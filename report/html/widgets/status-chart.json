@@ -1,0 +1,21 @@
+[ {
+  "uid" : "4991ae1ac884412e",
+  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+  "time" : {
+    "start" : 1541583508918,
+    "stop" : 1541583509152,
+    "duration" : 234
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5a5cf5559a8f34",
+  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+  "time" : {
+    "start" : 1541583509154,
+    "stop" : 1541583509230,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

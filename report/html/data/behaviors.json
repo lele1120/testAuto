@@ -1,0 +1,33 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "测试点击头像弹出侧边栏",
+    "children" : [ {
+      "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+      "uid" : "4991ae1ac884412e",
+      "parentUid" : "69fb7e50a5ce34885dc72d044ea29d0f",
+      "status" : "broken",
+      "time" : {
+        "start" : 1541583508918,
+        "stop" : 1541583509152,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "69fb7e50a5ce34885dc72d044ea29d0f"
+  }, {
+    "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+    "uid" : "5a5cf5559a8f34",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1541583509154,
+      "stop" : 1541583509230,
+      "duration" : 76
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

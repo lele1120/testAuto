@@ -1,0 +1,17 @@
+connect_type:
+# 连接方式
+  usb : usb
+  wifi : wifi
+
+phoneip:
+# 手机ip
+  Y66手机ip : 192.168.100.45
+  华为手机ip : 192.168.100.145
+
+phoneusb:
+# 手机设备序列号
+  Y66手机uuid : d5ddd4f7
+
+
+
+

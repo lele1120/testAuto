@@ -1,0 +1,33 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+      "uid" : "4991ae1ac884412e",
+      "parentUid" : "86abcc46617c603d802c3e378b13740e",
+      "status" : "broken",
+      "time" : {
+        "start" : 1541583508918,
+        "stop" : 1541583509152,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+      "uid" : "5a5cf5559a8f34",
+      "parentUid" : "86abcc46617c603d802c3e378b13740e",
+      "status" : "broken",
+      "time" : {
+        "start" : 1541583509154,
+        "stop" : 1541583509230,
+        "duration" : 76
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "86abcc46617c603d802c3e378b13740e"
+  } ]
+}

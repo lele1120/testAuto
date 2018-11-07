@@ -1,0 +1,33 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+      "uid" : "4991ae1ac884412e",
+      "parentUid" : "3b2e467b921b0ea8d4803b9c79d92d0c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1541583508918,
+        "stop" : 1541583509152,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+      "uid" : "5a5cf5559a8f34",
+      "parentUid" : "3b2e467b921b0ea8d4803b9c79d92d0c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1541583509154,
+        "stop" : 1541583509230,
+        "duration" : 76
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3b2e467b921b0ea8d4803b9c79d92d0c"
+  } ]
+}

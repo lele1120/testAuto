@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "localhost",
+    "children" : [ {
+      "name" : "5073-MainThread",
+      "children" : [ {
+        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+        "uid" : "4991ae1ac884412e",
+        "parentUid" : "35736ead1401ced9e14d0fcbb01cf3c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1541583508918,
+          "stop" : 1541583509152,
+          "duration" : 234
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+        "uid" : "5a5cf5559a8f34",
+        "parentUid" : "35736ead1401ced9e14d0fcbb01cf3c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1541583509154,
+          "stop" : 1541583509230,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35736ead1401ced9e14d0fcbb01cf3c8"
+    } ],
+    "uid" : "be30f600e0434356d35178c8efd2dc81"
+  } ]
+}

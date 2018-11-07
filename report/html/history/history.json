@@ -1,0 +1,42 @@
+{
+  "1f500e729f486cde213a3a8e6260e60f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5a5cf5559a8f34",
+      "status" : "broken",
+      "statusDetails" : "JsonRpcError: -32001 Jsonrpc error: <java.lang.IllegalStateException> data: java.lang.IllegalStateException: UiAutomation not connected!\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:971)\n\tat android.app.UiAutomation.waitForIdle(UiAutomation.java:577)\n\tat android.support.test.uiautomator.QueryController.waitForIdle(QueryController.java:532)\n\tat android.support.test.uiautomator.QueryController.waitForIdle(QueryController.java:523)\n\tat android.support.test.uiautomator.QueryController.getCurrentPackageName(QueryController.java:511)\n\tat android.support.test.uiautomator.UiDevice.getCurrentPackageName(UiDevice.java:653)\n\tat com.github.uiautomator.stub.DeviceInfo.<init>(DeviceInfo.java:51)\n\tat com.github.uiautomator.stub.DeviceInfo.getDeviceInfo(DeviceInfo.java:44)\n\tat com.github.uiautomator.stub.AutomatorServiceImpl.deviceInfo(AutomatorServiceImpl.java:105)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:467)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:352)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:283)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:251)\n\tat com.github.uiautomator.stub.AutomatorHttpServer.serve(AutomatorHttpServer.java:100)\n\tat fi.iki.elonen.NanoHTTPD.serve(NanoHTTPD.java:2244)\n\tat fi.iki.elonen.NanoHTTPD$HTTPSession.execute(NanoHTTPD.java:945)\n\tat fi.iki.elonen.NanoHTTPD$ClientHandler.run(NanoHTTPD.java:192)\n\tat java.lang.Thread.run(Thread.java:818)\n",
+      "time" : {
+        "start" : 1541583509154,
+        "stop" : 1541583509230,
+        "duration" : 76
+      }
+    } ]
+  },
+  "53ee6f9e7a4bf30137258d1e45bca066" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4991ae1ac884412e",
+      "status" : "broken",
+      "statusDetails" : "JsonRpcError: -32001 Jsonrpc error: <java.lang.IllegalStateException> data: java.lang.IllegalStateException: UiAutomation not connected!\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:971)\n\tat android.app.UiAutomation.waitForIdle(UiAutomation.java:577)\n\tat android.support.test.uiautomator.QueryController.waitForIdle(QueryController.java:532)\n\tat android.support.test.uiautomator.QueryController.waitForIdle(QueryController.java:523)\n\tat android.support.test.uiautomator.QueryController.getCurrentPackageName(QueryController.java:511)\n\tat android.support.test.uiautomator.UiDevice.getCurrentPackageName(UiDevice.java:653)\n\tat com.github.uiautomator.stub.DeviceInfo.<init>(DeviceInfo.java:51)\n\tat com.github.uiautomator.stub.DeviceInfo.getDeviceInfo(DeviceInfo.java:44)\n\tat com.github.uiautomator.stub.AutomatorServiceImpl.deviceInfo(AutomatorServiceImpl.java:105)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:467)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:352)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:283)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:251)\n\tat com.github.uiautomator.stub.AutomatorHttpServer.serve(AutomatorHttpServer.java:100)\n\tat fi.iki.elonen.NanoHTTPD.serve(NanoHTTPD.java:2244)\n\tat fi.iki.elonen.NanoHTTPD$HTTPSession.execute(NanoHTTPD.java:945)\n\tat fi.iki.elonen.NanoHTTPD$ClientHandler.run(NanoHTTPD.java:192)\n\tat java.lang.Thread.run(Thread.java:818)\n",
+      "time" : {
+        "start" : 1541583508918,
+        "stop" : 1541583509152,
+        "duration" : 234
+      }
+    } ]
+  }
+}

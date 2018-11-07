@@ -1,0 +1,37 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "JsonRpcError: -32001 Jsonrpc error: <java.lang.IllegalStateException> data: java.lang.IllegalStateException: UiAutomation not connected!\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:971)\n\tat android.app.UiAutomation.waitForIdle(UiAutomation.java:577)\n\tat android.support.test.uiautomator.QueryController.waitForIdle(QueryController.java:532)\n\tat android.support.test.uiautomator.QueryController.waitForIdle(QueryController.java:523)\n\tat android.support.test.uiautomator.QueryController.getCurrentPackageName(QueryController.java:511)\n\tat android.support.test.uiautomator.UiDevice.getCurrentPackageName(UiDevice.java:653)\n\tat com.github.uiautomator.stub.DeviceInfo.<init>(DeviceInfo.java:51)\n\tat com.github.uiautomator.stub.DeviceInfo.getDeviceInfo(DeviceInfo.java:44)\n\tat com.github.uiautomator.stub.AutomatorServiceImpl.deviceInfo(AutomatorServiceImpl.java:105)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:467)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:352)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:283)\n\tat com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:251)\n\tat com.github.uiautomator.stub.AutomatorHttpServer.serve(AutomatorHttpServer.java:100)\n\tat fi.iki.elonen.NanoHTTPD.serve(NanoHTTPD.java:2244)\n\tat fi.iki.elonen.NanoHTTPD$HTTPSession.execute(NanoHTTPD.java:945)\n\tat fi.iki.elonen.NanoHTTPD$ClientHandler.run(NanoHTTPD.java:192)\n\tat java.lang.Thread.run(Thread.java:818)\n",
+      "children" : [ {
+        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+        "uid" : "4991ae1ac884412e",
+        "parentUid" : "e01fa5b505ee51413c030adf2a9955e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1541583508918,
+          "stop" : 1541583509152,
+          "duration" : 234
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+        "uid" : "5a5cf5559a8f34",
+        "parentUid" : "e01fa5b505ee51413c030adf2a9955e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1541583509154,
+          "stop" : 1541583509230,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e01fa5b505ee51413c030adf2a9955e1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
