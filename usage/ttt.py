@@ -1,7 +1,14 @@
-from biz.get_value_by_yaml import Get_Value_By_Yaml
-import uiautomator2 as u2
+import inspect
 
-# wifi = Get_Value_By_Yaml().get_value("Y66手机ip")
-# driver = u2.connect_wifi(wifi)
-driver = u2.connect_usb("d5ddd4f7")
-print(driver.info)
+def get_current_function_name():
+    return inspect.stack()[1][3]
+
+class MyClass:
+    def function_one(self):
+
+        print("%s.%s invoked"%(self.__class__.__name__, get_current_function_name()))
+        print(get_current_function_name())
+
+if __name__ == "__main__":
+    myclass = MyClass()
+    myclass.function_one()

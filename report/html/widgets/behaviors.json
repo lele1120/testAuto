@@ -1,8 +1,19 @@
 {
   "total" : 2,
   "items" : [ {
-    "uid" : "69fb7e50a5ce34885dc72d044ea29d0f",
-    "name" : "测试点击头像弹出侧边栏",
+    "uid" : "0e2b348b66171ecd99a550635956dbf4",
+    "name" : "点击头像弹出侧边栏",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "1cafe58f43218cd7d515bbeda3f5a195",
+    "name" : "这个是第二条case",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

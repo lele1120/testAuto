@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
+import inspect
 import os
+import sys
 import time
 import pytest
 import allure
 
 from biz.get_value_by_yaml import Get_Value_By_Yaml
-
 
 @pytest.fixture(scope='module')
 def driver():
@@ -15,15 +16,23 @@ def driver():
     yield driver
     driver.app_stop("com.bs.finance")
 
+def save_picture(driver, picture_name):
+    driver.screenshot("../report/picture/" + picture_name + ".png")
+    return "../report/picture/" + picture_name + ".png"
 
-@allure.story('测试点击头像弹出侧边栏')
+
+@allure.story('点击头像弹出侧边栏')
 def test_one(driver):
     driver(resourceId="com.bs.finance:id/iv_user").click()
+    time.sleep(1)
+    picture_name = sys._getframe().f_code.co_name
+    pictor_url = save_picture(driver, picture_name)
+    file = open(pictor_url, 'rb').read()
     with allure.step("点击头像"):
-        allure.attach('商品1', '刘春明')  # attach可以打印一些附加信息
+        allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
         assert 1 == 1
 
-
+@allure.story('这个是第二条case')
 def test_two(driver):
     assert 1 == 1
 

@@ -10,6 +10,7 @@
           <option value="usage.tt._get_value" />
           <option value="test_case.test_bicai.get_value_by_yaml" />
           <option value="list.findall" />
+          <option value="test_case.test_bicai.get__function_name" />
         </list>
       </option>
     </inspection_tool>
