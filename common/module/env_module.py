@@ -1,5 +1,4 @@
-# coding:utf-8
-import sys
+# -*- coding: utf-8 -*-
 from usage.setting import ENVIRONMENT_CONFIG
 
 

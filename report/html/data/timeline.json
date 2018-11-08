@@ -4,33 +4,33 @@
   "children" : [ {
     "name" : "localhost",
     "children" : [ {
-      "name" : "2849-MainThread",
+      "name" : "663-MainThread",
       "children" : [ {
-        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
-        "uid" : "2f34c16730a33715",
-        "parentUid" : "83fc7dc8f395d8960b0a06e707ac29c1",
+        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+        "uid" : "119b46c5a09270d2",
+        "parentUid" : "bb9eae36f94bef93b7d2cedce094c53f",
         "status" : "passed",
         "time" : {
-          "start" : 1541651379423,
-          "stop" : 1541651379424,
-          "duration" : 1
+          "start" : 1541669090506,
+          "stop" : 1541669115966,
+          "duration" : 25460
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
-        "uid" : "a64384999b6a6807",
-        "parentUid" : "83fc7dc8f395d8960b0a06e707ac29c1",
+        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+        "uid" : "943b93229f7a17bc",
+        "parentUid" : "bb9eae36f94bef93b7d2cedce094c53f",
         "status" : "passed",
         "time" : {
-          "start" : 1541651361155,
-          "stop" : 1541651379420,
-          "duration" : 18265
+          "start" : 1541669115971,
+          "stop" : 1541669115972,
+          "duration" : 1
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "83fc7dc8f395d8960b0a06e707ac29c1"
+      "uid" : "bb9eae36f94bef93b7d2cedce094c53f"
     } ],
     "uid" : "be30f600e0434356d35178c8efd2dc81"
   } ]

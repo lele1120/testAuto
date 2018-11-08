@@ -1,20 +1,27 @@
+#!/Users/xuchen/venv/testAuto/bin/python
 # -*- coding: utf-8 -*-
-import inspect
+from __future__ import absolute_import
 import os
 import sys
 import time
-import pytest
 import allure
+import pytest
 
-from biz.get_value_by_yaml import Get_Value_By_Yaml
+import biz.get_test_value_by_yaml as get_test_value_by_yaml
+
+
+
+print(sys.path)
+
 
 @pytest.fixture(scope='module')
 def driver():
-    driver = Get_Value_By_Yaml().get_driver_by_key("Y66手机ip")
+    driver = get_test_value_by_yaml.get_driver_by_key("Y66手机ip")
     driver.set_fastinput_ime(True)
     driver.session("com.bs.finance")
     yield driver
     driver.app_stop("com.bs.finance")
+
 
 def save_picture(driver, picture_name):
     driver.screenshot("../report/picture/" + picture_name + ".png")
