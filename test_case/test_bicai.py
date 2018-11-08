@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import time
-import uiautomator2 as u2
 import pytest
 import allure
 
@@ -10,8 +9,7 @@ from biz.get_value_by_yaml import Get_Value_By_Yaml
 
 @pytest.fixture(scope='module')
 def driver():
-    wifi = Get_Value_By_Yaml().get_value("Y66手机ip")
-    driver = u2.connect_wifi(wifi)
+    driver = Get_Value_By_Yaml().get_driver_by_key("Y66手机ip")
     driver.set_fastinput_ime(True)
     driver.session("com.bs.finance")
     yield driver

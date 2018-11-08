@@ -1,11 +1,12 @@
 import os
+import re
 
 import yaml
-
+import uiautomator2 as u2
 
 class Get_Value_By_Yaml():
 
-    def get_target_value(self,key, dic, tmp_list):
+    def get_target_value(self, key, dic, tmp_list):
         """
         :param key: 目标key值
         :param dic: JSON数据
@@ -32,15 +33,42 @@ class Get_Value_By_Yaml():
             elif isinstance(val_, (list, tuple)):
                 self._get_value(key, val_, tmp_list)  # 传入数据的value值是列表或者元组，则调用自身
 
-    def get_value(self,key):
+    def get_value(self, key):
         yamlPath = os.path.join("../usage/", "cfgyaml")
         f = open(yamlPath, 'r', encoding='utf-8')
         cfg = f.read()
         d = yaml.load(cfg)
         return self.get_target_value(key, d, [])[0]
 
+    def get_driver_by_key(self, key):
+        """
+        :param key:使用yaml文件中的设备usb连接名称，或者ip连接名称，自动识别设备，使用ping ip和adb devices的方式判断设备是否可用
+        :return: 返回设备driver
+        """
+        if type(key) == str:
+            if key[-1] == "p":
+                ip = Get_Value_By_Yaml().get_value(key)
+                backinfo = os.system("ping -c 5 "+ip)
+                if backinfo == 0:
+                    driver = u2.connect_wifi(Get_Value_By_Yaml().get_value(key))
+                    return driver
+                else:
+                    print("未发现ip为" + ip + "的移动设备")
+            elif key[-1] == "d":
+                uuid = Get_Value_By_Yaml().get_value(key)
+                readDeviceId = list(os.popen('adb devices').readlines())
+                deviceId = re.findall(r'^\w*\b', readDeviceId[1])[0]
+                if uuid == deviceId:
+                    driver = u2.connect_usb(uuid)
+                    return driver
+                else:
+                    print("未发现udid为"+uuid+"的移动设备")
+        else:
+            print("请使用yaml文件中的设备连接名称")
+
 
 if __name__ == '__main__':
-    print(Get_Value_By_Yaml().get_value("Y66手机ip"))
+    # print(Get_Value_By_Yaml().get_value("Y66手机ip"))
+    print(Get_Value_By_Yaml().get_driver_by_key("Y66手机ip"))
 
 
