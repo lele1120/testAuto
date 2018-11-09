@@ -1,0 +1,10 @@
+PING 192.168.100.45 (192.168.100.45): 56 data bytes
+64 bytes from 192.168.100.45: icmp_seq=0 ttl=64 time=98.882 ms
+64 bytes from 192.168.100.45: icmp_seq=1 ttl=64 time=119.230 ms
+64 bytes from 192.168.100.45: icmp_seq=2 ttl=64 time=138.952 ms
+64 bytes from 192.168.100.45: icmp_seq=3 ttl=64 time=55.351 ms
+64 bytes from 192.168.100.45: icmp_seq=4 ttl=64 time=63.313 ms
+
+--- 192.168.100.45 ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 55.351/95.146/138.952/31.969 ms

@@ -1,0 +1,63 @@
+{
+  "uid" : "8b9b5098a6e2106c",
+  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+  "fullName" : "test_case..Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+  "historyId" : "1f500e729f486cde213a3a8e6260e60f",
+  "time" : {
+    "start" : 1541727899954,
+    "stop" : 1541727899955,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "localhost"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "这个是第二条case"
+  }, {
+    "name" : "thread",
+    "value" : "1229-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "testClass",
+    "value" : "test_case"
+  }, {
+    "name" : "testMethod",
+    "value" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two"
+  }, {
+    "name" : "package",
+    "value" : "test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8b9b5098a6e2106c.json",
+  "parameterValues" : [ ]
+}

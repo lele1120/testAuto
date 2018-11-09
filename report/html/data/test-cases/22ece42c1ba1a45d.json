@@ -1,0 +1,100 @@
+{
+  "uid" : "22ece42c1ba1a45d",
+  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+  "fullName" : "test_case..Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+  "historyId" : "53ee6f9e7a4bf30137258d1e45bca066",
+  "time" : {
+    "start" : 1541727883029,
+    "stop" : 1541727899952,
+    "duration" : 16923
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击头像",
+      "time" : {
+        "start" : 1541727899951,
+        "stop" : 1541727899951,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7f00cc96cb662495",
+        "name" : "test_one",
+        "source" : "7f00cc96cb662495.png",
+        "type" : "image/png",
+        "size" : 64518
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "adde490740828478",
+      "name" : "Captured stdout setup",
+      "source" : "adde490740828478.txt",
+      "type" : "text/plain",
+      "size" : 533
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "localhost"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "点击头像弹出侧边栏"
+  }, {
+    "name" : "thread",
+    "value" : "1229-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "testClass",
+    "value" : "test_case"
+  }, {
+    "name" : "testMethod",
+    "value" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one"
+  }, {
+    "name" : "package",
+    "value" : "test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22ece42c1ba1a45d.json",
+  "parameterValues" : [ ]
+}
