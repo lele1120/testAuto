@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/attachments/7f00cc96cb662495.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/attachments/adde490740828478.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biz/get_test_value_by_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/biz/get_test_value_by_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/data/behaviors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/data/packages.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/data/suites.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/test-cases/22ece42c1ba1a45d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/test-cases/8b9b5098a6e2106c.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/data/timeline.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/export/influxDbData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/export/prometheusData.txt" afterDir="false" />
@@ -23,9 +19,6 @@
       <change beforePath="$PROJECT_DIR$/report/html/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/widgets/status-chart.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/html/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/html/widgets/summary.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/picture/test_one.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/picture/test_one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/36d17efa-daf8-47cf-be97-2691b7fa3da5-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/3f675eea-c071-4893-8083-f7895b2fef53-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/de9f898a-353c-4a34-a721-ea67c86fe6ea-attachment.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_bicai.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_bicai.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,13 +29,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testAuto$tt.coverage" NAME="tt Coverage Results" MODIFIED="1541731096747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
+    <SUITE FILE_PATH="coverage/testAuto$tt.coverage" NAME="tt Coverage Results" MODIFIED="1541748850110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$test_bicai.coverage" NAME="test_bicai Coverage Results" MODIFIED="1541554792320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/testAuto$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1541748507868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_interface.coverage" NAME="test_interface Coverage Results" MODIFIED="1541658906799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1541648388578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$main.coverage" NAME="main Coverage Results" MODIFIED="1541664399534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_suite" />
     <SUITE FILE_PATH="coverage/testAuto$test.coverage" NAME="test Coverage Results" MODIFIED="1541405982000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1541731313011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1541748870468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1541489873688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$env_module.coverage" NAME="env_module Coverage Results" MODIFIED="1541664566426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/module" />
   </component>
@@ -51,11 +45,29 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="543">
+              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
               <folding>
-                <element signature="e#65#103#0" expanded="true" />
+                <element signature="e#46#84#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aaaa.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/aaaa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -63,10 +75,11 @@
       <file leaf-file-name="get_test_value_by_yaml.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biz/get_test_value_by_yaml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="350">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#1417#2268#0" />
               </folding>
             </state>
           </provider>
@@ -83,11 +96,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hello world</find>
+      <find />
       <find>测试字符串相等</find>
       <find>Y66手机ip</find>
       <find>biz</find>
-      <find>yamlPath = os.path.join(&quot;../usage/&quot;, &quot;cfgyaml&quot;)</find>
+      <find />
+      <find>driver.set_fastinput_ime(True)</find>
+      <find />
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,6 +129,7 @@
         <option value="$PROJECT_DIR$/biz/__init__.py" />
         <option value="$PROJECT_DIR$/test_suite/main.py" />
         <option value="$PROJECT_DIR$/common/module/env_module.py" />
+        <option value="$PROJECT_DIR$/test_case/aaaa.py" />
         <option value="$PROJECT_DIR$/test_case/test_bicai.py" />
         <option value="$PROJECT_DIR$/biz/get_test_value_by_yaml.py" />
       </list>
@@ -127,10 +144,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1682" />
-    <option name="y" value="25" />
-    <option name="width" value="1918" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="y" value="30" />
+    <option name="width" value="1680" />
     <option name="height" value="953" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -139,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,17 +177,6 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -179,6 +184,11 @@
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
               <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="usage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
@@ -193,6 +203,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +230,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.test_bicai (1)">
+    <configuration name="aaaa" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="testAuto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/aaaa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="env_module" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testAuto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,25 +306,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="testAuto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/test_interface.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="tt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testAuto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -317,17 +328,17 @@
     <list>
       <item itemvalue="Python.test_bicai (1)" />
       <item itemvalue="Python.tt" />
-      <item itemvalue="Python.test_interface" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.env_module" />
+      <item itemvalue="Python.aaaa" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_bicai (1)" />
         <item itemvalue="Python.tt" />
+        <item itemvalue="Python.aaaa" />
         <item itemvalue="Python.env_module" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test_interface" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541728772938</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="测试报告集成截图">
+      <created>1541736002145</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541736002145</updated>
+    </task>
+    <task id="LOCAL-00011" summary="测试报告集成截图">
+      <created>1541736149406</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1541736149406</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -418,17 +443,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1682" y="25" width="1918" height="953" extended-state="0" />
+    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905483" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" weight="0.30140188" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.44392523" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.2835821" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905483" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4978678" visible="true" weight="0.30140188" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4978678" weight="0.30140188" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21512248" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -455,9 +480,18 @@
     <MESSAGE value="测试报告集成截图" />
     <option name="LAST_COMMIT_MESSAGE" value="测试报告集成截图" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_case/test_bicai.py</url>
+          <line>2</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/report/result/a1daecfa-e4ad-416e-bb54-89622cfc1b29-attachment.txt" />
-    <entry file="file://$PROJECT_DIR$/report/result/27f1cc5f-4596-4e6c-84d9-8fe6959ae257-attachment.txt" />
     <entry file="file://$PROJECT_DIR$/report/result/04f576b3-db57-4061-a7be-845bade62fc3-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/report/index.html" />
     <entry file="file://$PROJECT_DIR$/report/export/mail.html" />
@@ -569,16 +603,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_suite/main.py" />
-    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/xml/0b69828d-4308-4773-8296-04993ff6f890-testsuite.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/xml/0b69828d-4308-4773-8296-04993ff6f890-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -589,22 +614,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report/xml/f9750c76-379e-4306-93a3-2e7bdfceb8ae-testsuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/aaaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="543">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
           <folding>
-            <element signature="e#65#103#0" expanded="true" />
+            <element signature="e#46#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biz/get_test_value_by_yaml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="350">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1417#2268#0" />
           </folding>
         </state>
       </provider>

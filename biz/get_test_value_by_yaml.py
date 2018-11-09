@@ -35,8 +35,9 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
-    # yamlPath = os.path.join("../usage/", "cfgyaml")
-    yamlPath = os.path.join("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
+    yamlPath = os.path.abspath('..')+r"/usage/cfgyaml"
+    # yamlPath = os.path.join("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
+    # yamlPath = os.path.join("../"+os.getcwd())
     f = open(yamlPath, 'r', encoding='utf-8')
     cfg = f.read()
     d = yaml.load(cfg)
@@ -73,6 +74,9 @@ def get_driver_by_key(key):
 if __name__ == '__main__':
     # print(get_value("Y66手机ip"))
     # print(get_driver_by_key("Y66手机ip"))
-    print(get_value("Y66手机uuid"))
+    print(os.path.abspath('.')+r"/cfgyaml")
+    print("\n")
+    print("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
+
 
 
