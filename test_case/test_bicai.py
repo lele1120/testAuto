@@ -22,7 +22,7 @@ def driver():
 
 def save_picture(driver, picture_name):
     driver.screenshot(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")
-    return os.path.abspath('..')+"/report/picture/" + picture_name + ".png"
+    return os.path.abspath('.')+"/report/picture/" + picture_name + ".png"
 
 
 @allure.story('点击头像弹出侧边栏')
