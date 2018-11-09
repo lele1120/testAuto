@@ -41,6 +41,8 @@ def test_two(driver):
     assert 1 == 1
 
 
+
+
 if __name__ == '__main__':
     # 执行所有case并生成报告
     pytest.main("--alluredir /Users/xuchen/PycharmProjects/testAuto/report/xml")
