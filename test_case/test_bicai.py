@@ -1,4 +1,4 @@
-#!/Users/xuchen/venv/testAuto/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 import os
@@ -49,6 +49,8 @@ if __name__ == '__main__':
     os.system('allure generate /Users/xuchen/PycharmProjects/testAuto/report/xml -o /Users/xuchen/PycharmProjects/testAuto/report/html --clean')
     # time.sleep(5)
     # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
+
+    # git push -u origin master 提交代码到主分支
 
     # 命令行运行生成报告
     # cd /Users/xuchen/PycharmProjects/testAuto
