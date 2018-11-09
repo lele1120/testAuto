@@ -1,6 +1,5 @@
 import os
 import re
-import sys
 
 import yaml
 import uiautomator2 as u2
@@ -36,7 +35,8 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
-    yamlPath = os.path.join("../usage/", "cfgyaml")
+    # yamlPath = os.path.join("../usage/", "cfgyaml")
+    yamlPath = os.path.join("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
     f = open(yamlPath, 'r', encoding='utf-8')
     cfg = f.read()
     d = yaml.load(cfg)

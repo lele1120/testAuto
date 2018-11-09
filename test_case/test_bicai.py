@@ -21,8 +21,8 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    driver.screenshot("../report/picture/" + picture_name + ".png")
-    return "../report/picture/" + picture_name + ".png"
+    driver.screenshot("/Users/xuchen/PycharmProjects/testAuto/report/picture/" + picture_name + ".png")
+    return "/Users/xuchen/PycharmProjects/testAuto/report/picture/" + picture_name + ".png"
 
 
 @allure.story('点击头像弹出侧边栏')
@@ -43,7 +43,12 @@ def test_two(driver):
 
 if __name__ == '__main__':
     # 执行所有case并生成报告
-    pytest.main("--alluredir ../report/xml")
-    os.system('allure generate ../report/xml -o ../report/html --clean')
+    pytest.main("--alluredir /Users/xuchen/PycharmProjects/testAuto/report/xml")
+    os.system('allure generate /Users/xuchen/PycharmProjects/testAuto/report/xml -o /Users/xuchen/PycharmProjects/testAuto/report/html --clean')
     # time.sleep(5)
     # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
+
+    # 命令行运行生成报告
+    # cd /Users/xuchen/PycharmProjects/testAuto
+    # py.test test_case --alluredir /Users/xuchen/PycharmProjects/testAuto/report/xml
+    # allure generate /Users/xuchen/PycharmProjects/testAuto/report/xml -o /Users/xuchen/PycharmProjects/testAuto/report/html --clean
