@@ -35,7 +35,7 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
-    yamlPath = os.path.abspath('..')+r"/usage/cfgyaml"
+    yamlPath = os.path.abspath('.')+r"/usage/cfgyaml"
     # yamlPath = os.path.join("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
     # yamlPath = os.path.join("../"+os.getcwd())
     f = open(yamlPath, 'r', encoding='utf-8')
