@@ -4,10 +4,10 @@
     "uid" : "0e2b348b66171ecd99a550635956dbf4",
     "name" : "点击头像弹出侧边栏",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

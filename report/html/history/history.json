@@ -9,31 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "424bb5752d6631a3",
+      "uid" : "96cdeeab0eb5f41a",
       "status" : "passed",
       "time" : {
-        "start" : 1541748889748,
-        "stop" : 1541748889750,
-        "duration" : 2
+        "start" : 1541752738957,
+        "stop" : 1541752738957,
+        "duration" : 0
       }
     } ]
   },
   "53ee6f9e7a4bf30137258d1e45bca066" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a2eced6125b3a166",
-      "status" : "passed",
+      "uid" : "51a886a0b8477ee7",
+      "status" : "failed",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '/Users/xuchen/PycharmProjects/testAuto/test_case/report/picture/test_one.png'",
       "time" : {
-        "start" : 1541748870935,
-        "stop" : 1541748889746,
-        "duration" : 18811
+        "start" : 1541752713687,
+        "stop" : 1541752738954,
+        "duration" : 25267
       }
     } ]
   }

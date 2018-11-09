@@ -3,7 +3,7 @@ import re
 
 import yaml
 import uiautomator2 as u2
-
+from pathlib import Path
 
 def get_target_value(key, dic, tmp_list):
     """
@@ -35,9 +35,8 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
-    yamlPath = os.path.abspath('.')+r"/usage/cfgyaml"
-    # yamlPath = os.path.join("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
-    # yamlPath = os.path.join("../"+os.getcwd())
+    yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml")
+
     f = open(yamlPath, 'r', encoding='utf-8')
     cfg = f.read()
     d = yaml.load(cfg)
@@ -74,9 +73,9 @@ def get_driver_by_key(key):
 if __name__ == '__main__':
     # print(get_value("Y66手机ip"))
     # print(get_driver_by_key("Y66手机ip"))
-    print(os.path.abspath('.')+r"/cfgyaml")
-    print("\n")
-    print("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
-
+    # print(os.path.abspath('.')+r"/cfgyaml")
+    # print("\n")
+    # print("/Users/xuchen/PycharmProjects/testAuto/usage/cfgyaml")
+    print(Path(os.path.abspath('.')+"/usage/cfgyaml"))
 
 

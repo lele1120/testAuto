@@ -5,13 +5,13 @@
     "name" : "点击头像弹出侧边栏",
     "children" : [ {
       "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
-      "uid" : "a2eced6125b3a166",
+      "uid" : "51a886a0b8477ee7",
       "parentUid" : "0e2b348b66171ecd99a550635956dbf4",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1541748870935,
-        "stop" : 1541748889746,
-        "duration" : 18811
+        "start" : 1541752713687,
+        "stop" : 1541752738954,
+        "duration" : 25267
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -21,13 +21,13 @@
     "name" : "这个是第二条case",
     "children" : [ {
       "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
-      "uid" : "424bb5752d6631a3",
+      "uid" : "96cdeeab0eb5f41a",
       "parentUid" : "1cafe58f43218cd7d515bbeda3f5a195",
       "status" : "passed",
       "time" : {
-        "start" : 1541748889748,
-        "stop" : 1541748889750,
-        "duration" : 2
+        "start" : 1541752738957,
+        "stop" : 1541752738957,
+        "duration" : 0
       },
       "flaky" : false,
       "parameters" : [ ]
