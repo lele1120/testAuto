@@ -21,7 +21,7 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    driver.screenshot(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")
+    driver.screenshot(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")
     return os.path.abspath('..')+"/report/picture/" + picture_name + ".png"
 
 
