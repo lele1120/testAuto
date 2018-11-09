@@ -14,7 +14,7 @@ print(sys.path)
 @pytest.fixture(scope='module')
 def driver():
     driver = get_test_value_by_yaml.get_driver_by_key("Y66手机ip")
-    driver.set_fastinput_ime(True)
+    # driver.set_fastinput_ime(True)
     driver.session("com.bs.finance")
     yield driver
     driver.app_stop("com.bs.finance")
