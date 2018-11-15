@@ -23,10 +23,10 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
+    picture_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
     # pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
-    driver.screenshot(pictor_url)
-    return pictor_url
+    driver.screenshot(picture_url)
+    return picture_url
 
 
 @allure.story('点击头像弹出侧边栏')
