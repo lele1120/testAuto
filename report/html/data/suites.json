@@ -5,24 +5,24 @@
     "name" : "test_case",
     "children" : [ {
       "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
-      "uid" : "cb30ff5a89713608",
+      "uid" : "d80ca096b8525a96",
       "parentUid" : "86abcc46617c603d802c3e378b13740e",
       "status" : "passed",
       "time" : {
-        "start" : 1542250408236,
-        "stop" : 1542250423922,
-        "duration" : 15686
+        "start" : 1542262874119,
+        "stop" : 1542262895502,
+        "duration" : 21383
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
-      "uid" : "80e5a047c891ac21",
+      "uid" : "ca644fdca6e6a202",
       "parentUid" : "86abcc46617c603d802c3e378b13740e",
       "status" : "passed",
       "time" : {
-        "start" : 1542250423925,
-        "stop" : 1542250423926,
+        "start" : 1542262895505,
+        "stop" : 1542262895506,
         "duration" : 1
       },
       "flaky" : false,

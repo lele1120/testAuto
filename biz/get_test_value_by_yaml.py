@@ -35,8 +35,8 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
-    yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml") # 适用于jenkins持续集成
-    # yamlPath = Path(os.path.abspath('..')+"/usage/cfgyaml") # 适用于本地调试持续集成
+    # yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml") # 适用于jenkins持续集成
+    yamlPath = Path(os.path.abspath('..')+"/usage/cfgyaml") # 适用于本地调试持续集成
 
     f = open(yamlPath, 'r', encoding='utf-8')
     cfg = f.read()

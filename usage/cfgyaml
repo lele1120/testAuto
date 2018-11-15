@@ -6,11 +6,11 @@ connect_type:
 phoneip:
 # 手机ip
   Y66手机ip : 192.168.100.107
-  华为手机ip : 192.168.100.145
+  华为手机ip : 192.168.100.140
 
 phoneusb:
 # 手机设备序列号
-  Y66手机uuid : d5ddd4f7
+  Y66-uuid : d5ddd4f7
 
 
 

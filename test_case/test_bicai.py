@@ -22,8 +22,8 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
-    # pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
+    # pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
+    pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
     driver.screenshot(pictor_url)
     return pictor_url
 
@@ -48,10 +48,10 @@ def test_two(driver):
 
 if __name__ == '__main__':
     # 执行所有case并生成报告
-    pytest.main("--alluredir ${WORKSPACE}/Auto_Test/report")
-    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
-    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
-    #           "/report/html --clean")))
+    # pytest.main("--alluredir ${WORKSPACE}/Auto_Test/report")
+    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
+              "/report/html --clean")))
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
 
