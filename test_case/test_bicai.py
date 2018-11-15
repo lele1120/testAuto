@@ -22,7 +22,7 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")
+    pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")
     driver.screenshot(pictor_url)
     return pictor_url
 
