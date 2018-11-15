@@ -116,7 +116,8 @@ def get_driver_by_key(key):
 if __name__ == '__main__':
 #     # 执行所有case并生成报告
 
-    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    pytest.main("--alluredir ${WORKSPACE}/report")
     os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
               "/report/html --clean")))
         # time.sleep(5)

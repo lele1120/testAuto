@@ -32,14 +32,25 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="246">
+              <caret line="119" column="50" lean-forward="true" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
-                <element signature="e#2058#2320#0" />
-                <element signature="e#2347#2626#0" />
-                <element signature="e#2661#3512#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_one.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -117,10 +128,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="152" />
-    <option name="y" value="100" />
-    <option name="width" value="1680" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
     <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -129,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +160,12 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="picture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -168,6 +183,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542275418441</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修改相对路径">
+      <created>1542275965293</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1542275965293</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -517,10 +540,9 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32842582" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" weight="0.30577576" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49733758" visible="true" weight="0.28652322" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.31789136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.32108626" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
       <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
@@ -531,6 +553,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,57 +670,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biz/test_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biz/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/xml/4dcb90ff-1439-47aa-be3e-f28bde41acd2-testsuite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/xml/1a0580ac-79fc-42b6-b8a6-124a897c7a4e-attachment.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/module/env_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suite/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/biz/test_sample.py" />
+    <entry file="file://$PROJECT_DIR$/biz/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/test_case/conftest.py" />
+    <entry file="file://$PROJECT_DIR$/report/xml/4dcb90ff-1439-47aa-be3e-f28bde41acd2-testsuite.xml" />
+    <entry file="file://$PROJECT_DIR$/report/xml/1a0580ac-79fc-42b6-b8a6-124a897c7a4e-attachment.png" />
+    <entry file="file://$PROJECT_DIR$/common/module/env_module.py" />
+    <entry file="file://$PROJECT_DIR$/test_suite/__init__.py" />
     <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/usage/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/usage/setting.py" />
     <entry file="file://$PROJECT_DIR$/usage/ttt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -705,19 +688,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/save_picture_by_function_name.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/test_two.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/xml/05e4dc7d-2e3e-4790-9a95-3c734b20db79-testsuite.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/save_picture_by_function_name.py" />
+    <entry file="file://$PROJECT_DIR$/report/picture/test_two.png" />
+    <entry file="file://$PROJECT_DIR$/report/xml/05e4dc7d-2e3e-4790-9a95-3c734b20db79-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -725,10 +698,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/report/xml/a0e0ba10-8bab-430f-83ee-54b8f91ff86c-attachment.png" />
+    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/xml/a0e0ba10-8bab-430f-83ee-54b8f91ff86c-attachment.png">
+    <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/report/html/index.html">
@@ -738,22 +716,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="246">
+          <caret line="119" column="50" lean-forward="true" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
-            <element signature="e#2058#2320#0" />
-            <element signature="e#2347#2626#0" />
-            <element signature="e#2661#3512#0" />
           </folding>
         </state>
       </provider>
