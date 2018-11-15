@@ -30,7 +30,7 @@ def save_picture(driver, picture_name):
 
 
 @allure.story('点击头像弹出侧边栏')
-def test_two(driver):
+def test_one(driver):
     driver(resourceId="com.bs.finance:id/iv_user").click()
     time.sleep(1)
     picture_name = sys._getframe().f_code.co_name
@@ -41,7 +41,7 @@ def test_two(driver):
         assert 1 == 1
 
 @allure.story('这个是第二条case')
-def test_three(driver):
+def test_two(driver):
     assert 1 == 1
 
 
@@ -114,8 +114,8 @@ def get_driver_by_key(key):
 
 
 if __name__ == '__main__':
-    # 执行所有case并生成报告
-    # pytest.main("--alluredir ${WORKSPACE}/Auto_Test/report")
+#     # 执行所有case并生成报告
+
     pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
     os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
               "/report/html --clean")))

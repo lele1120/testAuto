@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/biz/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/biz/get_test_value_by_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/get_test_value_by_yaml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/biz/save_picture_by_function_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/save_picture_by_function_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/module/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/module/env_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/behaviors.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/categories.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/packages.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/suites.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/data/timeline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/export/influxDbData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/export/mail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/export/prometheusData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/history/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/history/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/history/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/history/history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/history/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/plugins/behaviors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/plugins/packages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/plugins/screen-diff/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/plugins/screen-diff/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/duration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/environment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/executors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/severity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/status-chart.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/widgets/summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/picture/test_one.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/save_picture_by_function_name.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_bicai.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_bicai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suite/__init__.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,36 +30,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="263">
+              <caret line="118" column="60" selection-start-line="118" selection-start-column="60" selection-end-line="118" selection-end-column="60" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
-                <element signature="e#1414#2093#0" />
-                <element signature="e#2136#2398#0" />
-                <element signature="e#2425#2704#0" />
-                <element signature="e#2739#3590#0" />
+                <element signature="e#2058#2320#0" />
+                <element signature="e#2347#2626#0" />
+                <element signature="e#2661#3512#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+      <file leaf-file-name="get_test_value_by_yaml.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ttt.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/usage/ttt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="-608">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -168,8 +111,8 @@
         <option value="$PROJECT_DIR$/test_case/test_sample.py" />
         <option value="$PROJECT_DIR$/biz/conftest.py" />
         <option value="$PROJECT_DIR$/biz/test_sample.py" />
-        <option value="$PROJECT_DIR$/test_case/test_bicai.py" />
         <option value="$PROJECT_DIR$/test_case/__init__.py" />
+        <option value="$PROJECT_DIR$/test_case/test_bicai.py" />
       </list>
     </option>
   </component>
@@ -215,7 +158,8 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="usage" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
@@ -511,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542263696792</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="修改相对路径">
+      <created>1542274249728</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1542274249728</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -526,7 +477,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="980" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026624" side_tool="true" weight="0.28652322" />
@@ -642,13 +592,6 @@
     <entry file="file://$PROJECT_DIR$/report/picture/aaaaaa.jpg" />
     <entry file="file://$PROJECT_DIR$/report/picture/pytest_pyfunc_call.png" />
     <entry file="file://$PROJECT_DIR$/report/picture/pytest_pyfunc_call.jpg" />
-    <entry file="file://$PROJECT_DIR$/usage/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/main.py" />
     <entry file="file://$PROJECT_DIR$/test_case/test_interface.py" />
     <entry file="file://$PROJECT_DIR$/test_suite/main.py" />
@@ -700,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/save_picture_by_function_name.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/biz/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -721,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/xml/4dcb90ff-1439-47aa-be3e-f28bde41acd2-testsuite.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -736,9 +665,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/report/xml/1a0580ac-79fc-42b6-b8a6-124a897c7a4e-attachment.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/test_two.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
@@ -757,17 +683,17 @@
     <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
+    <entry file="file://$PROJECT_DIR$/usage/setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#46#84#0" expanded="true" />
-            <element signature="e#1414#2093#0" />
-            <element signature="e#2136#2398#0" />
-            <element signature="e#2425#2704#0" />
-            <element signature="e#2739#3590#0" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usage/ttt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -778,10 +704,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usage/ttt.py">
+    <entry file="file://$PROJECT_DIR$/test_case/save_picture_by_function_name.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-608">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/test_two.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="118" column="60" selection-start-line="118" selection-start-column="60" selection-end-line="118" selection-end-column="60" />
+          <folding>
+            <element signature="e#46#84#0" expanded="true" />
+            <element signature="e#2058#2320#0" />
+            <element signature="e#2347#2626#0" />
+            <element signature="e#2661#3512#0" />
+          </folding>
         </state>
       </provider>
     </entry>
