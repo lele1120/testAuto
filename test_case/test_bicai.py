@@ -23,8 +23,8 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    # pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
-    pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
+    pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
+    # pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
     driver.screenshot(pictor_url)
     return pictor_url
 
