@@ -35,7 +35,7 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
-    yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml")
+    yamlPath = Path(os.path.abspath('..')+"/usage/cfgyaml")
 
     f = open(yamlPath, 'r', encoding='utf-8')
     cfg = f.read()

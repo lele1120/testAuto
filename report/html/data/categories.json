@@ -1,25 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/Users/xuchen/PycharmProjects/testAuto/test_case/report/picture/test_one.png'",
-      "children" : [ {
-        "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
-        "uid" : "51a886a0b8477ee7",
-        "parentUid" : "cc3c8fc9a6ab7b5703b51debb759cf06",
-        "status" : "failed",
-        "time" : {
-          "start" : 1541752713687,
-          "stop" : 1541752738954,
-          "duration" : 25267
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "cc3c8fc9a6ab7b5703b51debb759cf06"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }
