@@ -9,12 +9,12 @@ import pytest
 from pathlib import Path
 
 import biz.get_test_value_by_yaml as get_test_value_by_yaml
-print(sys.path)
 
 
 @pytest.fixture(scope='module')
 def driver():
-    driver = get_test_value_by_yaml.get_driver_by_key("Y66手机ip")
+    driver = get_test_value_by_yaml.get_driver_by_key(sys.argv[1])
+    # driver = get_test_value_by_yaml.get_driver_by_key("Y66手机ip")
     driver.set_fastinput_ime(True)
     driver.session("com.bs.finance")
     yield driver
@@ -22,7 +22,8 @@ def driver():
 
 
 def save_picture(driver, picture_name):
-    pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")
+    pictor_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
+    # pictor_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
     driver.screenshot(pictor_url)
     return pictor_url
 
@@ -47,10 +48,10 @@ def test_two(driver):
 
 if __name__ == '__main__':
     # 执行所有case并生成报告
-    # pytest.main()
-    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
-    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
-              "/report/html --clean")))
+    pytest.main("--alluredir ${WORKSPACE}/Auto_Test/report")
+    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
+    #           "/report/html --clean")))
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
 

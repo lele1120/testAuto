@@ -1,20 +1,20 @@
 [ {
-  "uid" : "a585fbc9bde19ca4",
-  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
+  "uid" : "80e5a047c891ac21",
+  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
   "time" : {
-    "start" : 1542245643972,
-    "stop" : 1542245660660,
-    "duration" : 16688
+    "start" : 1542250423925,
+    "stop" : 1542250423926,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4b6a6f42a49cab30",
-  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_two",
+  "uid" : "cb30ff5a89713608",
+  "name" : ".Users.xuchen.PycharmProjects.testAuto.test_case.test_bicai.test_one",
   "time" : {
-    "start" : 1542245660663,
-    "stop" : 1542245660664,
-    "duration" : 1
+    "start" : 1542250408236,
+    "stop" : 1542250423922,
+    "duration" : 15686
   },
   "status" : "passed",
   "severity" : "normal"
