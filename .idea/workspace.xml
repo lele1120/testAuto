@@ -32,23 +32,14 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="160">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
                 <element signature="e#2058#2320#0" />
                 <element signature="e#2347#2626#0" />
                 <element signature="e#2661#3512#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_test_value_by_yaml.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -82,6 +73,7 @@
       <find>u2</find>
       <find>get_test_value_by_yaml</find>
       <find>适用于jenkins运行</find>
+      <find>save_picture</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,11 +99,11 @@
         <option value="$PROJECT_DIR$/test_case/aaaa.py" />
         <option value="$PROJECT_DIR$/biz/get_test_value_by_yaml.py" />
         <option value="$PROJECT_DIR$/test_case/conftest.py" />
-        <option value="$PROJECT_DIR$/usage/cfgyaml" />
         <option value="$PROJECT_DIR$/test_case/test_sample.py" />
         <option value="$PROJECT_DIR$/biz/conftest.py" />
         <option value="$PROJECT_DIR$/biz/test_sample.py" />
         <option value="$PROJECT_DIR$/test_case/__init__.py" />
+        <option value="$PROJECT_DIR$/usage/cfgyaml" />
         <option value="$PROJECT_DIR$/test_case/test_bicai.py" />
       </list>
     </option>
@@ -148,7 +140,29 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="usage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -465,7 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542275231996</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修改相对路径">
+      <created>1542275310874</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1542275310874</updated>
+    </task>
+    <task id="LOCAL-00025" summary="修改相对路径">
+      <created>1542275418441</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1542275418441</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -549,13 +577,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/venv/testAuto/lib/python3.7/site-packages/_pytest/assertion/rewrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="271" selection-start-line="271" selection-end-line="271" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allure-report/index.html" />
     <entry file="file://$PROJECT_DIR$/report/ee4d8766-16e0-4b18-8210-f1569423e814-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/test_case/demo.py" />
@@ -593,13 +614,6 @@
     <entry file="file://$PROJECT_DIR$/test_case/test_interface.py" />
     <entry file="file://$PROJECT_DIR$/test_suite/main.py" />
     <entry file="file://$PROJECT_DIR$/report/xml/0b69828d-4308-4773-8296-04993ff6f890-testsuite.xml" />
-    <entry file="file://$PROJECT_DIR$/report/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/xml/f9750c76-379e-4306-93a3-2e7bdfceb8ae-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/test_case/aaaa.py" />
     <entry file="file://$PROJECT_DIR$/test_case/${WORKSPACE}/Auto_Test/report/3e7c8f04-5fd2-4b06-a8ff-ac5752d9c541-attachment.png" />
@@ -691,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/save_picture_by_function_name.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -706,9 +713,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/report/picture/test_two.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/report/xml/05e4dc7d-2e3e-4790-9a95-3c734b20db79-testsuite.xml">
@@ -721,10 +725,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/xml/a0e0ba10-8bab-430f-83ee-54b8f91ff86c-attachment.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="160">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
             <element signature="e#2058#2320#0" />

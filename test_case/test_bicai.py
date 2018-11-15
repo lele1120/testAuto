@@ -14,8 +14,8 @@ from optparse import OptionParser
 
 @pytest.fixture(scope='module')
 def driver():
-    # driver = get_driver_by_key(sys.argv[1])
-    driver = get_driver_by_key("Y66手机ip")
+    driver = get_driver_by_key(sys.argv[1])
+    # driver = get_driver_by_key("Y66手机ip")
     driver.set_fastinput_ime(True)
     driver.session("com.bs.finance")
     yield driver
