@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 import os
+import re
 import sys
 import time
 import allure
@@ -117,7 +118,7 @@ if __name__ == '__main__':
 #     # 执行所有case并生成报告
 
     # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
-
+    #
     # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
     #                                         "/report/html --clean")))
 
