@@ -117,9 +117,14 @@ if __name__ == '__main__':
 #     # 执行所有case并生成报告
 
     # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+
+    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
+    #                                         "/report/html --clean")))
+
     pytest.main("--alluredir ${WORKSPACE}/report")
-    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o "+os.path.abspath('..') +
-              "/report/html --clean")))
+
+    os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
 
