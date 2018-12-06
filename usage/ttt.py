@@ -10,5 +10,7 @@ class MyClass:
         print(get_current_function_name())
 
 if __name__ == "__main__":
-    myclass = MyClass()
-    myclass.function_one()
+    # myclass = MyClass()
+    # myclass.function_one()
+    my_name = "我的名字"
+    print(my_name[2:4])

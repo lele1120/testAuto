@@ -14,36 +14,62 @@ from optparse import OptionParser
 
 
 @pytest.fixture(scope='module')
-def driver():
+def d():
     # driver = get_driver_by_key(sys.argv[1])  # 输入参数启动
     # driver = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
-    driver = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
-    driver.unlock()
-    driver.set_fastinput_ime(True)
-    driver.session("com.bs.finance")
-    yield driver
-    driver.app_stop("com.bs.finance")
+    d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+    d.unlock()
+    d.set_fastinput_ime(True)
+    d.session("com.bs.finance")
+    yield d
+    d.app_stop("com.bs.finance")
 
 
-def save_picture(driver, picture_name):
+def save_picture(d, picture_name):
     # picture_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
     picture_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
-    driver.screenshot(picture_url)
+    d.screenshot(picture_url)
     return picture_url
 
 
 @allure.feature("侧边栏相关功能")
 @allure.story("点击左上角图标弹出侧边栏")
 @allure.severity('Critical')
-def test_cebian_function(driver):
+def test_cebian_function(d):
     """
      用例描述：验证侧边栏功能
     """
     with allure.step("左上角图标"):
-        driver(resourceId=get_value("首页左上角图标")).click()
+        d(resourceId=get_value("首页左上角图标")).click()
     with allure.step("获取侧边栏账号文本"):
-        user_id = driver(resourceId=get_value("侧边栏账号")).get_text()
+        user_id = d(resourceId=get_value("侧边栏账号")).get_text()
+    with allure.step("验证账号为已登录状态，账号为139****5993"):
         assert user_id == "139****5993"
+    with allure.step("点击未实名"):
+        d(resourceId=get_value("未实名")).click(timeout=1)
+    with allure.step("点击返回icon"):
+        d(resourceId=get_value("返回icon")).click(timeout=1)
+    with allure.step("点击未绑卡"):
+        d(resourceId=get_value("未绑卡")).click(timeout=1)
+    with allure.step("点击返回icon"):
+        d(resourceId=get_value("返回icon")).click(timeout=1)
+    cebian_button = ["我的消息", "比财钱包", "我的关注", "了解比财"]
+
+    for i in range(cebian_button.__len__()):
+        with allure.step("点击"+cebian_button[i]):
+            d(text=cebian_button[i]).click(timeout=1)
+        with allure.step("验证点击"+cebian_button[i]+"能否跳转"):
+            time.sleep(5)
+            title = d(resourceId=get_value("标题")).get_text()
+            print(title)
+            print("----------------------")
+            if i == 0:
+                assert title == (cebian_button[i])[2:4]
+            else:
+                assert title == cebian_button[i]
+        with allure.step("点击返回icon"):
+            d(resourceId=get_value("返回icon")).click(timeout=1)
+
 
 
     # time.sleep(1)
