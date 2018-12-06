@@ -35,7 +35,7 @@ def save_picture(driver, picture_name):
 @allure.feature("侧边栏相关功能")
 @allure.story("点击左上角图标弹出侧边栏")
 @allure.severity('Critical')
-def test_one(driver):
+def test_cebian_function(driver):
     """
      用例描述：验证侧边栏功能
     """
