@@ -15,8 +15,10 @@ from optparse import OptionParser
 
 @pytest.fixture(scope='module')
 def driver():
-    driver = get_driver_by_key(sys.argv[1])
-    # driver = get_driver_by_key("Y66手机ip")
+    # driver = get_driver_by_key(sys.argv[1])  # 输入参数启动
+    # driver = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
+    driver = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+    driver.unlock()
     driver.set_fastinput_ime(True)
     driver.session("com.bs.finance")
     yield driver
@@ -30,20 +32,32 @@ def save_picture(driver, picture_name):
     return picture_url
 
 
-@allure.story('点击头像弹出侧边栏')
+@allure.feature("侧边栏相关功能")
+@allure.story("点击左上角图标弹出侧边栏")
+@allure.severity('Critical')
 def test_one(driver):
-    driver(resourceId="com.bs.finance:id/iv_user").click()
-    time.sleep(1)
-    picture_name = sys._getframe().f_code.co_name
-    pictor_url = save_picture(driver, picture_name)
-    file = open(pictor_url, 'rb').read()
-    with allure.step("点击头像"):
-        allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
-        assert 1 == 1
+    """
+     用例描述：验证侧边栏功能
+    """
+    with allure.step("左上角图标"):
+        driver(resourceId=get_value("首页左上角图标")).click()
+    with allure.step("获取侧边栏账号文本"):
+        user_id = driver(resourceId=get_value("侧边栏账号")).get_text()
+        assert user_id == "139****5993"
 
-@allure.story('这个是第二条case')
-def test_two(driver):
-    assert 1 == 1
+
+    # time.sleep(1)
+    # picture_name = sys._getframe().f_code.co_name
+    # pictor_url = save_picture(driver, picture_name)
+    # file = open(pictor_url, 'rb').read()
+    # with allure.step("点击头像"):
+    #     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
+    #     assert 1 == 1
+
+
+# @allure.story('这个是第二条case')
+# def test_two(driver):
+#     assert 1 == 1
 
 
 
@@ -117,14 +131,14 @@ def get_driver_by_key(key):
 if __name__ == '__main__':
 #     # 执行所有case并生成报告
 
-    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+
+    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
+                                            "/report/html --clean")))
+
+    # pytest.main("--alluredir ${WORKSPACE}/report")
     #
-    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-    #                                         "/report/html --clean")))
-
-    pytest.main("--alluredir ${WORKSPACE}/report")
-
-    os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
 
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
