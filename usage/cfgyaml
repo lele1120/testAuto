@@ -5,7 +5,7 @@ connect_type:
 
 phoneip:
 # 手机ip
-  Y66手机ip : 192.168.100.34
+  Y66手机ip : 192.168.100.219
   华为手机ip : 192.168.100.234
 
 phoneusb:
