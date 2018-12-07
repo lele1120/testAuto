@@ -13,11 +13,13 @@ from pathlib import Path
 from optparse import OptionParser
 
 
+
 @pytest.fixture(scope='module')
 def d():
     # driver = get_driver_by_key(sys.argv[1])  # 输入参数启动
     # driver = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+
     d.unlock()
     d.set_fastinput_ime(True)
     d.session("com.bs.finance")
@@ -37,40 +39,51 @@ def save_picture(d, picture_name):
 @allure.severity('Critical')
 def test_cebian_function(d):
     """
-     用例描述：验证侧边栏功能
+     验证侧边栏功能
     """
-    with allure.step("左上角图标"):
+    global USER_ID   # 使用账号
+
+    USER_ID = str(get_value("xc手机号"))
+
+    time.sleep(5)
+
+    with allure.step("点击左上角图标"):
         d(resourceId=get_value("首页左上角图标")).click()
+
     with allure.step("获取侧边栏账号文本"):
         user_id = d(resourceId=get_value("侧边栏账号")).get_text()
-    with allure.step("验证账号为已登录状态，账号为139****5993"):
-        assert user_id == "139****5993"
+
+    with allure.step("验证账号为已登录状态，账号为" + USER_ID):
+        assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
+
+
     with allure.step("点击未实名"):
-        d(resourceId=get_value("未实名")).click(timeout=1)
+        d(resourceId=get_value("未实名")).click(timeout=2)
+
     with allure.step("点击返回icon"):
-        d(resourceId=get_value("返回icon")).click(timeout=1)
+        d(resourceId=get_value("返回icon")).click(timeout=2)
+
     with allure.step("点击未绑卡"):
-        d(resourceId=get_value("未绑卡")).click(timeout=1)
+        d(resourceId=get_value("未绑卡")).click(timeout=2)
+
     with allure.step("点击返回icon"):
-        d(resourceId=get_value("返回icon")).click(timeout=1)
+        d(resourceId=get_value("返回icon")).click(timeout=2)
+
+
     cebian_button = ["我的消息", "比财钱包", "我的关注", "了解比财"]
 
     for i in range(cebian_button.__len__()):
         with allure.step("点击"+cebian_button[i]):
-            d(text=cebian_button[i]).click(timeout=1)
+            d(text=cebian_button[i]).click(timeout=2)
         with allure.step("验证点击"+cebian_button[i]+"能否跳转"):
             time.sleep(5)
             title = d(resourceId=get_value("标题")).get_text()
-            print(title)
-            print("----------------------")
             if i == 0:
                 assert title == (cebian_button[i])[2:4]
             else:
                 assert title == cebian_button[i]
         with allure.step("点击返回icon"):
             d(resourceId=get_value("返回icon")).click(timeout=1)
-
-
 
     # time.sleep(1)
     # picture_name = sys._getframe().f_code.co_name
@@ -79,13 +92,6 @@ def test_cebian_function(d):
     # with allure.step("点击头像"):
     #     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
     #     assert 1 == 1
-
-
-# @allure.story('这个是第二条case')
-# def test_two(driver):
-#     assert 1 == 1
-
-
 
 
 def get_target_value(key, dic, tmp_list):
@@ -155,16 +161,18 @@ def get_driver_by_key(key):
 
 
 if __name__ == '__main__':
-#     # 执行所有case并生成报告
+    """
+    执行所有case并生成报告
+    """
 
-    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+
+    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
+                                            "/report/html --clean")))
+
+    # pytest.main("--alluredir ${WORKSPACE}/report")
     #
-    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-    #                                         "/report/html --clean")))
-
-    pytest.main("--alluredir ${WORKSPACE}/report")
-
-    os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
 
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')

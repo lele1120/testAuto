@@ -5,7 +5,7 @@ connect_type:
 
 phoneip:
 # 手机ip
-  Y66手机ip : 192.168.100.219
+  Y66手机ip : 192.168.100.121
   华为手机ip : 192.168.100.234
 
 phoneusb:
@@ -20,6 +20,9 @@ element_id:
   返回icon: com.bs.finance:id/rl_back
   未绑卡: com.bs.finance:id/iv_certification2
   标题: com.bs.finance:id/tv_title
+
+user_id:
+  xc手机号: 13911645993
 
 
 

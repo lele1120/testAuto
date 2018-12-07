@@ -1,5 +1,8 @@
 import inspect
 
+from test_case.get_test_value_by_yaml import get_value
+
+
 def get_current_function_name():
     return inspect.stack()[1][3]
 
@@ -12,5 +15,8 @@ class MyClass:
 if __name__ == "__main__":
     # myclass = MyClass()
     # myclass.function_one()
-    my_name = "我的名字"
-    print(my_name[2:4])
+    # my_name = "我的名字"
+    my_id = str(get_value("xc手机号")) #13911645993
+    # print(my_id)
+    # print(my_id[3:7])
+    print(my_id.replace((my_id[3:7]), "****"))
