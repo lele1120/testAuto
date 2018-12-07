@@ -74,7 +74,7 @@ def test_cebian_function(d):
 
     for i in range(cebian_button.__len__()):
         with allure.step("点击"+cebian_button[i]):
-            d(text=cebian_button[i]).click(timeout=2)
+            d(text=cebian_button[i]).click(timeout=3)
         with allure.step("验证点击"+cebian_button[i]+"能否跳转"):
             time.sleep(5)
             title = d(resourceId=get_value("标题")).get_text()
