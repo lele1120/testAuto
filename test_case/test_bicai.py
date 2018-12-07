@@ -82,13 +82,13 @@ def test_cebian_function(d):
             if i == 0:
                 try:
                     assert title == (cebian_button[i])[2:4]
-                    picture_name = sys._getframe().f_code.co_name + str[i]
+                    picture_name = cebian_button[i]
                     pictor_url = save_picture(d, picture_name)
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
                 except Exception as msg:
                     print(msg)
-                    picture_name = sys._getframe().f_code.co_name + str[i]
+                    picture_name = cebian_button[i]
                     pictor_url = save_picture(d, picture_name)
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
