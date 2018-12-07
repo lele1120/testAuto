@@ -78,10 +78,26 @@ def test_cebian_function(d):
         with allure.step("验证点击"+cebian_button[i]+"能否跳转"):
             time.sleep(5)
             title = d(resourceId=get_value("标题")).get_text()
+
             if i == 0:
-                assert title == (cebian_button[i])[2:4]
+                try:
+                    assert title == (cebian_button[i])[2:4]
+                except Exception as msg:
+                    print(msg)
+                    picture_name = sys._getframe().f_code.co_name
+                    pictor_url = save_picture(driver, picture_name)
+                    file = open(pictor_url, 'rb').read()
+                    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
             else:
-                assert title == cebian_button[i]
+                try:
+                    assert title == cebian_button[i]
+                except Exception as msg:
+                    print(msg)
+                    picture_name = sys._getframe().f_code.co_name
+                    pictor_url = save_picture(driver, picture_name)
+                    file = open(pictor_url, 'rb').read()
+                    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
+
         with allure.step("点击返回icon"):
             d(resourceId=get_value("返回icon")).click(timeout=1)
 
@@ -89,6 +105,8 @@ def test_cebian_function(d):
     # picture_name = sys._getframe().f_code.co_name
     # pictor_url = save_picture(driver, picture_name)
     # file = open(pictor_url, 'rb').read()
+
+
     # with allure.step("点击头像"):
     #     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
     #     assert 1 == 1
@@ -165,14 +183,14 @@ if __name__ == '__main__':
     执行所有case并生成报告
     """
 
-    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
-
-    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-                                            "/report/html --clean")))
-
-    # pytest.main("--alluredir ${WORKSPACE}/report")
+    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
     #
-    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
+    #                                         "/report/html --clean")))
+
+    pytest.main("--alluredir ${WORKSPACE}/report")
+
+    os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
 
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
