@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_bicai.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_bicai.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,25 +32,13 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+            <state relative-caret-position="1882">
+              <caret line="205" column="26" lean-forward="true" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
                 <element signature="e#2822#3501#0" />
                 <element signature="e#3466#3728#0" />
                 <element signature="e#3755#4034#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ttt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usage/ttt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +154,24 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="usage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="usage" type="462c0819:PsiDirectoryNode" />
+              <item name="ttt.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
@@ -626,7 +630,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544171512474</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="测试">
+      <created>1544171651252</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1544171651252</updated>
+    </task>
+    <task id="LOCAL-00044" summary="测试">
+      <created>1544171806818</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1544171806818</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -644,13 +662,13 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026624" side_tool="true" weight="0.28652322" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026624" side_tool="true" weight="0.28068182" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" visible="true" weight="0.28068182" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733758" visible="true" weight="0.28068182" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32842582" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49733758" weight="0.28652322" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.21991481" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.21991481" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
@@ -844,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        <state relative-caret-position="1882">
+          <caret line="205" column="26" lean-forward="true" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
             <element signature="e#2822#3501#0" />

@@ -87,11 +87,11 @@ def test_cebian_function(d):
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
                 except Exception as msg:
-                    print(msg)
                     picture_name = cebian_button[i]
                     pictor_url = save_picture(d, picture_name)
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
+                    print(msg)
             else:
                 try:
                     assert title == cebian_button[i]
@@ -100,11 +100,11 @@ def test_cebian_function(d):
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
                 except Exception as msg:
-                    print(msg)
                     picture_name = sys._getframe().f_code.co_name + str[i]
                     pictor_url = save_picture(d, picture_name)
                     file = open(pictor_url, 'rb').read()
-                    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
+                    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片、
+                    print(msg)
 
         with allure.step("点击返回icon"):
             d(resourceId=get_value("返回icon")).click(timeout=1)
