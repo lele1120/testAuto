@@ -82,6 +82,7 @@ def test_cebian_function(d):
             if i == 0:
                 try:
                     assert title == (cebian_button[i])[2:4]
+                    assert title == "aaaa"
                 except Exception as msg:
                     print(msg)
                     picture_name = sys._getframe().f_code.co_name
