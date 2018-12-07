@@ -16,8 +16,8 @@ from optparse import OptionParser
 
 @pytest.fixture(scope='module')
 def d():
-    # driver = get_driver_by_key(sys.argv[1])  # 输入参数启动
-    # driver = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
+    # d = get_driver_by_key(sys.argv[1])  # 输入参数启动
+    # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
     d.unlock()
@@ -86,7 +86,7 @@ def test_cebian_function(d):
                 except Exception as msg:
                     print(msg)
                     picture_name = sys._getframe().f_code.co_name
-                    pictor_url = save_picture(driver, picture_name)
+                    pictor_url = save_picture(d, picture_name)
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
             else:
@@ -95,7 +95,7 @@ def test_cebian_function(d):
                 except Exception as msg:
                     print(msg)
                     picture_name = sys._getframe().f_code.co_name
-                    pictor_url = save_picture(driver, picture_name)
+                    pictor_url = save_picture(d, picture_name)
                     file = open(pictor_url, 'rb').read()
                     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
 
@@ -104,7 +104,7 @@ def test_cebian_function(d):
 
     # time.sleep(1)
     # picture_name = sys._getframe().f_code.co_name
-    # pictor_url = save_picture(driver, picture_name)
+    # pictor_url = save_picture(d, picture_name)
     # file = open(pictor_url, 'rb').read()
 
 
@@ -162,8 +162,8 @@ def get_driver_by_key(key):
             ip = get_value(key)
             backinfo = os.system("ping -c 5 "+ip)
             if backinfo == 0:
-                driver = u2.connect_wifi(get_value(key))
-                return driver
+                d = u2.connect_wifi(get_value(key))
+                return d
             else:
                 print("未发现ip为" + ip + "的移动设备")
         elif key[-1] == "d":
@@ -171,8 +171,8 @@ def get_driver_by_key(key):
             readDeviceId = list(os.popen('adb devices').readlines())
             deviceId = re.findall(r'^\w*\b', readDeviceId[1])[0]
             if uuid == deviceId:
-                driver = u2.connect_usb(uuid)
-                return driver
+                d = u2.connect_usb(uuid)
+                return d
             else:
                 print("未发现udid为"+uuid+"的移动设备")
     else:
