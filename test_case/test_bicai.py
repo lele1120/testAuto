@@ -13,12 +13,11 @@ from pathlib import Path
 from optparse import OptionParser
 
 
-
 @pytest.fixture(scope='module')
 def d():
-    # d = get_driver_by_key(sys.argv[1])  # 输入参数启动
+    d = get_driver_by_key(sys.argv[1])  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
-    d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+    # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
     d.unlock()
     d.set_fastinput_ime(True)
@@ -34,16 +33,23 @@ def save_picture(d, picture_name):
     return picture_url
 
 
-@allure.feature("侧边栏相关功能")
-@allure.story("点击左上角图标弹出侧边栏")
+# @allure.feature("侧边栏相关功能")
+@allure.story("验证侧边栏功能_用户登录状态")
 @allure.severity('Critical')
-def test_cebian_function(d):
+def test_cebian_function_login_status_01(d):
     """
-     验证侧边栏功能
+     验证侧边栏功能_用户登录状态
     """
+
     global USER_ID   # 使用账号
 
+    global cebian_button  # 侧边栏按钮
+
+    global realname_status  # 实名认证状态
+
     USER_ID = str(get_value("xc手机号"))
+
+    cebian_button = ["我的消息", "比财钱包", "我的关注", "了解比财"]
 
     time.sleep(5)
 
@@ -57,20 +63,46 @@ def test_cebian_function(d):
         assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
 
 
-    with allure.step("点击未实名"):
-        d(resourceId=get_value("未实名")).click(timeout=2)
+@allure.story("验证侧边栏功能_个人资料")
+def test_cebian_function_realname_status_02(d):
+    """
+        验证侧边栏功能_个人资料
+    """
+    with allure.step("点击是侧边栏logo"):
+        d(resourceId=get_value("侧边栏目logo")).click(timeout=2)
+
+        realname_status = d(resourceId=get_value("个人资料实名认证")).get_text()
 
     with allure.step("点击返回icon"):
         d(resourceId=get_value("返回icon")).click(timeout=2)
 
-    with allure.step("点击未绑卡"):
-        d(resourceId=get_value("未绑卡")).click(timeout=2)
+
+@allure.story("验证侧边栏功能_用户是否实名")
+def test_cebian_function_authentication_03(d):
+    """
+     验证侧边栏功能_用户是否实名
+    """
+
+    with allure.step("点击是否实名"):
+        user_id = d(resourceId=get_value("是否实名")).get_text()
+        d(resourceId=get_value("是否实名")).click(timeout=2)
+
+    with allure.step("点击返回icon"):
+        d(resourceId=get_value("返回icon")).click(timeout=2)
+
+    with allure.step("点击是否绑卡"):
+        user_id = d(resourceId=get_value("是否绑卡")).get_text()
+        d(resourceId=get_value("是否绑卡")).click(timeout=2)
 
     with allure.step("点击返回icon"):
         d(resourceId=get_value("返回icon")).click(timeout=2)
 
 
-    cebian_button = ["我的消息", "比财钱包", "我的关注", "了解比财"]
+@allure.story("验证侧边栏功能_功能键_我的消息跳转")
+def test_cebian_function_first_key_04(d):
+    """
+     验证侧边栏功能_功能键_我的消息跳转
+    """
 
     for i in range(cebian_button.__len__()):
         with allure.step("点击"+cebian_button[i]):

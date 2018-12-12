@@ -5,7 +5,7 @@ connect_type:
 
 phoneip:
 # 手机ip
-  Y66手机ip : 192.168.100.121
+  Y66手机ip : 192.168.100.100
   华为手机ip : 192.168.100.234
 
 phoneusb:
@@ -15,10 +15,12 @@ phoneusb:
 element_id:
 # 控件id
   首页左上角图标: com.bs.finance:id/iv_user
+  侧边栏目logo: com.bs.finance:id/iv_user_logo
+  个人资料实名认证: com.bs.finance:id/auth_tv_code
   侧边栏账号: com.bs.finance:id/tv_user_name
-  未实名: com.bs.finance:id/iv_certification
+  是否实名: com.bs.finance:id/iv_certification
   返回icon: com.bs.finance:id/rl_back
-  未绑卡: com.bs.finance:id/iv_certification2
+  是否绑卡: com.bs.finance:id/iv_certification2
   标题: com.bs.finance:id/tv_title
 
 user_id:
