@@ -19,7 +19,7 @@ def d():
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
-    d.unlock()
+    # d.unlock()
     d.set_fastinput_ime(True)
     d.session("com.bs.finance")
     yield d
