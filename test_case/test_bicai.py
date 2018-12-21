@@ -66,6 +66,8 @@ def test_login_02(d):
     with allure.step("点击app首页一键登录"):
         d(resourceId=get_value("首页一键登录")).click()
 
+    time.sleep(3)
+
     with allure.step("在登录页账号输入框输入账号"):
         d(resourceId=get_value("登录页账号输入框")).set_text(USER_ID)  # 输入账号
 
@@ -102,33 +104,35 @@ def test_login_02(d):
     display_picture(d, "app首页已登录")
 
 
-# @allure.story("验证侧边栏功能_用户登录状态")
-# @allure.severity('Critical')
-# def test_cebian_function_login_status_01(d):
-#     """
-#      验证侧边栏功能_用户登录状态
-#     """
-#
+@allure.story("侧边栏弹出")
+@allure.severity('Critical')
+def test_sidebar_eject_03(d):
+    """
+     验证侧边栏功能_用户登录状态
+    """
 
-#
-#     global cebian_button  # 侧边栏按钮
-#
-#     global realname_status  # 实名认证状态
-#
+    global cebian_button  # 侧边栏按钮
 
-#
-#     cebian_button = ["我的消息", "比财钱包", "我的关注", "了解比财"]
-#
-#     time.sleep(5)
-#
-#     with allure.step("点击左上角图标"):
-#         d(resourceId=get_value("首页左上角图标")).click()
-#
-#     with allure.step("获取侧边栏账号文本"):
-#         user_id = d(resourceId=get_value("侧边栏账号")).get_text()
-#
-#     with allure.step("验证账号为已登录状态，账号为" + USER_ID):
-#         assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
+    global realname_status  # 实名认证状态
+
+    cebian_button = ["我的关注", "我的消息", "比财钱包", "了解比财"]
+
+    with allure.step("点击左上角图标"):
+        d(resourceId=get_value("首页左上角图标")).click()
+
+        time.sleep(3)
+
+    with allure.step("检验侧边栏控件"):
+        for i in range(cebian_button.__len__()):
+            assert d(text=cebian_button[i]).exists
+
+    display_picture(d, "弹出侧边栏")
+
+    # with allure.step("获取侧边栏账号文本"):
+    #     user_id = d(resourceId=get_value("侧边栏账号")).get_text()
+    #
+    # with allure.step("验证账号为已登录状态，账号为" + USER_ID):
+    #     assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
 #
 #
 # @allure.story("验证侧边栏功能_个人资料")
@@ -217,11 +221,11 @@ def test_login_02(d):
     #     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
     #     assert 1 == 1
 
+
 def display_picture(d, picture_name):
     pictor_url = save_picture(d, picture_name)
     file = open(pictor_url, 'rb').read()
     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片、
-
 
 
 def get_target_value(key, dic, tmp_list):
