@@ -5,7 +5,7 @@ connect_type:
 
 phoneip:
 # 手机ip
-  Y66手机ip : 192.168.100.228
+  Y66手机ip : 192.168.100.154
   华为手机ip : 192.168.100.234
 
 phoneusb:
@@ -14,6 +14,14 @@ phoneusb:
 
 element_id:
 # 控件id
+  启动页进入比财: com.bs.finance:id/go_main
+  首页一键登录: com.bs.finance:id/tv_gologin
+  登录页账号输入框: com.bs.finance:id/et_phone
+  登录页获取验证码按钮: com.bs.finance:id/get_msg_code
+  图片验证码输入框: com.bs.finance:id/et_msg_code
+  图片验证码确定按钮: com.bs.finance:id/btn_submit
+  登录验证码输入框: com.bs.finance:id/et_msg_code
+  立即登录按钮: com.bs.finance:id/btn_login
   首页左上角图标: com.bs.finance:id/iv_user
   侧边栏目logo: com.bs.finance:id/iv_user_logo
   个人资料实名认证: com.bs.finance:id/auth_tv_code
@@ -25,6 +33,11 @@ element_id:
 
 user_id:
   xc手机号: 13911645993
+
+verification_code:
+# 各种验证码
+  四位图片验证码: 1234
+  登录验证码: 123456
 
 
 

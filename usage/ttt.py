@@ -1,22 +1,32 @@
-import inspect
+import time
 
-from test_case.get_test_value_by_yaml import get_value
+from test_case.get_test_value_by_yaml import get_driver_by_key
 
+d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+d.set_fastinput_ime(True)
+d.session("com.bs.finance")
+time.sleep(1)
+d(resourceId="com.bs.finance:id/rl_1").click()
+d(resourceId="com.bs.finance:id/tv_bank_name", text=u"梅州客商银行").click()
+d(resourceId="com.bs.finance:id/tv_name", text=u"周周利1号1030").click()
+d(resourceId="com.bs.finance:id/tv_buy").click()
 
-def get_current_function_name():
-    return inspect.stack()[1][3]
+d(resourceId="com.bs.finance:id/btn_doMoney").click()  # 充值
+d(resourceId="com.bs.finance:id/et_recharge_money").set_text("10000")
+d(resourceId="com.bs.finance:id/btn_get_code").click()  # 获取验证码
+time.sleep(2)
+d(resourceId="com.bs.finance:id/et_open_code").set_text("666666")
+d(resourceId="com.bs.finance:id/btn_recharge").click()
 
-class MyClass:
-    def function_one(self):
+time.sleep(2)
+for i in range(2):
+    d(resourceId="com.bs.finance:id/btn_ok").click()
+    d(resourceId="com.bs.finance:id/tv_banlance_mx").click()
+    d(text=u"充值").click()
+    d(resourceId="com.bs.finance:id/et_recharge_money").set_text("10000")
+    d(resourceId="com.bs.finance:id/btn_get_code").click()  # 获取验证码
+    time.sleep(2)
+    d(resourceId="com.bs.finance:id/et_open_code").set_text("666666")
+    d(resourceId="com.bs.finance:id/btn_recharge").click()
+    time.sleep(2)
 
-        print("%s.%s invoked"%(self.__class__.__name__, get_current_function_name()))
-        print(get_current_function_name())
-
-if __name__ == "__main__":
-    # myclass = MyClass()
-    # myclass.function_one()
-    # my_name = "我的名字"
-    my_id = str(get_value("xc手机号")) #13911645993
-    # print(my_id)
-    # print(my_id[3:7])
-    print(my_id.replace((my_id[3:7]), "****"))
