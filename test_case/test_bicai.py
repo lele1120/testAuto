@@ -69,35 +69,35 @@ def test_login_02(d):
     with allure.step("在登录页账号输入框输入账号"):
         d(resourceId=get_value("登录页账号输入框")).set_text(USER_ID)  # 输入账号
 
-    time.sleep(2)
+    time.sleep(3)
 
     with allure.step("点击获取验证码"):
         d(resourceId=get_value("登录页获取验证码按钮")).click()  # 点击获取验证码
 
-    time.sleep(2)
+    time.sleep(3)
 
     #  如果弹出4位数字图片验证码
     with allure.step("输入4位验证码"):
         d(resourceId=get_value("图片验证码输入框")).set_text(picture_verification_code)  # 输入4位验证码
 
-    time.sleep(2)
+    time.sleep(3)
 
     with allure.step("点击确认按钮"):
         d(resourceId=get_value("图片验证码确定按钮")).click()
 
-    time.sleep(2)
+    time.sleep(3)
 
     with allure.step("输入6位验证码"):
         d(resourceId=get_value("登录验证码输入框")).set_text(login_verification_code)
 
-    time.sleep(2)
+    time.sleep(3)
     with allure.step("点击立即登录"):
         d(resourceId=get_value("立即登录按钮")).click()
 
     with allure.step("验证是否登录成功"):
         assert not d(resourceId=get_value("首页一键登录")).exists
 
-    time.sleep(2)
+    time.sleep(3)
 
     display_picture(d, "app首页已登录")
 
