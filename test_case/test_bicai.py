@@ -15,9 +15,9 @@ from optparse import OptionParser
 
 @pytest.fixture(scope='module')
 def d():
-    # d = get_driver_by_key(sys.argv[1])  # 输入参数启动
+    d = get_driver_by_key(sys.argv[1])  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
-    d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+    # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
     d.unlock()
     # d.set_fastinput_ime(True)
@@ -302,14 +302,14 @@ if __name__ == '__main__':
     执行所有case并生成报告
     """
 
-    pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
-
-    os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-                                            "/report/html --clean")))
-
-    # pytest.main("--alluredir ${WORKSPACE}/report")
+    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
     #
-    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
+    #                                         "/report/html --clean")))
+
+    pytest.main("--alluredir ${WORKSPACE}/report")
+
+    os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
 
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')

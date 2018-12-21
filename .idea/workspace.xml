@@ -34,8 +34,8 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="380">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
               </folding>
@@ -54,15 +54,15 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
+      <find>hello world</find>
       <find>测试字符串相等</find>
       <find>Y66手机ip</find>
       <find>biz</find>
-      <find />
+      <find>yamlPath = os.path.join(&quot;../usage/&quot;, &quot;cfgyaml&quot;)</find>
       <find>driver.set_fastinput_ime(True)</find>
       <find>yamlPath</find>
-      <find />
-      <find />
+      <find>yamlPath = os.path.abspath('.')+r&quot;/cfgyaml</find>
+      <find>yamlPath =</find>
       <find>driver.screenshot</find>
       <find>conftest</find>
       <find>pytest_addoption</find>
@@ -75,10 +75,10 @@
       <find>save_picture</find>
       <find>unlock</find>
       <find>print</find>
-      <find />
+      <find>with allure.step(&quot;验证账号为已登录状态，账号为&quot;+get_value(&quot;xc手机号&quot;)):</find>
       <find>xc</find>
       <find>driver</find>
-      <find />
+      <find>deviceId = re.findall(r'^\w*\b', readDeviceId[1])[0]</find>
       <find>d.unlock()</find>
       <find>d(resourceId=get_value(&quot;启动页进入比财&quot;)).click()</find>
     </findStrings>
@@ -342,13 +342,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00005" summary="测试报告集成截图">
-      <created>1541671316780</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1541671316780</updated>
     </task>
     <task id="LOCAL-00006" summary="测试报告集成截图">
       <created>1541671464020</created>
@@ -686,7 +679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545373687160</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="测试报告截图展示">
+      <created>1545376357540</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1545376357540</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -771,7 +771,8 @@
     <MESSAGE value="测试" />
     <MESSAGE value="侧边栏功能添加" />
     <MESSAGE value="启动app，登录功能编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="启动app，登录功能编写" />
+    <MESSAGE value="测试报告截图展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试报告截图展示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -905,6 +906,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report/html/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/report/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -912,13 +916,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/html/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
           </folding>
