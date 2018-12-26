@@ -167,6 +167,8 @@ def test_nickname_click_05(d):
     with allure.step("验证修改昵称页title"):
         assert_title(d, "修改昵称")  # 验证是否跳转成功
 
+    time.sleep(3)
+
     display_picture(d, "修改昵称页")
 
 
@@ -175,7 +177,71 @@ def test_nickname_click_05(d):
 def test_complete_click_06(d):
     with allure.step("点击完成按钮返回个人资料页"):
         click_element(d, "完成按钮")
-        display_picture(d, "返回修改昵称页")
+
+    time.sleep(3)
+
+    with allure.step("验证是否跳转个人资料页"):
+        assert_title(d, "个人资料")  # 验证跳转个人资料页成功
+
+    time.sleep(3)
+
+    display_picture(d, "点击完成页面跳转修改昵称页")
+
+
+@allure.feature("7、修改昵称页点击返回icon")
+@allure.severity('Critical')
+def test_nickname_icon_click_07(d):
+    with allure.step("点击昵称跳转到修改昵称页"):
+        click_element(d, "个人资料昵称")
+
+    with allure.step("验证修改昵称页是否跳转成功"):
+        assert_title(d, "修改昵称")  # 验证是否跳转成功
+
+    time.sleep(3)
+
+    with allure.step("点击修改昵称页返回icon"):
+        click_element(d, "返回icon")
+
+    time.sleep(3)
+
+    with allure.step("验证是否跳转个人资料页"):
+        assert_title(d, "个人资料")  # 验证跳转个人资料页成功
+
+    display_picture(d, "点击返回icon跳转回个人资料页")
+
+
+@allure.feature("8、修改性别")
+@allure.severity('Critical')
+def test_modify_sex_08(d):
+    with allure.step("点击性别"):
+        sex_text = d(resourceId=get_value("性别文本")).get_text()
+
+        click_element(d, "性别")
+
+    time.sleep(3)
+
+    with allure.step("修改性别"):
+        if sex_text == "男":
+            click_element(d, "选项女")
+        elif sex_text == "女":
+            click_element(d, "选项男")
+        else:
+            print("无此选项")
+
+    time.sleep(3)
+
+    with allure.step("验证性别修改是否成功"):
+        modify_sex_text = d(resourceId=get_value("性别文本")).get_text()
+        if sex_text == "男":
+            assert modify_sex_text == "女"
+        elif sex_text == "女":
+            assert modify_sex_text == "男"
+        else:
+            print("无此选项")
+
+    display_picture(d, "性别修改")
+
+
 
 
 # @allure.story("验证侧边栏功能_个人资料")
