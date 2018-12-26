@@ -161,8 +161,21 @@ def test_logo_click_04(d):
 @allure.feature("5、点击昵称进入修改页")
 @allure.severity('Critical')
 def test_nickname_click_05(d):
-    click_element(d, "个人资料昵称")
-    assert_title(d, "修改昵称")  # 验证是否跳转成功
+    with allure.step("点击昵称跳转到修改昵称页"):
+        click_element(d, "个人资料昵称")
+
+    with allure.step("验证修改昵称页title"):
+        assert_title(d, "修改昵称")  # 验证是否跳转成功
+
+    display_picture(d, "修改昵称页")
+
+
+@allure.feature("6、修改昵称页点击完成")
+@allure.severity('Critical')
+def test_complete_click_06(d):
+    with allure.step("点击完成按钮返回个人资料页"):
+        click_element(d, "完成按钮")
+        display_picture(d, "返回修改昵称页")
 
 
 # @allure.story("验证侧边栏功能_个人资料")
@@ -286,6 +299,12 @@ def assert_title(d, title):
 
 
 def display_picture(d, picture_name):
+    """
+
+    :param d: 控件名称，默认为d
+    :param picture_name: 图片名称
+    :return: 无
+    """
     pictor_url = save_picture(d, picture_name)
     file = open(pictor_url, 'rb').read()
     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
@@ -321,6 +340,11 @@ def _get_value(key, val, tmp_list):
 
 
 def get_value(key):
+    """
+
+    :param key: 关键字
+    :return:无
+    """
     # yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml") # 适用于jenkins持续集成
     yamlPath = Path(os.path.abspath('..')+"/usage/cfgyaml") # 适用于本地调试持续集成
 
