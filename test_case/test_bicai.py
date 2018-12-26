@@ -26,8 +26,7 @@ def d():
     # d.app_stop("com.bs.finance")
 
 
-@allure.feature("启动app后进入比财")
-@allure.story("点击进入比财")
+@allure.feature("1、启动app后进入比财")
 @allure.severity('Critical')
 def test_go_main_01(d):
     """
@@ -50,7 +49,7 @@ def test_go_main_01(d):
     display_picture(d, "app首页未登录")
 
 
-@allure.story("比财登录")
+@allure.feature("2、比财登录")
 @allure.severity('Critical')
 def test_login_02(d):
     """
@@ -106,7 +105,7 @@ def test_login_02(d):
     display_picture(d, "app首页已登录")
 
 
-@allure.story("侧边栏弹出")
+@allure.feature("3、弹出侧边栏")
 @allure.severity('Critical')
 def test_sidebar_eject_03(d):
     """
@@ -137,7 +136,7 @@ def test_sidebar_eject_03(d):
     time.sleep(3)
 
 
-@allure.story("点击侧边栏目logo")
+@allure.feature("4、点击侧边栏目logo")
 @allure.severity('Critical')
 def test_logo_click_04(d):
     with allure.step("侧边栏logo点击"):
@@ -159,7 +158,7 @@ def test_logo_click_04(d):
     time.sleep(3)
 
 
-@allure.story("点击昵称进入修改页")
+@allure.feature("5、点击昵称进入修改页")
 @allure.severity('Critical')
 def test_nickname_click_05(d):
     click_element(d, "个人资料昵称")
