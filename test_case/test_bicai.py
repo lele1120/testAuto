@@ -19,7 +19,7 @@ def d():
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
-    d.unlock()
+    # d.unlock()
     # d.set_fastinput_ime(True)
     d.session("com.bs.finance")
     yield d
@@ -30,31 +30,33 @@ def d():
 @allure.story("点击进入比财")
 @allure.severity('Critical')
 def test_go_main_01(d):
-
-    time.sleep(2)
+    """
+    首次启动app点击进入比财
+    """
+    time.sleep(5)
 
     with allure.step("启动页点击进入比财"):
-        d(resourceId=get_value("启动页进入比财")).click()
+
+        click_element(d, "启动页进入比财")
 
     time.sleep(2)
+
     with allure.step("验证启动app点击进入比财是否进入首页"):
 
-        assert d(resourceId=get_value("首页一键登录")).exists
-
-        login_button_text = d(resourceId=get_value("首页一键登录")).get_text()
-
-        assert login_button_text == "一键登录"
+        assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
 
     time.sleep(2)
 
     display_picture(d, "app首页未登录")
 
 
-# @allure.feature("启动app后进入比财")
 @allure.story("比财登录")
 @allure.severity('Critical')
 def test_login_02(d):
+    """
+    比财账号登录
 
+    """
     global USER_ID   # 使用账号
 
     USER_ID = str(get_value("xc手机号"))
@@ -64,37 +66,37 @@ def test_login_02(d):
     login_verification_code = str(get_value("登录验证码"))
 
     with allure.step("点击app首页一键登录"):
-        d(resourceId=get_value("首页一键登录")).click()
+        click_element(d, "首页一键登录")
 
-    time.sleep(3)
+    time.sleep(5)
 
     with allure.step("在登录页账号输入框输入账号"):
-        d(resourceId=get_value("登录页账号输入框")).set_text(USER_ID)  # 输入账号
+        input_element(d, "登录页账号输入框", USER_ID)
 
-    time.sleep(3)
+    time.sleep(5)
 
     with allure.step("点击获取验证码"):
-        d(resourceId=get_value("登录页获取验证码按钮")).click()  # 点击获取验证码
+        click_element(d, "登录页获取验证码按钮")  # 点击获取验证码
 
-    time.sleep(3)
+    time.sleep(5)
 
-    #  如果弹出4位数字图片验证码
+    #  如果弹出4位数字图片验证码 此处需加if判断
     with allure.step("输入4位验证码"):
-        d(resourceId=get_value("图片验证码输入框")).set_text(picture_verification_code)  # 输入4位验证码
+        input_element(d, "图片验证码输入框", picture_verification_code )
 
     time.sleep(3)
 
     with allure.step("点击确认按钮"):
-        d(resourceId=get_value("图片验证码确定按钮")).click()
+        click_element(d, "图片验证码确定按钮")
 
     time.sleep(3)
 
     with allure.step("输入6位验证码"):
-        d(resourceId=get_value("登录验证码输入框")).set_text(login_verification_code)
+        input_element(d, "登录验证码输入框", login_verification_code)
 
     time.sleep(3)
     with allure.step("点击立即登录"):
-        d(resourceId=get_value("立即登录按钮")).click()
+        click_element(d, "立即登录按钮")
 
     with allure.step("验证是否登录成功"):
         assert not d(resourceId=get_value("首页一键登录")).exists
@@ -108,7 +110,7 @@ def test_login_02(d):
 @allure.severity('Critical')
 def test_sidebar_eject_03(d):
     """
-     验证侧边栏功能_用户登录状态
+     验证点击左上角图标弹出侧边栏功能
     """
 
     global cebian_button  # 侧边栏按钮
@@ -118,23 +120,52 @@ def test_sidebar_eject_03(d):
     cebian_button = ["我的关注", "我的消息", "比财钱包", "了解比财"]
 
     with allure.step("点击左上角图标"):
-        d(resourceId=get_value("首页左上角图标")).click()
+        click_element(d, "首页左上角图标")
 
         time.sleep(3)
 
     with allure.step("检验侧边栏控件"):
         for i in range(cebian_button.__len__()):
-            assert d(text=cebian_button[i]).exists
+            assert d(text=cebian_button[i]).exists  #验证侧边栏4个按钮控件存在
+
+    with allure.step("验证账号为已登录状态，账号为" + USER_ID):
+        user_id = d(resourceId=get_value("侧边栏账号")).get_text()
+        assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
 
     display_picture(d, "弹出侧边栏")
 
-    # with allure.step("获取侧边栏账号文本"):
-    #     user_id = d(resourceId=get_value("侧边栏账号")).get_text()
-    #
-    # with allure.step("验证账号为已登录状态，账号为" + USER_ID):
-    #     assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
-#
-#
+    time.sleep(3)
+
+
+@allure.story("点击侧边栏目logo")
+@allure.severity('Critical')
+def test_logo_click_04(d):
+    with allure.step("侧边栏logo点击"):
+        click_element(d, "侧边栏logo")
+
+    time.sleep(3)
+
+    with allure.step("验证是否跳转个人资料页"):
+
+        assert_title(d, "个人资料")  # 验证跳转个人资料页成功
+
+    personal_data = ["性别", "微信", "职业", "实名认证", "手机号", "所在地", "个性签名"]
+
+    for i in range(personal_data.__len__()):
+        assert d(text=personal_data[i]).exists  # 验证个人资料内内容是否存在
+
+    display_picture(d, "个人资料")
+
+    time.sleep(3)
+
+
+@allure.story("点击昵称进入修改页")
+@allure.severity('Critical')
+def test_nickname_click_05(d):
+    click_element(d, "个人资料昵称")
+    assert_title(d, "修改昵称")  # 验证是否跳转成功
+
+
 # @allure.story("验证侧边栏功能_个人资料")
 # def test_cebian_function_realname_status_02(d):
 #     """
@@ -181,7 +212,7 @@ def test_sidebar_eject_03(d):
 #             d(text=cebian_button[i]).click(timeout=3)
 #         with allure.step("验证点击"+cebian_button[i]+"能否跳转"):
 #             time.sleep(5)
-#             title = d(resourceId=get_value("标题")).get_text()
+#             title = d(resourceId=get_value("个人资料标题")).get_text()
 #
 #             if i == 0:
 #                 try:
@@ -221,11 +252,44 @@ def test_sidebar_eject_03(d):
     #     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
     #     assert 1 == 1
 
+def click_element(d, element_name):
+    """
+
+    :param d: 控件默认为d
+    :param element_name: 控件名称详见yaml文件
+    :return: 无
+    封装控件点击操作
+    """
+    d(resourceId=get_value(element_name)).click()
+
+
+def input_element(d, element_name, input_text):
+    """
+
+    :param d: 控件默认为d
+    :param element_name: 控件名称详见yaml文件
+    :param input_text: 需要输入的内容
+    :return: 无
+    """
+    d(resourceId=get_value(element_name)).set_text(input_text)
+
+
+def assert_title(d, title):
+    """
+
+    :param d: 控件默认为d
+    :param title: 页面标题
+    :return: 无
+    验证页面是否跳转成功
+
+    """
+    assert title == d(resourceId=get_value("标题")).get_text()
+
 
 def display_picture(d, picture_name):
     pictor_url = save_picture(d, picture_name)
     file = open(pictor_url, 'rb').read()
-    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片、
+    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
 
 
 def get_target_value(key, dic, tmp_list):
