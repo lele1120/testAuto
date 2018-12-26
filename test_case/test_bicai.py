@@ -172,9 +172,17 @@ def test_nickname_click_05(d):
     display_picture(d, "修改昵称页")
 
 
-@allure.feature("6、修改昵称页点击完成")
+@allure.feature("6、修改昵称页修改昵称点击完成")
 @allure.severity('Critical')
 def test_complete_click_06(d):
+
+    time.sleep(3)
+
+    with allure.step("修改昵称为Alex"):
+        input_element(d, "昵称文本框", "Alex")
+
+    time.sleep(3)
+
     with allure.step("点击完成按钮返回个人资料页"):
         click_element(d, "完成按钮")
 
@@ -183,9 +191,19 @@ def test_complete_click_06(d):
     with allure.step("验证是否跳转个人资料页"):
         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
 
+    with allure.step("验证昵称是否修改成功"):
+        assert d(resourceId=get_value("个人资料昵称")).get_text() == "Alex"
+
     time.sleep(3)
 
     display_picture(d, "点击完成页面跳转修改昵称页")
+
+    # 恢复数据
+    click_element(d, "个人资料昵称")
+    time.sleep(1)
+    input_element(d, "昵称文本框", USER_ID.replace((USER_ID[3:7]), "****"))
+    time.sleep(1)
+    click_element(d, "完成按钮")
 
 
 @allure.feature("7、修改昵称页点击返回icon")
@@ -199,6 +217,11 @@ def test_nickname_icon_click_07(d):
 
     time.sleep(3)
 
+    with allure.step("修改昵称为Alex"):
+        input_element(d, "昵称文本框", "Alex")
+
+    time.sleep(3)
+
     with allure.step("点击修改昵称页返回icon"):
         click_element(d, "返回icon")
 
@@ -206,6 +229,9 @@ def test_nickname_icon_click_07(d):
 
     with allure.step("验证是否跳转个人资料页"):
         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
+
+    with allure.step("验证昵称不会被修改"):
+        assert d(resourceId=get_value("个人资料昵称")).get_text() == USER_ID.replace((USER_ID[3:7]), "****")
 
     display_picture(d, "点击返回icon跳转回个人资料页")
 
@@ -240,8 +266,6 @@ def test_modify_sex_08(d):
             print("无此选项")
 
     display_picture(d, "性别修改")
-
-
 
 
 # @allure.story("验证侧边栏功能_个人资料")

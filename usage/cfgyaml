@@ -31,6 +31,7 @@ element_id:
   是否绑卡: com.bs.finance:id/iv_certification2
   标题: com.bs.finance:id/tv_title
   个人资料昵称: com.bs.finance:id/tv_nickname
+  昵称文本框: com.bs.finance:id/et_content
   完成按钮: com.bs.finance:id/tv_submit
   性别: com.bs.finance:id/edit_sex
   性别文本: com.bs.finance:id/sex_tv
