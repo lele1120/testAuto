@@ -19,9 +19,8 @@ def d():
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
-
     # d.unlock()
-    # d.set_fastinput_ime(True)
+    d.set_fastinput_ime(True)
     d.session("com.bs.finance")
     yield d
     # d.app_stop("com.bs.finance")
@@ -33,7 +32,7 @@ def test_go_main_01(d):
     """
     首次启动app点击进入比财
     """
-    time.sleep(5)
+    # time.sleep(5)
 
     with allure.step("启动页点击进入比财"):
 
@@ -68,40 +67,40 @@ def test_login_02(d):
     with allure.step("点击app首页一键登录"):
         click_element(d, "首页一键登录")
 
-    time.sleep(5)
+    # time.sleep(5)
 
     with allure.step("在登录页账号输入框输入账号"):
         input_element(d, "登录页账号输入框", USER_ID)
 
-    time.sleep(5)
+    # time.sleep(5)
 
     with allure.step("点击获取验证码"):
         click_element(d, "登录页获取验证码按钮")  # 点击获取验证码
 
-    time.sleep(5)
+    # time.sleep(5)
 
     #  如果弹出4位数字图片验证码 此处需加if判断
     with allure.step("输入4位验证码"):
         input_element(d, "图片验证码输入框", picture_verification_code )
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("点击确认按钮"):
         click_element(d, "图片验证码确定按钮")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("输入6位验证码"):
         input_element(d, "登录验证码输入框", login_verification_code)
 
-    time.sleep(3)
+    # time.sleep(3)
     with allure.step("点击立即登录"):
         click_element(d, "立即登录按钮")
 
     with allure.step("验证是否登录成功"):
         assert not d(resourceId=get_value("首页一键登录")).exists
 
-    time.sleep(3)
+    # time.sleep(3)
 
     display_picture(d, "app首页已登录")
 
@@ -122,7 +121,7 @@ def test_sidebar_eject_03(d):
     with allure.step("点击左上角图标"):
         click_element(d, "首页左上角图标")
 
-        time.sleep(3)
+        # time.sleep(3)
 
     with allure.step("检验侧边栏控件"):
         for i in range(cebian_button.__len__()):
@@ -134,7 +133,7 @@ def test_sidebar_eject_03(d):
 
     display_picture(d, "弹出侧边栏")
 
-    time.sleep(3)
+    # time.sleep(3)
 
 
 @allure.feature("4、点击侧边栏目logo")
@@ -143,7 +142,7 @@ def test_logo_click_04(d):
     with allure.step("侧边栏logo点击"):
         click_element(d, "侧边栏logo")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("验证是否跳转个人资料页"):
 
@@ -156,7 +155,7 @@ def test_logo_click_04(d):
 
     display_picture(d, "个人资料")
 
-    time.sleep(3)
+    # time.sleep(3)
 
 
 @allure.feature("5、点击昵称进入修改页")
@@ -168,7 +167,7 @@ def test_nickname_click_05(d):
     with allure.step("验证修改昵称页title"):
         assert_title(d, "修改昵称")  # 验证是否跳转成功
 
-    time.sleep(3)
+    # time.sleep(3)
 
     display_picture(d, "修改昵称页")
 
@@ -177,17 +176,17 @@ def test_nickname_click_05(d):
 @allure.severity('Critical')
 def test_complete_click_06(d):
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("修改昵称为Alex"):
         input_element(d, "昵称文本框", "Alex")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("点击完成按钮返回个人资料页"):
         click_element(d, "完成按钮")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("验证是否跳转个人资料页"):
         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
@@ -195,15 +194,15 @@ def test_complete_click_06(d):
     with allure.step("验证昵称是否修改成功"):
         assert d(resourceId=get_value("个人资料昵称")).get_text() == "Alex"
 
-    time.sleep(3)
+    # time.sleep(3)
 
     display_picture(d, "点击完成页面跳转修改昵称页")
 
     # 恢复数据
     click_element(d, "个人资料昵称")
-    time.sleep(1)
+    # time.sleep(1)
     input_element(d, "昵称文本框", USER_ID.replace((USER_ID[3:7]), "****"))
-    time.sleep(1)
+    # time.sleep(1)
     click_element(d, "完成按钮")
 
 
@@ -216,17 +215,17 @@ def test_nickname_icon_click_07(d):
     with allure.step("验证修改昵称页是否跳转成功"):
         assert_title(d, "修改昵称")  # 验证是否跳转成功
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("修改昵称为Alex"):
         input_element(d, "昵称文本框", "Alex")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("点击修改昵称页返回icon"):
         click_element(d, "返回icon")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("验证是否跳转个人资料页"):
         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
@@ -245,7 +244,7 @@ def test_modify_sex_08(d):
 
         click_element(d, "性别")
 
-    time.sleep(3)
+    # time.sleep(3)
 
     with allure.step("修改性别"):
         if sex_text == "男":
@@ -267,6 +266,42 @@ def test_modify_sex_08(d):
             print("无此选项")
 
     display_picture(d, "性别修改")
+
+
+@allure.feature("9、修改职业")
+@allure.severity('Critical')
+def test_modify_profession_09(d):
+    with allure.step("点击职业"):
+        click_element(d, "职业")
+
+    modify_profession_text = d(resourceId=get_value("职业文本")).get_text()
+
+    with allure.step("修改职业"):
+        if modify_profession_text == "测试":
+            input_element(d, "职业文本", "码农")
+        elif modify_profession_text == "码农":
+            input_element(d, "职业文本", "测试")
+        else:
+            print("输入错误")
+
+    with allure.step("点击完成"):
+        click_element(d, "完成")
+
+    with allure.step("验证是否修改成功"):
+        modify_profession_display = d(resourceId=get_value("职业展示")).get_text()
+
+        if modify_profession_text == "测试":
+            assert modify_profession_display == "码农"
+        elif modify_profession_text == "码农":
+            assert modify_profession_display == "测试"
+        else:
+            print("输入错误")
+
+    display_picture(d, "职业修改")
+
+
+
+
 
 
 # @allure.story("验证侧边栏功能_个人资料")
@@ -363,7 +398,9 @@ def click_element(d, element_name):
     :return: 无
     封装控件点击操作
     """
+    d(resourceId=get_value(element_name)).wait(timeout=10.0)
     d(resourceId=get_value(element_name)).click()
+    time.sleep(3)
 
 
 def input_element(d, element_name, input_text):
@@ -374,7 +411,9 @@ def input_element(d, element_name, input_text):
     :param input_text: 需要输入的内容
     :return: 无
     """
+    d(resourceId=get_value(element_name)).wait(timeout=10.0)
     d(resourceId=get_value(element_name)).set_text(input_text)
+    time.sleep(3)
 
 
 def assert_title(d, title):
@@ -387,6 +426,7 @@ def assert_title(d, title):
 
     """
     assert title == d(resourceId=get_value("标题")).get_text()
+    time.sleep(3)
 
 
 def display_picture(d, picture_name):

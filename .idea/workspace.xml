@@ -4,6 +4,7 @@
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_bicai.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_bicai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/cfgyaml" beforeDir="false" afterPath="$PROJECT_DIR$/usage/cfgyaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +22,7 @@
     <SUITE FILE_PATH="coverage/testAuto$main.coverage" NAME="main Coverage Results" MODIFIED="1541664399534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_suite" />
     <SUITE FILE_PATH="coverage/testAuto$test.coverage" NAME="test Coverage Results" MODIFIED="1541405982000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$mytestpp.coverage" NAME="mytestpp Coverage Results" MODIFIED="1544074101661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1545817501251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1545876662588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1542268441984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$env_module.coverage" NAME="env_module Coverage Results" MODIFIED="1541664566426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/module" />
     <SUITE FILE_PATH="coverage/testAuto$make_test.coverage" NAME="make_test Coverage Results" MODIFIED="1545207273418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
@@ -34,18 +35,10 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="444">
+              <caret line="531" selection-start-line="531" selection-end-line="533" selection-end-column="92" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
-                <element signature="e#3908#3939#0" />
-                <element signature="e#7039#7188#0" />
-                <element signature="e#7552#7711#0" />
-                <element signature="e#6743#7422#0" />
-                <element signature="e#7465#7727#0" />
-                <element signature="e#8859#9138#0" />
-                <element signature="e#8068#8899#0" />
-                <element signature="e#8941#9199#0" />
               </folding>
             </state>
           </provider>
@@ -54,8 +47,8 @@
       <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="683">
+              <caret line="42" column="6" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -71,8 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>测试字符串相等</find>
-      <find>Y66手机ip</find>
       <find>biz</find>
       <find>yamlPath = os.path.join(&quot;../usage/&quot;, &quot;cfgyaml&quot;)</find>
       <find>driver.set_fastinput_ime(True)</find>
@@ -101,6 +92,8 @@
       <find>点击昵称进入修改页</find>
       <find>et_content</find>
       <find>昵称</find>
+      <find>time.sleep</find>
+      <find>com.bs.finance:id/rl_submit</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -153,8 +146,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="29" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="977" />
   </component>
@@ -180,7 +173,25 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="picture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
@@ -349,13 +360,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00014" summary="修改相对路径">
-      <created>1541749480512</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1541749480512</updated>
     </task>
     <task id="LOCAL-00015" summary="修改相对路径">
       <created>1541749590363</created>
@@ -693,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545817679097</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="编写修改性别case">
+      <created>1545817716643</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1545817716643</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -707,23 +718,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50319487" side_tool="true" visible="true" weight="0.24079601" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50319487" side_tool="true" weight="0.24079601" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968051" visible="true" weight="0.24079601" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32842582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968051" visible="true" weight="0.24204545" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49733758" weight="0.28652322" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.24760383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.2905983" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -792,12 +803,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_case/home.jpg" />
-    <entry file="file://$PROJECT_DIR$/report/xml/test_one.jpg" />
-    <entry file="file://$PROJECT_DIR$/report/picture/aaa.jpg" />
-    <entry file="file://$PROJECT_DIR$/report/picture/aaaaaa.jpg" />
-    <entry file="file://$PROJECT_DIR$/report/picture/pytest_pyfunc_call.png" />
-    <entry file="file://$PROJECT_DIR$/report/picture/pytest_pyfunc_call.jpg" />
     <entry file="file://$PROJECT_DIR$/test_case/main.py" />
     <entry file="file://$PROJECT_DIR$/test_case/test_interface.py" />
     <entry file="file://$PROJECT_DIR$/test_suite/main.py" />
@@ -877,9 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,36 +892,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#46#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/app首页未登录.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/test_one.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/了解比财.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/弹出侧边栏.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/我的关注.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/我的消息.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/app首页已登录.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/picture/app首页.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/test_one.png" />
+    <entry file="file://$PROJECT_DIR$/report/picture/了解比财.png" />
+    <entry file="file://$PROJECT_DIR$/report/picture/我的关注.png" />
+    <entry file="file://$PROJECT_DIR$/report/picture/我的消息.png" />
+    <entry file="file://$PROJECT_DIR$/report/picture/app首页.png" />
     <entry file="file://$PROJECT_DIR$/report/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -927,27 +907,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/app首页已登录.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/app首页未登录.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/个人资料.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/修改昵称页.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/弹出侧边栏.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/性别修改.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/点击完成页面跳转修改昵称页.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/点击返回icon跳转回个人资料页.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/picture/返回修改昵称页.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="683">
+          <caret line="42" column="6" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="444">
+          <caret line="531" selection-start-line="531" selection-end-line="533" selection-end-column="92" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
-            <element signature="e#3908#3939#0" />
-            <element signature="e#7039#7188#0" />
-            <element signature="e#7552#7711#0" />
-            <element signature="e#6743#7422#0" />
-            <element signature="e#7465#7727#0" />
-            <element signature="e#8859#9138#0" />
-            <element signature="e#8068#8899#0" />
-            <element signature="e#8941#9199#0" />
           </folding>
         </state>
       </provider>
