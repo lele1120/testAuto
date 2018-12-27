@@ -31,6 +31,7 @@ element_id:
   是否绑卡: com.bs.finance:id/iv_certification2
   标题: com.bs.finance:id/tv_title
   个人资料昵称: com.bs.finance:id/tv_nickname
+  实名认证状态: com.bs.finance:id/auth_tv_code
   昵称文本框: com.bs.finance:id/et_content
   完成按钮: com.bs.finance:id/tv_submit
   性别: com.bs.finance:id/edit_sex
@@ -42,6 +43,7 @@ element_id:
   完成: com.bs.finance:id/rl_submit
   职业展示: com.bs.finance:id/zy_tv
   清除按钮: com.bs.finance:id/rl_clear
+
 
 user_id:
   xc手机号: 13911645993
