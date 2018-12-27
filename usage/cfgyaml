@@ -41,6 +41,7 @@ element_id:
   职业文本: com.bs.finance:id/et_content
   完成: com.bs.finance:id/rl_submit
   职业展示: com.bs.finance:id/zy_tv
+  清除按钮: com.bs.finance:id/rl_clear
 
 user_id:
   xc手机号: 13911645993

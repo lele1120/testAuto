@@ -26,7 +26,7 @@ def d():
     # d.app_stop("com.bs.finance")
 
 
-@allure.feature("1、启动app后进入比财")
+@allure.feature("01.启动app后进入比财")
 @allure.severity('Critical')
 def test_go_main_01(d):
     """
@@ -49,7 +49,7 @@ def test_go_main_01(d):
     display_picture(d, "app首页未登录")
 
 
-@allure.feature("2、比财登录")
+@allure.feature("02.比财登录")
 @allure.severity('Critical')
 def test_login_02(d):
     """
@@ -77,7 +77,7 @@ def test_login_02(d):
     with allure.step("点击获取验证码"):
         click_element(d, "登录页获取验证码按钮")  # 点击获取验证码
 
-    # time.sleep(5)
+    time.sleep(5)
 
     #  如果弹出4位数字图片验证码 此处需加if判断
     with allure.step("输入4位验证码"):
@@ -105,7 +105,7 @@ def test_login_02(d):
     display_picture(d, "app首页已登录")
 
 
-@allure.feature("3、弹出侧边栏")
+@allure.feature("03.弹出侧边栏")
 @allure.severity('Critical')
 def test_sidebar_eject_03(d):
     """
@@ -136,7 +136,7 @@ def test_sidebar_eject_03(d):
     # time.sleep(3)
 
 
-@allure.feature("4、点击侧边栏目logo")
+@allure.feature("04.点击侧边栏目logo")
 @allure.severity('Critical')
 def test_logo_click_04(d):
     with allure.step("侧边栏logo点击"):
@@ -158,7 +158,7 @@ def test_logo_click_04(d):
     # time.sleep(3)
 
 
-@allure.feature("5、点击昵称进入修改页")
+@allure.feature("05.点击昵称进入修改页")
 @allure.severity('Critical')
 def test_nickname_click_05(d):
     with allure.step("点击昵称跳转到修改昵称页"):
@@ -172,7 +172,7 @@ def test_nickname_click_05(d):
     display_picture(d, "修改昵称页")
 
 
-@allure.feature("6、修改昵称页修改昵称点击完成")
+@allure.feature("06.修改昵称页修改昵称点击完成")
 @allure.severity('Critical')
 def test_complete_click_06(d):
 
@@ -206,7 +206,7 @@ def test_complete_click_06(d):
     click_element(d, "完成按钮")
 
 
-@allure.feature("7、修改昵称页点击返回icon")
+@allure.feature("07.修改昵称页点击返回icon")
 @allure.severity('Critical')
 def test_nickname_icon_click_07(d):
     with allure.step("点击昵称跳转到修改昵称页"):
@@ -233,10 +233,10 @@ def test_nickname_icon_click_07(d):
     with allure.step("验证昵称不会被修改"):
         assert d(resourceId=get_value("个人资料昵称")).get_text() == USER_ID.replace((USER_ID[3:7]), "****")
 
-    display_picture(d, "点击返回icon跳转回个人资料页")
+    display_picture(d, "修改昵称页点击返回icon跳转回个人资料页")
 
 
-@allure.feature("8、修改性别")
+@allure.feature("08.修改性别")
 @allure.severity('Critical')
 def test_modify_sex_08(d):
     with allure.step("点击性别"):
@@ -268,7 +268,7 @@ def test_modify_sex_08(d):
     display_picture(d, "性别修改")
 
 
-@allure.feature("9、修改职业")
+@allure.feature("09.修改职业")
 @allure.severity('Critical')
 def test_modify_profession_09(d):
     with allure.step("点击职业"):
@@ -297,9 +297,78 @@ def test_modify_profession_09(d):
         else:
             print("输入错误")
 
-    display_picture(d, "职业修改")
+    display_picture(d, "职业页点击返回icon跳转回个人资料页")
 
 
+@allure.feature("10.修改职业点击返回icon")
+@allure.severity('Critical')
+def test_modify_profession_icon_10(d):
+    with allure.step("点击职业"):
+        click_element(d, "职业")
+
+    global modify_profession_text
+
+    modify_profession_text = d(resourceId=get_value("职业文本")).get_text()
+
+    with allure.step("修改职业"):
+        if modify_profession_text == "测试":
+            input_element(d, "职业文本", "码农")
+        elif modify_profession_text == "码农":
+            input_element(d, "职业文本", "测试")
+        else:
+            print("输入错误")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+    with allure.step("验证职业是否被修改"):
+        modify_profession_display = d(resourceId=get_value("职业展示")).get_text()
+
+        if modify_profession_text == "测试":
+            assert modify_profession_display == "测试"
+        elif modify_profession_text == "码农":
+            assert modify_profession_display == "码农"
+        else:
+            print("输入错误")
+
+    display_picture(d, "职业修改页点击返回icon跳转回个人资料页")
+
+
+@allure.feature("11.修改职业输入框输入内容点击取消")
+@allure.severity('Critical')
+def test_modify_profession_clear_11(d):
+    with allure.step("点击职业"):
+        click_element(d, "职业")
+
+    with allure.step("验证不存在清除按钮"):
+        assert not d(resourceId=get_value("清除按钮")).exists
+
+    with allure.step("修改职业文本框内容"):
+
+        if modify_profession_text == "测试":
+            input_element(d, "职业文本", "码农")
+        elif modify_profession_text == "码农":
+            input_element(d, "职业文本", "测试")
+        else:
+            print("输入错误")
+
+    with allure.step("验证清除按钮存在"):
+
+        assert d(resourceId=get_value("清除按钮")).exists
+
+    with allure.step("点击清除按钮"):
+
+        click_element(d, "清除按钮")
+
+    with allure.step("文本内容被清除"):
+
+        modify_profession_display = d(resourceId=get_value("职业文本")).get_text()
+
+        assert modify_profession_display is None
+
+        display_picture(d, "职业修改页输入后删除")
+
+    click_element(d, "返回icon")
 
 
 
@@ -389,6 +458,7 @@ def test_modify_profession_09(d):
     # with allure.step("点击头像"):
     #     allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
     #     assert 1 == 1
+
 
 def click_element(d, element_name):
     """
