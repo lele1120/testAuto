@@ -43,6 +43,11 @@ element_id:
   完成: com.bs.finance:id/rl_submit
   职业展示: com.bs.finance:id/zy_tv
   清除按钮: com.bs.finance:id/rl_clear
+  手机号: com.bs.finance:id/phone_tv
+  居住地址文本: com.bs.finance:id/jzd_tv
+  所在地区文本: com.bs.finance:id/tv_area
+  详细地址文本: com.bs.finance:id/et_xxdz
+
 
 
 user_id:

@@ -10,6 +10,8 @@ import pytest
 import yaml
 import uiautomator2 as u2
 from pathlib import Path
+import warnings
+warnings.filterwarnings("ignore")
 from optparse import OptionParser
 
 
@@ -237,6 +239,9 @@ def test_modify_profession_09(d):
     with allure.step("点击职业"):
         click_element(d, "职业")
 
+    with allure.step("验证跳转职业修改页title"):
+        assert_title(d,"职业")
+
     modify_profession_text = d(resourceId=get_value("职业文本")).get_text()
 
     with allure.step("修改职业"):
@@ -245,7 +250,7 @@ def test_modify_profession_09(d):
         elif modify_profession_text == "码农":
             input_element(d, "职业文本", "测试")
         else:
-            print("输入错误")
+            input_element(d, "职业文本", "码农")
 
     with allure.step("点击完成"):
         click_element(d, "完成")
@@ -258,7 +263,7 @@ def test_modify_profession_09(d):
         elif modify_profession_text == "码农":
             assert modify_profession_display == "测试"
         else:
-            print("输入错误")
+            assert modify_profession_display == "码农"
 
     display_picture(d, "职业页点击返回icon跳转回个人资料页")
 
@@ -279,7 +284,7 @@ def test_modify_profession_icon_10(d):
         elif modify_profession_text == "码农":
             input_element(d, "职业文本", "测试")
         else:
-            print("输入错误")
+            input_element(d, "职业文本", "码农")
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
@@ -292,7 +297,7 @@ def test_modify_profession_icon_10(d):
         elif modify_profession_text == "码农":
             assert modify_profession_display == "码农"
         else:
-            print("输入错误")
+            assert modify_profession_display == "测试"
 
     display_picture(d, "职业修改页点击返回icon跳转回个人资料页")
 
@@ -313,7 +318,7 @@ def test_modify_profession_clear_11(d):
         elif modify_profession_text == "码农":
             input_element(d, "职业文本", "测试")
         else:
-            print("输入错误")
+            input_element(d, "职业文本", "码农")
 
     with allure.step("验证清除按钮存在"):
 
@@ -334,9 +339,69 @@ def test_modify_profession_clear_11(d):
     click_element(d, "返回icon")
 
 
+@allure.feature("12.手机号校验")
+@allure.severity('Critical')
+def test_phone_number_check_12(d):
+    with allure.step("手机号检查"):
+        assert USER_ID == d(resourceId=get_value("手机号")).get_text()
+
+
+@allure.feature("13.所在地修改")
+@allure.severity('Critical')
+def test_modify_address_13(d):
+    with allure.step("点击所在地"):
+        address_text = d(resourceId=get_value("居住地址文本")).get_text()
+        click_element(d, "居住地址文本")
+
+    with allure.step("验证修改地址页title"):
+        assert_title(d, "居住地址")
+
+    with allure.step("选择所在地区"):
+
+        click_element(d, "所在地区文本")
+
+    if address_text.replace(' ', '') == "北京朝阳区三环到四环之间":
+        d(resourceId="com.bs.finance:id/textView", text=u"上海").click()
+        time.sleep(1)
+        d(resourceId="com.bs.finance:id/textView", text=u"徐汇区").click()
+        time.sleep(1)
+        d(resourceId="com.bs.finance:id/textView", text=u"城区").click()
+        time.sleep(1)
+        input_element(d, "详细地址文本", "外滩")
+    elif address_text.replace(' ', '') == "上海徐汇区城区":
+        d(resourceId="com.bs.finance:id/textView", text=u"北京").click()
+        time.sleep(1)
+        d(resourceId="com.bs.finance:id/textView", text=u"朝阳区").click()
+        time.sleep(1)
+        d(resourceId="com.bs.finance:id/textView", text=u"三环到四环之间").click()
+        time.sleep(1)
+        input_element(d, "详细地址文本", "安定门")
+    else:
+        d(resourceId="com.bs.finance:id/textView", text=u"上海").click()
+        time.sleep(1)
+        d(resourceId="com.bs.finance:id/textView", text=u"徐汇区").click()
+        time.sleep(1)
+        d(resourceId="com.bs.finance:id/textView", text=u"城区").click()
+        time.sleep(1)
+        input_element(d, "详细地址文本", "外滩")
+
+    with allure.step("点击完成返回"):
+        click_element(d, "完成")
+
+        modify_address_text = d(resourceId=get_value("居住地址文本")).get_text()
+
+        if address_text.replace(' ', '') == "北京朝阳区三环到四环之间":
+            assert modify_address_text.replace(' ', '') == "上海徐汇区城区"
+        elif address_text.replace(' ', '') == "上海徐汇区城区":
+            assert modify_address_text.replace(' ', '') == "北京朝阳区三环到四环之间"
+        else:
+            assert modify_address_text.replace(' ', '') == "上海徐汇区城区"
+
+    display_picture(d, "地址修改")
+
+
 def click_element(d, element_name):
     """
-
     :param d: 控件默认为d
     :param element_name: 控件名称详见yaml文件
     :return: 无
