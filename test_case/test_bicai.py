@@ -34,7 +34,7 @@ def test_go_main_01(d):
     """
     首次启动app点击进入比财
     """
-    # time.sleep(5)
+    time.sleep(5)
 
     with allure.step("启动页点击进入比财"):
 
