@@ -547,6 +547,56 @@ def test_modify_address_clear_14(d):
     display_picture(d, "地址修改后点击返回icon")
 
 
+@allure.feature("15.修改个性签名")
+@allure.severity('Critical')
+def test_modify_personalized_signature_15(d):
+    """
+    修改个性签名
+    :param d:
+    :return:
+    """
+    with allure.step("点击个性签名跳转个性签名修改页"):
+        click_element(d, "个性签名")
+        assert_title(d, "个性签名")
+
+    with allure.step("编辑个性签名"):
+
+        personalized_signature_text = d(resourceId=get_value("个性签名文本框")).get_text()
+
+        if personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了":
+
+            input_element(d, "个性签名文本框", "噜起袖子加油干一张蓝图绘到底")
+
+        elif personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底":
+
+            input_element(d, "个性签名文本框", "企业要想好踏踏实实搞成天作报告那可好不了")
+
+        else:
+
+            input_element(d, "个性签名文本框", "噜起袖子加油干一张蓝图绘到底")
+
+    with allure.step("点击完成"):
+
+        click_element(d, "完成")
+
+    with allure.step("验证是否修改成功"):
+
+        click_element(d, "个性签名")
+
+        modify_personalized_signature_text = d(resourceId=get_value("个性签名文本框")).get_text()
+
+        if personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了":
+            assert modify_personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底"
+        elif personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底":
+            assert modify_personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了"
+        else:
+            assert modify_personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底"
+
+    display_picture(d, "修改个性签名")
+
+    click_element(d, "完成")
+
+
 def click_element(d, element_name):
     """
     :param d: 控件默认为d
@@ -574,7 +624,6 @@ def input_element(d, element_name, input_text):
 
 def assert_title(d, title):
     """
-
     :param d: 控件默认为d
     :param title: 页面标题
     :return: 无

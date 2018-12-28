@@ -47,6 +47,9 @@ element_id:
   居住地址文本: com.bs.finance:id/jzd_tv
   所在地区文本: com.bs.finance:id/tv_area
   详细地址文本: com.bs.finance:id/et_xxdz
+  个性签名: com.bs.finance:id/edit_qm
+  个性签名文本框: com.bs.finance:id/et_content
+
 
 
 
