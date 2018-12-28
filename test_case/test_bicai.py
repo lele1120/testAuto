@@ -25,7 +25,7 @@ def d():
     d.set_fastinput_ime(True)
     d.session("com.bs.finance")
     yield d
-    # d.app_stop("com.bs.finance")
+    d.app_stop("com.bs.finance")
 
 
 @allure.feature("01.启动app后进入比财")
@@ -595,6 +595,89 @@ def test_modify_personalized_signature_15(d):
     display_picture(d, "修改个性签名")
 
     click_element(d, "完成")
+
+
+@allure.feature("16.修改个性签名后点击返回icon")
+@allure.severity('Critical')
+def test_modify_personalized_signature_clear_16(d):
+    """
+    修改个性签名点击返回icon
+    :param d:
+    :return:
+    """
+    with allure.step("点击个性签名跳转个性签名修改页"):
+        click_element(d, "个性签名")
+        assert_title(d, "个性签名")
+
+    with allure.step("编辑个性签名"):
+
+        personalized_signature_text = d(resourceId=get_value("个性签名文本框")).get_text()
+
+        if personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了":
+            input_element(d, "个性签名文本框", "噜起袖子加油干一张蓝图绘到底")
+
+        else:
+            input_element(d, "个性签名文本框", "企业要想好踏踏实实搞成天作报告那可好不了")
+
+    with allure.step("点击返回icon"):
+
+        click_element(d, "返回icon")
+
+    with allure.step("验证是否修改成功"):
+
+        click_element(d, "个性签名")
+
+        modify_personalized_signature_text = d(resourceId=get_value("个性签名文本框")).get_text()
+
+        if personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了":
+            assert modify_personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了"
+        else:
+            assert modify_personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底"
+
+    display_picture(d, "修改个性签名点击返回icon")
+
+    click_element(d, "返回icon")
+
+    click_element(d, "返回icon")
+
+
+@allure.feature("17.验证实名状态")
+@allure.severity('Critical')
+def test_check_Real_Name_Authentication_state_17(d):
+    """
+    根据个人资料中实名认证状态检验是否已实名
+    :param d:
+    :return:
+    """
+    if Real_Name_Authentication == "已认证":
+        pass
+
+
+@allure.feature("99.app退出")
+@allure.severity('Critical')
+def test_sign_out_app_99(d):
+    """
+    退出app
+    :param d:
+    :return:
+    """
+    with allure.step("点击设置"):
+
+        click_element(d, "侧边栏设置")
+
+    with allure.step("点击安全退出"):
+
+        click_element(d, "安全退出")
+
+    with allure.step("点击确认退出_是"):
+
+        click_element(d, "确认退出_是")
+
+    with allure.step("验证app已成功退出"):
+
+        assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
+
+    display_picture(d, "app退出")
 
 
 def click_element(d, element_name):

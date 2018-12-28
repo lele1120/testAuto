@@ -49,6 +49,9 @@ element_id:
   详细地址文本: com.bs.finance:id/et_xxdz
   个性签名: com.bs.finance:id/edit_qm
   个性签名文本框: com.bs.finance:id/et_content
+  侧边栏设置: com.bs.finance:id/icon_1
+  安全退出: com.bs.finance:id/btn_quite
+  确认退出_是: com.bs.finance:id/tv_yes
 
 
 
