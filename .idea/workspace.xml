@@ -4,7 +4,6 @@
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_bicai.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_bicai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/cfgyaml" beforeDir="false" afterPath="$PROJECT_DIR$/usage/cfgyaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +21,7 @@
     <SUITE FILE_PATH="coverage/testAuto$main.coverage" NAME="main Coverage Results" MODIFIED="1541664399534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_suite" />
     <SUITE FILE_PATH="coverage/testAuto$test.coverage" NAME="test Coverage Results" MODIFIED="1541405982000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$mytestpp.coverage" NAME="mytestpp Coverage Results" MODIFIED="1544074101661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1545901405394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1545968401670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1542268441984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$env_module.coverage" NAME="env_module Coverage Results" MODIFIED="1541664566426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/module" />
     <SUITE FILE_PATH="coverage/testAuto$make_test.coverage" NAME="make_test Coverage Results" MODIFIED="1545207273418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="test_bicai.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="535" selection-start-line="535" selection-end-line="538" selection-end-column="71" />
+            <state relative-caret-position="418">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
               </folding>
@@ -47,8 +46,8 @@
       <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="797">
-              <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="4" />
+            <state relative-caret-position="54">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -64,8 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>driver.set_fastinput_ime(True)</find>
-      <find>yamlPath</find>
       <find>yamlPath = os.path.abspath('.')+r&quot;/cfgyaml</find>
       <find>yamlPath =</find>
       <find>driver.screenshot</find>
@@ -94,6 +91,8 @@
       <find>.e</find>
       <find>global</find>
       <find>com.bs.finance:id/rl_submit</find>
+      <find>所在地</find>
+      <find>com.bs.finance:id/tv_area</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -146,9 +145,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="30" />
-    <option name="width" value="1680" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -157,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,56 +166,28 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name=".pytest_cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="picture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="test_case" type="462c0819:PsiDirectoryNode" />
-              <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="usage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (testAuto) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (testAuto) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (testAuto) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="allure" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,20 +337,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00018" summary="修改相对路径">
-      <created>1542246547821</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1542246547821</updated>
-    </task>
-    <task id="LOCAL-00019" summary="修改相对路径">
-      <created>1542251783996</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1542251783996</updated>
     </task>
     <task id="LOCAL-00020" summary="修改相对路径">
       <created>1542263696792</created>
@@ -711,7 +667,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545890090017</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="修改地址case添加">
+      <created>1545901651412</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1545901651412</updated>
+    </task>
+    <task id="LOCAL-00068" summary="增加等待时间">
+      <created>1545901989388</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1545901989389</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TodoView">
@@ -725,23 +695,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50319487" side_tool="true" weight="0.24079601" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968051" visible="true" weight="0.22272727" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32842582" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968051" visible="true" weight="0.47761193" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49733758" weight="0.28652322" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.25612354" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.26144835" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
-      <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -804,7 +774,9 @@
     <MESSAGE value="编写修改性别case" />
     <MESSAGE value="添加职业修改case" />
     <MESSAGE value="添加职业后删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加职业后删除" />
+    <MESSAGE value="修改地址case添加" />
+    <MESSAGE value="增加等待时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加等待时间" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,8 +784,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_suite/main.py" />
-    <entry file="file://$PROJECT_DIR$/report/xml/0b69828d-4308-4773-8296-04993ff6f890-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/report/xml/f9750c76-379e-4306-93a3-2e7bdfceb8ae-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/test_case/aaaa.py" />
     <entry file="file://$PROJECT_DIR$/test_case/${WORKSPACE}/Auto_Test/report/3e7c8f04-5fd2-4b06-a8ff-ac5752d9c541-attachment.png" />
@@ -854,9 +824,6 @@
     <entry file="file://$PROJECT_DIR$/report/xml/1a0580ac-79fc-42b6-b8a6-124a897c7a4e-attachment.png" />
     <entry file="file://$PROJECT_DIR$/common/module/env_module.py" />
     <entry file="file://$PROJECT_DIR$/test_suite/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/usage/setting.py" />
     <entry file="file://$PROJECT_DIR$/test_case/save_picture_by_function_name.py" />
     <entry file="file://$PROJECT_DIR$/report/picture/test_two.png" />
@@ -871,13 +838,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/mytestpp.py" />
     <entry file="file://$PROJECT_DIR$/test_case/make_test.py" />
-    <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/html/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -934,13 +894,6 @@
     <entry file="file://$PROJECT_DIR$/report/picture/返回修改昵称页.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/testAuto/lib/python3.7/site-packages/allure/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -951,17 +904,44 @@
     <entry file="file://$PROJECT_DIR$/report/picture/地址修改.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.pytest_cache/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.pytest_cache/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/get_test_value_by_yaml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="4" />
+        <state relative-caret-position="54">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="535" selection-start-line="535" selection-end-line="538" selection-end-column="71" />
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
           </folding>
