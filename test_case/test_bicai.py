@@ -1000,6 +1000,7 @@ if __name__ == '__main__':
     # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
     #                                         "/report/html --clean")))
 
+
     pytest.main("--alluredir ${WORKSPACE}/report")
 
     os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
