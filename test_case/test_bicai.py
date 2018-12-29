@@ -25,7 +25,7 @@ def d():
     d.set_fastinput_ime(True)
     d.session("com.bs.finance")
     yield d
-    # d.app_stop("com.bs.finance")
+    d.app_stop("com.bs.finance")
 
 
 @allure.feature("01.启动app后进入比财")
