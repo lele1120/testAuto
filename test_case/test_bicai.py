@@ -25,7 +25,7 @@ def d():
     d.set_fastinput_ime(True)
     d.session("com.bs.finance")
     yield d
-    d.app_stop("com.bs.finance")
+    # d.app_stop("com.bs.finance")
 
 
 @allure.feature("01.启动app后进入比财")
@@ -643,14 +643,84 @@ def test_modify_personalized_signature_clear_16(d):
 
 @allure.feature("17.验证实名状态")
 @allure.severity('Critical')
-def test_check_Real_Name_Authentication_state_17(d):
+def test_check_real_name_authentication_state_17(d):
     """
     根据个人资料中实名认证状态检验是否已实名
     :param d:
     :return:
     """
-    if Real_Name_Authentication == "已认证":
-        pass
+    with allure.step("点击实名认证"):
+
+        click_element(d, "是否实名")
+
+    with allure.step("是否已实名验证"):
+
+        if Real_Name_Authentication == "已认证":
+
+            assert_title(d, "认证完成")
+
+            display_picture(d, "用户已实名")
+
+        elif Real_Name_Authentication == "未认证":
+
+            assert_title(d, "身份证认证")
+
+            display_picture(d, "用户未实名")
+
+
+@allure.feature("18.实名认证页返回icon点击")
+@allure.severity('Critical')
+def test_real_name_click_icon_18(d):
+    """
+    实名状态页点击返回icon
+    :param d:
+    :return:
+    """
+    with allure.step("实名验证页面点击返回icon"):
+        click_element(d, "返回icon")
+
+    display_picture(d, "实名认证页面点击返回icon")
+
+
+@allure.feature("19.验证绑卡状态")
+@allure.severity('Critical')
+def test_check_tied_card_state_19(d):
+    """
+    根据个人资料中实名认证状态检验是否绑卡
+    :param d:
+    :return:
+    """
+    with allure.step("点击绑卡状态"):
+
+        click_element(d, "是否绑卡")
+
+    with allure.step("是否已绑定卡"):
+
+        if Real_Name_Authentication == "已认证":
+
+            assert_title(d, "银行卡")
+
+            display_picture(d, "已绑定银行卡")
+
+        elif Real_Name_Authentication == "未认证":
+
+            assert_title(d, "身份证认证")
+
+            display_picture(d, "用户未实名")
+
+
+@allure.feature("20.绑定银行卡页icon点击")
+@allure.severity('Critical')
+def test_tied_card_click_icon_20(d):
+    """
+    绑卡页点击返回icon
+    :param d:
+    :return:
+    """
+    with allure.step("实名验证页面点击返回icon"):
+        click_element(d, "返回icon")
+
+    display_picture(d, "实名认证页面点击返回icon")
 
 
 @allure.feature("99.app退出")
