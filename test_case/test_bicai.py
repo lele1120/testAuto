@@ -812,7 +812,7 @@ def test_click_my_concern_23(d):
     :return:
     """
     with allure.step("我的关注"):
-        d(text="我的关注").click()
+        click_element(d, "我的关注")
 
         assert_title(d, "我的关注")
 
@@ -824,6 +824,7 @@ def test_click_my_concern_23(d):
 
         display_picture(d, "我的关注")
 
+    click_element(d, "返回icon")
 
 # @allure.feature("24.验证关注内内容")
 # @allure.severity('Critical')
@@ -999,7 +1000,6 @@ if __name__ == '__main__':
     #
     # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
     #                                         "/report/html --clean")))
-
 
     pytest.main("--alluredir ${WORKSPACE}/report")
 
