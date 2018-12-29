@@ -56,6 +56,8 @@ element_id:
   添加银行卡: com.bs.finance:id/ll_add
   隐藏数字键盘: com.bs.finance:id/iv_close
   我的关注: com.bs.finance:id/tv_title
+  关注产品类型: com.bs.finance:id/num_tv
+  缺省页文本: com.bs.finance:id/nodata_tip
 
 
 

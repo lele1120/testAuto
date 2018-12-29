@@ -816,6 +816,8 @@ def test_click_my_concern_23(d):
 
         assert_title(d, "我的关注")
 
+        global product_type
+
         product_type = ["货币基金", "理财产品", "纯债基金", "智能存款", "活期存款", "结构性存款"]
 
         with allure.step("检验我的关注内容"):
@@ -824,17 +826,37 @@ def test_click_my_concern_23(d):
 
         display_picture(d, "我的关注")
 
-    click_element(d, "返回icon")
 
-# @allure.feature("24.验证关注内内容")
-# @allure.severity('Critical')
-# def test_click_my_concern_content_24(d):
-#     """
-#     验证我的关注内下一页内容
-#     :param d:
-#     :return:
-#     """
-#     display_picture(d, "关注内内容")
+@allure.feature("24.验证关注内内容")
+@allure.severity('Critical')
+def test_click_my_concern_content_24(d):
+    """
+    验证我的关注内下一页内容
+    :param d:
+    :return:
+    """
+    with allure.step("将关注页内容保存到字典"):
+        product_type_dict = {}
+        for i in range(product_type.__len__()):
+            product_type_dict[product_type[i]] = d(resourceId=get_value("关注产品类型"))[i].get_text()
+
+        print(product_type_dict)
+
+    for j in range(product_type.__len__()):
+        d(text=product_type[j]).click()
+        time.sleep(2)
+        display_picture(d, "我的关注"+str(j))
+        if int(product_type_dict[product_type[j]]) == 0:
+            print(product_type_dict[product_type[j]])
+            assert_title(d, product_type[j])
+            assert d(resourceId=get_value("缺省页文本")).exists
+            assert d(resourceId=get_value("缺省页文本")).get_text() == "对不起，目前没有数据"
+            click_element(d, "返回icon")
+        else:
+            click_element(d, "返回icon")
+
+
+    click_element(d, "返回icon")
 
 
 @allure.feature("99.app退出")
