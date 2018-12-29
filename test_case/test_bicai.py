@@ -77,6 +77,7 @@ def test_login_02(d):
 
     #  如果弹出4位数字图片验证码 此处需加if判断
     with allure.step("输入4位验证码"):
+        time.sleep(2)
         input_element(d, "图片验证码输入框", picture_verification_code )
 
     with allure.step("点击确认按钮"):
@@ -723,6 +724,118 @@ def test_tied_card_click_icon_20(d):
     display_picture(d, "实名认证页面点击返回icon")
 
 
+@allure.feature("21.已实名中点击查看榜单返回app首页")
+@allure.severity('Critical')
+def test_check_list_click_21(d):
+    """
+    已经实名用户点击查看绑定
+    :param d:
+    :return:
+    """
+    with allure.step("点击实名认证"):
+
+        click_element(d, "是否实名")
+
+    with allure.step("点击查看榜单"):
+
+        if Real_Name_Authentication == "已认证":
+            click_element(d, "查看榜单")
+            assert d(resourceId=get_value("首页左上角图标")).exists  # 验证是否有文本为一键登录的控件
+            display_picture(d, "点击查看榜单返回首页")
+            click_element(d, "首页左上角图标")
+        else:
+            print("用户未实名")
+            click_element(d, "返回icon")
+            pass
+
+
+@allure.feature("22.添加银行卡")
+@allure.severity('Critical')
+def test_add_bank_cards_22(d):
+    """
+    添加银行卡
+    :param d:
+    :return:
+    """
+    with allure.step("点击绑卡状态"):
+
+        click_element(d, "是否绑卡")
+
+    with allure.step("添加银行卡"):
+
+        if Real_Name_Authentication == "已认证":
+
+            click_element(d, "添加银行卡")
+
+            with allure.step("数字键盘显示"):
+
+                for i in range(10):
+                    num_element = "com.bs.finance:id/tv_keyboard_"+str(i)
+                    assert d(resourceId=num_element).exists
+
+                assert d(resourceId="com.bs.finance:id/fl_keyboard_del").exists
+
+            display_picture(d, "添加银行卡")
+
+            with allure.step("隐藏数字键盘"):
+
+                click_element(d, "隐藏数字键盘")
+
+                for i in range(10):
+                    num_element = "com.bs.finance:id/tv_keyboard_"+str(i)
+                    assert not d(resourceId=num_element).exists
+
+                assert not d(resourceId="com.bs.finance:id/fl_keyboard_del").exists
+
+            with allure.step("添加银行卡title校验"):
+
+                assert_title(d, "添加银行卡")
+
+            with allure.step("点击返回icon"):
+
+                click_element(d, "返回icon")
+
+                assert_title(d, "银行卡")
+
+                click_element(d, "返回icon")
+
+        else:
+            print("用户未实名认证")
+
+
+@allure.feature("23.点击我的关注")
+@allure.severity('Critical')
+def test_click_my_concern_23(d):
+    """
+    点击我的关注，校验内容
+    :param d:
+    :return:
+    """
+    with allure.step("我的关注"):
+        d(text="我的关注").click()
+
+        assert_title(d, "我的关注")
+
+        product_type = ["货币基金", "理财产品", "纯债基金", "智能存款", "活期存款", "结构性存款"]
+
+        with allure.step("检验我的关注内容"):
+            for i in range(product_type.__len__()):
+                assert d(text=product_type[i]).exists
+
+        display_picture(d, "我的关注")
+
+
+# @allure.feature("24.验证关注内内容")
+# @allure.severity('Critical')
+# def test_click_my_concern_content_24(d):
+#     """
+#     验证我的关注内下一页内容
+#     :param d:
+#     :return:
+#     """
+#     display_picture(d, "关注内内容")
+
+
 @allure.feature("99.app退出")
 @allure.severity('Critical')
 def test_sign_out_app_99(d):
@@ -759,7 +872,7 @@ def click_element(d, element_name):
     """
     d(resourceId=get_value(element_name)).wait(timeout=10.0)
     d(resourceId=get_value(element_name)).click()
-    time.sleep(3)
+    time.sleep(1)
 
 
 def input_element(d, element_name, input_text):
@@ -772,7 +885,7 @@ def input_element(d, element_name, input_text):
     """
     d(resourceId=get_value(element_name)).wait(timeout=10.0)
     d(resourceId=get_value(element_name)).set_text(input_text)
-    time.sleep(3)
+    time.sleep(1)
 
 
 def assert_title(d, title):
@@ -784,7 +897,7 @@ def assert_title(d, title):
 
     """
     assert title == d(resourceId=get_value("标题")).get_text()
-    time.sleep(3)
+    time.sleep(1)
 
 
 def display_picture(d, picture_name):
