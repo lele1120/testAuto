@@ -58,6 +58,7 @@ element_id:
   我的关注: com.bs.finance:id/tv_title
   关注产品类型: com.bs.finance:id/num_tv
   缺省页文本: com.bs.finance:id/nodata_tip
+  产品标题: com.bs.finance:id/title_tv
 
 
 

@@ -845,16 +845,20 @@ def test_click_my_concern_content_24(d):
     for j in range(product_type.__len__()):
         d(text=product_type[j]).click()
         time.sleep(2)
-        display_picture(d, "我的关注"+str(j))
         if int(product_type_dict[product_type[j]]) == 0:
+            display_picture(d, "无关注" + str(j + 1))
             print(product_type_dict[product_type[j]])
             assert_title(d, product_type[j])
             assert d(resourceId=get_value("缺省页文本")).exists
             assert d(resourceId=get_value("缺省页文本")).get_text() == "对不起，目前没有数据"
             click_element(d, "返回icon")
         else:
+            display_picture(d, "有关注" + str(j + 1))
+            print("***" + product_type_dict[product_type[j]] + "***")
+            print("++++" + str(d(resourceId=get_value("产品标题")).__len__()) + "+++")
+            assert not d(resourceId=get_value("缺省页文本")).exists
+            assert int(product_type_dict[product_type[j]]) == d(resourceId=get_value("产品标题")).__len__()
             click_element(d, "返回icon")
-
 
     click_element(d, "返回icon")
 
