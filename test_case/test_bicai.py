@@ -845,22 +845,54 @@ def test_click_my_concern_content_24(d):
     for j in range(product_type.__len__()):
         d(text=product_type[j]).click()
         time.sleep(2)
-        if int(product_type_dict[product_type[j]]) == 0:
-            display_picture(d, "无关注" + str(j + 1))
-            print(product_type_dict[product_type[j]])
-            assert_title(d, product_type[j])
-            assert d(resourceId=get_value("缺省页文本")).exists
-            assert d(resourceId=get_value("缺省页文本")).get_text() == "对不起，目前没有数据"
-            click_element(d, "返回icon")
-        else:
-            display_picture(d, "有关注" + str(j + 1))
-            print("***" + product_type_dict[product_type[j]] + "***")
-            print("++++" + str(d(resourceId=get_value("产品标题")).__len__()) + "+++")
-            assert not d(resourceId=get_value("缺省页文本")).exists
-            assert int(product_type_dict[product_type[j]]) == d(resourceId=get_value("产品标题")).__len__()
-            click_element(d, "返回icon")
+        with allure.step("for循环对比关注条数和类型页展示条数"):
+            if int(product_type_dict[product_type[j]]) == 0:
+                display_picture(d, "无关注" + str(j + 1))
+                print(product_type_dict[product_type[j]])
+                assert_title(d, product_type[j])
+                assert d(resourceId=get_value("缺省页文本")).exists
+                assert d(resourceId=get_value("缺省页文本")).get_text() == "对不起，目前没有数据"
+                click_element(d, "返回icon")
+            else:
+                display_picture(d, "有关注" + str(j + 1))
+                print("我的关注页统计:" + product_type_dict[product_type[j]] + "条")
+                print("产品类型页显示:" + str(d(resourceId=get_value("产品标题")).__len__()) + "条")
+                assert not d(resourceId=get_value("缺省页文本")).exists
+                with allure.step("对比我的关注页统计条数和产品类型页显示条数"):
+                    assert int(product_type_dict[product_type[j]]) == d(resourceId=get_value("产品标题")).__len__()
+                with allure.step("点击返回icon"):
+                    click_element(d, "返回icon")
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
 
-    click_element(d, "返回icon")
+
+@allure.feature("25.点击我的消息")
+@allure.severity('Critical')
+def test_click_my_news_25(d):
+    """
+    点击我的消息
+    :param d:
+    :return:
+    """
+
+    massage_type = ["系统消息", "产品消息", "活动"]
+
+    with allure.step("点击我的消息"):
+        click_element_with_text(d, "我的消息", "我的消息")
+
+    with allure.step("校验跳转后title"):
+        assert_title(d, "消息")
+
+    with allure.step("校验消息内内容"):
+        for i in range(massage_type.__len__()):
+            with allure.step("点击消息内条目跳转"):
+                click_element_with_text(d, "我的消息", massage_type[i])
+            with allure.step("校验跳转后title显示"):
+                assert_title(d, massage_type[i])
+            with allure.step("点击返回icon"):
+                click_element(d, "返回icon")
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
 
 
 @allure.feature("99.app退出")
@@ -899,6 +931,19 @@ def click_element(d, element_name):
     """
     d(resourceId=get_value(element_name)).wait(timeout=10.0)
     d(resourceId=get_value(element_name)).click()
+    time.sleep(1)
+
+
+def click_element_with_text(d, element_name, element_text):
+    """
+
+    :param d:控件默认为d
+    :param element_name:控件名称详见yaml文件
+    :param element_text:控件文本
+    :return:
+    """
+    d(resourceId=get_value(element_name), text=str(element_text)).wait(timeout=10.0)
+    d(resourceId=get_value(element_name), text=str(element_text)).click()
     time.sleep(1)
 
 
