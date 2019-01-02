@@ -78,10 +78,10 @@ def test_login_02(d):
     #  如果弹出4位数字图片验证码 此处需加if判断
     with allure.step("输入4位验证码"):
         time.sleep(2)
-        input_element(d, "图片验证码输入框", picture_verification_code )
-
-    with allure.step("点击确认按钮"):
-        click_element(d, "图片验证码确定按钮")
+        if d(text=u"请填写图像验证码").exists:
+            input_element(d, "图片验证码输入框", picture_verification_code )
+            with allure.step("点击确认按钮"):
+                click_element(d, "图片验证码确定按钮")
 
     with allure.step("输入6位验证码"):
         input_element(d, "登录验证码输入框", login_verification_code)
