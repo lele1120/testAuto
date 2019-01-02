@@ -22,7 +22,7 @@ def d():
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 
     # d.unlock()
-    d.set_fastinput_ime(True)
+    d.set_fastinput_ime(True)  # 开启快速输入
     d.session("com.bs.finance")
     yield d
     d.app_stop("com.bs.finance")
@@ -885,7 +885,7 @@ def test_click_my_news_25(d):
 
     with allure.step("校验消息内内容"):
         for i in range(massage_type.__len__()):
-            with allure.step("点击消息内条目跳转"):
+            with allure.step("点击消息内条目跳转"+"进入"+str(massage_type[i])):
                 click_element_with_text(d, "我的消息", massage_type[i])
             with allure.step("校验跳转后title显示"):
                 assert_title(d, massage_type[i])
@@ -893,6 +893,135 @@ def test_click_my_news_25(d):
                 click_element(d, "返回icon")
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+
+
+@allure.feature("26.点击比财钱包")
+@allure.severity('Critical')
+def test_click_bicai_wallet_26(d):
+    """
+    点击比财钱包跳转
+    :param d:
+    :return:
+    """
+    global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
+    global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
+    with allure.step("点击比财钱包"):
+        click_element_with_text(d, "比财钱包", "比财钱包")
+        assert_title(d, "比财钱包")
+
+
+@allure.feature("27.点击常见问题")
+@allure.severity('Critical')
+def test_click_common_problem_27(d):
+    """
+    点击常见问题跳转
+    :param d:
+    :return:
+    """
+
+    with allure.step("点击常见问题"):
+        click_element(d, "常见问题")
+        assert_title(d, "常见问题")
+        click_element(d, "返回icon")
+
+
+@allure.feature("28.点击明细")
+@allure.severity('Critical')
+def test_click_detailed_28(d):
+    """
+    点击明细，跳转明细页默认选择收益明细
+    :param d:
+    :return:
+    """
+    with allure.step("点击明细"):
+        d(description=u"明细").click()
+        time.sleep(2)
+        assert_title(d, "明细")
+
+    with allure.step("默认选择为收益明细"):
+        assert d(className="android.widget.ImageView", instance=3).exists
+
+    with allure.step("日期图标显示"):
+        assert d(resourceId="com.bs.finance:id/iv_date").exists  # 日期图标显示
+
+
+@allure.feature("29.点击交易记录")
+@allure.severity('Critical')
+def test_click_business_record_29(d):
+    """
+    切换交易明细页，日期图标被隐藏
+    :param d:
+    :return:
+    """
+    with allure.step("点击交易记录"):
+        click_element(d, "交易记录")
+        assert_title(d, "明细")
+
+    with allure.step("交易记录下划线显示"):
+        assert d(className="android.widget.ImageView", instance=2).exists
+
+    with allure.step("日期图标显示"):
+        assert not d(resourceId="com.bs.finance:id/iv_date").exists  # 日期图标显示
+
+
+@allure.feature("30.点击交易记录页内容")
+@allure.severity('Critical')
+def test_click_business_record_content_30(d):
+    """
+    如果交易记录页中有内容点击进入
+    :param d:
+    :return:
+    """
+    if d(className="android.widget.RelativeLayout", instance=2).exists:
+        with allure.step("点击交易记录页首条记录"):
+            d(className="android.widget.RelativeLayout", instance=2).click()
+            time.sleep(2)
+            assert_title(d, "交易明细")
+
+        with allure.step("点击返回icon"):
+            click_element(d, "返回icon")
+    else:
+        print("该账号没有做过交易")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+    with allure.step("获取账户余额显示隐藏状态"):
+        if d(description=u"****").exists:
+            print("当前账户余额金额显示状态为:隐藏")
+            remaining_sum_type = 1  # 金额隐藏
+        else:
+            print("当前账户余额金额显示状态为:显示")
+            remaining_sum_type = 0  # 金额显示
+
+    with allure.step("点击显示/隐藏图标"):
+        d(className="android.widget.Button").click()
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+    with allure.step("再次点击进入比财钱包"):
+        click_element_with_text(d, "比财钱包", "比财钱包")
+        assert_title(d, "比财钱包")
+
+    with allure.step("获取改变后账户余额显示隐藏状态"):
+        if not d(description=u"****").exists:
+            print("当前账户余额金额显示状态为:显示")
+            change_remaining_sum_type = 1  # 金额显示
+        else:
+            print("当前账户余额金额显示状态为:隐藏")
+            change_remaining_sum_type = 0  # 金额隐藏
+
+    with allure.step("金额显示/隐藏状态对比"):
+        assert remaining_sum_type == change_remaining_sum_type
+
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+
+
 
 
 @allure.feature("99.app退出")
@@ -969,6 +1098,8 @@ def assert_title(d, title):
 
     """
     assert title == d(resourceId=get_value("标题")).get_text()
+    print("页面title为:"+str(d(resourceId=get_value("标题")).get_text()))
+    print("预期页面的title为:"+str(title))
     time.sleep(1)
 
 

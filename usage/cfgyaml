@@ -60,6 +60,11 @@ element_id:
   缺省页文本: com.bs.finance:id/nodata_tip
   产品标题: com.bs.finance:id/title_tv
   我的消息: com.bs.finance:id/tv_title
+  比财钱包: com.bs.finance:id/tv_title
+  常见问题: com.bs.finance:id/tv_submit
+  交易记录: com.bs.finance:id/right_tv
+  收益明细: com.bs.finance:id/left_tv
+  日期图标: com.bs.finance:id/iv_date
 
 
 
