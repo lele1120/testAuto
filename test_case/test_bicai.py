@@ -4,7 +4,6 @@ from __future__ import absolute_import
 import os
 import random
 import re
-import sys
 import time
 import allure
 import pytest
@@ -12,6 +11,7 @@ import yaml
 import uiautomator2 as u2
 from pathlib import Path
 import warnings
+import sys
 warnings.filterwarnings("ignore")
 from optparse import OptionParser
 
@@ -33,9 +33,13 @@ def d():
 @allure.severity('Critical')
 def test_go_main_01(d):
     """
-    首次启动app点击进入比财
+    首次启动app点击进入比财,如果有广告页点击x关闭，
+    :param d:
+    :return:
     """
+
     time.sleep(5)
+    allure.environment(environment="生产环境")
 
     with allure.step("启动页点击进入比财"):
 
@@ -47,11 +51,7 @@ def test_go_main_01(d):
 
     with allure.step("验证启动app点击进入比财是否进入首页"):
 
-        assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
-
-    time.sleep(2)
-
-    display_picture(d, "app首页未登录")
+        assert_element_exists_save_picture(d, d(text="一键登录").exists, "验证是否有文本为一键登录的控件")
 
 
 @allure.feature("02.比财登录")
@@ -78,7 +78,7 @@ def test_login_02(d):
     with allure.step("点击获取验证码"):
         click_element(d, "登录页获取验证码按钮")  # 点击获取验证码
 
-    #  如果弹出4位数字图片验证码 此处需加if判断
+    #  如果弹出4位数字图片验证码
     with allure.step("输入4位验证码"):
         time.sleep(2)
         if d(text=u"请填写图像验证码").exists:
@@ -93,9 +93,7 @@ def test_login_02(d):
         click_element(d, "立即登录按钮")
 
     with allure.step("验证是否登录成功"):
-        assert not d(resourceId=get_value("首页一键登录")).exists
-
-    display_picture(d, "app首页已登录")
+        assert_element_exists_save_picture(d, not d(resourceId=get_value("首页一键登录")).exists, "验证是否登录")
 
 
 @allure.feature("03.弹出侧边栏")
@@ -116,13 +114,11 @@ def test_sidebar_eject_03(d):
 
     with allure.step("检验侧边栏控件"):
         for i in range(cebian_button.__len__()):
-            assert d(text=cebian_button[i]).exists  #验证侧边栏4个按钮控件存在
+            assert_element_exists_save_picture(d, d(text=cebian_button[i]).exists, "验证侧边栏"+cebian_button[i]+"按钮控件存在")
 
     with allure.step("验证账号为已登录状态，账号为" + USER_ID):
         user_id = d(resourceId=get_value("侧边栏账号")).get_text()
-        assert user_id == USER_ID.replace((USER_ID[3:7]), "****")
-
-    display_picture(d, "弹出侧边栏")
+        assert_equal_save_picture(d, user_id, USER_ID.replace((USER_ID[3:7]), "****"), "账号" + USER_ID + "已登录状态")
 
 
 @allure.feature("04.点击侧边栏目logo")
@@ -147,9 +143,7 @@ def test_logo_click_04(d):
     Real_Name_Authentication = d(resourceId=get_value("实名认证状态")).get_text()
 
     for i in range(personal_data.__len__()):
-        assert d(text=personal_data[i]).exists  # 验证个人资料内内容是否存在
-
-    display_picture(d, "个人资料")
+        assert_element_exists_save_picture(d, d(text=personal_data[i]).exists, "控件" + personal_data[i] + "存在")
 
 
 @allure.feature("05.点击昵称进入修改页")
@@ -188,9 +182,7 @@ def test_complete_click_06(d):
         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
 
     with allure.step("验证昵称是否修改成功"):
-        assert d(resourceId=get_value("个人资料昵称")).get_text() == "Alex"
-
-    display_picture(d, "点击完成页面跳转修改昵称页")
+        assert_equal_save_picture(d, d(resourceId=get_value("个人资料昵称")).get_text(), "Alex", "昵称修改")
 
     # 恢复数据
     click_element(d, "个人资料昵称")
@@ -224,9 +216,7 @@ def test_nickname_icon_click_07(d):
         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
 
     with allure.step("验证昵称不会被修改"):
-        assert d(resourceId=get_value("个人资料昵称")).get_text() == USER_ID.replace((USER_ID[3:7]), "****")
-
-    display_picture(d, "修改昵称页点击返回icon跳转回个人资料页")
+        assert_equal_save_picture(d, d(resourceId=get_value("个人资料昵称")).get_text(), USER_ID.replace((USER_ID[3:7]), "****"), "昵称未做修改")
 
 
 @allure.feature("08.修改性别")
@@ -253,13 +243,11 @@ def test_modify_sex_08(d):
     with allure.step("验证性别修改是否成功"):
         modify_sex_text = d(resourceId=get_value("性别文本")).get_text()
         if sex_text == "男":
-            assert modify_sex_text == "女"
+            assert_equal_save_picture(d, modify_sex_text, "女", "性别修改为女")
         elif sex_text == "女":
-            assert modify_sex_text == "男"
+            assert_equal_save_picture(d, modify_sex_text, "男", "性别修改为男")
         else:
             print("无此选项")
-
-    display_picture(d, "性别修改")
 
 
 @allure.feature("09.修改职业")
@@ -293,13 +281,11 @@ def test_modify_profession_09(d):
         modify_profession_display = d(resourceId=get_value("职业展示")).get_text()
 
         if modify_profession_text == "测试":
-            assert modify_profession_display == "码农"
+            assert_equal_save_picture(d, modify_profession_display, "码农", "职业修改")
         elif modify_profession_text == "码农":
-            assert modify_profession_display == "测试"
+            assert_equal_save_picture(d, modify_profession_display, "测试", "职业修改")
         else:
-            assert modify_profession_display == "码农"
-
-    display_picture(d, "职业页点击返回icon跳转回个人资料页")
+            assert_equal_save_picture(d, modify_profession_display, "码农", "职业修改")
 
 
 @allure.feature("10.修改职业点击返回icon")
@@ -332,13 +318,11 @@ def test_modify_profession_icon_10(d):
         modify_profession_display = d(resourceId=get_value("职业展示")).get_text()
 
         if modify_profession_text == "测试":
-            assert modify_profession_display == "测试"
+            assert_equal_save_picture(d, modify_profession_display, "测试", "职业未做修改")
         elif modify_profession_text == "码农":
-            assert modify_profession_display == "码农"
+            assert_equal_save_picture(d, modify_profession_display, "码农", "职业未做修改")
         else:
-            assert modify_profession_display == "测试"
-
-    display_picture(d, "职业修改页点击返回icon跳转回个人资料页")
+            assert_equal_save_picture(d, modify_profession_display, "测试", "职业未做修改")
 
 
 @allure.feature("11.修改职业输入框输入内容点击取消")
@@ -353,7 +337,7 @@ def test_modify_profession_clear_11(d):
         click_element(d, "职业")
 
     with allure.step("验证不存在清除按钮"):
-        assert not d(resourceId=get_value("清除按钮")).exists
+        assert_element_exists_save_picture(d, not d(resourceId=get_value("清除按钮")).exists, "不显示清除按钮")
 
     with allure.step("修改职业文本框内容"):
 
@@ -365,8 +349,7 @@ def test_modify_profession_clear_11(d):
             input_element(d, "职业文本", "码农")
 
     with allure.step("验证清除按钮存在"):
-
-        assert d(resourceId=get_value("清除按钮")).exists
+        assert_element_exists_save_picture(d, d(resourceId=get_value("清除按钮")).exists, "显示清除按钮")
 
     with allure.step("点击清除按钮"):
 
@@ -376,9 +359,12 @@ def test_modify_profession_clear_11(d):
 
         modify_profession_display = d(resourceId=get_value("职业文本")).get_text()
 
-        assert modify_profession_display is None
-
-        display_picture(d, "职业修改页输入后删除")
+        if modify_profession_display is None:
+            # display_picture(d, "清除内容_成功")
+            assert modify_profession_display is None
+        else:
+            display_picture(d, "清除内容_失败")
+            assert modify_profession_display is None
 
     click_element(d, "返回icon")
 
@@ -392,7 +378,7 @@ def test_phone_number_check_12(d):
     :return:
     """
     with allure.step("手机号检查"):
-        assert USER_ID == d(resourceId=get_value("手机号")).get_text()
+        assert_equal_save_picture(d, USER_ID, d(resourceId=get_value("手机号")).get_text(), "个人资料手机号与登录账号对比")
 
 
 @allure.feature("13.所在地修改")
@@ -421,12 +407,15 @@ def test_modify_address_13(d):
         time.sleep(1)
         d(resourceId="com.bs.finance:id/textView", text=u"城区").click()
         time.sleep(1)
+        location_text = (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '')
+        assert_equal_save_picture(d, location_text, "上海徐汇区城区", "所在地区修改为上海")
 
-        assert (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '') == "上海徐汇区城区"
-        
         input_element(d, "详细地址文本", "外滩")
-
-        assert (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '') == "外滩"
+        detailed_address_text = (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '')
+        print("**********************")
+        print(detailed_address_text)
+        print("**********************")
+        assert_equal_save_picture(d, detailed_address_text, "外滩", "详细地址修改为外滩")
 
     elif address_text.replace(' ', '') == "上海徐汇区城区":
         d(resourceId="com.bs.finance:id/textView", text=u"北京").click()
@@ -435,12 +424,12 @@ def test_modify_address_13(d):
         time.sleep(1)
         d(resourceId="com.bs.finance:id/textView", text=u"三环到四环之间").click()
         time.sleep(1)
-
-        assert (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '') == "北京朝阳区三环到四环之间"
+        location_text = (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '')
+        assert_equal_save_picture(d, location_text, "北京朝阳区三环到四环之间", "地区修改")
 
         input_element(d, "详细地址文本", "安定门")
 
-        assert (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '') == "安定门"
+        assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''), "安定门", "详细地址修改")
 
     else:
         d(resourceId="com.bs.finance:id/textView", text=u"上海").click()
@@ -450,12 +439,12 @@ def test_modify_address_13(d):
         d(resourceId="com.bs.finance:id/textView", text=u"城区").click()
         time.sleep(1)
         input_element(d, "详细地址文本", "外滩")
-
-        assert (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '') == "上海徐汇区城"
+        location_text = (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '')
+        assert_equal_save_picture(d, location_text, "上海徐汇区城区", "所在地区修改为上海")
 
         input_element(d, "详细地址文本", "外滩")
 
-        assert (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '') == "外滩"
+        assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''),"详细地址修改为外滩")
 
     with allure.step("点击完成"):
 
@@ -464,13 +453,11 @@ def test_modify_address_13(d):
         modify_address_text = d(resourceId=get_value("居住地址文本")).get_text()
 
         if address_text.replace(' ', '') == "北京朝阳区三环到四环之间":
-            assert modify_address_text.replace(' ', '') == "上海徐汇区城区"
+            assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "上海徐汇区城区", "地址修改")
         elif address_text.replace(' ', '') == "上海徐汇区城区":
-            assert modify_address_text.replace(' ', '') == "北京朝阳区三环到四环之间"
+            assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "北京朝阳区三环到四环之间", "地址修改")
         else:
-            assert modify_address_text.replace(' ', '') == "上海徐汇区城区"
-
-    display_picture(d, "地址修改")
+            assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "上海徐汇区城区", "地址修改")
 
 
 @allure.feature("14.修改所在地点击返回icon")
@@ -499,12 +486,14 @@ def test_modify_address_clear_14(d):
         time.sleep(1)
         d(resourceId="com.bs.finance:id/textView", text=u"城区").click()
         time.sleep(1)
-
-        assert (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '') == "上海徐汇区城区"
+        location_text = (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '')
+        assert_equal_save_picture(d, location_text,
+                                  "上海徐汇区城区", "地区修改")
 
         input_element(d, "详细地址文本", "外滩")
 
-        assert (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '') == "外滩"
+        assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''),
+                                  "外滩", "文本修改")
 
     elif address_text.replace(' ', '') == "上海徐汇区城区":
         d(resourceId="com.bs.finance:id/textView", text=u"北京").click()
@@ -513,12 +502,13 @@ def test_modify_address_clear_14(d):
         time.sleep(1)
         d(resourceId="com.bs.finance:id/textView", text=u"三环到四环之间").click()
         time.sleep(1)
-
-        assert (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '') == "北京朝阳区三环到四环之间"
+        location_text = (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '')
+        assert_equal_save_picture(d, location_text, "北京朝阳区三环到四环之间", "地区修改")
 
         input_element(d, "详细地址文本", "安定门")
 
-        assert (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '') == "安定门"
+        assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''),
+                                  "安定门", "详细地址修改")
 
     else:
         d(resourceId="com.bs.finance:id/textView", text=u"上海").click()
@@ -528,12 +518,13 @@ def test_modify_address_clear_14(d):
         d(resourceId="com.bs.finance:id/textView", text=u"城区").click()
         time.sleep(1)
         input_element(d, "详细地址文本", "外滩")
-
-        assert (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '') == "上海徐汇区城"
+        location_text = (d(resourceId=get_value("所在地区文本")).get_text()).replace(' ', '')
+        assert_equal_save_picture(d, location_text, "上海徐汇区城区", "地区修改")
 
         input_element(d, "详细地址文本", "外滩")
 
-        assert (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', '') == "外滩"
+        assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''),
+                                  "外滩", "文本修改")
 
     with allure.step("点击返回icon"):
 
@@ -542,13 +533,11 @@ def test_modify_address_clear_14(d):
         modify_address_text = d(resourceId=get_value("居住地址文本")).get_text()
 
         if address_text.replace(' ', '') == "上海徐汇区城区":
-            assert modify_address_text.replace(' ', '') == "上海徐汇区城区"
+            assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "上海徐汇区城区", "点击返回icon居住地址校验")
         elif address_text.replace(' ', '') == "北京朝阳区三环到四环之间":
-            assert modify_address_text.replace(' ', '') == "北京朝阳区三环到四环之间"
+            assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "北京朝阳区三环到四环之间", "点击返回icon居住地址校验")
         else:
-            assert modify_address_text.replace(' ', '') == "上海徐汇区城区"
-
-    display_picture(d, "地址修改后点击返回icon")
+            assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "上海徐汇区城区", "点击返回icon居住地址校验")
 
 
 @allure.feature("15.修改个性签名")
@@ -590,13 +579,14 @@ def test_modify_personalized_signature_15(d):
         modify_personalized_signature_text = d(resourceId=get_value("个性签名文本框")).get_text()
 
         if personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了":
-            assert modify_personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底"
+            assert_equal_save_picture(d, modify_personalized_signature_text.replace(' ', ''),
+                                      "噜起袖子加油干一张蓝图绘到底", "修改个性签名")
         elif personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底":
-            assert modify_personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了"
+            assert_equal_save_picture(d, modify_personalized_signature_text.replace(' ', ''),
+                                      "企业要想好踏踏实实搞成天作报告那可好不了", "修改个性签名")
         else:
-            assert modify_personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底"
-
-    display_picture(d, "修改个性签名")
+            assert_equal_save_picture(d, modify_personalized_signature_text.replace(' ', ''),
+                                      "噜起袖子加油干一张蓝图绘到底", "修改个性签名")
 
     click_element(d, "完成")
 
@@ -634,11 +624,11 @@ def test_modify_personalized_signature_clear_16(d):
         modify_personalized_signature_text = d(resourceId=get_value("个性签名文本框")).get_text()
 
         if personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了":
-            assert modify_personalized_signature_text.replace(' ', '') == "企业要想好踏踏实实搞成天作报告那可好不了"
+            assert_equal_save_picture(d, modify_personalized_signature_text.replace(' ', ''),
+                                      "企业要想好踏踏实实搞成天作报告那可好不了", "修改点返回icon签名不会修改")
         else:
-            assert modify_personalized_signature_text.replace(' ', '') == "噜起袖子加油干一张蓝图绘到底"
-
-    display_picture(d, "修改个性签名点击返回icon")
+            assert_equal_save_picture(d, modify_personalized_signature_text.replace(' ', ''),
+                                      "噜起袖子加油干一张蓝图绘到底", "修改点返回icon签名不会修改")
 
     click_element(d, "返回icon")
 
@@ -704,13 +694,9 @@ def test_check_tied_card_state_19(d):
 
             assert_title(d, "银行卡")
 
-            display_picture(d, "已绑定银行卡")
-
         elif Real_Name_Authentication == "未认证":
 
             assert_title(d, "身份证认证")
-
-            display_picture(d, "用户未实名")
 
 
 @allure.feature("20.绑定银行卡页icon点击")
@@ -743,8 +729,7 @@ def test_check_list_click_21(d):
 
         if Real_Name_Authentication == "已认证":
             click_element(d, "查看榜单")
-            assert d(resourceId=get_value("首页左上角图标")).exists  # 验证是否有文本为一键登录的控件
-            display_picture(d, "点击查看榜单返回首页")
+            assert_element_exists_save_picture(d, d(resourceId=get_value("首页左上角图标")).exists, "点击查看榜单返回首页")
             click_element(d, "首页左上角图标")
         else:
             print("用户未实名")
@@ -774,9 +759,9 @@ def test_add_bank_cards_22(d):
 
                 for i in range(10):
                     num_element = "com.bs.finance:id/tv_keyboard_"+str(i)
-                    assert d(resourceId=num_element).exists
+                    assert_element_exists_save_picture(d, d(resourceId=num_element).exists, "数字键盘显示")
 
-                assert d(resourceId="com.bs.finance:id/fl_keyboard_del").exists
+                assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/fl_keyboard_del").exists, "删除键盘显示")
 
             display_picture(d, "添加银行卡")
 
@@ -786,9 +771,10 @@ def test_add_bank_cards_22(d):
 
                 for i in range(10):
                     num_element = "com.bs.finance:id/tv_keyboard_"+str(i)
-                    assert not d(resourceId=num_element).exists
+                    assert_element_exists_save_picture(d, not d(resourceId=num_element).exists, "隐藏数字键盘")
 
-                assert not d(resourceId="com.bs.finance:id/fl_keyboard_del").exists
+                assert_element_exists_save_picture(d, not d(resourceId="com.bs.finance:id/fl_keyboard_del").exists,
+                                                   "隐藏数字键盘删除键")
 
             with allure.step("添加银行卡title校验"):
 
@@ -823,11 +809,9 @@ def test_click_my_concern_23(d):
 
         product_type = ["货币基金", "理财产品", "纯债基金", "智能存款", "活期存款", "结构性存款"]
 
-        with allure.step("检验我的关注内容"):
+        with allure.step("校验我的关注内容"):
             for i in range(product_type.__len__()):
-                assert d(text=product_type[i]).exists
-
-        display_picture(d, "我的关注")
+                assert_element_exists_save_picture(d, d(text=product_type[i]).exists, "校验我的关注内容")
 
 
 @allure.feature("24.验证关注内内容")
@@ -853,16 +837,18 @@ def test_click_my_concern_content_24(d):
                 display_picture(d, "无关注" + str(j + 1))
                 print(product_type_dict[product_type[j]])
                 assert_title(d, product_type[j])
-                assert d(resourceId=get_value("缺省页文本")).exists
-                assert d(resourceId=get_value("缺省页文本")).get_text() == "对不起，目前没有数据"
+                assert_element_exists_save_picture(d, d(resourceId=get_value("缺省页文本")).exists, "无关注省却页展示")
+                assert_equal_save_picture(d, d(resourceId=get_value("缺省页文本")).get_text(),
+                                          "对不起，目前没有数据", "省缺页文本校验")
                 click_element(d, "返回icon")
             else:
                 display_picture(d, "有关注" + str(j + 1))
                 print("我的关注页统计:" + product_type_dict[product_type[j]] + "条")
                 print("产品类型页显示:" + str(d(resourceId=get_value("产品标题")).__len__()) + "条")
-                assert not d(resourceId=get_value("缺省页文本")).exists
+                assert_element_exists_save_picture(d, not d(resourceId=get_value("缺省页文本")).exists,"有关注不展示缺省页")
                 with allure.step("对比我的关注页统计条数和产品类型页显示条数"):
-                    assert int(product_type_dict[product_type[j]]) == d(resourceId=get_value("产品标题")).__len__()
+                    assert_equal_save_picture(d, int(product_type_dict[product_type[j]]),
+                                              d(resourceId=get_value("产品标题")).__len__(), "关注条目数量校验")
                 with allure.step("点击返回icon"):
                     click_element(d, "返回icon")
     with allure.step("点击返回icon"):
@@ -942,10 +928,10 @@ def test_click_detailed_28(d):
         assert_title(d, "明细")
 
     with allure.step("默认选择为收益明细"):
-        assert d(className="android.widget.ImageView", instance=3).exists
+        assert_element_exists_save_picture(d, d(className="android.widget.ImageView", instance=3).exists, "默认选择收益明细")
 
     with allure.step("日期图标显示"):
-        assert d(resourceId="com.bs.finance:id/iv_date").exists  # 日期图标显示
+        assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标显示")
 
 
 @allure.feature("29.点击交易记录")
@@ -961,10 +947,11 @@ def test_click_business_record_29(d):
         assert_title(d, "明细")
 
     with allure.step("交易记录下划线显示"):
-        assert d(className="android.widget.ImageView", instance=2).exists
+        assert_element_exists_save_picture(d, d(className="android.widget.ImageView", instance=2).exists,
+                                           "交易记录下划线显示")
 
     with allure.step("日期图标显示"):
-        assert not d(resourceId="com.bs.finance:id/iv_date").exists  # 日期图标显示
+        assert_element_exists_save_picture(d,not d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标隐藏")
 
 
 @allure.feature("30.点击交易记录页内容")
@@ -1019,7 +1006,8 @@ def test_cash_withdrawal_clickenable_32(d):
     :return:
     """
     with allure.step("验证进入提现页提现按钮默认不可点"):
-        assert d(resourceId=get_value("提现按钮")).info["clickable"] is False
+        assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
+                                           "提现按钮默认不可点")
 
 
 @allure.feature("33.验证输入大于等于10元提现金额按钮可点击")
@@ -1036,7 +1024,8 @@ def test_cash_withdrawal_clickable_33(d):
             input_money_text = random.uniform(10.00, float(balance[0]))
             input_money = round(input_money_text, 2)  # 随机生成大于10元小于可提现金额随机浮点数
             input_element(d, "余额提现页金额输入框", str(input_money))
-            assert d(resourceId=get_value("提现按钮")).info["clickable"] is True
+            assert_element_exists_save_picture(d, d(resourceId=get_value("提现按钮")).info["clickable"],
+                                               "余额和提现金额大于10提现按钮可点击")
 
 
 @allure.feature("34.验证输入小等10元提现金额按钮不可点击")
@@ -1049,7 +1038,8 @@ def test_cash_withdrawal_clickable__less_than_ten_34(d):
     """
     with allure.step("验证输入小于10元提现按钮不可点击"):
         input_element(d, "余额提现页金额输入框", str(9.9))
-        assert d(resourceId=get_value("提现按钮")).info["clickable"] is False
+        assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
+                                           "余额提现金额小于10提现不可点")
 
     click_element(d, "返回icon")
 
@@ -1090,7 +1080,7 @@ def test_balance_display_hide_35(d):
             change_remaining_sum_type = 0  # 金额隐藏
 
     with allure.step("金额显示/隐藏状态对比"):
-        assert remaining_sum_type == change_remaining_sum_type
+        assert_equal_save_picture(d, remaining_sum_type, change_remaining_sum_type, "金额显示/隐藏状态对比")
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
@@ -1169,7 +1159,7 @@ def assert_title(d, title):
     验证页面是否跳转成功
 
     """
-    assert title == d(resourceId=get_value("标题")).get_text()
+    assert_equal_save_picture(d, title, d(resourceId=get_value("标题")).get_text(), "标题对比")
     print("页面title为:"+str(d(resourceId=get_value("标题")).get_text()))
     print("预期页面的title为:"+str(title))
     time.sleep(1)
@@ -1263,6 +1253,45 @@ def save_picture(d, picture_name):
     picture_url = Path(os.path.abspath('..') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
     d.screenshot(picture_url)
     return picture_url
+
+
+def assert_equal_save_picture(d, str_a, str_b, picture_name):
+    """
+    字符串断言，成功截图展示图片，失败截图展示图片
+    :param d:d
+    :param str_a:字符串a
+    :param str_b:字符串b
+    :param picture_name:图片名称
+    :return:
+    """
+    if str_a == str_b:
+        # display_picture(d, picture_name + "_成功")
+        print(picture_name + "_成功")
+        assert str_a == str_b
+    else:
+        print(picture_name + "_失败")
+        display_picture(d, picture_name + "_失败")
+        assert str_a == str_b
+
+
+def assert_element_exists_save_picture(d, bool_a, picture_name):
+    """
+
+    :param d:d
+    :param bool_a: 控件.exists 存在返回ture，不存在返回Flase
+    :param picture_name: 图片名称
+    :return:
+    """
+    if bool_a:
+        # display_picture(d, picture_name + "_成功")
+        print(picture_name + "_成功")
+        assert bool_a
+    else:
+        print(picture_name + "_失败")
+        display_picture(d, picture_name + "_失败")
+        assert bool_a
+
+
 
 
 if __name__ == '__main__':

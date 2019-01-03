@@ -5,6 +5,7 @@ import yaml
 import uiautomator2 as u2
 from pathlib import Path
 
+
 def get_target_value(key, dic, tmp_list):
     """
     :param key: 目标key值
