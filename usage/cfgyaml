@@ -65,6 +65,10 @@ element_id:
   交易记录: com.bs.finance:id/right_tv
   收益明细: com.bs.finance:id/left_tv
   日期图标: com.bs.finance:id/iv_date
+  余额提现页金额输入框: com.bs.finance:id/wallet_get_cash_et
+  提现按钮: com.bs.finance:id/wallet_btn_get_cash
+  广告页: com.bs.finance:id/iv_main_act
+  广告页关闭: com.bs.finance:id/iv_know
 
 
 

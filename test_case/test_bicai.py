@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 import os
+import random
 import re
 import sys
 import time
@@ -40,7 +41,9 @@ def test_go_main_01(d):
 
         click_element(d, "启动页进入比财")
 
-    time.sleep(2)
+    with allure.step("如果弹出广告页点x关闭"):
+        if d(resourceId=get_value("广告页")).exists:  # 如果弹出广告页
+            click_element(d, "广告页关闭")  # 点击x关闭
 
     with allure.step("验证启动app点击进入比财是否进入首页"):
 
@@ -986,11 +989,85 @@ def test_click_business_record_content_30(d):
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
 
+
+@allure.feature("31.点击提现")
+@allure.severity('Critical')
+def test_click_cash_withdrawal_31(d):
+    """
+    点击提现
+    :param d:
+    :return:
+    """
+    with allure.step("点击提现"):
+        d(description=u"提现").click()
+        time.sleep(2)
+        assert_title(d, "余额提现")
+
+    with allure.step("正则匹配可提现余额"):
+        global balance  # 可提现余额
+        balance_text = d(resourceId="com.bs.finance:id/wallet_get_cash_tv_money_tip").get_text()
+        balance = re.findall(r'-?\d+\.?\d*e?-?\d*?', balance_text)
+        print("可提现余额：" + str(balance[0]))
+
+
+@allure.feature("32.验证进入提现页提现按钮默认不可点")
+@allure.severity('Critical')
+def test_cash_withdrawal_clickenable_32(d):
+    """
+    验证页面跳转后提现按钮不可点击
+    :param d:
+    :return:
+    """
+    with allure.step("验证进入提现页提现按钮默认不可点"):
+        assert d(resourceId=get_value("提现按钮")).info["clickable"] is False
+
+
+@allure.feature("33.验证输入大于等于10元提现金额按钮可点击")
+@allure.severity('Critical')
+def test_cash_withdrawal_clickable_33(d):
+    """
+    验证页面输入大于等于10元随机金额提现按钮可以点击
+    :param d:
+    :return:
+    """
+
+    with allure.step("验证输入大于等于10元提现按钮可以点击"):
+        if float(balance[0]) >= 10.00:
+            input_money_text = random.uniform(10.00, float(balance[0]))
+            input_money = round(input_money_text, 2)  # 随机生成大于10元小于可提现金额随机浮点数
+            input_element(d, "余额提现页金额输入框", str(input_money))
+            assert d(resourceId=get_value("提现按钮")).info["clickable"] is True
+
+
+@allure.feature("34.验证输入小等10元提现金额按钮不可点击")
+@allure.severity('Critical')
+def test_cash_withdrawal_clickable__less_than_ten_34(d):
+    """
+    验证页面输入小于10元随机金额提现按钮不可点击
+    :param d:
+    :return:
+    """
+    with allure.step("验证输入小于10元提现按钮不可点击"):
+        input_element(d, "余额提现页金额输入框", str(9.9))
+        assert d(resourceId=get_value("提现按钮")).info["clickable"] is False
+
+    click_element(d, "返回icon")
+
+
+@allure.feature("35.账户余额隐藏显示状态校验")
+@allure.severity('Critical')
+def test_balance_display_hide_35(d):
+    """
+    账户余额校验
+    :param d:
+    :return:
+    """
     with allure.step("获取账户余额显示隐藏状态"):
         if d(description=u"****").exists:
             print("当前账户余额金额显示状态为:隐藏")
             remaining_sum_type = 1  # 金额隐藏
-        else:
+
+        elif d(description=str(balance[0])).exists:
             print("当前账户余额金额显示状态为:显示")
             remaining_sum_type = 0  # 金额显示
 
@@ -1005,23 +1082,18 @@ def test_click_business_record_content_30(d):
         assert_title(d, "比财钱包")
 
     with allure.step("获取改变后账户余额显示隐藏状态"):
-        if not d(description=u"****").exists:
+        if d(description=str(balance[0])).exists:
             print("当前账户余额金额显示状态为:显示")
             change_remaining_sum_type = 1  # 金额显示
-        else:
+        elif d(description=u"****").exists:
             print("当前账户余额金额显示状态为:隐藏")
             change_remaining_sum_type = 0  # 金额隐藏
 
     with allure.step("金额显示/隐藏状态对比"):
         assert remaining_sum_type == change_remaining_sum_type
 
-
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
-
-
-
-
 
 
 @allure.feature("99.app退出")
