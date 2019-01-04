@@ -693,6 +693,8 @@ def test_check_tied_card_state_19(d):
         if Real_Name_Authentication == "已认证":
 
             assert_title(d, "银行卡")
+            global cards_number
+            cards_number = (d(resourceId=get_value("银行卡展示"))).__len__()  # 获取卡数量
 
         elif Real_Name_Authentication == "未认证":
 
@@ -1075,6 +1077,7 @@ def test_balance_display_hide_35(d):
         if d(description=str(balance[0])).exists:
             print("当前账户余额金额显示状态为:显示")
             change_remaining_sum_type = 1  # 金额显示
+
         elif d(description=u"****").exists:
             print("当前账户余额金额显示状态为:隐藏")
             change_remaining_sum_type = 0  # 金额隐藏
@@ -1082,8 +1085,101 @@ def test_balance_display_hide_35(d):
     with allure.step("金额显示/隐藏状态对比"):
         assert_equal_save_picture(d, remaining_sum_type, change_remaining_sum_type, "金额显示/隐藏状态对比")
 
+
+@allure.feature("36.点击比财钱包银行卡跳转")
+@allure.severity('Critical')
+def test_click_card_button_36(d):
+    """
+    点击比财钱包银行卡跳转
+    :param d:
+    :return:
+    """
+    card_button_text = "银行卡(" + str(cards_number) + ")"
+    with allure.step("点击银行卡跳转"):
+        d(description=card_button_text).click()
+        time.sleep(2)
+
+    with allure.step("校验是否跳转成功"):
+        assert_title(d, "银行卡")
+
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+
+
+@allure.feature("37.点击II类户跳转")
+@allure.severity('Critical')
+def test_click_type_two_accounts_37(d):
+    """
+    点击二类户跳转
+    :param d:
+    :return:
+    """
+    with allure.step("点击II类户（图片）跳转"):
+        d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
+        time.sleep(1)
+
+    with allure.step("校验是否跳转成功"):
+        assert_title(d, "II类户")
+        type_two_accounts_number = (d(resourceId="com.bs.finance:id/bg_bank_item")).__len__()
+        print("已绑定二类户数量为:"+str(type_two_accounts_number))
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+    with allure.step("点击II类户按钮跳转并校验已经绑定二类户数量"):
+        type_two_accounts_text = "Ⅱ类户(" + str(type_two_accounts_number) + ")"
+        d(description=str(type_two_accounts_text)).click()
+        time.sleep(2)
+
+    with allure.step("校验是否跳转成功"):
+        assert_title(d, "II类户")
+
+
+@allure.feature("38.点击未开户")
+@allure.severity('Critical')
+def test_click_not_opening_bank_38(d):
+    """
+    点击二类户跳转
+    :param d:
+    :return:
+    """
+    with allure.step("点击未开户"):
+        click_element_with_text(d, "未开户", "未开户")
+    with allure.step("校验是否跳转到未开户"):
+        assert_element_exists_save_picture(d, d(resourceId=get_value("查看全部银行")).exists, "查看全部银行按钮显示")
+
+        if d(resourceId=get_value("银行卡展示")).__len__() >= 1:
+            assert_element_exists_save_picture(d, d(resourceId=get_value("立即开户")).exists, "跳转到未开户")
+
+            with allure.step("如果有未开户点击立即开户跳转"):
+                click_element(d, "立即开户")
+                time.sleep(5)
+                assert_title(d, "安全登录")
+
+                click_element(d, "返回icon")
+                assert_title(d, "II类户")
+
+
+@allure.feature("39.点击查看全部银行")
+@allure.severity('Critical')
+def test_click_look_all_bank_39(d):
+    """
+    点击查看全部银行
+    :param d:
+    :return:
+    """
+    with allure.step("点击查看全部银行"):
+        click_element(d, "查看全部银行")
+
+    with allure.step("校验是否跳转成功"):
+        assert_element_exists_save_picture(d, d(text="收藏银行").exists, "跳转全部银行收藏银行显示")
+
+    with allure.step("恢复脚本在侧边栏目比财钱包状态"):
+        click_element(d, "底部导航栏（比财）")
+        click_element(d, "首页左上角图标")
+        click_element_with_text(d, "比财钱包", "比财钱包")
+
+    click_element(d, "返回icon")
 
 
 @allure.feature("99.app退出")
@@ -1255,7 +1351,7 @@ def save_picture(d, picture_name):
     return picture_url
 
 
-def assert_equal_save_picture(d, str_a, str_b, picture_name):
+def assert_equal_save_picture(d, first, second, picture_name):
     """
     字符串断言，成功截图展示图片，失败截图展示图片
     :param d:d
@@ -1264,14 +1360,14 @@ def assert_equal_save_picture(d, str_a, str_b, picture_name):
     :param picture_name:图片名称
     :return:
     """
-    if str_a == str_b:
+    if first == second:
         # display_picture(d, picture_name + "_成功")
         print(picture_name + "_成功")
-        assert str_a == str_b
+        assert first == second
     else:
         print(picture_name + "_失败")
         display_picture(d, picture_name + "_失败")
-        assert str_a == str_b
+        assert first == second
 
 
 def assert_element_exists_save_picture(d, bool_a, picture_name):
@@ -1290,8 +1386,6 @@ def assert_element_exists_save_picture(d, bool_a, picture_name):
         print(picture_name + "_失败")
         display_picture(d, picture_name + "_失败")
         assert bool_a
-
-
 
 
 if __name__ == '__main__':

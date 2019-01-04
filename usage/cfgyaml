@@ -69,6 +69,12 @@ element_id:
   提现按钮: com.bs.finance:id/wallet_btn_get_cash
   广告页: com.bs.finance:id/iv_main_act
   广告页关闭: com.bs.finance:id/iv_know
+  银行卡展示: com.bs.finance:id/bg_bank_item
+  II类户展示: com.bs.finance:id/bg_bank_item
+  未开户: com.bs.finance:id/tv_tab_title
+  立即开户: com.bs.finance:id/openState
+  查看全部银行: com.bs.finance:id/btn_all_bank
+  底部导航栏（比财）: com.bs.finance:id/rl_0
 
 
 
