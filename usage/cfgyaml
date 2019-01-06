@@ -5,12 +5,14 @@ connect_type:
 
 phoneip:
 # 手机ip
-  Y66手机ip : 192.168.100.109
+  Y66手机ip : 192.168.100.62
   华为手机ip : 192.168.100.234
+  夜神模拟器ip: 172.17.100.15
 
 phoneusb:
 # 手机设备序列号
   Y66手机udid : d5ddd4f7
+  夜神模拟器udid: 127.0.0.1:62001
 
 element_id:
 # 控件id
@@ -75,11 +77,13 @@ element_id:
   立即开户: com.bs.finance:id/openState
   查看全部银行: com.bs.finance:id/btn_all_bank
   底部导航栏（比财）: com.bs.finance:id/rl_0
-
-
-
+  了解比财: com.bs.finance:id/tv_title
+  签到: com.bs.finance:id/tab_3
+  侧边栏未签到红点: com.bs.finance:id/tab3_dot
+  左上角关闭: com.bs.finance:id/iv_close
 
 user_id:
+# 登录账号
   xc手机号: 13911645993
   xc测试机手机号: 18301401092
 

@@ -12,6 +12,7 @@ import uiautomator2 as u2
 from pathlib import Path
 import warnings
 import sys
+import datetime
 warnings.filterwarnings("ignore")
 from optparse import OptionParser
 
@@ -21,11 +22,20 @@ def d():
     d = get_driver_by_key(sys.argv[1])  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
+    # d = get_driver_by_key("夜神模拟器udid")   # 输入手机udid启动
+    global start_time
+    i = datetime.datetime.now()
+    # strat_time = "启动时间为  %s/%s/%s" % (i.hour, i.minute, i.second)
+    strat_time = "启动时间为  %s时%s分%s秒" % (i.hour, i.minute, i.second)
+    print(strat_time)
 
     # d.unlock()
     d.set_fastinput_ime(True)  # 开启快速输入
     d.session("com.bs.finance")
     yield d
+    y = datetime.datetime.now()
+    end_time = "结束时间为  %s时%s分%s秒" % (y.hour, y.minute, y.second)
+    print(end_time)
     d.app_stop("com.bs.finance")
 
 
@@ -1179,7 +1189,98 @@ def test_click_look_all_bank_39(d):
         click_element(d, "首页左上角图标")
         click_element_with_text(d, "比财钱包", "比财钱包")
 
+
+@allure.feature("40.点击卡券跳转到卡券页")
+@allure.severity('Critical')
+def test_click_card_ticket_40(d):
+    """
+    点击卡券跳转到卡券页
+    :param d:
+    :return:
+    """
+    with allure.step("点击卡券"):
+        d(description=u"卡券").click()
+        time.sleep(2)
+        assert_title(d, "卡券")
+
+    with allure.step("点击返回icon返回比财钱包页"):
+        click_element(d, "返回icon")
+        assert_title(d, "比财钱包")
+
     click_element(d, "返回icon")
+
+
+@allure.feature("41.点击了解比财")
+@allure.severity('Critical')
+def test_click_understand_bicai_41(d):
+    """
+    点击了解比财
+    :param d:
+    :return:
+    """
+    with allure.step("点击了解比财"):
+        click_element_with_text(d, "了解比财", "了解比财")
+
+    with allure.step("校验收否成功跳转了解比财"):
+        assert_title(d, "了解比财")
+
+    with allure.step("点击使用帮助"):
+        d(description=u"使用帮助").click(timeout=10)
+
+    with allure.step("点击安全说明"):
+        d(description=u"安全说明").click(timeout=10)
+
+    click_element(d, "返回icon")
+
+
+@allure.feature("42.点击签到")
+@allure.severity('Critical')
+def test_click_sign_in_42(d):
+    """
+    点击签到
+    :param d:
+    :return:
+    """
+    if d(resourceId="com.bs.finance:id/tab3_dot").exists:
+        not_sign_in = 1  # 签到上方红点存在，今日还未点击过签到按钮
+    else:
+        not_sign_in = 0  # 签到上方红点不存在，今日已点击过签到按钮
+
+    with allure.step("点击签到"):
+        click_element(d, "签到")
+
+    with allure.step("校验是否跳转成功"):
+        assert_title(d, "签到")
+        time.sleep(2)
+        sign_in_state = d(className="android.view.View")[29].info['contentDescription']
+        assert_equal_save_picture(d, sign_in_state, "今日已签到", "签到")
+
+    with allure.step("签到校验"):
+        if d(description=u"5@2x").exists:
+            print("今日未抽奖")
+            with allure.step("点击抽奖"):
+                d(description=u"5@2x").click(timeout=15)
+                d(description=u"5@2x").click(timeout=15)
+                red_envelope_money_text = (d(className="android.view.View")[37]).info['contentDescription']
+                red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
+
+                with allure.step("点击查看中奖记录"):
+
+                    d(description=u"10e8eb1f-83fe-4321-b207-739241fc3d41").click(timeout=10)
+                    red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
+                    red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
+
+                    assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
+
+                    record_date = (d(className="android.view.View")[2]).info['contentDescription']
+
+                    now_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+
+                    assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
+
+                    click_element(d, "左上角关闭")
+
+        click_element(d, "左上角关闭")
 
 
 @allure.feature("99.app退出")
