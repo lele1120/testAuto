@@ -21,8 +21,8 @@ from optparse import OptionParser
 def d():
     global running_environment
     running_environment = sys.argv[1]
-    # running_environment = "Y66手机ip"
     # running_environment = "Y66手机udid"
+    # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
@@ -31,6 +31,8 @@ def d():
     i = datetime.datetime.now()
     # strat_time = "启动时间为  %s/%s/%s" % (i.hour, i.minute, i.second)
     strat_time = "启动时间为  %s时%s分%s秒" % (i.hour, i.minute, i.second)
+    global now_date
+    now_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
     print(strat_time)
 
     # d.unlock()
@@ -1256,38 +1258,164 @@ def test_click_sign_in_42(d):
     with allure.step("点击签到"):
         click_element(d, "签到")
 
+        time.sleep(5)
+
     with allure.step("校验是否跳转成功"):
         assert_title(d, "签到")
-        time.sleep(2)
+        time.sleep(10)
         sign_in_state = d(className="android.view.View")[29].info['contentDescription']
         assert_equal_save_picture(d, sign_in_state, "今日已签到", "签到")
 
-    with allure.step("签到校验"):
-        if d(description=u"5@2x").exists:
-            print("今日未抽奖")
-            with allure.step("点击抽奖"):
-                d(description=u"5@2x").click(timeout=15)
-                d(description=u"5@2x").click(timeout=15)
-                red_envelope_money_text = (d(className="android.view.View")[37]).info['contentDescription']
-                red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
 
-                with allure.step("点击查看中奖记录"):
+@allure.feature("43.签到抽奖校验")
+@allure.severity('Critical')
+def test_click_sign_in_luck_draw_43(d):
+    """
+    签到抽奖校验
+    :param d:
+    :return:
+    """
+    with allure.step("签到抽奖校验"):
 
-                    d(description=u"10e8eb1f-83fe-4321-b207-739241fc3d41").click(timeout=10)
-                    red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
-                    red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
+        for i in range(d(className="android.widget.Image").__len__()):
+            if d(className="android.widget.Image")[i].info['contentDescription'] == "5@2x":
+                print("今日未抽奖")
+                with allure.step("点击抽奖"):
+                    d(className="android.widget.Image")[i].click()
+                    time.sleep(5)
+                    d(className="android.widget.Image")[i].click()
+                    global red_envelope_money
+                    for j in range(d(className="android.view.View").__len__()):
+                        if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
+                            red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
+                            print(red_envelope_money_text)
+                            red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
+                            print("抽中金额:" + str(red_envelope_money) + "元")
+                            break
 
-                    assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
+                        with allure.step("点击查看中奖记录"):
 
-                    record_date = (d(className="android.view.View")[2]).info['contentDescription']
+                            d(description=u"10e8eb1f-83fe-4321-b207-739241fc3d41").click(timeout=10)
+                            red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
+                            red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
 
-                    now_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+                            assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
 
-                    assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
+                            record_date = (d(className="android.view.View")[2]).info['contentDescription']
 
-                    click_element(d, "左上角关闭")
 
-        click_element(d, "左上角关闭")
+
+                            assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
+
+                        with allure.step("点击返回"):
+
+                            d(className="android.widget.ImageView")[0].click()  # 点击返回
+
+                            assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
+                                                                    className="android.view.View").exists, "返回签到页")
+
+                        with allure.step("点击查看中奖记录"):
+
+                            d(className="android.widget.ImageView")[0].click()  # 点击返回
+
+                            time.sleep(2)
+
+                            assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
+                                                                    className="android.view.View").exists, "返回签到页")
+
+                        with allure.step("向下滑动，点击活动规则"):
+                            d(scrollable=True).scroll.vert.backward()
+
+                            time.sleep(2)
+        print("该用户已抽奖")
+
+
+@allure.feature("44.查看活动规则")
+@allure.severity('Critical')
+def test_look_activity_rules_44(d):
+    """
+    查看活动规则
+    :param d:
+    :return:
+    """
+    with allure.step("查看活动规则"):
+
+        d(description=u"活动规则").click(timeout=10)
+
+        time.sleep(2)
+
+        assert_element_exists_save_picture(d, d(description=u"签到抽奖规则").exists, "签到规则跳转")
+
+    with allure.step("点击活动规则关闭"):
+        d(className="android.view.View", instance=1).click(timeout=10)
+
+
+@allure.feature("45.点击分享")
+@allure.severity('Critical')
+def test_click_share_friend_45(d):
+    """
+    点击分享给朋友
+    :param d:
+    :return:
+    """
+    time.sleep(2)
+    with allure.step("点击分享按钮"):
+        d(description=u"分享").click(timeout=10)  # 点击分享
+
+    with allure.step("点击发送给朋友"):
+
+        d(description=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
+
+    with allure.step("选择要发送的人"):
+
+        d(resourceId="com.tencent.mm:id/lp", text=u"熊出没").click(timeout=10)   # 选择要发送的人
+
+    with allure.step("点击分享"):
+
+        d(resourceId="com.tencent.mm:id/an3").click(timeout=10)  # 点击分享
+
+    with allure.step("点击返回比财"):
+
+        d(resourceId="com.tencent.mm:id/an2").click(timeout=10)  # 返回比财
+
+
+@allure.feature("46.点击分享圈")
+@allure.severity('Critical')
+def test_click_share_circle_of_friend_46(d):
+    """
+    点击分享给朋友圈
+    :param d:
+    :return:
+    """
+    time.sleep(2)
+
+    with allure.step("点击分享按钮"):
+        d(description=u"分享").click(timeout=10)  # 点击分享
+
+    with allure.step("点击发送给朋友"):
+        d(description=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
+
+    with allure.step("选择要发送的人"):
+        d(resourceId="com.tencent.mm:id/hg").click(timeout=10)   # 选择要发送的人
+
+
+@allure.feature("47.签到页查看我的中奖记录")
+@allure.severity('Critical')
+def test_click_my_winning_record_47(d):
+    """
+    在签到页点击我的中奖记录
+    :param d:
+    :return:
+    """
+    d(scrollable=True).scroll(steps=30)  # 向下滑动
+    time.sleep(2)
+    d(description=u"我的中奖记录").click(timeout=10)
+    time.sleep(2)
+    assert_title(d, "签到")
+
+    assert_element_exists_save_picture(d, d(description=str(now_date)).exists, "签到记录中记录今日签到记录")
+
+    click_element(d, "左上角关闭")
 
 
 @allure.feature("99.app退出")
