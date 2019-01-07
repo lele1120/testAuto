@@ -22,6 +22,7 @@ def d():
     global running_environment
     running_environment = sys.argv[1]
     # running_environment = "Y66手机ip"
+    # running_environment = "Y66手机udid"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
     # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
@@ -52,7 +53,10 @@ def test_go_main_01(d):
     """
 
     time.sleep(5)
-    allure.environment(连接方式=str(running_environment))
+
+    show_running_environment = str(running_environment)+":" + get_value(str(running_environment))
+
+    allure.environment(使用连接方式=str(show_running_environment))
 
     with allure.step("启动页点击进入比财"):
 
