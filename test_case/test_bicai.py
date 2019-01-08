@@ -130,6 +130,7 @@ def test_sidebar_eject_03(d):
 
     with allure.step("点击左上角图标"):
         click_element(d, "首页左上角图标")
+        time.sleep(10)
 
     with allure.step("检验侧边栏控件"):
         for i in range(cebian_button.__len__()):
@@ -1287,47 +1288,38 @@ def test_click_sign_in_luck_draw_43(d):
                     global red_envelope_money
                     for j in range(d(className="android.view.View").__len__()):
                         if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
+                            global red_envelope_money
                             red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
                             print(red_envelope_money_text)
                             red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
                             print("抽中金额:" + str(red_envelope_money) + "元")
-                            break
 
-                        with allure.step("点击查看中奖记录"):
+                            with allure.step("点击查看中奖记录"):
 
-                            d(description=u"10e8eb1f-83fe-4321-b207-739241fc3d41").click(timeout=10)
-                            red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
-                            red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
+                                d(description=u"10e8eb1f-83fe-4321-b207-739241fc3d41").click(timeout=10)
+                                red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
+                                red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
 
-                            assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
+                                assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
 
-                            record_date = (d(className="android.view.View")[2]).info['contentDescription']
+                                record_date = (d(className="android.view.View")[2]).info['contentDescription']
 
+                                assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
 
+                                with allure.step("点击返回"):
 
-                            assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
+                                    d(className="android.widget.ImageView")[0].click()  # 点击返回
 
-                        with allure.step("点击返回"):
+                                    assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
+                                                                            className="android.view.View").exists, "返回签到页")
 
-                            d(className="android.widget.ImageView")[0].click()  # 点击返回
-
-                            assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
-                                                                    className="android.view.View").exists, "返回签到页")
-
-                        with allure.step("点击查看中奖记录"):
-
-                            d(className="android.widget.ImageView")[0].click()  # 点击返回
-
-                            time.sleep(2)
-
-                            assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
-                                                                    className="android.view.View").exists, "返回签到页")
-
-                        with allure.step("向下滑动，点击活动规则"):
-                            d(scrollable=True).scroll.vert.backward()
-
-                            time.sleep(2)
+                                    break
         print("该用户已抽奖")
+
+        # with allure.step("向下滑动，点击活动规则"):
+        #     d(scrollable=True).scroll.vert.backward()
+        #
+        #     time.sleep(2)
 
 
 @allure.feature("44.查看活动规则")
@@ -1407,15 +1399,112 @@ def test_click_my_winning_record_47(d):
     :param d:
     :return:
     """
-    d(scrollable=True).scroll(steps=30)  # 向下滑动
-    time.sleep(2)
-    d(description=u"我的中奖记录").click(timeout=10)
-    time.sleep(2)
-    assert_title(d, "签到")
+    with allure.step("向下滑动"):
+        d(scrollable=True).scroll(steps=30)  # 向下滑动
+        time.sleep(2)
+    with allure.step("点击我的中奖记录"):
+        d(description=u"我的中奖记录").click(timeout=10)
+        time.sleep(2)
+        assert_title(d, "签到")
 
-    assert_element_exists_save_picture(d, d(description=str(now_date)).exists, "签到记录中记录今日签到记录")
+    with allure.step("我的中奖记录中含有今日已发放记录"):
+        assert_element_exists_save_picture(d, d(description=str(now_date)).exists, "签到记录中记录今日签到记录")
 
-    click_element(d, "左上角关闭")
+    with allure.step("点击我的中奖记录"):
+        click_element(d, "左上角关闭")
+
+
+@allure.feature("48.点击用户调研")
+@allure.severity('Critical')
+def test_click_user_survey_48(d):
+    """
+    点击用户调研
+    :param d:
+    :return:
+    """
+    with allure.step("点击有奖调研"):
+        click_element(d, "有奖调研")
+        assert_title(d, "用户调研")
+
+    with allure.step("点击左上角关闭"):
+        click_element(d, "左上角关闭")
+
+
+@allure.feature("49.点击设置")
+@allure.severity('Critical')
+def test_click_set_up_49(d):
+    with allure.step("点击设置"):
+
+        click_element(d, "侧边栏设置")
+
+    with allure.step("title校验"):
+        assert_title(d, "设置")
+
+
+@allure.feature("50.点击比财支付密码管理")
+@allure.severity('Critical')
+def test_click_bicai_payment_password_management_50(d):
+    with allure.step("点击比财支付密码管理"):
+        d(text=u"比财支付密码管理").click()
+        time.sleep(2)
+
+    with allure.step("title校验"):
+        assert_title(d, "密码管理")
+
+
+@allure.feature("51.点击修改密码")
+@allure.severity('Critical')
+def test_click_change_password_51(d):
+    with allure.step("点击修改密码"):
+        d(text=u"修改密码").click()
+        time.sleep(2)
+
+    with allure.step("隐藏数字键盘"):
+        click_element(d, "隐藏数字键盘")
+
+    with allure.step("title校验"):
+        assert_title(d, "修改支付密码")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("52.点击忘记密码")
+@allure.severity('Critical')
+def test_click_forget_password_52(d):
+    with allure.step("点击忘记密码"):
+        d(text=u"忘记密码").click()
+        time.sleep(2)
+
+    with allure.step("title校验"):
+        assert_title(d, "忘记支付密码")
+
+    with allure.step("控件验证"):
+        user_id = d(resourceId=get_value("反显手机号")).get_text()
+        assert_equal_save_picture(d, user_id, USER_ID.replace((USER_ID[3:7]), "****"), "账号" + USER_ID + "已反显")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("53.点击首页默认")
+@allure.severity('Critical')
+def test_click_home_page_default_53(d):
+    with allure.step("点击首页默认版本"):
+        d(text=u"首页默认显示版本").click()
+
+    with allure.step("title校验"):
+        assert_title(d, "首页默认版本")
+
+    with allure.step("控件存在验证"):
+        assert_element_exists_save_picture(d, "行情版单选", "行情版单选显示")
+        assert_element_exists_save_picture(d, "对比版单选", "对比版单选显示")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
 
 
 @allure.feature("99.app退出")
@@ -1426,10 +1515,6 @@ def test_sign_out_app_99(d):
     :param d:
     :return:
     """
-    with allure.step("点击设置"):
-
-        click_element(d, "侧边栏设置")
-
     with allure.step("点击安全退出"):
 
         click_element(d, "安全退出")

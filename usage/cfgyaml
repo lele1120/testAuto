@@ -81,6 +81,11 @@ element_id:
   签到: com.bs.finance:id/tab_3
   侧边栏未签到红点: com.bs.finance:id/tab3_dot
   左上角关闭: com.bs.finance:id/iv_close
+  有奖调研: com.bs.finance:id/layot_setting_bottom2
+  验证按钮: com.bs.finance:id/tv_check
+  反显手机号: com.bs.finance:id/tv_phone
+  行情版单选: com.bs.finance:id/iv_tab_1
+  对比版单选: com.bs.finance:id/iv_tab_2
 
 user_id:
 # 登录账号
