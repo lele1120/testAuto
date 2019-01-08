@@ -86,6 +86,13 @@ element_id:
   反显手机号: com.bs.finance:id/tv_phone
   行情版单选: com.bs.finance:id/iv_tab_1
   对比版单选: com.bs.finance:id/iv_tab_2
+  消息推送提醒: com.bs.finance:id/iv_mes_state
+  默认安全购买渠道设置: com.bs.finance:id/btn_pay
+  银行名称: com.bs.finance:id/bank_name
+  版本更新说明: com.bs.finance:id/btn_new_version
+  隐私政策: com.bs.finance:id/btn_mySelfy
+  联系我们: com.bs.finance:id/btn_call_me
+  意见反馈: com.bs.finance:id/btn_you
 
 user_id:
 # 登录账号

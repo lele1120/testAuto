@@ -1433,6 +1433,11 @@ def test_click_user_survey_48(d):
 @allure.feature("49.点击设置")
 @allure.severity('Critical')
 def test_click_set_up_49(d):
+    """
+    点击设置
+    :param d:
+    :return:
+    """
     with allure.step("点击设置"):
 
         click_element(d, "侧边栏设置")
@@ -1444,6 +1449,11 @@ def test_click_set_up_49(d):
 @allure.feature("50.点击比财支付密码管理")
 @allure.severity('Critical')
 def test_click_bicai_payment_password_management_50(d):
+    """
+    点击比财支付密码管理
+    :param d:
+    :return:
+    """
     with allure.step("点击比财支付密码管理"):
         d(text=u"比财支付密码管理").click()
         time.sleep(2)
@@ -1455,6 +1465,11 @@ def test_click_bicai_payment_password_management_50(d):
 @allure.feature("51.点击修改密码")
 @allure.severity('Critical')
 def test_click_change_password_51(d):
+    """
+    点击修改密码
+    :param d:
+    :return:
+    """
     with allure.step("点击修改密码"):
         d(text=u"修改密码").click()
         time.sleep(2)
@@ -1472,6 +1487,11 @@ def test_click_change_password_51(d):
 @allure.feature("52.点击忘记密码")
 @allure.severity('Critical')
 def test_click_forget_password_52(d):
+    """
+    点击忘记密码
+    :param d:
+    :return:
+    """
     with allure.step("点击忘记密码"):
         d(text=u"忘记密码").click()
         time.sleep(2)
@@ -1493,6 +1513,11 @@ def test_click_forget_password_52(d):
 @allure.feature("53.点击首页默认")
 @allure.severity('Critical')
 def test_click_home_page_default_53(d):
+    """
+    点击首页默认
+    :param d:
+    :return:
+    """
     with allure.step("点击首页默认版本"):
         d(text=u"首页默认显示版本").click()
 
@@ -1507,9 +1532,119 @@ def test_click_home_page_default_53(d):
         click_element(d, "返回icon")
 
 
-@allure.feature("99.app退出")
+@allure.feature("54.消息推送提醒")
 @allure.severity('Critical')
-def test_sign_out_app_99(d):
+def test_click_news_push_54(d):
+    """
+    点击消息推送提醒
+    :param d:
+    :return:
+    """
+    with allure.step("开启消息推送提醒"):
+        click_element(d, "消息推送提醒")
+
+    with allure.step("关闭消息推送提醒"):
+        click_element(d, "消息推送提醒")
+
+
+@allure.feature("55.默认安全购买渠道设置")
+@allure.severity('Critical')
+def test_default_purchase_channel_55(d):
+    """
+    默认安全购买渠道设置
+    :param d:
+    :return:
+    """
+    with allure.step("点击默认安全购买渠道设置"):
+        click_element(d, "默认安全购买渠道设置")
+
+    with allure.step("title跳转验证"):
+        assert_title(d, "安全购买渠道设置")
+
+    bank_name = d(resourceId=get_value("银行名称"))
+    for i in range(bank_name.__len__()):
+        print("银行名称为:"+bank_name[i].get_text())
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("56.点击版本更新说明")
+@allure.severity('Critical')
+def test_click_new_version_56(d):
+    """
+    点击版本更新说明
+    :param d:
+    :return:
+    """
+    with allure.step("点击版本更新说明"):
+        click_element(d, "版本更新说明")
+        time.sleep(5)
+
+    with allure.step("校验title"):
+        assert_title(d, "版本更新说明")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("57.点击隐私政策")
+@allure.severity('Critical')
+def test_click_privacy_policy_57(d):
+    """
+    点击隐私政策
+    :param d:
+    :return:
+    """
+    with allure.step("点击隐私政策"):
+        click_element(d, "隐私政策")
+
+    with allure.step("校验title"):
+        assert_title(d, "北京比财数据科技有限公司隐私隐私声明(V1.0版)")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("58.点击联系我们")
+@allure.severity('Critical')
+def test_click_call_me_58(d):
+    """
+    点击联系我们
+    :param d:
+    :return:
+    """
+    with allure.step("点击联系我们"):
+        click_element(d, "联系我们")
+
+    with allure.step("校验title"):
+        assert_title(d, "联系我们")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("59.点击意见反馈")
+@allure.severity('Critical')
+def test_click_give_feedback_59(d):
+    """
+    点击意见反馈
+    :param d:
+    :return:
+    """
+    with allure.step("点击意见反馈"):
+        click_element(d, "意见反馈")
+
+    with allure.step("校验title"):
+        assert_title(d, "建议与反馈")
+
+    with allure.step("点击返回icon"):
+        click_element(d, "返回icon")
+
+
+@allure.feature("60.app退出")
+@allure.severity('Critical')
+def test_sign_out_app_60(d):
     """
     退出app
     :param d:
