@@ -1263,9 +1263,10 @@ def test_click_sign_in_42(d):
 
     with allure.step("校验是否跳转成功"):
         assert_title(d, "签到")
-        time.sleep(10)
-        sign_in_state = d(className="android.view.View")[29].info['contentDescription']
-        assert_equal_save_picture(d, sign_in_state, "今日已签到", "签到")
+        # time.sleep(10)
+        # 需要添加 查找当天数据 没查到向下滑动 再查 获取当天记录对比
+        # sign_in_state = d(className="android.view.View")[29].info['contentDescription']
+        # assert_equal_save_picture(d, sign_in_state, "今日已签到", "签到")
 
 
 @allure.feature("43.签到抽奖校验")
@@ -1295,25 +1296,24 @@ def test_click_sign_in_luck_draw_43(d):
                             print("抽中金额:" + str(red_envelope_money) + "元")
 
                             with allure.step("点击查看中奖记录"):
-
-                                d(description=u"10e8eb1f-83fe-4321-b207-739241fc3d41").click(timeout=10)
-                                red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
-                                red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
-
-                                assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
-
-                                record_date = (d(className="android.view.View")[2]).info['contentDescription']
-
-                                assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
-
+                                d(description=u"查看我的中奖记录")
+                            #     red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
+                            #     red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
+                            #
+                            #     assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
+                            #
+                            #     record_date = (d(className="android.view.View")[2]).info['contentDescription']
+                            #
+                            #     assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
+                            #
                                 with allure.step("点击返回"):
 
                                     d(className="android.widget.ImageView")[0].click()  # 点击返回
 
                                     assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
                                                                             className="android.view.View").exists, "返回签到页")
+                            break
 
-                                    break
         print("该用户已抽奖")
 
         # with allure.step("向下滑动，点击活动规则"):
@@ -1848,6 +1848,7 @@ if __name__ == '__main__':
     """
     执行所有case并生成报告
     """
+    # pytest.main("--maxfail=2")  # fail超过两个停止运行
 
     # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
     #
