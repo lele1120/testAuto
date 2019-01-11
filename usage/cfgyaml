@@ -62,7 +62,7 @@ element_id:
   缺省页文本: com.bs.finance:id/nodata_tip
   产品标题: com.bs.finance:id/title_tv
   我的消息: com.bs.finance:id/tv_title
-  比财钱包: com.bs.finance:id/tv_title
+  我的钱包: com.bs.finance:id/tv_title
   常见问题: com.bs.finance:id/tv_submit
   交易记录: com.bs.finance:id/right_tv
   收益明细: com.bs.finance:id/left_tv
@@ -77,7 +77,7 @@ element_id:
   立即开户: com.bs.finance:id/openState
   查看全部银行: com.bs.finance:id/btn_all_bank
   底部导航栏（比财）: com.bs.finance:id/rl_0
-  了解比财: com.bs.finance:id/tv_title
+  关于我们: com.bs.finance:id/tv_title
   签到: com.bs.finance:id/tab_3
   侧边栏未签到红点: com.bs.finance:id/tab3_dot
   左上角关闭: com.bs.finance:id/iv_close
@@ -93,6 +93,9 @@ element_id:
   隐私政策: com.bs.finance:id/btn_mySelfy
   联系我们: com.bs.finance:id/btn_call_me
   意见反馈: com.bs.finance:id/btn_you
+  银行名称: com.bs.finance:id/tv_name
+  晋商弹框: com.bs.finance:id/tv_hint
+  晋商弹框确定: com.bs.finance:id/tv_right
 
 user_id:
 # 登录账号

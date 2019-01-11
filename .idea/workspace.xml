@@ -4,6 +4,7 @@
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_bicai.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_bicai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/cfgyaml" beforeDir="false" afterPath="$PROJECT_DIR$/usage/cfgyaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +19,7 @@
     <SUITE FILE_PATH="coverage/testAuto$test_interface.coverage" NAME="test_interface Coverage Results" MODIFIED="1541658906799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1545220881530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$main.coverage" NAME="main Coverage Results" MODIFIED="1541664399534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_suite" />
-    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1547084677809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1547196188718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$logintt.coverage" NAME="logintt Coverage Results" MODIFIED="1546923937130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1542268441984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$env_module.coverage" NAME="env_module Coverage Results" MODIFIED="1541664566426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/module" />
@@ -26,7 +27,7 @@
     <SUITE FILE_PATH="coverage/testAuto$h5location.coverage" NAME="h5location Coverage Results" MODIFIED="1546832478838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$test.coverage" NAME="test Coverage Results" MODIFIED="1541405982000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$mytestpp.coverage" NAME="mytestpp Coverage Results" MODIFIED="1544074101661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/testAuto$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1546925964382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
+    <SUITE FILE_PATH="coverage/testAuto$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1547194073998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$make_test.coverage" NAME="make_test Coverage Results" MODIFIED="1545207273418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
   </component>
   <component name="FavoritesManager">
@@ -38,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
               </folding>
@@ -46,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -66,23 +67,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>info</find>
-      <find>获得0.3元红包</find>
-      <find>小数</find>
-      <find>35</find>
-      <find>左上角关闭</find>
-      <find>4f2ff569-25ee-43b3-9121-1247df0379d8</find>
-      <find>今日已签到</find>
-      <find>if &quot;获得&quot; in (d(className=&quot;android.view.View&quot;)[i]).info['contentDescription']:</find>
-      <find>allure</find>
-      <find>id</find>
-      <find>日期</find>
-      <find>assert_element_exists_save_picture</find>
-      <find>now_date</find>
-      <find>com.bs.finance:id/iv_close</find>
-      <find>com.bs.finance:id/rl_back</find>
       <find>com.bs.finance:id/tv_check</find>
-      <find>43</find>
       <find>User</find>
       <find>ID</find>
       <find>com.bs.finance:id/tv_phone</find>
@@ -96,9 +81,27 @@
       <find>get_text</find>
       <find>42</find>
       <find>签到</find>
+      <find>str(Path(os.path.abspath('..') + &quot;/report/xml&quot;))</find>
+      <find>滑</find>
+      <find>上</find>
+      <find>滑动</find>
+      <find>向上</find>
+      <find>银行卡</find>
+      <find>balance</find>
+      <find>比财钱包</find>
+      <find>了解比财</find>
+      <find>com.bs.finance:id/tv_name</find>
+      <find>com.bs.finance:id/tv_right</find>
+      <find>立即开户</find>
+      <find>44</find>
+      <find>设置</find>
+      <find>49</find>
+      <find>43</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>关于我们</replace>
+      <replace>我的钱包</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/test_case</dir>
@@ -136,8 +139,8 @@
         <option value="$PROJECT_DIR$/test_case/get_test_value_by_yaml.py" />
         <option value="$PROJECT_DIR$/usage/logintt.py" />
         <option value="$PROJECT_DIR$/usage/h5location.py" />
-        <option value="$PROJECT_DIR$/usage/aaa.py" />
         <option value="$PROJECT_DIR$/usage/cfgyaml" />
+        <option value="$PROJECT_DIR$/usage/aaa.py" />
         <option value="$PROJECT_DIR$/test_case/test_bicai.py" />
       </list>
     </option>
@@ -185,6 +188,17 @@
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="test_bicai.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="usage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
@@ -348,13 +362,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00044" summary="测试">
-      <created>1544171806818</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1544171806818</updated>
     </task>
     <task id="LOCAL-00045" summary="测试">
       <created>1544173835274</created>
@@ -692,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546934192924</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="维护签到抽奖case">
+      <created>1547085183444</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1547085183445</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TodoView">
@@ -714,9 +728,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32842582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4941427" visible="true" weight="0.29431817" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4941427" visible="true" weight="0.18977273" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49733758" weight="0.28522727" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.22683705" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.23535676" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
@@ -765,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="测试报告截图展示" />
     <MESSAGE value="增加操作等待时间" />
     <MESSAGE value="封装控件点击&#10;封装控件输入文本&#10;编写case4、5" />
     <MESSAGE value="修改feature备注" />
@@ -790,7 +803,8 @@
     <MESSAGE value="比财签到case编写" />
     <MESSAGE value="比财侧边栏功能完成" />
     <MESSAGE value="修改ip" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改ip" />
+    <MESSAGE value="维护签到抽奖case" />
+    <option name="LAST_COMMIT_MESSAGE" value="维护签到抽奖case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -926,34 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/html/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="3" column="1489729" selection-start-line="3" selection-start-column="1489729" selection-end-line="3" selection-end-column="1489729" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/testAuto/lib/python3.7/site-packages/uiautomator2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="1567" column="8" selection-start-line="1567" selection-start-column="8" selection-end-line="1567" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usage/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5149">
-          <caret line="288" column="44" selection-start-line="288" selection-start-column="44" selection-end-line="288" selection-end-column="44" />
-          <folding>
-            <element signature="e#46#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,17 +964,38 @@
     <entry file="file://$PROJECT_DIR$/report/html/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/usage/cfgyaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="53" column="7" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/html/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="3" column="1489729" selection-start-line="3" selection-start-column="1489729" selection-end-line="3" selection-end-column="1489729" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usage/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="351" column="19" selection-start-line="351" selection-start-column="19" selection-end-line="351" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/report/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="133">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_bicai.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
           </folding>

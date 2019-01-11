@@ -126,7 +126,7 @@ def test_sidebar_eject_03(d):
 
     global realname_status  # 实名认证状态
 
-    cebian_button = ["我的关注", "我的消息", "比财钱包", "了解比财"]
+    cebian_button = ["我的关注", "我的消息", "我的钱包", "关于我们"]
 
     with allure.step("点击左上角图标"):
         click_element(d, "首页左上角图标")
@@ -775,6 +775,8 @@ def test_add_bank_cards_22(d):
 
         if Real_Name_Authentication == "已认证":
 
+            d(scrollable=True).scroll(steps=10)
+
             click_element(d, "添加银行卡")
 
             with allure.step("数字键盘显示"):
@@ -906,19 +908,19 @@ def test_click_my_news_25(d):
         click_element(d, "返回icon")
 
 
-@allure.feature("26.点击比财钱包")
+@allure.feature("26.点击我的钱包")
 @allure.severity('Critical')
 def test_click_bicai_wallet_26(d):
     """
-    点击比财钱包跳转
+    点击我的钱包跳转
     :param d:
     :return:
     """
     global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
     global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
-    with allure.step("点击比财钱包"):
-        click_element_with_text(d, "比财钱包", "比财钱包")
-        assert_title(d, "比财钱包")
+    with allure.step("点击我的钱包"):
+        click_element_with_text(d, "我的钱包", "我的钱包")
+        assert_title(d, "我的钱包")
 
 
 @allure.feature("27.点击常见问题")
@@ -1059,7 +1061,7 @@ def test_cash_withdrawal_clickable__less_than_ten_34(d):
     :return:
     """
     with allure.step("验证输入小于10元提现按钮不可点击"):
-        input_element(d, "余额提现页金额输入框", str(9.9))
+        input_element(d, "余额提现页金额输入框", str(9.99))
         assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
                                            "余额提现金额小于10提现不可点")
 
@@ -1089,9 +1091,9 @@ def test_balance_display_hide_35(d):
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
 
-    with allure.step("再次点击进入比财钱包"):
-        click_element_with_text(d, "比财钱包", "比财钱包")
-        assert_title(d, "比财钱包")
+    with allure.step("再次点击进入我的钱包"):
+        click_element_with_text(d, "我的钱包", "我的钱包")
+        assert_title(d, "我的钱包")
 
     with allure.step("获取改变后账户余额显示隐藏状态"):
         if d(description=str(balance[0])).exists:
@@ -1106,11 +1108,11 @@ def test_balance_display_hide_35(d):
         assert_equal_save_picture(d, remaining_sum_type, change_remaining_sum_type, "金额显示/隐藏状态对比")
 
 
-@allure.feature("36.点击比财钱包银行卡跳转")
+@allure.feature("36.点击我的钱包银行卡跳转")
 @allure.severity('Critical')
 def test_click_card_button_36(d):
     """
-    点击比财钱包银行卡跳转
+    点击我的钱包银行卡跳转
     :param d:
     :return:
     """
@@ -1169,15 +1171,21 @@ def test_click_not_opening_bank_38(d):
         assert_element_exists_save_picture(d, d(resourceId=get_value("查看全部银行")).exists, "查看全部银行按钮显示")
 
         if d(resourceId=get_value("银行卡展示")).__len__() >= 1:
-            assert_element_exists_save_picture(d, d(resourceId=get_value("立即开户")).exists, "跳转到未开户")
 
-            with allure.step("如果有未开户点击立即开户跳转"):
-                click_element(d, "立即开户")
-                time.sleep(5)
-                assert_title(d, "安全登录")
+            if d(resourceId=get_value("银行名称")).get_text() == "晋享财富":
+                assert_element_exists_save_picture(d, d(resourceId=get_value("立即开户")).exists, "跳转到未开户")
 
-                click_element(d, "返回icon")
-                assert_title(d, "II类户")
+                with allure.step("如果有未开户点击立即开户跳转"):
+                    click_element(d, "立即开户")
+                    # time.sleep(5)
+                    # assert_title(d, "安全登录")
+                    d(resourceId=get_value("晋商弹框")).get_text()
+                    assert_equal_save_picture(d, d(resourceId=get_value("晋商弹框")).get_text(),
+                                              "晋商银行系统升级中，暂时无法提供服务，敬请期待。", "晋商升级弹窗")
+                    click_element(d, "晋商弹框确定")
+                    assert_title(d, "II类户")
+                    # click_element(d, "返回icon")
+                    # assert_title(d, "我的钱包")
 
 
 @allure.feature("39.点击查看全部银行")
@@ -1194,10 +1202,10 @@ def test_click_look_all_bank_39(d):
     with allure.step("校验是否跳转成功"):
         assert_element_exists_save_picture(d, d(text="收藏银行").exists, "跳转全部银行收藏银行显示")
 
-    with allure.step("恢复脚本在侧边栏目比财钱包状态"):
+    with allure.step("恢复脚本在侧边栏目我的钱包状态"):
         click_element(d, "底部导航栏（比财）")
         click_element(d, "首页左上角图标")
-        click_element_with_text(d, "比财钱包", "比财钱包")
+        click_element_with_text(d, "我的钱包", "我的钱包")
 
 
 @allure.feature("40.点击卡券跳转到卡券页")
@@ -1213,26 +1221,26 @@ def test_click_card_ticket_40(d):
         time.sleep(2)
         assert_title(d, "卡券")
 
-    with allure.step("点击返回icon返回比财钱包页"):
+    with allure.step("点击返回icon返回我的钱包页"):
         click_element(d, "返回icon")
-        assert_title(d, "比财钱包")
+        assert_title(d, "我的钱包")
 
     click_element(d, "返回icon")
 
 
-@allure.feature("41.点击了解比财")
+@allure.feature("41.点击关于我们")
 @allure.severity('Critical')
 def test_click_understand_bicai_41(d):
     """
-    点击了解比财
+    点击关于我们
     :param d:
     :return:
     """
-    with allure.step("点击了解比财"):
-        click_element_with_text(d, "了解比财", "了解比财")
+    with allure.step("点击关于我们"):
+        click_element_with_text(d, "关于我们", "关于我们")
 
-    with allure.step("校验收否成功跳转了解比财"):
-        assert_title(d, "了解比财")
+    with allure.step("校验收否成功跳转关于我们"):
+        assert_title(d, "关于我们")
 
     with allure.step("点击使用帮助"):
         d(description=u"使用帮助").click(timeout=10)
@@ -1255,6 +1263,8 @@ def test_click_sign_in_42(d):
         not_sign_in = 1  # 签到上方红点存在，今日还未点击过签到按钮
     else:
         not_sign_in = 0  # 签到上方红点不存在，今日已点击过签到按钮
+
+    time.sleep(5)
 
     with allure.step("点击签到"):
         click_element(d, "签到")
@@ -1296,7 +1306,7 @@ def test_click_sign_in_luck_draw_43(d):
                             print("抽中金额:" + str(red_envelope_money) + "元")
 
                             with allure.step("点击查看中奖记录"):
-                                d(description=u"查看我的中奖记录")
+                                d(description=u"查看我的中奖记录").click()
                             #     red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
                             #     red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
                             #
@@ -1439,6 +1449,8 @@ def test_click_set_up_49(d):
     :return:
     """
     with allure.step("点击设置"):
+
+        time.sleep(5)
 
         click_element(d, "侧边栏设置")
 
@@ -1850,14 +1862,35 @@ if __name__ == '__main__':
     """
     # pytest.main("--maxfail=2")  # fail超过两个停止运行
 
+    xml_report_path = "${WORKSPACE}/report"
+    html_report_path = "${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html"
+
+    # xml_report_path = str(Path(os.path.abspath('..') + "/report/xml"))
+    # html_report_path = str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
+    #                             "/report/html --clean"))
+
+    args = ['-q', '--maxfail=1', '--alluredir', xml_report_path]
+    # args = ["--alluredir", xml_report_path]
+
+    pytest.main(args)
+    os.system("allure generate " + html_report_path)
+
+
+
+
+
+    # os.system('allure generate %s -o %s' % (xml_report_path, html_report_path))
+
     # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
     #
     # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
     #                                         "/report/html --clean")))
 
-    pytest.main("--alluredir ${WORKSPACE}/report")
 
-    os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+    # pytest.main("--alluredir ${WORKSPACE}/report")
+    #
+    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+
 
         # time.sleep(5)
         # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
