@@ -714,7 +714,30 @@ def test_check_tied_card_state_19(d):
 
             assert_title(d, "银行卡")
             global cards_number
-            cards_number = (d(resourceId=get_value("银行卡展示"))).__len__()  # 获取卡数量
+            cards_name_a = []
+            cards_name_b = []
+            card_name = d(resourceId=get_value("银行名称"))  # 获取卡数量
+
+            for i in range(card_name.__len__()):
+                print(card_name[i].get_text())
+                cards_name_a.append(card_name[i].get_text())
+            print(cards_name_a)
+
+            d(scrollable=True).scroll(steps=30)  # 向下滑动
+
+            time.sleep(5)
+
+            for i in range(card_name.__len__()):
+                print(card_name[i].get_text())
+                cards_name_b.append(card_name[i].get_text())
+
+            print(cards_name_b)
+
+            cards_name_c = list(set(cards_name_a + cards_name_b))
+
+            print(cards_name_c)
+
+            cards_number = cards_name_c.__len__()
 
         elif Real_Name_Authentication == "未认证":
 
