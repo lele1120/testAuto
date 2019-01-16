@@ -13,7 +13,6 @@ from pathlib import Path
 import warnings
 import sys
 import datetime
-import itchat
 warnings.filterwarnings("ignore")
 from optparse import OptionParser
 
