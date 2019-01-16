@@ -13,10 +13,12 @@ from pathlib import Path
 import warnings
 import sys
 import datetime
+import itchat
 warnings.filterwarnings("ignore")
 from optparse import OptionParser
 
 
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
 @pytest.fixture(scope='module')
 def d():
     global running_environment
@@ -1708,6 +1710,8 @@ def click_element(d, element_name):
     封装控件点击操作
     """
     d(resourceId=get_value(element_name)).wait(timeout=10.0)
+    if not d(resourceId=get_value(element_name)).exists:
+        display_picture(d, "控件未获取到")
     d(resourceId=get_value(element_name)).click()
     time.sleep(1)
 
@@ -1746,10 +1750,13 @@ def assert_title(d, title):
     验证页面是否跳转成功
 
     """
-    assert_equal_save_picture(d, title, d(resourceId=get_value("标题")).get_text(), "标题对比")
-    print("页面title为:"+str(d(resourceId=get_value("标题")).get_text()))
-    print("预期页面的title为:"+str(title))
-    time.sleep(1)
+    if not d(resourceId=get_value("标题")).exists:
+        time.sleep(2)
+    else:
+        assert_equal_save_picture(d, title, d(resourceId=get_value("标题")).get_text(), "标题对比")
+        print("页面title为:"+str(d(resourceId=get_value("标题")).get_text()))
+        print("预期页面的title为:"+str(title))
+        time.sleep(1)
 
 
 def display_picture(d, picture_name):
@@ -1879,6 +1886,18 @@ def assert_element_exists_save_picture(d, bool_a, picture_name):
         assert bool_a
 
 
+
+
+
+def pytest_sessionfinish(session, exitstatus):
+    print()
+    print('run status code:', exitstatus)
+    passed_amount = sum(1 for result in session.results.values() if result.passed)
+    failed_amount = sum(1 for result in session.results.values() if result.failed)
+    print(f'there are {passed_amount} passed and {failed_amount} failed tests')
+
+
+
 if __name__ == '__main__':
     """
     执行所有case并生成报告
@@ -1892,12 +1911,19 @@ if __name__ == '__main__':
     # html_report_path = str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
     #                             "/report/html --clean"))
 
-    args = ['-q', '--maxfail=1', '--alluredir', xml_report_path]
+    args = ['-svq', '--maxfail=3', '--alluredir', xml_report_path]
+
+
     # args = ["--alluredir", xml_report_path]
 
     pytest.main(args)
     os.system("allure generate " + html_report_path)
 
+    # itchat.auto_login(hotReload=True)
+    #
+    # friends_name = itchat.search_friends(name='xtest')
+    #
+    # itchat.send('自动化脚本运行完毕', friends_name[0]['UserName'])
 
 
 
