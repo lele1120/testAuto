@@ -13,11 +13,14 @@ from pathlib import Path
 import warnings
 import sys
 import datetime
+
+from test_case.test_bicai import display_picture, click_element, assert_title, get_driver_by_key, get_value, \
+    assert_element_exists_save_picture, input_element, assert_equal_save_picture, click_element_with_text
+
 warnings.filterwarnings("ignore")
 from optparse import OptionParser
 
-#
-# @pytest.hookimpl(tryfirst=True, hookwrapper=True)
+
 @pytest.fixture(scope='module')
 def d():
     global running_environment
@@ -46,9 +49,9 @@ def d():
     d.app_stop("com.bs.finance")
 
 
-@allure.feature("01.启动app后进入比财")
+@allure.feature("001.启动app后进入比财")
 @allure.severity('Critical')
-def test_go_main_01(d):
+def test_go_01(d):
     """
     首次启动app点击进入比财,如果有广告页点击x关闭，
     :param d:
@@ -57,12 +60,11 @@ def test_go_main_01(d):
 
     time.sleep(5)
 
-    show_running_environment = str(running_environment)+":" + get_value(str(running_environment))
+    show_running_environment = str(running_environment) + ":" + get_value(str(running_environment))
 
     allure.environment(使用连接方式=str(show_running_environment))
 
     with allure.step("启动页点击进入比财"):
-
         click_element(d, "启动页进入比财")
 
     with allure.step("如果弹出广告页点x关闭"):
@@ -70,18 +72,17 @@ def test_go_main_01(d):
             click_element(d, "广告页关闭")  # 点击x关闭
 
     with allure.step("验证启动app点击进入比财是否进入首页"):
-
         assert_element_exists_save_picture(d, d(text="一键登录").exists, "验证是否有文本为一键登录的控件")
 
 
-@allure.feature("02.比财登录")
+@allure.feature("002.比财登录")
 @allure.severity('Critical')
 def test_login_02(d):
     """
     比财账号登录
 
     """
-    global USER_ID   # 使用账号
+    global USER_ID  # 使用账号
 
     USER_ID = str(get_value("xc手机号"))
 
@@ -102,7 +103,7 @@ def test_login_02(d):
     with allure.step("输入4位验证码"):
         time.sleep(2)
         if d(text=u"请填写图像验证码").exists:
-            input_element(d, "图片验证码输入框", picture_verification_code )
+            input_element(d, "图片验证码输入框", picture_verification_code)
             with allure.step("点击确认按钮"):
                 click_element(d, "图片验证码确定按钮")
 
@@ -116,7 +117,7 @@ def test_login_02(d):
         assert_element_exists_save_picture(d, not d(resourceId=get_value("首页一键登录")).exists, "验证是否登录")
 
 
-@allure.feature("03.弹出侧边栏")
+@allure.feature("003.弹出侧边栏")
 @allure.severity('Critical')
 def test_sidebar_eject_03(d):
     """
@@ -135,7 +136,8 @@ def test_sidebar_eject_03(d):
 
     with allure.step("检验侧边栏控件"):
         for i in range(cebian_button.__len__()):
-            assert_element_exists_save_picture(d, d(text=cebian_button[i]).exists, "验证侧边栏"+cebian_button[i]+"按钮控件存在")
+            assert_element_exists_save_picture(d, d(text=cebian_button[i]).exists,
+                                               "验证侧边栏" + cebian_button[i] + "按钮控件存在")
 
     with allure.step("验证账号为已登录状态，账号为" + USER_ID):
         user_id = d(resourceId=get_value("侧边栏账号")).get_text()
@@ -154,7 +156,6 @@ def test_sidebar_eject_03(d):
 #         click_element(d, "侧边栏logo")
 #
 #     with allure.step("验证是否跳转个人资料页"):
-#
 #         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
 #
 #     personal_data = ["性别", "微信", "职业", "实名认证", "手机号", "所在地", "个性签名"]
@@ -237,7 +238,8 @@ def test_sidebar_eject_03(d):
 #         assert_title(d, "个人资料")  # 验证跳转个人资料页成功
 #
 #     with allure.step("验证昵称不会被修改"):
-#         assert_equal_save_picture(d, d(resourceId=get_value("个人资料昵称")).get_text(), USER_ID.replace((USER_ID[3:7]), "****"), "昵称未做修改")
+#         assert_equal_save_picture(d, d(resourceId=get_value("个人资料昵称")).get_text(),
+#                                   USER_ID.replace((USER_ID[3:7]), "****"), "昵称未做修改")
 #
 #
 # @allure.feature("08.修改性别")
@@ -465,7 +467,7 @@ def test_sidebar_eject_03(d):
 #
 #         input_element(d, "详细地址文本", "外滩")
 #
-#         assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''),"详细地址修改为外滩")
+#         assert_equal_save_picture(d, (d(resourceId=get_value("详细地址文本")).get_text()).replace(' ', ''), "详细地址修改为外滩")
 #
 #     with allure.step("点击完成"):
 #
@@ -806,10 +808,11 @@ def test_sidebar_eject_03(d):
 #             with allure.step("数字键盘显示"):
 #
 #                 for i in range(10):
-#                     num_element = "com.bs.finance:id/tv_keyboard_"+str(i)
+#                     num_element = "com.bs.finance:id/tv_keyboard_" + str(i)
 #                     assert_element_exists_save_picture(d, d(resourceId=num_element).exists, "数字键盘显示")
 #
-#                 assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/fl_keyboard_del").exists, "删除键盘显示")
+#                 assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/fl_keyboard_del").exists,
+#                                                    "删除键盘显示")
 #
 #             display_picture(d, "添加银行卡")
 #
@@ -818,7 +821,7 @@ def test_sidebar_eject_03(d):
 #                 click_element(d, "隐藏数字键盘")
 #
 #                 for i in range(10):
-#                     num_element = "com.bs.finance:id/tv_keyboard_"+str(i)
+#                     num_element = "com.bs.finance:id/tv_keyboard_" + str(i)
 #                     assert_element_exists_save_picture(d, not d(resourceId=num_element).exists, "隐藏数字键盘")
 #
 #                 assert_element_exists_save_picture(d, not d(resourceId="com.bs.finance:id/fl_keyboard_del").exists,
@@ -893,7 +896,7 @@ def test_sidebar_eject_03(d):
 #                 display_picture(d, "有关注" + str(j + 1))
 #                 print("我的关注页统计:" + product_type_dict[product_type[j]] + "条")
 #                 print("产品类型页显示:" + str(d(resourceId=get_value("产品标题")).__len__()) + "条")
-#                 assert_element_exists_save_picture(d, not d(resourceId=get_value("缺省页文本")).exists,"有关注不展示缺省页")
+#                 assert_element_exists_save_picture(d, not d(resourceId=get_value("缺省页文本")).exists, "有关注不展示缺省页")
 #                 with allure.step("对比我的关注页统计条数和产品类型页显示条数"):
 #                     assert_equal_save_picture(d, int(product_type_dict[product_type[j]]),
 #                                               d(resourceId=get_value("产品标题")).__len__(), "关注条目数量校验")
@@ -922,7 +925,7 @@ def test_sidebar_eject_03(d):
 #
 #     with allure.step("校验消息内内容"):
 #         for i in range(massage_type.__len__()):
-#             with allure.step("点击消息内条目跳转"+"进入"+str(massage_type[i])):
+#             with allure.step("点击消息内条目跳转" + "进入" + str(massage_type[i])):
 #                 click_element_with_text(d, "我的消息", massage_type[i])
 #             with allure.step("校验跳转后title显示"):
 #                 assert_title(d, massage_type[i])
@@ -999,7 +1002,7 @@ def test_sidebar_eject_03(d):
 #                                            "交易记录下划线显示")
 #
 #     with allure.step("日期图标显示"):
-#         assert_element_exists_save_picture(d,not d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标隐藏")
+#         assert_element_exists_save_picture(d, not d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标隐藏")
 #
 #
 # @allure.feature("30.点击交易记录页内容")
@@ -1167,7 +1170,7 @@ def test_sidebar_eject_03(d):
 #     with allure.step("校验是否跳转成功"):
 #         assert_title(d, "II类户")
 #         type_two_accounts_number = (d(resourceId="com.bs.finance:id/bg_bank_item")).__len__()
-#         print("已绑定二类户数量为:"+str(type_two_accounts_number))
+#         print("已绑定二类户数量为:" + str(type_two_accounts_number))
 #
 #     with allure.step("点击返回icon"):
 #         click_element(d, "返回icon")
@@ -1331,21 +1334,21 @@ def test_sidebar_eject_03(d):
 #
 #                             with allure.step("点击查看中奖记录"):
 #                                 d(description=u"查看我的中奖记录").click()
-#                             #     red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
-#                             #     red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
-#                             #
-#                             #     assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
-#                             #
-#                             #     record_date = (d(className="android.view.View")[2]).info['contentDescription']
-#                             #
-#                             #     assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
-#                             #
+#                                 #     red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
+#                                 #     red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
+#                                 #
+#                                 #     assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
+#                                 #
+#                                 #     record_date = (d(className="android.view.View")[2]).info['contentDescription']
+#                                 #
+#                                 #     assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
+#                                 #
 #                                 with allure.step("点击返回"):
-#
 #                                     d(className="android.widget.ImageView")[0].click()  # 点击返回
 #
 #                                     assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
-#                                                                             className="android.view.View").exists, "返回签到页")
+#                                                                             className="android.view.View").exists,
+#                                                                        "返回签到页")
 #                             break
 #
 #         print("该用户已抽奖")
@@ -1365,7 +1368,6 @@ def test_sidebar_eject_03(d):
 #     :return:
 #     """
 #     with allure.step("查看活动规则"):
-#
 #         d(description=u"活动规则").click(timeout=10)
 #
 #         time.sleep(2)
@@ -1389,19 +1391,15 @@ def test_sidebar_eject_03(d):
 #         d(description=u"分享").click(timeout=10)  # 点击分享
 #
 #     with allure.step("点击发送给朋友"):
-#
 #         d(description=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
 #
 #     with allure.step("选择要发送的人"):
-#
-#         d(resourceId="com.tencent.mm:id/lp", text=u"熊出没").click(timeout=10)   # 选择要发送的人
+#         d(resourceId="com.tencent.mm:id/lp", text=u"熊出没").click(timeout=10)  # 选择要发送的人
 #
 #     with allure.step("点击分享"):
-#
 #         d(resourceId="com.tencent.mm:id/an3").click(timeout=10)  # 点击分享
 #
 #     with allure.step("点击返回比财"):
-#
 #         d(resourceId="com.tencent.mm:id/an2").click(timeout=10)  # 返回比财
 #
 #
@@ -1422,7 +1420,7 @@ def test_sidebar_eject_03(d):
 #         d(description=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
 #
 #     with allure.step("选择要发送的人"):
-#         d(resourceId="com.tencent.mm:id/hg").click(timeout=10)   # 选择要发送的人
+#         d(resourceId="com.tencent.mm:id/hg").click(timeout=10)  # 选择要发送的人
 #
 #
 # @allure.feature("47.签到页查看我的中奖记录")
@@ -1464,7 +1462,7 @@ def test_sidebar_eject_03(d):
 #         click_element(d, "左上角关闭")
 #
 #
-@allure.feature("49.点击设置")
+@allure.feature("0049.点击设置")
 @allure.severity('Critical')
 def test_click_set_up_49(d):
     """
@@ -1473,15 +1471,14 @@ def test_click_set_up_49(d):
     :return:
     """
     with allure.step("点击设置"):
-
         time.sleep(5)
 
         click_element(d, "侧边栏设置")
 
     with allure.step("title校验"):
         assert_title(d, "设置")
-#
-#
+
+
 # @allure.feature("50.点击比财支付密码管理")
 # @allure.severity('Critical')
 # def test_click_bicai_payment_password_management_50(d):
@@ -1599,7 +1596,7 @@ def test_click_set_up_49(d):
 #
 #     bank_name = d(resourceId=get_value("银行名称"))
 #     for i in range(bank_name.__len__()):
-#         print("银行名称为:"+bank_name[i].get_text())
+#         print("银行名称为:" + bank_name[i].get_text())
 #
 #     with allure.step("点击返回icon"):
 #         click_element(d, "返回icon")
@@ -1678,7 +1675,7 @@ def test_click_set_up_49(d):
 #         click_element(d, "返回icon")
 
 
-@allure.feature("60.app退出")
+@allure.feature("0060.app退出")
 @allure.severity('Critical')
 def test_sign_out_app_60(d):
     """
@@ -1687,261 +1684,15 @@ def test_sign_out_app_60(d):
     :return:
     """
     with allure.step("点击安全退出"):
-
         click_element(d, "安全退出")
 
     with allure.step("点击确认退出_是"):
-
         click_element(d, "确认退出_是")
 
     with allure.step("验证app已成功退出"):
-
         assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
 
     display_picture(d, "app退出")
 
 
-def click_element(d, element_name):
-    """
-    :param d: 控件默认为d
-    :param element_name: 控件名称详见yaml文件
-    :return: 无
-    封装控件点击操作
-    """
-    d(resourceId=get_value(element_name)).wait(timeout=10.0)
-    if not d(resourceId=get_value(element_name)).exists:
-        display_picture(d, "控件未获取到")
-    d(resourceId=get_value(element_name)).click()
-    time.sleep(1)
 
-
-def click_element_with_text(d, element_name, element_text):
-    """
-
-    :param d:控件默认为d
-    :param element_name:控件名称详见yaml文件
-    :param element_text:控件文本
-    :return:
-    """
-    d(resourceId=get_value(element_name), text=str(element_text)).wait(timeout=10.0)
-    d(resourceId=get_value(element_name), text=str(element_text)).click()
-    time.sleep(1)
-
-
-def input_element(d, element_name, input_text):
-    """
-
-    :param d: 控件默认为d
-    :param element_name: 控件名称详见yaml文件
-    :param input_text: 需要输入的内容
-    :return: 无
-    """
-    d(resourceId=get_value(element_name)).wait(timeout=10.0)
-    d(resourceId=get_value(element_name)).set_text(input_text)
-    time.sleep(1)
-
-
-def assert_title(d, title):
-    """
-    :param d: 控件默认为d
-    :param title: 页面标题
-    :return: 无
-    验证页面是否跳转成功
-
-    """
-    if not d(resourceId=get_value("标题")).exists:
-        time.sleep(2)
-    else:
-        assert_equal_save_picture(d, title, d(resourceId=get_value("标题")).get_text(), "标题对比")
-        print("页面title为:"+str(d(resourceId=get_value("标题")).get_text()))
-        print("预期页面的title为:"+str(title))
-        time.sleep(1)
-
-
-def display_picture(d, picture_name):
-    """
-
-    :param d: 控件名称，默认为d
-    :param picture_name: 图片名称
-    :return: 无
-    """
-    pictor_url = save_picture(d, picture_name)
-    file = open(pictor_url, 'rb').read()
-    allure.attach(picture_name, file, allure.attach_type.PNG)  # attach显示图片
-
-
-def get_target_value(key, dic, tmp_list):
-    """
-    :param key: 目标key值
-    :param dic: JSON数据
-    :param tmp_list: 用于存储获取的数据
-    :return: list
-    """
-    if not isinstance(dic, dict) or not isinstance(tmp_list, list):  # 对传入数据进行格式校验
-        return 'argv[1] not an dict or argv[-1] not an list '
-
-    if key in dic.keys():
-        tmp_list.append(dic[key])  # 传入数据存在则存入tmp_list
-    else:
-        for value in dic.values():  # 传入数据不符合则对其value值进行遍历
-            if isinstance(value, dict):
-                get_target_value(key, value, tmp_list)  # 传入数据的value值是字典，则直接调用自身
-            elif isinstance(value, (list, tuple)):
-                _get_value(key, value, tmp_list)  # 传入数据的value值是列表或者元组，则调用_get_value
-    return tmp_list
-
-
-def _get_value(key, val, tmp_list):
-    for val_ in val:
-        if isinstance(val_, dict):
-            get_target_value(key, val_, tmp_list)  # 传入数据的value值是字典，则调用get_target_value
-        elif isinstance(key, val_, (list, tuple)):
-            _get_value(key, val_, tmp_list)  # 传入数据的value值是列表或者元组，则调用自身
-
-
-def get_value(key):
-    """
-
-    :param key: 关键字
-    :return:无
-    """
-    yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml") # 适用于jenkins持续集成
-    # yamlPath = Path(os.path.abspath('..')+"/usage/cfgyaml") # 适用于本地调试持续集成
-
-    f = open(yamlPath, 'r', encoding='utf-8')
-    cfg = f.read()
-    d = yaml.load(cfg)
-    return get_target_value(key, d, [])[0]
-
-
-def get_driver_by_key(key):
-    """
-    :param key:使用yaml文件中的设备usb连接名称，或者ip连接名称，自动识别设备，使用ping ip和adb devices的方式判断设备是否可用
-    :return: 返回设备driver
-    """
-    if type(key) == str:
-        if key[-1] == "p":
-            ip = get_value(key)
-            backinfo = os.system("ping -c 5 "+ip)
-            if backinfo == 0:
-                d = u2.connect_wifi(get_value(key))
-                return d
-            else:
-                print("未发现ip为" + ip + "的移动设备")
-        elif key[-1] == "d":
-            uuid = get_value(key)
-            readDeviceId = list(os.popen('adb devices').readlines())
-            deviceId = re.findall(r'^\w*\b', readDeviceId[1])[0]
-            if uuid == deviceId:
-                d = u2.connect_usb(uuid)
-                return d
-            else:
-                print("未发现udid为"+uuid+"的移动设备")
-    else:
-        print("请使用yaml文件中的设备连接名称")
-
-
-def save_picture(d, picture_name):
-    # picture_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
-    picture_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
-    d.screenshot(picture_url)
-    return picture_url
-
-
-def assert_equal_save_picture(d, first, second, picture_name):
-    """
-    字符串断言，成功截图展示图片，失败截图展示图片
-    :param d:d
-    :param str_a:字符串a
-    :param str_b:字符串b
-    :param picture_name:图片名称
-    :return:
-    """
-    if first == second:
-        # display_picture(d, picture_name + "_成功")
-        print(picture_name + "_成功")
-        assert first == second
-    else:
-        print(picture_name + "_失败")
-        display_picture(d, picture_name + "_失败")
-        assert first == second
-
-
-def assert_element_exists_save_picture(d, bool_a, picture_name):
-    """
-
-    :param d:d
-    :param bool_a: 控件.exists 存在返回ture，不存在返回Flase
-    :param picture_name: 图片名称
-    :return:
-    """
-    if bool_a:
-        # display_picture(d, picture_name + "_成功")
-        print(picture_name + "_成功")
-        assert bool_a
-    else:
-        print(picture_name + "_失败")
-        display_picture(d, picture_name + "_失败")
-        assert bool_a
-
-def pytest_sessionfinish(session, exitstatus):
-    print()
-    print('run status code:', exitstatus)
-    passed_amount = sum(1 for result in session.results.values() if result.passed)
-    failed_amount = sum(1 for result in session.results.values() if result.failed)
-    print(f'there are {passed_amount} passed and {failed_amount} failed tests')
-
-
-
-# if __name__ == '__main__':
-    """
-    执行所有case并生成报告
-    """
-    # pytest.main("--maxfail=2")  # fail超过两个停止运行
-
-    # xml_report_path = "${WORKSPACE}/report"
-    # html_report_path = "${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html"
-
-    # xml_report_path = str(Path(os.path.abspath('..') + "/report/xml"))
-    # html_report_path = str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-    #                             "/report/html --clean"))
-    #
-    # args = ['-svq', '--maxfail=3', '--alluredir', xml_report_path]
-    #
-    #
-    # # args = ["--alluredir", xml_report_path]
-    #
-    # pytest.main(args)
-    # os.system("allure generate " + html_report_path)
-
-    # itchat.auto_login(hotReload=True)
-    #
-    # friends_name = itchat.search_friends(name='xtest')
-    #
-    # itchat.send('自动化脚本运行完毕', friends_name[0]['UserName'])
-
-
-
-
-    # os.system('allure generate %s -o %s' % (xml_report_path, html_report_path))
-
-    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
-    #
-    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-    #                                         "/report/html --clean")))
-
-
-    # pytest.main("--alluredir ${WORKSPACE}/report")
-    #
-    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
-
-
-        # time.sleep(5)
-        # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
-
-        # git push -u origin master 提交代码到主分支
-
-        # 命令行运行生成报告
-        # cd /Users/xuchen/PycharmProjects/testAuto
-        # py.test test_case --alluredir /Users/xuchen/PycharmProjects/testAuto/report/xml
-        # allure generate /Users/xuchen/PycharmProjects/testAuto/report/xml -o /Users/xuchen/PycharmProjects/testAuto/report/html --clean
