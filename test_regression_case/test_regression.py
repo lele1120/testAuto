@@ -24,8 +24,8 @@ from optparse import OptionParser
 @pytest.fixture(scope='module')
 def d():
     global running_environment
-    # running_environment = sys.argv[1]
-    running_environment = "Y66手机udid"
+    running_environment = sys.argv[1]
+    # running_environment = "Y66手机udid"
     # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app

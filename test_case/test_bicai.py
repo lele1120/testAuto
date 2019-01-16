@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 import os
-import random
 import re
 import time
 import allure
@@ -11,18 +10,17 @@ import yaml
 import uiautomator2 as u2
 from pathlib import Path
 import warnings
-import sys
 import datetime
+import sys
 warnings.filterwarnings("ignore")
-from optparse import OptionParser
 
-#
-# @pytest.hookimpl(tryfirst=True, hookwrapper=True)
+
+
 @pytest.fixture(scope='module')
 def d():
     global running_environment
-    # running_environment = sys.argv[1]
-    running_environment = "Y66手机udid"
+    running_environment = sys.argv[1]
+    # running_environment = "Y66手机udid"
     # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
