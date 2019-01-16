@@ -29,8 +29,6 @@ def d():
     # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
-    # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
-    # d = get_driver_by_key("夜神模拟器udid")   # 输入手机udid启动
     global start_time
     i = datetime.datetime.now()
     # strat_time = "启动时间为  %s/%s/%s" % (i.hour, i.minute, i.second)
@@ -49,9 +47,9 @@ def d():
     d.app_stop("com.bs.finance")
 
 
-@allure.feature("001.启动app后进入比财")
+@allure.feature("01.启动app后进入比财")
 @allure.severity('Critical')
-def test_go_01(d):
+def test_go_main_01(d):
     """
     首次启动app点击进入比财,如果有广告页点击x关闭，
     :param d:
@@ -75,7 +73,7 @@ def test_go_01(d):
         assert_element_exists_save_picture(d, d(text="一键登录").exists, "验证是否有文本为一键登录的控件")
 
 
-@allure.feature("002.比财登录")
+@allure.feature("02.比财登录")
 @allure.severity('Critical')
 def test_login_02(d):
     """
@@ -117,7 +115,7 @@ def test_login_02(d):
         assert_element_exists_save_picture(d, not d(resourceId=get_value("首页一键登录")).exists, "验证是否登录")
 
 
-@allure.feature("003.弹出侧边栏")
+@allure.feature("03.弹出侧边栏")
 @allure.severity('Critical')
 def test_sidebar_eject_03(d):
     """
@@ -1462,7 +1460,7 @@ def test_sidebar_eject_03(d):
 #         click_element(d, "左上角关闭")
 #
 #
-@allure.feature("0049.点击设置")
+@allure.feature("049.点击设置")
 @allure.severity('Critical')
 def test_click_set_up_49(d):
     """
@@ -1675,7 +1673,7 @@ def test_click_set_up_49(d):
 #         click_element(d, "返回icon")
 
 
-@allure.feature("0060.app退出")
+@allure.feature("060.app退出")
 @allure.severity('Critical')
 def test_sign_out_app_60(d):
     """
@@ -1693,6 +1691,24 @@ def test_sign_out_app_60(d):
         assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
 
     display_picture(d, "app退出")
+
+# if __name__ == '__main__':
+#     """
+#     执行所有case并生成报告
+#     """
+#
+#     # xml_report_path = "${WORKSPACE}/report"
+#     # html_report_path = "${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html"
+#
+#     xml_report_path = str(Path(os.path.abspath('.') + "/report/xml"))
+#     html_report_path = str(Path(os.path.abspath('.') + "/report/xml -o " + os.path.abspath('.') +
+#                                 "/report/html --clean"))
+#
+#     # args = ['-q', '/Users/xuchen/PycharmProjects/testAuto/test_case/test_regression_case/test_regression.py', '--maxfail=1', '--alluredir', xml_report_path]
+#     args = ['-q', '/Users/xuchen/PycharmProjects/testAuto/test_regression_case/test_regression.py']
+#
+#     pytest.main(args)
+#     # os.system("allure generate " + html_report_path)
 
 
 
