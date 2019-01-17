@@ -1,6 +1,6 @@
 import time
 
-from test_case.get_test_value_by_yaml import get_driver_by_key
+from TestCase.get_test_value_by_yaml import get_driver_by_key
 
 d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
 d.set_fastinput_ime(True)

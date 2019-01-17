@@ -22,13 +22,15 @@ if __name__ == '__main__':
     # xml_report_path = str(Path(os.path.abspath('.') + "/Report/xml"))
     # html_report_path = str(Path(os.path.abspath('.') + "/Report/xml -o " + os.path.abspath('.') +
     #                             "/Report/html --clean"))
+    #
+    # html_report_path = conf.xml_report_path + " -o " + conf.html_report_path + " --clean"
 
     xml_report_path = conf.xml_report_path
     html_report_path = conf.html_report_path
 
-    args = ['-q', '--maxfail=1', '--alluredir', xml_report_path]
+    args = ['-q', '--maxfail=3', '--alluredir', xml_report_path]
     pytest.main(args)
-    cmd = 'allure generate %s -o %s' % (xml_report_path, html_report_path)
+    cmd = 'allure generate %s -o %s  --clean' % (xml_report_path, html_report_path)
 
     try:
         shell.invoke(cmd)
