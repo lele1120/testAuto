@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/ttt.py" beforeDir="false" afterPath="$PROJECT_DIR$/usage/ttt.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +39,20 @@
       <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="257">
+              <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="46" />
               <folding>
                 <element signature="e#44#53#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -145,6 +152,7 @@
         <option value="$PROJECT_DIR$/Conf/Config.py" />
         <option value="$PROJECT_DIR$/Common/Shell.py" />
         <option value="$PROJECT_DIR$/Common/Log.py" />
+        <option value="$PROJECT_DIR$/Conf/config.ini" />
         <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
@@ -181,25 +189,7 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Shell.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Shell.py" type="8704e2dd:PyFileNode" />
-              <item name="Shell" type="dd8bbb05:PyElementNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="Conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
@@ -218,6 +208,9 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Conf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Params/Param" />
       <recent name="$PROJECT_DIR$/test_regression_case" />
@@ -360,20 +353,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00053" summary="启动app，登录功能编写">
-      <created>1545373687160</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1545373687160</updated>
-    </task>
-    <task id="LOCAL-00054" summary="测试报告截图展示">
-      <created>1545376357540</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1545376357540</updated>
     </task>
     <task id="LOCAL-00055" summary="测试报告截图展示">
       <created>1545376402003</created>
@@ -704,7 +683,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547707245434</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="维护项目结构，添加相应日志模块">
+      <created>1547708975892</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1547708975892</updated>
+    </task>
+    <task id="LOCAL-00103" summary="维护项目结构，添加相应日志模块">
+      <created>1547710879380</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1547710879380</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TodoView">
@@ -719,6 +712,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1522" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063898" side_tool="true" weight="0.28656715" />
@@ -776,7 +770,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="编写修改性别case" />
     <MESSAGE value="添加职业修改case" />
     <MESSAGE value="添加职业后删除" />
     <MESSAGE value="修改地址case添加" />
@@ -801,7 +794,8 @@
     <MESSAGE value="维护获取银行卡数量case" />
     <MESSAGE value="跳转脚本稳定性" />
     <MESSAGE value="添加回归包" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加回归包" />
+    <MESSAGE value="维护项目结构，添加相应日志模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="维护项目结构，添加相应日志模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,13 +803,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Report/html/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="3" column="1489729" selection-start-line="3" selection-start-column="1489729" selection-end-line="3" selection-end-column="1489729" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/venv/testAuto/lib/python3.7/site-packages/itchat/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -970,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Report/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Report/picture/控件未获取到.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1009,10 +989,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Report/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="257">
+          <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="46" />
           <folding>
             <element signature="e#44#53#0" expanded="true" />
           </folding>
