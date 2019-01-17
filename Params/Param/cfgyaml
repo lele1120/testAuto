@@ -96,6 +96,11 @@ element_id:
   银行名称: com.bs.finance:id/tv_name
   晋商弹框: com.bs.finance:id/tv_hint
   晋商弹框确定: com.bs.finance:id/tv_right
+  未开户消息: com.bs.finance:id/tv_world
+  二类户立即开户: com.bs.finance:id/openState
+  去实名认证: com.bs.finance:id/btn_next
+  身份证正面: com.bs.finance:id/iv_front
+  身份证背面: ccom.bs.finance:id/iv_back
 
 user_id:
 # 登录账号

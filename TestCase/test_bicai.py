@@ -16,12 +16,11 @@ import sys
 warnings.filterwarnings("ignore")
 
 
-
 @pytest.fixture(scope='module')
 def d():
     global running_environment
-    running_environment = sys.argv[1]
-    # running_environment = "Y66手机udid"
+    # running_environment = sys.argv[1]
+    running_environment = "Y66手机udid"
     # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
@@ -1393,15 +1392,15 @@ def test_click_share_friend_45(d):
 
     with allure.step("选择要发送的人"):
 
-        d(resourceId="com.tencent.mm:id/lp", text=u"熊出没").click(timeout=10)   # 选择要发送的人
+        d(resourceId="com.tencent.mm:id/pp", text=u"熊出没").click(timeout=10)
 
     with allure.step("点击分享"):
 
-        d(resourceId="com.tencent.mm:id/an3").click(timeout=10)  # 点击分享
+        d(resourceId="com.tencent.mm:id/ayb").click(timeout=10)
 
     with allure.step("点击返回比财"):
 
-        d(resourceId="com.tencent.mm:id/an2").click(timeout=10)  # 返回比财
+        d(resourceId="com.tencent.mm:id/aya").click(timeout=10)  # 返回比财
 
 
 @allure.feature("46.点击分享圈")
@@ -1417,11 +1416,12 @@ def test_click_share_circle_of_friend_46(d):
     with allure.step("点击分享按钮"):
         d(description=u"分享").click(timeout=10)  # 点击分享
 
-    with allure.step("点击发送给朋友"):
+    with allure.step("点击发送到朋友圈"):
         d(description=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
 
-    with allure.step("选择要发送的人"):
-        d(resourceId="com.tencent.mm:id/hg").click(timeout=10)   # 选择要发送的人
+    with allure.step("点击发表"):
+
+        d(resourceId="com.tencent.mm:id/jq").click(timeout=10)
 
 
 @allure.feature("47.签到页查看我的中奖记录")
@@ -1804,7 +1804,7 @@ def get_value(key):
     :param key: 关键字
     :return:无
     """
-    yamlPath = Path(os.path.abspath('.')+"/usage/cfgyaml") # 适用于jenkins持续集成
+    yamlPath = Path(os.path.abspath('.')+"/Params/Param/cfgyaml") # 适用于jenkins持续集成
     # yamlPath = Path(os.path.abspath('..')+"/usage/cfgyaml") # 适用于本地调试持续集成
 
     f = open(yamlPath, 'r', encoding='utf-8')
@@ -1841,8 +1841,8 @@ def get_driver_by_key(key):
 
 
 def save_picture(d, picture_name):
-    # picture_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于jenkins运行
-    picture_url = Path(os.path.abspath('.') + "/report/picture/" + picture_name + ".png")  # 适用于本地调试
+    # picture_url = Path(os.path.abspath('.') + "/Report/picture/" + picture_name + ".png")  # 适用于jenkins运行
+    picture_url = Path(os.path.abspath('.') + "/Report/picture/" + picture_name + ".png")  # 适用于本地调试
     d.screenshot(picture_url)
     return picture_url
 
@@ -1899,12 +1899,12 @@ def pytest_sessionfinish(session, exitstatus):
     """
     # pytest.main("--maxfail=2")  # fail超过两个停止运行
 
-    # xml_report_path = "${WORKSPACE}/report"
-    # html_report_path = "${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html"
+    # xml_report_path = "${WORKSPACE}/Report"
+    # html_report_path = "${WORKSPACE}/Report/xml -o ${WORKSPACE}/Report/html"
 
-    # xml_report_path = str(Path(os.path.abspath('..') + "/report/xml"))
-    # html_report_path = str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-    #                             "/report/html --clean"))
+    # xml_report_path = str(Path(os.path.abspath('..') + "/Report/xml"))
+    # html_report_path = str(Path(os.path.abspath('..') + "/Report/xml -o " + os.path.abspath('..') +
+    #                             "/Report/html --clean"))
     #
     # args = ['-svq', '--maxfail=3', '--alluredir', xml_report_path]
     #
@@ -1925,23 +1925,23 @@ def pytest_sessionfinish(session, exitstatus):
 
     # os.system('allure generate %s -o %s' % (xml_report_path, html_report_path))
 
-    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/report/xml")))
+    # pytest.main("--alluredir " + str(Path(os.path.abspath('..') + "/Report/xml")))
     #
-    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/report/xml -o " + os.path.abspath('..') +
-    #                                         "/report/html --clean")))
+    # os.system("allure generate " + str(Path(os.path.abspath('..') + "/Report/xml -o " + os.path.abspath('..') +
+    #                                         "/Report/html --clean")))
 
 
-    # pytest.main("--alluredir ${WORKSPACE}/report")
+    # pytest.main("--alluredir ${WORKSPACE}/Report")
     #
-    # os.system("allure generate ${WORKSPACE}/report/xml -o ${WORKSPACE}/report/html --clean")
+    # os.system("allure generate ${WORKSPACE}/Report/xml -o ${WORKSPACE}/Report/html --clean")
 
 
         # time.sleep(5)
-        # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/report/html')
+        # os.system('allure open -h 127.0.0.1 -p 8083 /Users/xuchen/PycharmProjects/testAuto/Report/html')
 
         # git push -u origin master 提交代码到主分支
 
         # 命令行运行生成报告
         # cd /Users/xuchen/PycharmProjects/testAuto
-        # py.test test_case --alluredir /Users/xuchen/PycharmProjects/testAuto/report/xml
-        # allure generate /Users/xuchen/PycharmProjects/testAuto/report/xml -o /Users/xuchen/PycharmProjects/testAuto/report/html --clean
+        # py.test TestCase --alluredir /Users/xuchen/PycharmProjects/testAuto/Report/xml
+        # allure generate /Users/xuchen/PycharmProjects/testAuto/Report/xml -o /Users/xuchen/PycharmProjects/testAuto/Report/html --clean
