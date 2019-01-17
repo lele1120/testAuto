@@ -16,8 +16,8 @@ if __name__ == '__main__':
     conf = Config.Config()
     shell = Shell.Shell()
     log = Log.MyLog()
-    # xml_report_path = "${WORKSPACE}/Report"
-    # html_report_path = "${WORKSPACE}/Report/xml -o ${WORKSPACE}/Report/html"
+    xml_report_path = "${WORKSPACE}/Report"
+    html_report_path = "${WORKSPACE}/Report/xml -o ${WORKSPACE}/Report/html"
 
     # xml_report_path = str(Path(os.path.abspath('.') + "/Report/xml"))
     # html_report_path = str(Path(os.path.abspath('.') + "/Report/xml -o " + os.path.abspath('.') +
@@ -25,8 +25,8 @@ if __name__ == '__main__':
     #
     # html_report_path = conf.xml_report_path + " -o " + conf.html_report_path + " --clean"
 
-    xml_report_path = conf.xml_report_path
-    html_report_path = conf.html_report_path
+    # xml_report_path = conf.xml_report_path
+    # html_report_path = conf.html_report_path
 
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path]
     pytest.main(args)
