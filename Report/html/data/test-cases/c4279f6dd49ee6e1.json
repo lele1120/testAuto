@@ -1,0 +1,65 @@
+{
+  "uid" : "c4279f6dd49ee6e1",
+  "name" : "test_sidebar.test_click_card_button_36",
+  "fullName" : "TestCase.test_sidebar.test_click_card_button_36",
+  "historyId" : "66858e902d39e6b740cf92c3faed68d5",
+  "time" : {
+    "start" : 1547775514359,
+    "stop" : 1547775514360,
+    "duration" : 1
+  },
+  "description" : "\n    点击我的钱包银行卡跳转\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击我的钱包银行卡跳转\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "36.点击我的钱包银行卡跳转"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_card_button_36"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4279f6dd49ee6e1.json",
+  "parameterValues" : [ ]
+}

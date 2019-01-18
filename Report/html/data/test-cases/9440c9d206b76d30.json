@@ -1,0 +1,65 @@
+{
+  "uid" : "9440c9d206b76d30",
+  "name" : "test_sidebar.test_click_bicai_wallet_26",
+  "fullName" : "TestCase.test_sidebar.test_click_bicai_wallet_26",
+  "historyId" : "3849068a1af4a7d099985ab7e560a583",
+  "time" : {
+    "start" : 1547775514347,
+    "stop" : 1547775514348,
+    "duration" : 1
+  },
+  "description" : "\n    点击我的钱包跳转\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击我的钱包跳转\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "26.点击我的钱包"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_bicai_wallet_26"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9440c9d206b76d30.json",
+  "parameterValues" : [ ]
+}

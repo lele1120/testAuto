@@ -1,0 +1,65 @@
+{
+  "uid" : "28d24ef687d959de",
+  "name" : "test_sidebar.test_click_call_me_58",
+  "fullName" : "TestCase.test_sidebar.test_click_call_me_58",
+  "historyId" : "eea482af1b5984481d397b167003e974",
+  "time" : {
+    "start" : 1547775522530,
+    "stop" : 1547775522531,
+    "duration" : 1
+  },
+  "description" : "\n    点击联系我们\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击联系我们\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "58.点击联系我们"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_call_me_58"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28d24ef687d959de.json",
+  "parameterValues" : [ ]
+}

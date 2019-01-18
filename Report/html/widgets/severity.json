@@ -1,0 +1,601 @@
+[ {
+  "uid" : "361fb9286555119b",
+  "name" : "test_sidebar.test_click_card_ticket_40",
+  "time" : {
+    "start" : 1547775514364,
+    "stop" : 1547775514364,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "8d5eec17617317a3",
+  "name" : "test_sidebar.test_modify_personalized_signature_15",
+  "time" : {
+    "start" : 1547775514332,
+    "stop" : 1547775514333,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "64e2af729fb3d034",
+  "name" : "test_sidebar.test_login_02",
+  "time" : {
+    "start" : 1547775487816,
+    "stop" : 1547775500579,
+    "duration" : 12763
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5177d4e59a51b102",
+  "name" : "test_sidebar.test_modify_personalized_signature_clear_16",
+  "time" : {
+    "start" : 1547775514333,
+    "stop" : 1547775514334,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "72c8a73ced709fe2",
+  "name" : "test_sidebar.test_click_understand_bicai_41",
+  "time" : {
+    "start" : 1547775514365,
+    "stop" : 1547775514365,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "4f26817e22ec0b9a",
+  "name" : "test_sidebar.test_nickname_click_05",
+  "time" : {
+    "start" : 1547775514317,
+    "stop" : 1547775514318,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "4d0f20ec1a05b39e",
+  "name" : "test_sidebar.test_click_my_concern_content_24",
+  "time" : {
+    "start" : 1547775514345,
+    "stop" : 1547775514345,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "6ce219dd3dc272bb",
+  "name" : "test_sidebar.test_click_business_record_content_30",
+  "time" : {
+    "start" : 1547775514352,
+    "stop" : 1547775514353,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "9b32759303184761",
+  "name" : "test_sidebar.test_click_type_two_accounts_37",
+  "time" : {
+    "start" : 1547775514360,
+    "stop" : 1547775514361,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "ba47e0b98426e972",
+  "name" : "test_sidebar.test_sign_out_app_60",
+  "time" : {
+    "start" : 1547775522533,
+    "stop" : 1547775526142,
+    "duration" : 3609
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c7d4dcac25f1f991",
+  "name" : "test_sidebar.test_click_forget_password_52",
+  "time" : {
+    "start" : 1547775522521,
+    "stop" : 1547775522522,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "3d5be22b9b710d14",
+  "name" : "test_sidebar.test_click_new_version_56",
+  "time" : {
+    "start" : 1547775522527,
+    "stop" : 1547775522528,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "ad3457eb4179404f",
+  "name" : "test_sidebar.test_cash_withdrawal_clickenable_32",
+  "time" : {
+    "start" : 1547775514354,
+    "stop" : 1547775514355,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "8c0a648f99fce9f6",
+  "name" : "test_sidebar.test_click_common_problem_27",
+  "time" : {
+    "start" : 1547775514348,
+    "stop" : 1547775514349,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "e4681a002d91d45f",
+  "name" : "test_sidebar.test_tied_card_click_icon_20",
+  "time" : {
+    "start" : 1547775514339,
+    "stop" : 1547775514340,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "ca0ffbc05fb44bcd",
+  "name" : "test_sidebar.test_click_set_up_49",
+  "time" : {
+    "start" : 1547775514373,
+    "stop" : 1547775522515,
+    "duration" : 8142
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7f4887b693391b5a",
+  "name" : "test_sidebar.test_click_news_push_54",
+  "time" : {
+    "start" : 1547775522524,
+    "stop" : 1547775522525,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "528094ae133949ab",
+  "name" : "test_sidebar.test_click_sign_in_luck_draw_43",
+  "time" : {
+    "start" : 1547775514367,
+    "stop" : 1547775514368,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "7e34d5cb5dc33751",
+  "name" : "test_sidebar.test_check_tied_card_state_19",
+  "time" : {
+    "start" : 1547775514338,
+    "stop" : 1547775514338,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "c4279f6dd49ee6e1",
+  "name" : "test_sidebar.test_click_card_button_36",
+  "time" : {
+    "start" : 1547775514359,
+    "stop" : 1547775514360,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "67e932f99e0275b0",
+  "name" : "test_sidebar.test_logo_click_04",
+  "time" : {
+    "start" : 1547775514315,
+    "stop" : 1547775514316,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "621c5336240c17da",
+  "name" : "test_sidebar.test_phone_number_check_12",
+  "time" : {
+    "start" : 1547775514328,
+    "stop" : 1547775514328,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "8296601592bf3ec6",
+  "name" : "test_sidebar.test_click_look_all_bank_39",
+  "time" : {
+    "start" : 1547775514363,
+    "stop" : 1547775514363,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "9c5c4eb97b8cbefb",
+  "name" : "test_sidebar.test_click_change_password_51",
+  "time" : {
+    "start" : 1547775522519,
+    "stop" : 1547775522520,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "ca4470d40e6163a1",
+  "name" : "test_sidebar.test_click_sign_in_42",
+  "time" : {
+    "start" : 1547775514366,
+    "stop" : 1547775514366,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "59d3cb26b319f67f",
+  "name" : "test_sidebar.test_click_cash_withdrawal_31",
+  "time" : {
+    "start" : 1547775514353,
+    "stop" : 1547775514354,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "565c5d37fa3820e9",
+  "name" : "test_sidebar.test_modify_profession_clear_11",
+  "time" : {
+    "start" : 1547775514326,
+    "stop" : 1547775514327,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "28d24ef687d959de",
+  "name" : "test_sidebar.test_click_call_me_58",
+  "time" : {
+    "start" : 1547775522530,
+    "stop" : 1547775522531,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "b109e20f77765089",
+  "name" : "test_sidebar.test_default_purchase_channel_55",
+  "time" : {
+    "start" : 1547775522525,
+    "stop" : 1547775522526,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "dd5d9f7215aab78e",
+  "name" : "test_sidebar.test_modify_profession_09",
+  "time" : {
+    "start" : 1547775514324,
+    "stop" : 1547775514324,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "517b4d510bed07e4",
+  "name" : "test_sidebar.test_modify_address_13",
+  "time" : {
+    "start" : 1547775514329,
+    "stop" : 1547775514330,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "20f34d5f8a48619b",
+  "name" : "test_sidebar.test_click_bicai_payment_password_management_50",
+  "time" : {
+    "start" : 1547775522517,
+    "stop" : 1547775522518,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "a3af441e17197bda",
+  "name" : "test_sidebar.test_complete_click_06",
+  "time" : {
+    "start" : 1547775514319,
+    "stop" : 1547775514320,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "b0c44b0ca61895fa",
+  "name" : "test_sidebar.test_click_my_winning_record_47",
+  "time" : {
+    "start" : 1547775514371,
+    "stop" : 1547775514372,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "bdf36f1e88355d86",
+  "name" : "test_sidebar.test_sidebar_eject_03",
+  "time" : {
+    "start" : 1547775500581,
+    "stop" : 1547775514313,
+    "duration" : 13732
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b4dd88f82deb2f25",
+  "name" : "test_sidebar.test_cash_withdrawal_clickable_33",
+  "time" : {
+    "start" : 1547775514356,
+    "stop" : 1547775514356,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "977b3206725262a1",
+  "name" : "test_sidebar.test_click_share_circle_of_friend_46",
+  "time" : {
+    "start" : 1547775514370,
+    "stop" : 1547775514371,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "a1e037ca2b31497f",
+  "name" : "test_sidebar.test_check_list_click_21",
+  "time" : {
+    "start" : 1547775514341,
+    "stop" : 1547775514341,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "9440c9d206b76d30",
+  "name" : "test_sidebar.test_click_bicai_wallet_26",
+  "time" : {
+    "start" : 1547775514347,
+    "stop" : 1547775514348,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "323d03f8b28adf20",
+  "name" : "test_sidebar.test_look_activity_rules_44",
+  "time" : {
+    "start" : 1547775514368,
+    "stop" : 1547775514369,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "823cd96a32b63142",
+  "name" : "test_sidebar.test_modify_address_clear_14",
+  "time" : {
+    "start" : 1547775514331,
+    "stop" : 1547775514331,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "2e650b515295270b",
+  "name" : "test_sidebar.test_click_my_news_25",
+  "time" : {
+    "start" : 1547775514346,
+    "stop" : 1547775514347,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "fde6500fb3869db1",
+  "name" : "test_sidebar.test_click_business_record_29",
+  "time" : {
+    "start" : 1547775514351,
+    "stop" : 1547775514352,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "a74f30b7c128d4b2",
+  "name" : "test_sidebar.test_click_privacy_policy_57",
+  "time" : {
+    "start" : 1547775522529,
+    "stop" : 1547775522529,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "c6c984b3161bf7b9",
+  "name" : "test_sidebar.test_click_give_feedback_59",
+  "time" : {
+    "start" : 1547775522531,
+    "stop" : 1547775522532,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "fae36e8dc278ba08",
+  "name" : "test_sidebar.test_cash_withdrawal_clickable__less_than_ten_34",
+  "time" : {
+    "start" : 1547775514357,
+    "stop" : 1547775514357,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "6b7df1f9b771a291",
+  "name" : "test_sidebar.test_modify_profession_icon_10",
+  "time" : {
+    "start" : 1547775514325,
+    "stop" : 1547775514326,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "2cb17f6b6349ef98",
+  "name" : "test_sidebar.test_modify_sex_08",
+  "time" : {
+    "start" : 1547775514322,
+    "stop" : 1547775514323,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "a23402a9301ef0d4",
+  "name" : "test_sidebar.test_click_my_concern_23",
+  "time" : {
+    "start" : 1547775514343,
+    "stop" : 1547775514344,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "b79559471a45defc",
+  "name" : "test_sidebar.test_add_bank_cards_22",
+  "time" : {
+    "start" : 1547775514342,
+    "stop" : 1547775514343,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "b521f3ee6d4d885f",
+  "name" : "test_sidebar.test_nickname_icon_click_07",
+  "time" : {
+    "start" : 1547775514320,
+    "stop" : 1547775514321,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "79d141e336cebfc5",
+  "name" : "test_sidebar.test_check_real_name_authentication_state_17",
+  "time" : {
+    "start" : 1547775514335,
+    "stop" : 1547775514336,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "c26dd1ed19734126",
+  "name" : "test_sidebar.test_click_share_friend_45",
+  "time" : {
+    "start" : 1547775514369,
+    "stop" : 1547775514370,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "2d9e7998a39a7506",
+  "name" : "test_sidebar.test_click_home_page_default_53",
+  "time" : {
+    "start" : 1547775522522,
+    "stop" : 1547775522523,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "a2d37503d505c620",
+  "name" : "test_sidebar.test_click_detailed_28",
+  "time" : {
+    "start" : 1547775514350,
+    "stop" : 1547775514350,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "6a9b33ed871b50c3",
+  "name" : "test_sidebar.test_click_user_survey_48",
+  "time" : {
+    "start" : 1547775514372,
+    "stop" : 1547775514373,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "52e5b420f066abe1",
+  "name" : "test_sidebar.test_real_name_click_icon_18",
+  "time" : {
+    "start" : 1547775514336,
+    "stop" : 1547775514337,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "66891bb7e08b6ba",
+  "name" : "test_sidebar.test_balance_display_hide_35",
+  "time" : {
+    "start" : 1547775514358,
+    "stop" : 1547775514359,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "1c8d1152ae0d0f6a",
+  "name" : "test_sidebar.test_click_not_opening_bank_38",
+  "time" : {
+    "start" : 1547775514361,
+    "stop" : 1547775514362,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "critical"
+}, {
+  "uid" : "5572080165a93e43",
+  "name" : "test_sidebar.test_go_main_01",
+  "time" : {
+    "start" : 1547775473968,
+    "stop" : 1547775487813,
+    "duration" : 13845
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

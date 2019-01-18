@@ -1,0 +1,65 @@
+{
+  "uid" : "621c5336240c17da",
+  "name" : "test_sidebar.test_phone_number_check_12",
+  "fullName" : "TestCase.test_sidebar.test_phone_number_check_12",
+  "historyId" : "b3bf3f8567ae5caf1b58ad9462d7071",
+  "time" : {
+    "start" : 1547775514328,
+    "stop" : 1547775514328,
+    "duration" : 0
+  },
+  "description" : "\n    个人资料手机号与登录账号对比校验\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>个人资料手机号与登录账号对比校验\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "12.手机号校验"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_phone_number_check_12"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "621c5336240c17da.json",
+  "parameterValues" : [ ]
+}

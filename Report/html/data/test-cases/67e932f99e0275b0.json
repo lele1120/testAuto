@@ -1,0 +1,65 @@
+{
+  "uid" : "67e932f99e0275b0",
+  "name" : "test_sidebar.test_logo_click_04",
+  "fullName" : "TestCase.test_sidebar.test_logo_click_04",
+  "historyId" : "746ef28a5502f60deec69493cbc75ae7",
+  "time" : {
+    "start" : 1547775514315,
+    "stop" : 1547775514316,
+    "duration" : 1
+  },
+  "description" : "\n    验证点击侧边栏logo会跳转正确跳到个人资料页，及个人资料页内控件元素存在校验\n    :param d:\n    :return: 无\n    ",
+  "descriptionHtml" : "<pre><code>验证点击侧边栏logo会跳转正确跳到个人资料页，及个人资料页内控件元素存在校验\n:param d:\n:return: 无\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "04.点击侧边栏目logo"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_logo_click_04"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "67e932f99e0275b0.json",
+  "parameterValues" : [ ]
+}

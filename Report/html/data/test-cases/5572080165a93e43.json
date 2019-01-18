@@ -1,0 +1,145 @@
+{
+  "uid" : "5572080165a93e43",
+  "name" : "test_sidebar.test_go_main_01",
+  "fullName" : "TestCase.test_sidebar.test_go_main_01",
+  "historyId" : "9b4a07fda101b4e2fe5b1b17c8df6638",
+  "time" : {
+    "start" : 1547775473968,
+    "stop" : 1547775487813,
+    "duration" : 13845
+  },
+  "description" : "\n    首次启动app点击进入比财,如果有广告页点击x关闭，\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>首次启动app点击进入比财,如果有广告页点击x关闭，\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "启动页点击进入比财",
+      "time" : {
+        "start" : 1547775485392,
+        "stop" : 1547775487406,
+        "duration" : 2014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "如果弹出广告页点x关闭",
+      "time" : {
+        "start" : 1547775487407,
+        "stop" : 1547775487714,
+        "duration" : 307
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "验证启动app点击进入比财是否进入首页",
+      "time" : {
+        "start" : 1547775487714,
+        "stop" : 1547775487812,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6ce37c433652e181",
+      "name" : "Captured stdout setup",
+      "source" : "6ce37c433652e181.txt",
+      "type" : "text/plain",
+      "size" : 32
+    }, {
+      "uid" : "84a25e3645d1b589",
+      "name" : "Captured log setup",
+      "source" : "84a25e3645d1b589.txt",
+      "type" : "text/plain",
+      "size" : 493
+    }, {
+      "uid" : "40c7bcc871ac7e2a",
+      "name" : "Captured stdout call",
+      "source" : "40c7bcc871ac7e2a.txt",
+      "type" : "text/plain",
+      "size" : 53
+    }, {
+      "uid" : "42ec0d25c812a5d2",
+      "name" : "Captured log call",
+      "source" : "42ec0d25c812a5d2.txt",
+      "type" : "text/plain",
+      "size" : 679
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "01.启动app后进入比财"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_go_main_01"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5572080165a93e43.json",
+  "parameterValues" : [ ]
+}

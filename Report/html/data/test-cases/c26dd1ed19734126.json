@@ -1,0 +1,65 @@
+{
+  "uid" : "c26dd1ed19734126",
+  "name" : "test_sidebar.test_click_share_friend_45",
+  "fullName" : "TestCase.test_sidebar.test_click_share_friend_45",
+  "historyId" : "dadd38a3a10b7bdabcd0c9171bc27699",
+  "time" : {
+    "start" : 1547775514369,
+    "stop" : 1547775514370,
+    "duration" : 1
+  },
+  "description" : "\n    点击分享给朋友\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击分享给朋友\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "45.点击分享"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_share_friend_45"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c26dd1ed19734126.json",
+  "parameterValues" : [ ]
+}

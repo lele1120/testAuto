@@ -1,0 +1,65 @@
+{
+  "uid" : "9c5c4eb97b8cbefb",
+  "name" : "test_sidebar.test_click_change_password_51",
+  "fullName" : "TestCase.test_sidebar.test_click_change_password_51",
+  "historyId" : "b7148355b279d352c54c9980ca442764",
+  "time" : {
+    "start" : 1547775522519,
+    "stop" : 1547775522520,
+    "duration" : 1
+  },
+  "description" : "\n    点击修改密码\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击修改密码\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "51.点击修改密码"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_change_password_51"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9c5c4eb97b8cbefb.json",
+  "parameterValues" : [ ]
+}

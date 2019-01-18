@@ -1,0 +1,65 @@
+{
+  "uid" : "fde6500fb3869db1",
+  "name" : "test_sidebar.test_click_business_record_29",
+  "fullName" : "TestCase.test_sidebar.test_click_business_record_29",
+  "historyId" : "5f8682355d40e1609c40724f1cfeb72a",
+  "time" : {
+    "start" : 1547775514351,
+    "stop" : 1547775514352,
+    "duration" : 1
+  },
+  "description" : "\n    切换交易明细页，日期图标被隐藏\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>切换交易明细页，日期图标被隐藏\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "29.点击交易记录"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_business_record_29"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fde6500fb3869db1.json",
+  "parameterValues" : [ ]
+}

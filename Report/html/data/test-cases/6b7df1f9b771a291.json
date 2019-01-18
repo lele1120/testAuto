@@ -1,0 +1,65 @@
+{
+  "uid" : "6b7df1f9b771a291",
+  "name" : "test_sidebar.test_modify_profession_icon_10",
+  "fullName" : "TestCase.test_sidebar.test_modify_profession_icon_10",
+  "historyId" : "21090ad93ac8d326e02aff2a00df903",
+  "time" : {
+    "start" : 1547775514325,
+    "stop" : 1547775514326,
+    "duration" : 1
+  },
+  "description" : "\n    修改职业后点击返回icon\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>修改职业后点击返回icon\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "10.修改职业点击返回icon"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_modify_profession_icon_10"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6b7df1f9b771a291.json",
+  "parameterValues" : [ ]
+}

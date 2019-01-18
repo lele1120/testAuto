@@ -12,8 +12,8 @@ from pathlib import Path
 import random
 import warnings
 import datetime
+from Common import Consts
 import sys
-warnings.filterwarnings("ignore")
 
 
 @pytest.fixture(scope='module')
@@ -23,12 +23,8 @@ def d():
     running_environment = "Y66手机udid"
     # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
-    # d = get_driver_by_key("Y66手机ip")   # 输入手机ip启动app
-    # d = get_driver_by_key("Y66手机udid")   # 输入手机udid启动
-    # d = get_driver_by_key("夜神模拟器udid")   # 输入手机udid启动
     global start_time
     i = datetime.datetime.now()
-    # strat_time = "启动时间为  %s/%s/%s" % (i.hour, i.minute, i.second)
     strat_time = "启动时间为  %s时%s分%s秒" % (i.hour, i.minute, i.second)
     global now_date
     now_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
@@ -44,6 +40,7 @@ def d():
     d.app_stop("com.bs.finance")
 
 
+@pytest.allure.feature('Home')
 @allure.feature("01.启动app后进入比财")
 @allure.severity('Critical')
 def test_go_main_01(d):
@@ -71,7 +68,10 @@ def test_go_main_01(d):
 
         assert_element_exists_save_picture(d, d(text="一键登录").exists, "验证是否有文本为一键登录的控件")
 
+    Consts.RESULT_LIST.append('True')
 
+
+@pytest.allure.feature('Home')
 @allure.feature("02.比财登录")
 @allure.severity('Critical')
 def test_login_02(d):
@@ -113,7 +113,10 @@ def test_login_02(d):
     with allure.step("验证是否登录成功"):
         assert_element_exists_save_picture(d, not d(resourceId=get_value("首页一键登录")).exists, "验证是否登录")
 
+    Consts.RESULT_LIST.append('True')
 
+
+@pytest.allure.feature('Home')
 @allure.feature("03.弹出侧边栏")
 @allure.severity('Critical')
 def test_sidebar_eject_03(d):
@@ -138,6 +141,8 @@ def test_sidebar_eject_03(d):
     with allure.step("验证账号为已登录状态，账号为" + USER_ID):
         user_id = d(resourceId=get_value("侧边栏账号")).get_text()
         assert_equal_save_picture(d, user_id, USER_ID.replace((USER_ID[3:7]), "****"), "账号" + USER_ID + "已登录状态")
+
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("04.点击侧边栏目logo")
@@ -164,6 +169,8 @@ def test_logo_click_04(d):
     for i in range(personal_data.__len__()):
         assert_element_exists_save_picture(d, d(text=personal_data[i]).exists, "控件" + personal_data[i] + "存在")
 
+    Consts.RESULT_LIST.append('True')
+
 
 @allure.feature("05.点击昵称进入修改页")
 @allure.severity('Critical')
@@ -180,6 +187,7 @@ def test_nickname_click_05(d):
         assert_title(d, "修改昵称")  # 验证是否跳转成功
 
     display_picture(d, "修改昵称页")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("06.修改昵称页修改昵称点击完成")
@@ -209,6 +217,7 @@ def test_complete_click_06(d):
     input_element(d, "昵称文本框", USER_ID.replace((USER_ID[3:7]), "****"))
 
     click_element(d, "完成按钮")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("07.修改昵称页点击返回icon")
@@ -236,6 +245,7 @@ def test_nickname_icon_click_07(d):
 
     with allure.step("验证昵称不会被修改"):
         assert_equal_save_picture(d, d(resourceId=get_value("个人资料昵称")).get_text(), USER_ID.replace((USER_ID[3:7]), "****"), "昵称未做修改")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("08.修改性别")
@@ -267,6 +277,7 @@ def test_modify_sex_08(d):
             assert_equal_save_picture(d, modify_sex_text, "男", "性别修改为男")
         else:
             print("无此选项")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("09.修改职业")
@@ -305,7 +316,7 @@ def test_modify_profession_09(d):
             assert_equal_save_picture(d, modify_profession_display, "测试", "职业修改")
         else:
             assert_equal_save_picture(d, modify_profession_display, "码农", "职业修改")
-
+    Consts.RESULT_LIST.append('True')
 
 @allure.feature("10.修改职业点击返回icon")
 @allure.severity('Critical')
@@ -342,6 +353,7 @@ def test_modify_profession_icon_10(d):
             assert_equal_save_picture(d, modify_profession_display, "码农", "职业未做修改")
         else:
             assert_equal_save_picture(d, modify_profession_display, "测试", "职业未做修改")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("11.修改职业输入框输入内容点击取消")
@@ -386,6 +398,7 @@ def test_modify_profession_clear_11(d):
             assert modify_profession_display is None
 
     click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("12.手机号校验")
@@ -398,6 +411,7 @@ def test_phone_number_check_12(d):
     """
     with allure.step("手机号检查"):
         assert_equal_save_picture(d, USER_ID, d(resourceId=get_value("手机号")).get_text(), "个人资料手机号与登录账号对比")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("13.所在地修改")
@@ -477,6 +491,8 @@ def test_modify_address_13(d):
             assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "北京朝阳区三环到四环之间", "地址修改")
         else:
             assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "上海徐汇区城区", "地址修改")
+
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("14.修改所在地点击返回icon")
@@ -558,6 +574,8 @@ def test_modify_address_clear_14(d):
         else:
             assert_equal_save_picture(d, modify_address_text.replace(' ', ''), "上海徐汇区城区", "点击返回icon居住地址校验")
 
+    Consts.RESULT_LIST.append('True')
+
 
 @allure.feature("15.修改个性签名")
 @allure.severity('Critical')
@@ -608,6 +626,7 @@ def test_modify_personalized_signature_15(d):
                                       "噜起袖子加油干一张蓝图绘到底", "修改个性签名")
 
     click_element(d, "完成")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("16.修改个性签名后点击返回icon")
@@ -652,6 +671,7 @@ def test_modify_personalized_signature_clear_16(d):
     click_element(d, "返回icon")
 
     click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("17.验证实名状态")
@@ -679,6 +699,7 @@ def test_check_real_name_authentication_state_17(d):
             assert_title(d, "身份证认证")
 
             display_picture(d, "用户未实名")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("18.实名认证页返回icon点击")
@@ -693,6 +714,7 @@ def test_real_name_click_icon_18(d):
         click_element(d, "返回icon")
 
     display_picture(d, "实名认证页面点击返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("19.验证绑卡状态")
@@ -741,6 +763,7 @@ def test_check_tied_card_state_19(d):
         elif Real_Name_Authentication == "未认证":
 
             assert_title(d, "身份证认证")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("20.绑定银行卡页icon点击")
@@ -755,6 +778,7 @@ def test_tied_card_click_icon_20(d):
         click_element(d, "返回icon")
 
     display_picture(d, "实名认证页面点击返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("21.已实名中点击查看榜单返回app首页")
@@ -779,6 +803,7 @@ def test_check_list_click_21(d):
             print("用户未实名")
             click_element(d, "返回icon")
             pass
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("22.添加银行卡")
@@ -836,6 +861,7 @@ def test_add_bank_cards_22(d):
 
         else:
             print("用户未实名认证")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("23.点击我的关注")
@@ -858,6 +884,7 @@ def test_click_my_concern_23(d):
         with allure.step("校验我的关注内容"):
             for i in range(product_type.__len__()):
                 assert_element_exists_save_picture(d, d(text=product_type[i]).exists, "校验我的关注内容")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("24.验证关注内内容")
@@ -899,6 +926,7 @@ def test_click_my_concern_content_24(d):
                     click_element(d, "返回icon")
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("25.点击我的消息")
@@ -929,6 +957,8 @@ def test_click_my_news_25(d):
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
 
+    Consts.RESULT_LIST.append('True')
+
 
 @allure.feature("26.点击我的钱包")
 @allure.severity('Critical')
@@ -943,6 +973,7 @@ def test_click_bicai_wallet_26(d):
     with allure.step("点击我的钱包"):
         click_element_with_text(d, "我的钱包", "我的钱包")
         assert_title(d, "我的钱包")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("27.点击常见问题")
@@ -958,6 +989,7 @@ def test_click_common_problem_27(d):
         click_element(d, "常见问题")
         assert_title(d, "常见问题")
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("28.点击明细")
@@ -978,6 +1010,7 @@ def test_click_detailed_28(d):
 
     with allure.step("日期图标显示"):
         assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标显示")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("29.点击交易记录")
@@ -998,6 +1031,7 @@ def test_click_business_record_29(d):
 
     with allure.step("日期图标显示"):
         assert_element_exists_save_picture(d,not d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标隐藏")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("30.点击交易记录页内容")
@@ -1021,6 +1055,7 @@ def test_click_business_record_content_30(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("31.点击提现")
@@ -1041,6 +1076,7 @@ def test_click_cash_withdrawal_31(d):
         balance_text = d(resourceId="com.bs.finance:id/wallet_get_cash_tv_money_tip").get_text()
         balance = re.findall(r'-?\d+\.?\d*e?-?\d*?', balance_text)
         print("可提现余额：" + str(balance[0]))
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("32.验证进入提现页提现按钮默认不可点")
@@ -1054,6 +1090,7 @@ def test_cash_withdrawal_clickenable_32(d):
     with allure.step("验证进入提现页提现按钮默认不可点"):
         assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
                                            "提现按钮默认不可点")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("33.验证输入大于等于10元提现金额按钮可点击")
@@ -1072,6 +1109,7 @@ def test_cash_withdrawal_clickable_33(d):
             input_element(d, "余额提现页金额输入框", str(input_money))
             assert_element_exists_save_picture(d, d(resourceId=get_value("提现按钮")).info["clickable"],
                                                "余额和提现金额大于10提现按钮可点击")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("34.验证输入小等10元提现金额按钮不可点击")
@@ -1088,6 +1126,7 @@ def test_cash_withdrawal_clickable__less_than_ten_34(d):
                                            "余额提现金额小于10提现不可点")
 
     click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("35.账户余额隐藏显示状态校验")
@@ -1128,7 +1167,7 @@ def test_balance_display_hide_35(d):
 
     with allure.step("金额显示/隐藏状态对比"):
         assert_equal_save_picture(d, remaining_sum_type, change_remaining_sum_type, "金额显示/隐藏状态对比")
-
+    Consts.RESULT_LIST.append('True')
 
 @allure.feature("36.点击我的钱包银行卡跳转")
 @allure.severity('Critical')
@@ -1148,6 +1187,7 @@ def test_click_card_button_36(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("37.点击II类户跳转")
@@ -1177,6 +1217,7 @@ def test_click_type_two_accounts_37(d):
 
     with allure.step("校验是否跳转成功"):
         assert_title(d, "II类户")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("38.点击未开户")
@@ -1208,6 +1249,7 @@ def test_click_not_opening_bank_38(d):
                     assert_title(d, "II类户")
                     # click_element(d, "返回icon")
                     # assert_title(d, "我的钱包")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("39.点击查看全部银行")
@@ -1228,6 +1270,7 @@ def test_click_look_all_bank_39(d):
         click_element(d, "底部导航栏（比财）")
         click_element(d, "首页左上角图标")
         click_element_with_text(d, "我的钱包", "我的钱包")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("40.点击卡券跳转到卡券页")
@@ -1248,6 +1291,7 @@ def test_click_card_ticket_40(d):
         assert_title(d, "我的钱包")
 
     click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("41.点击关于我们")
@@ -1271,6 +1315,7 @@ def test_click_understand_bicai_41(d):
         d(description=u"安全说明").click(timeout=10)
 
     click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("42.点击签到")
@@ -1299,6 +1344,7 @@ def test_click_sign_in_42(d):
         # 需要添加 查找当天数据 没查到向下滑动 再查 获取当天记录对比
         # sign_in_state = d(className="android.view.View")[29].info['contentDescription']
         # assert_equal_save_picture(d, sign_in_state, "今日已签到", "签到")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("43.签到抽奖校验")
@@ -1346,12 +1392,9 @@ def test_click_sign_in_luck_draw_43(d):
                                                                             className="android.view.View").exists, "返回签到页")
                             break
 
-        print("该用户已抽奖")
+    print("该用户已抽奖")
 
-        # with allure.step("向下滑动，点击活动规则"):
-        #     d(scrollable=True).scroll.vert.backward()
-        #
-        #     time.sleep(2)
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("44.查看活动规则")
@@ -1372,6 +1415,7 @@ def test_look_activity_rules_44(d):
 
     with allure.step("点击活动规则关闭"):
         d(className="android.view.View", instance=1).click(timeout=10)
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("45.点击分享")
@@ -1401,6 +1445,7 @@ def test_click_share_friend_45(d):
     with allure.step("点击返回比财"):
 
         d(resourceId="com.tencent.mm:id/aya").click(timeout=10)  # 返回比财
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("46.点击分享圈")
@@ -1422,6 +1467,7 @@ def test_click_share_circle_of_friend_46(d):
     with allure.step("点击发表"):
 
         d(resourceId="com.tencent.mm:id/jq").click(timeout=10)
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("47.签到页查看我的中奖记录")
@@ -1445,6 +1491,7 @@ def test_click_my_winning_record_47(d):
 
     with allure.step("点击我的中奖记录"):
         click_element(d, "左上角关闭")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("48.点击用户调研")
@@ -1461,8 +1508,10 @@ def test_click_user_survey_48(d):
 
     with allure.step("点击左上角关闭"):
         click_element(d, "左上角关闭")
+    Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Home')
 @allure.feature("49.点击设置")
 @allure.severity('Critical')
 def test_click_set_up_49(d):
@@ -1479,6 +1528,7 @@ def test_click_set_up_49(d):
 
     with allure.step("title校验"):
         assert_title(d, "设置")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("50.点击比财支付密码管理")
@@ -1495,6 +1545,7 @@ def test_click_bicai_payment_password_management_50(d):
 
     with allure.step("title校验"):
         assert_title(d, "密码管理")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("51.点击修改密码")
@@ -1517,6 +1568,7 @@ def test_click_change_password_51(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("52.点击忘记密码")
@@ -1543,6 +1595,7 @@ def test_click_forget_password_52(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("53.点击首页默认")
@@ -1565,6 +1618,7 @@ def test_click_home_page_default_53(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("54.消息推送提醒")
@@ -1580,6 +1634,7 @@ def test_click_news_push_54(d):
 
     with allure.step("关闭消息推送提醒"):
         click_element(d, "消息推送提醒")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("55.默认安全购买渠道设置")
@@ -1602,6 +1657,7 @@ def test_default_purchase_channel_55(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("56.点击版本更新说明")
@@ -1621,6 +1677,7 @@ def test_click_new_version_56(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("57.点击隐私政策")
@@ -1639,6 +1696,7 @@ def test_click_privacy_policy_57(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("58.点击联系我们")
@@ -1657,6 +1715,7 @@ def test_click_call_me_58(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
 @allure.feature("59.点击意见反馈")
@@ -1675,8 +1734,10 @@ def test_click_give_feedback_59(d):
 
     with allure.step("点击返回icon"):
         click_element(d, "返回icon")
+    Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Home')
 @allure.feature("60.app退出")
 @allure.severity('Critical')
 def test_sign_out_app_60(d):
@@ -1698,6 +1759,7 @@ def test_sign_out_app_60(d):
         assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
 
     display_picture(d, "app退出")
+    Consts.RESULT_LIST.append('True')
 
 
 def click_element(d, element_name):

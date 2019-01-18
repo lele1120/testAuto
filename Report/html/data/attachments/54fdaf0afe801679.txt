@@ -1,0 +1,10 @@
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 279
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 92
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 89
+connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /jsonrpc/0 HTTP/1.1" 200 93

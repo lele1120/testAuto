@@ -1,0 +1,9 @@
+<ns0:environment xmlns:ns0="urn:model.commons.qatools.yandex.ru">
+  <id>e3440c58-aeaa-4d35-97e7-7426a98b8535</id>
+  <name>Allure environment parameters</name>
+  <parameter>
+    <key>使用连接方式</key>
+    <name>使用连接方式</name>
+    <value>Y66手机udid:d5ddd4f7</value>
+  </parameter>
+</ns0:environment>

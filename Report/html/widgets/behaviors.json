@@ -1,0 +1,114 @@
+{
+  "total" : 61,
+  "items" : [ {
+    "uid" : "70cf6719a6b21834f4828bfc81908b89",
+    "name" : "Home",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "48e614ba46e49c9e15701025bdc91a97",
+    "name" : "01.启动app后进入比财",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "a16365db6f4a21eef86847772508c600",
+    "name" : "02.比财登录",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "923cb436607b9b46cee87f46cdac91b1",
+    "name" : "03.弹出侧边栏",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4225324b6f2bb265fb7e30d065d339b9",
+    "name" : "49.点击设置",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "7ec8ebd0bc83c20942fe9f917c10c768",
+    "name" : "60.app退出",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "7ee2a2f8214c50f1f115e6c44bdabdac",
+    "name" : "04.点击侧边栏目logo",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "f2293d824db32f1ceeb35d2cebd56f32",
+    "name" : "05.点击昵称进入修改页",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "aff2290c39ef4b2830b5d76b8bb33f7a",
+    "name" : "06.修改昵称页修改昵称点击完成",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "295cdddf6af7830f8ab41a865ce49f61",
+    "name" : "07.修改昵称页点击返回icon",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

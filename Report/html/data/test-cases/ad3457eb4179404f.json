@@ -1,0 +1,65 @@
+{
+  "uid" : "ad3457eb4179404f",
+  "name" : "test_sidebar.test_cash_withdrawal_clickenable_32",
+  "fullName" : "TestCase.test_sidebar.test_cash_withdrawal_clickenable_32",
+  "historyId" : "a900ea509740bd482a5a4796c03ce5d4",
+  "time" : {
+    "start" : 1547775514354,
+    "stop" : 1547775514355,
+    "duration" : 1
+  },
+  "description" : "\n    验证页面跳转后提现按钮不可点击\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>验证页面跳转后提现按钮不可点击\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "32.验证进入提现页提现按钮默认不可点"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_cash_withdrawal_clickenable_32"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad3457eb4179404f.json",
+  "parameterValues" : [ ]
+}

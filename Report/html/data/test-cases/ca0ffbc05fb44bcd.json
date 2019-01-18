@@ -1,0 +1,118 @@
+{
+  "uid" : "ca0ffbc05fb44bcd",
+  "name" : "test_sidebar.test_click_set_up_49",
+  "fullName" : "TestCase.test_sidebar.test_click_set_up_49",
+  "historyId" : "968bfc190cc08f1e36278d8db66f4c08",
+  "time" : {
+    "start" : 1547775514373,
+    "stop" : 1547775522515,
+    "duration" : 8142
+  },
+  "description" : "\n    点击设置\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击设置\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击设置",
+      "time" : {
+        "start" : 1547775514374,
+        "stop" : 1547775521047,
+        "duration" : 6673
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "title校验",
+      "time" : {
+        "start" : 1547775521047,
+        "stop" : 1547775522514,
+        "duration" : 1467
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "de02377c5c8b719d",
+      "name" : "Captured stdout call",
+      "source" : "de02377c5c8b719d.txt",
+      "type" : "text/plain",
+      "size" : 73
+    }, {
+      "uid" : "54fdaf0afe801679",
+      "name" : "Captured log call",
+      "source" : "54fdaf0afe801679.txt",
+      "type" : "text/plain",
+      "size" : 970
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "49.点击设置"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_set_up_49"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ca0ffbc05fb44bcd.json",
+  "parameterValues" : [ ]
+}

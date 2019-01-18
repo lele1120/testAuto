@@ -1,0 +1,65 @@
+{
+  "uid" : "361fb9286555119b",
+  "name" : "test_sidebar.test_click_card_ticket_40",
+  "fullName" : "TestCase.test_sidebar.test_click_card_ticket_40",
+  "historyId" : "e04fb35a90a6a1d35c5d4c7b1d4c0470",
+  "time" : {
+    "start" : 1547775514364,
+    "stop" : 1547775514364,
+    "duration" : 0
+  },
+  "description" : "\n    点击卡券跳转到卡券页\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击卡券跳转到卡券页\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "40.点击卡券跳转到卡券页"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_card_ticket_40"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "361fb9286555119b.json",
+  "parameterValues" : [ ]
+}

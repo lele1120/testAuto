@@ -1,0 +1,65 @@
+{
+  "uid" : "8d5eec17617317a3",
+  "name" : "test_sidebar.test_modify_personalized_signature_15",
+  "fullName" : "TestCase.test_sidebar.test_modify_personalized_signature_15",
+  "historyId" : "82c4474da990d19d6e18d5144c3d3841",
+  "time" : {
+    "start" : 1547775514332,
+    "stop" : 1547775514333,
+    "duration" : 1
+  },
+  "description" : "\n    修改个性签名\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>修改个性签名\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "15.修改个性签名"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_modify_personalized_signature_15"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8d5eec17617317a3.json",
+  "parameterValues" : [ ]
+}

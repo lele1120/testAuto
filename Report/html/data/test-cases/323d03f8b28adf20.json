@@ -1,0 +1,65 @@
+{
+  "uid" : "323d03f8b28adf20",
+  "name" : "test_sidebar.test_look_activity_rules_44",
+  "fullName" : "TestCase.test_sidebar.test_look_activity_rules_44",
+  "historyId" : "610c2e9a1bfb6ad65a4a680194aab2fb",
+  "time" : {
+    "start" : 1547775514368,
+    "stop" : 1547775514369,
+    "duration" : 1
+  },
+  "description" : "\n    查看活动规则\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>查看活动规则\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "44.查看活动规则"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_look_activity_rules_44"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "323d03f8b28adf20.json",
+  "parameterValues" : [ ]
+}

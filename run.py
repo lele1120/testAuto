@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
+
 # @Author  : XuChen
-import os
-from pathlib import Path
+# encoding=utf8
 
 from Common import Log
 from Conf import Config
 from Common import Shell
 import pytest
+from Common import Email
 
 
 if __name__ == '__main__':
@@ -16,27 +16,17 @@ if __name__ == '__main__':
     conf = Config.Config()
     shell = Shell.Shell()
     log = Log.MyLog()
-    # xml_report_path = "${WORKSPACE}/Report"
-    # html_report_path = "${WORKSPACE}/Report/xml -o ${WORKSPACE}/Report/html"
-
-    # xml_report_path = str(Path(os.path.abspath('.') + "/Report/xml"))
-    # html_report_path = str(Path(os.path.abspath('.') + "/Report/xml -o " + os.path.abspath('.') +
-    #                             "/Report/html --clean"))
-    #
-    # html_report_path = conf.xml_report_path + " -o " + conf.html_report_path + " --clean"
+    log.info('初始化配置文件, path=' + conf.conf_path)
 
     xml_report_path = conf.xml_report_path
     html_report_path = conf.html_report_path
 
-    args = ['-q', '--maxfail=3', '--alluredir', xml_report_path]
+    # 定义测试集
+    allure_list = '--allure_features=Home'
+
+    args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (xml_report_path, html_report_path)
-
-    print("-------------------------")
-    print(xml_report_path)
-    print("-------------------------")
-    print(html_report_path)
-    print("-------------------------")
 
     try:
         shell.invoke(cmd)
@@ -44,7 +34,11 @@ if __name__ == '__main__':
         log.error('执行用例失败，请检查环境配置')
         raise
 
-    # args = ['-q', '--maxfail=1', '--alluredir', xml_report_path]
-    #
-    # pytest.main(args)
-    # os.system("allure generate " + html_report_path)
+    try:
+        mail = Email.SendMail()
+        mail.sendMail()
+    except:
+        log.error('发送邮件失败，请检查邮件配置')
+        raise
+
+

@@ -1,0 +1,65 @@
+{
+  "uid" : "20f34d5f8a48619b",
+  "name" : "test_sidebar.test_click_bicai_payment_password_management_50",
+  "fullName" : "TestCase.test_sidebar.test_click_bicai_payment_password_management_50",
+  "historyId" : "e0f1a2cb2cda8ee667ff5cacc8cb9d92",
+  "time" : {
+    "start" : 1547775522517,
+    "stop" : 1547775522518,
+    "duration" : 1
+  },
+  "description" : "\n    点击比财支付密码管理\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>点击比财支付密码管理\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "50.点击比财支付密码管理"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_click_bicai_payment_password_management_50"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "20f34d5f8a48619b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,65 @@
+{
+  "uid" : "dd5d9f7215aab78e",
+  "name" : "test_sidebar.test_modify_profession_09",
+  "fullName" : "TestCase.test_sidebar.test_modify_profession_09",
+  "historyId" : "14767605cda80d00c7164b555e29f61",
+  "time" : {
+    "start" : 1547775514324,
+    "stop" : 1547775514324,
+    "duration" : 0
+  },
+  "description" : "\n    修改职业，如果是测试就修改为码农，如果是码农就修改为测试，并校验\n    :param d:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>修改职业，如果是测试就修改为码农，如果是码农就修改为测试，并校验\n:param d:\n:return:\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "09.修改职业"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "xuchendeMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "thread",
+    "value" : "988-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "TestCase"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCase"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_sidebar.test_modify_profession_09"
+  }, {
+    "name" : "package",
+    "value" : "TestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dd5d9f7215aab78e.json",
+  "parameterValues" : [ ]
+}
