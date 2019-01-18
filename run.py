@@ -5,6 +5,7 @@ from Common import Log, Consts
 from Conf import Config
 from Common import Shell
 import pytest
+
 from Common import Email
 
 
@@ -20,9 +21,15 @@ if __name__ == '__main__':
     xml_report_path = conf.xml_report_path
     html_report_path = conf.html_report_path
 
+    print("=========================")
+    print(xml_report_path)
+    print("=========================")
+    print(html_report_path)
+    print("=========================")
+
     # 定义测试集
-    # allure_list = '--allure_features=Home,Personal'
-    allure_list = '--allure_features=Home'
+    allure_list = '--allure_features=Home,Personal'
+    # allure_list = '--allure_features=Home'
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (xml_report_path, html_report_path)
@@ -45,7 +52,7 @@ if __name__ == '__main__':
             log.error('发送邮件失败，请检查邮件配置')
             raise
 
-    elif error_number == 0:
+    elif test_body.__len__() is not 0 and error_number == 0:
 
         print("全部通过")
 

@@ -27,8 +27,8 @@ action = Operate.Operation()
 @pytest.fixture(scope='module')
 def d():
     global running_environment
-    # running_environment = sys.argv[1]
-    running_environment = "Y66手机udid"
+    running_environment = sys.argv[1]
+    # running_environment = "Y66手机udid"
     # running_environment = "Y66手机ip"
     d = get_driver_by_key(running_environment)  # 输入参数启动
     global start_time
@@ -325,7 +325,7 @@ def test_modify_profession_09(d):
         action.click_element(d, "职业")
 
     with allure.step("验证跳转职业修改页title"):
-        action.test.assert_title(d, "职业")
+        test.assert_title(d, "职业")
 
     modify_profession_text = d(resourceId=get_value("职业文本")).get_text()
 
