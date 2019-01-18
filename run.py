@@ -1,6 +1,5 @@
-
+# -*- coding: utf-8 -*-
 # @Author  : XuChen
-# encoding=utf8
 
 from Common import Log, Consts
 from Conf import Config
@@ -17,14 +16,13 @@ if __name__ == '__main__':
     shell = Shell.Shell()
     log = Log.MyLog()
     log.info('初始化配置文件, path=' + conf.conf_path)
-
+    test_run_path = conf.run_path
     xml_report_path = conf.xml_report_path
     html_report_path = conf.html_report_path
 
     # 定义测试集
     # allure_list = '--allure_features=Home,Personal'
     allure_list = '--allure_features=Home'
-
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (xml_report_path, html_report_path)
@@ -37,19 +35,23 @@ if __name__ == '__main__':
 
     test_body = Consts.TEST_LIST
     result_body = Consts.RESULT_LIST
+    error_number = test_body.__len__() - result_body.__len__()
+    if error_number > 0:
 
-    # if test_body.__len__() - result_body.__len__() > 0:
+        try:
+            mail = Email.SendMail()
+            mail.sendMail()
+        except:
+            log.error('发送邮件失败，请检查邮件配置')
+            raise
 
-    try:
-        mail = Email.SendMail()
-        mail.sendMail()
-    except:
-        log.error('发送邮件失败，请检查邮件配置')
-        raise
+    elif error_number == 0:
 
-    # elif test_body.__len__() - result_body.__len__() == 0:
-    #     print("全部通过")
-    # else:
-    #     print("计算错误请查看代码")
+        print("全部通过")
+
+    else:
+
+        print("计算错误请查看代码")
+
 
 

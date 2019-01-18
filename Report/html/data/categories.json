@@ -1,41 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "UiObjectNotFoundError: -32002 Server error: <Selector [resourceId='com.bs.finance:id/go_main']> data: ",
-      "children" : [ {
-        "name" : "test_sidebar.test_go_main_01",
-        "uid" : "2e26d7b5bdccc8f9",
-        "parentUid" : "1bffd5cd33430036804e60028d555494",
-        "status" : "failed",
-        "time" : {
-          "start" : 1547780828019,
-          "stop" : 1547780873588,
-          "duration" : 45569
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "1bffd5cd33430036804e60028d555494"
-    }, {
-      "name" : "UiObjectNotFoundError: -32002 Server error: <Selector [resourceId='com.bs.finance:id/tv_gologin']> data: ",
-      "children" : [ {
-        "name" : "test_sidebar.test_login_02",
-        "uid" : "ebebd032188ca82d",
-        "parentUid" : "2a42f3a7b34685bb85bd3e9c1164959b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1547780873590,
-          "stop" : 1547780907624,
-          "duration" : 34034
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "2a42f3a7b34685bb85bd3e9c1164959b"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }

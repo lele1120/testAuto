@@ -3,14 +3,55 @@
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conf/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conf/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/Config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/修改昵称页.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/修改昵称页.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/用户已实名.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/用户已实名.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/categories.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/categories-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/categories-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/app退出.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/修改昵称页.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/控件未获取到.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/有关注2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/有关注4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/添加银行卡.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/用户已实名.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/xml/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/xml/environment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/report/html/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCase/test_sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_sidebar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/aaa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/h5location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/itchat.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/lianxi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/logintt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usage/ttt.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +61,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1547780827455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1547791317025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$tt.coverage" NAME="tt Coverage Results" MODIFIED="1541752358942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
+    <SUITE FILE_PATH="coverage/testAuto$params.coverage" NAME="params Coverage Results" MODIFIED="1547787974767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Params" />
     <SUITE FILE_PATH="coverage/testAuto$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1541748507868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_interface.coverage" NAME="test_interface Coverage Results" MODIFIED="1541658906799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1545220881530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
@@ -44,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="188">
+              <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding>
                 <element signature="e#38#68#0" expanded="true" />
               </folding>
@@ -59,8 +101,8 @@
       <file leaf-file-name="Config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="127">
+              <caret line="38" column="39" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="39" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
               </folding>
@@ -68,36 +110,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+      <file leaf-file-name="test_sidebar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="72">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
+      <file leaf-file-name="Operate.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Common/Operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1634">
-              <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Log/log.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-1079" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Email.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Email.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+            <state relative-caret-position="57">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,12 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find>save</find>
-      <find>..</find>
-      <find>05</find>
-      <find>xc手机号</find>
-      <find>24</find>
       <find>get_text()</find>
       <find>com.bs.finance:id/iv_front</find>
       <find>USER_ID</find>
@@ -126,7 +146,6 @@
       <find>44</find>
       <find>d(resourceId=&quot;com.tencent.m</find>
       <find>选择要发送的人</find>
-      <find>get_driver_by_key</find>
       <find>path_dir</find>
       <find />
       <find>stress_body</find>
@@ -143,11 +162,19 @@
       <find>host</find>
       <find>VALUE_HOST</find>
       <find>private_debug</find>
+      <find>self.config</find>
+      <find />
+      <find>action.action.display_picture</find>
+      <find />
+      <find>allure.attach(picture_name</find>
+      <find>display_picture</find>
+      <find>get_driver_by_key</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>关于我们</replace>
       <replace>我的钱包</replace>
+      <replace>action.display_picture</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/test_case</dir>
@@ -195,13 +222,16 @@
         <option value="$PROJECT_DIR$/TestCase/test_bicai.py" />
         <option value="$PROJECT_DIR$/Common/Shell.py" />
         <option value="$PROJECT_DIR$/Common/Log.py" />
-        <option value="$PROJECT_DIR$/Conf/Config.py" />
         <option value="$PROJECT_DIR$/usage/aaa.py" />
-        <option value="$PROJECT_DIR$/Common/Consts.py" />
-        <option value="$PROJECT_DIR$/TestCase/test_sidebar.py" />
         <option value="$PROJECT_DIR$/Common/Email.py" />
         <option value="$PROJECT_DIR$/Conf/config.ini" />
+        <option value="$PROJECT_DIR$/Common/Consts.py" />
+        <option value="$PROJECT_DIR$/Conf/Config.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/Common/Assert.py" />
+        <option value="$PROJECT_DIR$/TestCase/test_sidebar.py" />
+        <option value="$PROJECT_DIR$/Params/params.py" />
+        <option value="$PROJECT_DIR$/Common/Operate.py" />
       </list>
     </option>
   </component>
@@ -215,8 +245,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="84" />
-    <option name="y" value="23" />
+    <option name="x" value="83" />
+    <option name="y" value="30" />
     <option name="width" value="1522" />
     <option name="height" value="947" />
   </component>
@@ -237,23 +267,31 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Conf" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Log" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="Operate.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Params" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="Operate.py" type="8704e2dd:PyFileNode" />
+              <item name="Operation" type="dd8bbb05:PyElementNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Params" type="462c0819:PsiDirectoryNode" />
-              <item name="Param" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+              <item name="test_sidebar.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
@@ -312,7 +350,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lianxi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="params" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testAuto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,12 +358,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/usage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Params" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/usage/lianxi.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Params/params.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,17 +429,17 @@
     <list>
       <item itemvalue="Python.test_bicai (1)" />
       <item itemvalue="Python.aaa" />
-      <item itemvalue="Python.lianxi" />
       <item itemvalue="Python.run" />
       <item itemvalue="Python.test_regression" />
+      <item itemvalue="Python.params" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.params" />
         <item itemvalue="Python.aaa" />
         <item itemvalue="Python.test_bicai (1)" />
         <item itemvalue="Python.test_regression" />
-        <item itemvalue="Python.lianxi" />
       </list>
     </recent_temporary>
   </component>
@@ -415,13 +453,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00059" summary="修改feature备注">
-      <created>1545808335179</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1545808335179</updated>
     </task>
     <task id="LOCAL-00060" summary="编写case6">
       <created>1545810905899</created>
@@ -759,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547780127347</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="维护email模块">
+      <created>1547780959514</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1547780959514</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TodoView">
@@ -773,7 +811,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="23" width="1522" height="947" extended-state="0" />
+    <frame x="83" y="30" width="1522" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
@@ -781,9 +819,9 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32842582" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49361023" visible="true" weight="0.3682353" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49361023" visible="true" weight="0.38" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733758" weight="0.28522727" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.27432433" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.3527027" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
@@ -865,12 +903,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Report/picture/无关注6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/xml/677ed857-9e10-4d97-82ea-afec7098d7d1-attachment.png" />
-    <entry file="file://$PROJECT_DIR$/report/xml/949f8098-f906-42de-bed3-b300b381979d-attachment.png" />
-    <entry file="file://$PROJECT_DIR$/report/xml/44301d91-ad5f-41d5-900e-fc452e8fbba7-attachment.png" />
     <entry file="file://$PROJECT_DIR$/report/xml/b187541f-159c-400c-8dd4-03a438f268c8-attachment.png" />
     <entry file="file://$PROJECT_DIR$/report/xml/9ee80890-0116-4354-9187-905c7e618296-attachment.png" />
     <entry file="file://$PROJECT_DIR$/report/xml/606a1954-3a9c-4433-803c-624bfbb46517-testsuite.xml" />
@@ -921,9 +953,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Report/xml/5cb2bbb5-3bce-4b98-92a0-9d75039eb2ac-attachment.txt" />
-    <entry file="file://$PROJECT_DIR$/Report/picture/app退出.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Report/xml/0c8b55e3-436c-4061-b6ca-a428848c25ea-attachment.txt" />
     <entry file="file://$PROJECT_DIR$/usage/logintt.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -999,9 +1028,6 @@
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/configparser.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/header.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1022,15 +1048,33 @@
           <caret line="54" selection-start-line="54" selection-end-line="57" />
           <folding>
             <element signature="e#46#55#0" expanded="true" />
-            <marker date="1547730642846" expanded="true" signature="201:404" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Log.py">
+    <entry file="file://$PROJECT_DIR$/Report/picture/签到规则跳转_失败.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Report/picture/app退出.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/err.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-381" />
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/log.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="1634">
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1041,57 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Consts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1883" column="35" selection-start-line="1883" selection-start-column="35" selection-end-line="1883" selection-end-column="35" />
-          <folding>
-            <element signature="e#46#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/log.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-1079" />
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Log/err.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
-          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conf/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1099,13 +1092,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Consts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="e#66#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#69#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="188">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
             <element signature="e#38#68#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+          <folding>
+            <element signature="e#64#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>

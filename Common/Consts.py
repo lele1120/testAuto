@@ -19,3 +19,6 @@ TEST_LIST = []
 # UI执行结果list
 RESULT_LIST = []
 
+# UI 执行失败list
+RESULT_FAIL_LIST = []
+

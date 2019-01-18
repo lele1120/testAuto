@@ -36,6 +36,7 @@ class Config:
 
         self.config = configparser.ConfigParser()
         self.log = Log.MyLog()
+        self.run_path = Config.path_dir
         self.conf_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.ini')
         self.xml_report_path = Config.path_dir+'/Report/xml'
         self.html_report_path = Config.path_dir+'/Report/html'
