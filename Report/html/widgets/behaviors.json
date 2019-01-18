@@ -4,10 +4,10 @@
     "uid" : "70cf6719a6b21834f4828bfc81908b89",
     "name" : "Home",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 4,
       "unknown" : 0,
       "total" : 5
     }
@@ -15,10 +15,10 @@
     "uid" : "48e614ba46e49c9e15701025bdc91a97",
     "name" : "01.启动app后进入比财",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

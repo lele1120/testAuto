@@ -2,56 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conf/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/Config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/categories.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/app退出.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/修改昵称页.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/控件未获取到.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/有关注2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/有关注4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/添加银行卡.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/用户已实名.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/xml/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/xml/environment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_sidebar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/aaa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/h5location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/itchat.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/lianxi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/logintt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usage/ttt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Operate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Operate.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1547791317025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1547791930970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$tt.coverage" NAME="tt Coverage Results" MODIFIED="1541752358942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$params.coverage" NAME="params Coverage Results" MODIFIED="1547787974767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Params" />
     <SUITE FILE_PATH="coverage/testAuto$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1541748507868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
@@ -89,10 +40,48 @@
       <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state relative-caret-position="563">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding>
                 <element signature="e#38#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Report/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/params.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+              <folding>
+                <element signature="e#64#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Assert.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Assert.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
+              <folding>
+                <element signature="e#69#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,11 +108,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operate.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Operate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/Operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,8 +159,8 @@
       <find>action.action.display_picture</find>
       <find />
       <find>allure.attach(picture_name</find>
-      <find>display_picture</find>
       <find>get_driver_by_key</find>
+      <find>display_picture</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -267,31 +259,13 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Operate.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Operate.py" type="8704e2dd:PyFileNode" />
-              <item name="Operation" type="dd8bbb05:PyElementNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
-              <item name="test_sidebar.py" type="8704e2dd:PyFileNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,27 +427,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00060" summary="编写case6">
-      <created>1545810905899</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1545810905899</updated>
-    </task>
-    <task id="LOCAL-00061" summary="编写修改性别case">
-      <created>1545813310009</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1545813310009</updated>
-    </task>
-    <task id="LOCAL-00062" summary="编写修改性别case">
-      <created>1545817679097</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1545817679097</updated>
     </task>
     <task id="LOCAL-00063" summary="编写修改性别case">
       <created>1545817716643</created>
@@ -797,7 +750,28 @@
       <option name="project" value="LOCAL" />
       <updated>1547780959514</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="调整项目结构">
+      <created>1547791395137</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1547791395137</updated>
+    </task>
+    <task id="LOCAL-00110" summary="调整项目结构">
+      <created>1547791452341</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1547791452341</updated>
+    </task>
+    <task id="LOCAL-00111" summary="调整项目结构">
+      <created>1547791509186</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1547791509186</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,17 +785,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="30" width="1522" height="947" extended-state="0" />
-    <editor active="true" />
+    <frame x="83" y="30" width="1522" height="947" extended-state="1" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063898" side_tool="true" weight="0.28656715" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32842582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49361023" visible="true" weight="0.38" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49361023" visible="true" weight="0.38" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733758" weight="0.28522727" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.3527027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.2635135" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
@@ -870,7 +843,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加职业后删除" />
     <MESSAGE value="修改地址case添加" />
     <MESSAGE value="增加等待时间" />
     <MESSAGE value="取消修改地址case编写" />
@@ -895,7 +867,8 @@
     <MESSAGE value="添加回归包" />
     <MESSAGE value="维护项目结构，添加相应日志模块" />
     <MESSAGE value="维护email模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="维护email模块" />
+    <MESSAGE value="调整项目结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整项目结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,7 +876,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/report/xml/b187541f-159c-400c-8dd4-03a438f268c8-attachment.png" />
     <entry file="file://$PROJECT_DIR$/report/xml/9ee80890-0116-4354-9187-905c7e618296-attachment.png" />
     <entry file="file://$PROJECT_DIR$/report/xml/606a1954-3a9c-4433-803c-624bfbb46517-testsuite.xml" />
     <entry file="file://$PROJECT_DIR$/report/xml/4fc045d2-95e9-48ac-8182-ac3e3193d79f-attachment.png" />
@@ -1078,13 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Report/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conf/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1126,23 +1091,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
+    <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="e#69#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding>
-            <element signature="e#38#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1156,17 +1108,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
+    <entry file="file://$PROJECT_DIR$/Params/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="404">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#69#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/Operate.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="e#38#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Report/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>

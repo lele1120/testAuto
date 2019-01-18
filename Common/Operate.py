@@ -6,7 +6,6 @@ from Conf.Config import Config
 from Params.params import get_value
 
 
-
 class Operation:
     def __init__(self):
         self.config = Config()
