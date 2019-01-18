@@ -49,6 +49,7 @@ def test_go_main_01(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
 
     time.sleep(5)
 
@@ -79,6 +80,8 @@ def test_login_02(d):
     比财账号登录
 
     """
+    Consts.TEST_LIST.append('Test')
+
     global USER_ID   # 使用账号
 
     USER_ID = str(get_value("xc手机号"))
@@ -124,6 +127,8 @@ def test_sidebar_eject_03(d):
      验证点击左上角图标弹出侧边栏功能
     """
 
+    Consts.TEST_LIST.append('Test')
+
     global cebian_button  # 侧边栏按钮
 
     global realname_status  # 实名认证状态
@@ -145,6 +150,7 @@ def test_sidebar_eject_03(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("04.点击侧边栏目logo")
 @allure.severity('Critical')
 def test_logo_click_04(d):
@@ -153,6 +159,8 @@ def test_logo_click_04(d):
     :param d:
     :return: 无
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("侧边栏logo点击"):
         click_element(d, "侧边栏logo")
 
@@ -172,6 +180,7 @@ def test_logo_click_04(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("05.点击昵称进入修改页")
 @allure.severity('Critical')
 def test_nickname_click_05(d):
@@ -180,6 +189,8 @@ def test_nickname_click_05(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击昵称跳转到修改昵称页"):
         click_element(d, "个人资料昵称")
 
@@ -190,6 +201,7 @@ def test_nickname_click_05(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("06.修改昵称页修改昵称点击完成")
 @allure.severity('Critical')
 def test_complete_click_06(d):
@@ -198,6 +210,8 @@ def test_complete_click_06(d):
     :param d:
     :return:
     """
+
+    Consts.TEST_LIST.append('Test')
 
     with allure.step("修改昵称为Alex"):
         input_element(d, "昵称文本框", "Alex")
@@ -220,6 +234,7 @@ def test_complete_click_06(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("07.修改昵称页点击返回icon")
 @allure.severity('Critical')
 def test_nickname_icon_click_07(d):
@@ -228,6 +243,8 @@ def test_nickname_icon_click_07(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击昵称跳转到修改昵称页"):
         click_element(d, "个人资料昵称")
 
@@ -248,6 +265,7 @@ def test_nickname_icon_click_07(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("08.修改性别")
 @allure.severity('Critical')
 def test_modify_sex_08(d):
@@ -256,6 +274,9 @@ def test_modify_sex_08(d):
     :param d:
     :return:
     """
+
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击性别"):
         sex_text = d(resourceId=get_value("性别文本")).get_text()
 
@@ -280,6 +301,7 @@ def test_modify_sex_08(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("09.修改职业")
 @allure.severity('Critical')
 def test_modify_profession_09(d):
@@ -288,6 +310,8 @@ def test_modify_profession_09(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击职业"):
         click_element(d, "职业")
 
@@ -318,6 +342,8 @@ def test_modify_profession_09(d):
             assert_equal_save_picture(d, modify_profession_display, "码农", "职业修改")
     Consts.RESULT_LIST.append('True')
 
+
+@pytest.allure.feature('Personal')
 @allure.feature("10.修改职业点击返回icon")
 @allure.severity('Critical')
 def test_modify_profession_icon_10(d):
@@ -326,6 +352,8 @@ def test_modify_profession_icon_10(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击职业"):
         click_element(d, "职业")
 
@@ -356,6 +384,7 @@ def test_modify_profession_icon_10(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("11.修改职业输入框输入内容点击取消")
 @allure.severity('Critical')
 def test_modify_profession_clear_11(d):
@@ -364,6 +393,8 @@ def test_modify_profession_clear_11(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击职业"):
         click_element(d, "职业")
 
@@ -401,6 +432,7 @@ def test_modify_profession_clear_11(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("12.手机号校验")
 @allure.severity('Critical')
 def test_phone_number_check_12(d):
@@ -409,11 +441,14 @@ def test_phone_number_check_12(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("手机号检查"):
         assert_equal_save_picture(d, USER_ID, d(resourceId=get_value("手机号")).get_text(), "个人资料手机号与登录账号对比")
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("13.所在地修改")
 @allure.severity('Critical')
 def test_modify_address_13(d):
@@ -422,6 +457,8 @@ def test_modify_address_13(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击所在地"):
         address_text = d(resourceId=get_value("居住地址文本")).get_text()
         click_element(d, "居住地址文本")
@@ -495,6 +532,7 @@ def test_modify_address_13(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("14.修改所在地点击返回icon")
 @allure.severity('Critical')
 def test_modify_address_clear_14(d):
@@ -503,6 +541,8 @@ def test_modify_address_clear_14(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击所在地"):
         address_text = d(resourceId=get_value("居住地址文本")).get_text()
         click_element(d, "居住地址文本")
@@ -577,6 +617,7 @@ def test_modify_address_clear_14(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("15.修改个性签名")
 @allure.severity('Critical')
 def test_modify_personalized_signature_15(d):
@@ -585,6 +626,8 @@ def test_modify_personalized_signature_15(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击个性签名跳转个性签名修改页"):
         click_element(d, "个性签名")
         assert_title(d, "个性签名")
@@ -629,6 +672,7 @@ def test_modify_personalized_signature_15(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("16.修改个性签名后点击返回icon")
 @allure.severity('Critical')
 def test_modify_personalized_signature_clear_16(d):
@@ -637,6 +681,8 @@ def test_modify_personalized_signature_clear_16(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击个性签名跳转个性签名修改页"):
         click_element(d, "个性签名")
         assert_title(d, "个性签名")
@@ -674,6 +720,7 @@ def test_modify_personalized_signature_clear_16(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("17.验证实名状态")
 @allure.severity('Critical')
 def test_check_real_name_authentication_state_17(d):
@@ -682,6 +729,8 @@ def test_check_real_name_authentication_state_17(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击实名认证"):
 
         click_element(d, "是否实名")
@@ -702,6 +751,7 @@ def test_check_real_name_authentication_state_17(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("18.实名认证页返回icon点击")
 @allure.severity('Critical')
 def test_real_name_click_icon_18(d):
@@ -710,6 +760,8 @@ def test_real_name_click_icon_18(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("实名验证页面点击返回icon"):
         click_element(d, "返回icon")
 
@@ -717,6 +769,7 @@ def test_real_name_click_icon_18(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("19.验证绑卡状态")
 @allure.severity('Critical')
 def test_check_tied_card_state_19(d):
@@ -725,6 +778,8 @@ def test_check_tied_card_state_19(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("点击绑卡状态"):
 
         click_element(d, "是否绑卡")
@@ -766,6 +821,7 @@ def test_check_tied_card_state_19(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("20.绑定银行卡页icon点击")
 @allure.severity('Critical')
 def test_tied_card_click_icon_20(d):
@@ -774,6 +830,8 @@ def test_tied_card_click_icon_20(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
+
     with allure.step("实名验证页面点击返回icon"):
         click_element(d, "返回icon")
 
@@ -781,6 +839,7 @@ def test_tied_card_click_icon_20(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("21.已实名中点击查看榜单返回app首页")
 @allure.severity('Critical')
 def test_check_list_click_21(d):
@@ -789,6 +848,8 @@ def test_check_list_click_21(d):
     :param d:
     :return:
     """
+
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击实名认证"):
 
         click_element(d, "是否实名")
@@ -806,6 +867,7 @@ def test_check_list_click_21(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("22.添加银行卡")
 @allure.severity('Critical')
 def test_add_bank_cards_22(d):
@@ -814,6 +876,8 @@ def test_add_bank_cards_22(d):
     :param d:
     :return:
     """
+
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击绑卡状态"):
 
         click_element(d, "是否绑卡")
@@ -864,6 +928,7 @@ def test_add_bank_cards_22(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("23.点击我的关注")
 @allure.severity('Critical')
 def test_click_my_concern_23(d):
@@ -872,6 +937,7 @@ def test_click_my_concern_23(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("我的关注"):
         click_element(d, "我的关注")
 
@@ -887,6 +953,7 @@ def test_click_my_concern_23(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("24.验证关注内内容")
 @allure.severity('Critical')
 def test_click_my_concern_content_24(d):
@@ -895,6 +962,7 @@ def test_click_my_concern_content_24(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("将关注页内容保存到字典"):
         product_type_dict = {}
         for i in range(product_type.__len__()):
@@ -929,6 +997,7 @@ def test_click_my_concern_content_24(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("25.点击我的消息")
 @allure.severity('Critical')
 def test_click_my_news_25(d):
@@ -937,7 +1006,7 @@ def test_click_my_news_25(d):
     :param d:
     :return:
     """
-
+    Consts.TEST_LIST.append('Test')
     massage_type = ["系统消息", "产品消息", "活动"]
 
     with allure.step("点击我的消息"):
@@ -960,6 +1029,7 @@ def test_click_my_news_25(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("26.点击我的钱包")
 @allure.severity('Critical')
 def test_click_bicai_wallet_26(d):
@@ -968,6 +1038,7 @@ def test_click_bicai_wallet_26(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
     global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
     with allure.step("点击我的钱包"):
@@ -976,6 +1047,7 @@ def test_click_bicai_wallet_26(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("27.点击常见问题")
 @allure.severity('Critical')
 def test_click_common_problem_27(d):
@@ -984,7 +1056,7 @@ def test_click_common_problem_27(d):
     :param d:
     :return:
     """
-
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击常见问题"):
         click_element(d, "常见问题")
         assert_title(d, "常见问题")
@@ -992,6 +1064,7 @@ def test_click_common_problem_27(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("28.点击明细")
 @allure.severity('Critical')
 def test_click_detailed_28(d):
@@ -1000,6 +1073,7 @@ def test_click_detailed_28(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击明细"):
         d(description=u"明细").click()
         time.sleep(2)
@@ -1013,6 +1087,7 @@ def test_click_detailed_28(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("29.点击交易记录")
 @allure.severity('Critical')
 def test_click_business_record_29(d):
@@ -1021,6 +1096,7 @@ def test_click_business_record_29(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击交易记录"):
         click_element(d, "交易记录")
         assert_title(d, "明细")
@@ -1034,6 +1110,7 @@ def test_click_business_record_29(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("30.点击交易记录页内容")
 @allure.severity('Critical')
 def test_click_business_record_content_30(d):
@@ -1042,6 +1119,7 @@ def test_click_business_record_content_30(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     if d(className="android.widget.RelativeLayout", instance=2).exists:
         with allure.step("点击交易记录页首条记录"):
             d(className="android.widget.RelativeLayout", instance=2).click()
@@ -1058,6 +1136,7 @@ def test_click_business_record_content_30(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("31.点击提现")
 @allure.severity('Critical')
 def test_click_cash_withdrawal_31(d):
@@ -1066,6 +1145,7 @@ def test_click_cash_withdrawal_31(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击提现"):
         d(description=u"提现").click()
         time.sleep(2)
@@ -1079,6 +1159,7 @@ def test_click_cash_withdrawal_31(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("32.验证进入提现页提现按钮默认不可点")
 @allure.severity('Critical')
 def test_cash_withdrawal_clickenable_32(d):
@@ -1087,12 +1168,14 @@ def test_cash_withdrawal_clickenable_32(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("验证进入提现页提现按钮默认不可点"):
         assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
                                            "提现按钮默认不可点")
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("33.验证输入大于等于10元提现金额按钮可点击")
 @allure.severity('Critical')
 def test_cash_withdrawal_clickable_33(d):
@@ -1101,7 +1184,7 @@ def test_cash_withdrawal_clickable_33(d):
     :param d:
     :return:
     """
-
+    Consts.TEST_LIST.append('Test')
     with allure.step("验证输入大于等于10元提现按钮可以点击"):
         if float(balance[0]) >= 10.00:
             input_money_text = random.uniform(10.00, float(balance[0]))
@@ -1112,6 +1195,7 @@ def test_cash_withdrawal_clickable_33(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("34.验证输入小等10元提现金额按钮不可点击")
 @allure.severity('Critical')
 def test_cash_withdrawal_clickable__less_than_ten_34(d):
@@ -1120,6 +1204,7 @@ def test_cash_withdrawal_clickable__less_than_ten_34(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("验证输入小于10元提现按钮不可点击"):
         input_element(d, "余额提现页金额输入框", str(9.99))
         assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
@@ -1129,6 +1214,7 @@ def test_cash_withdrawal_clickable__less_than_ten_34(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("35.账户余额隐藏显示状态校验")
 @allure.severity('Critical')
 def test_balance_display_hide_35(d):
@@ -1137,6 +1223,7 @@ def test_balance_display_hide_35(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("获取账户余额显示隐藏状态"):
         if d(description=u"****").exists:
             print("当前账户余额金额显示状态为:隐藏")
@@ -1169,6 +1256,8 @@ def test_balance_display_hide_35(d):
         assert_equal_save_picture(d, remaining_sum_type, change_remaining_sum_type, "金额显示/隐藏状态对比")
     Consts.RESULT_LIST.append('True')
 
+
+@pytest.allure.feature('Personal')
 @allure.feature("36.点击我的钱包银行卡跳转")
 @allure.severity('Critical')
 def test_click_card_button_36(d):
@@ -1177,6 +1266,7 @@ def test_click_card_button_36(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     card_button_text = "银行卡(" + str(cards_number) + ")"
     with allure.step("点击银行卡跳转"):
         d(description=card_button_text).click()
@@ -1190,6 +1280,7 @@ def test_click_card_button_36(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("37.点击II类户跳转")
 @allure.severity('Critical')
 def test_click_type_two_accounts_37(d):
@@ -1198,6 +1289,7 @@ def test_click_type_two_accounts_37(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击II类户（图片）跳转"):
         d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
         time.sleep(1)
@@ -1220,6 +1312,7 @@ def test_click_type_two_accounts_37(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("38.点击未开户")
 @allure.severity('Critical')
 def test_click_not_opening_bank_38(d):
@@ -1228,6 +1321,7 @@ def test_click_not_opening_bank_38(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击未开户"):
         click_element_with_text(d, "未开户", "未开户")
     with allure.step("校验是否跳转到未开户"):
@@ -1252,6 +1346,7 @@ def test_click_not_opening_bank_38(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("39.点击查看全部银行")
 @allure.severity('Critical')
 def test_click_look_all_bank_39(d):
@@ -1260,6 +1355,7 @@ def test_click_look_all_bank_39(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击查看全部银行"):
         click_element(d, "查看全部银行")
 
@@ -1273,6 +1369,7 @@ def test_click_look_all_bank_39(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("40.点击卡券跳转到卡券页")
 @allure.severity('Critical')
 def test_click_card_ticket_40(d):
@@ -1281,6 +1378,7 @@ def test_click_card_ticket_40(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击卡券"):
         d(description=u"卡券").click()
         time.sleep(2)
@@ -1294,6 +1392,7 @@ def test_click_card_ticket_40(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("41.点击关于我们")
 @allure.severity('Critical')
 def test_click_understand_bicai_41(d):
@@ -1302,6 +1401,7 @@ def test_click_understand_bicai_41(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击关于我们"):
         click_element_with_text(d, "关于我们", "关于我们")
 
@@ -1318,6 +1418,7 @@ def test_click_understand_bicai_41(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("42.点击签到")
 @allure.severity('Critical')
 def test_click_sign_in_42(d):
@@ -1326,6 +1427,7 @@ def test_click_sign_in_42(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     if d(resourceId="com.bs.finance:id/tab3_dot").exists:
         not_sign_in = 1  # 签到上方红点存在，今日还未点击过签到按钮
     else:
@@ -1347,6 +1449,7 @@ def test_click_sign_in_42(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("43.签到抽奖校验")
 @allure.severity('Critical')
 def test_click_sign_in_luck_draw_43(d):
@@ -1355,6 +1458,7 @@ def test_click_sign_in_luck_draw_43(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("签到抽奖校验"):
 
         for i in range(d(className="android.widget.Image").__len__()):
@@ -1397,6 +1501,7 @@ def test_click_sign_in_luck_draw_43(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("44.查看活动规则")
 @allure.severity('Critical')
 def test_look_activity_rules_44(d):
@@ -1405,6 +1510,7 @@ def test_look_activity_rules_44(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("查看活动规则"):
 
         d(description=u"活动规则").click(timeout=10)
@@ -1418,6 +1524,7 @@ def test_look_activity_rules_44(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("45.点击分享")
 @allure.severity('Critical')
 def test_click_share_friend_45(d):
@@ -1426,6 +1533,7 @@ def test_click_share_friend_45(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     time.sleep(2)
     with allure.step("点击分享按钮"):
         d(description=u"分享").click(timeout=10)  # 点击分享
@@ -1448,6 +1556,7 @@ def test_click_share_friend_45(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("46.点击分享圈")
 @allure.severity('Critical')
 def test_click_share_circle_of_friend_46(d):
@@ -1456,6 +1565,7 @@ def test_click_share_circle_of_friend_46(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     time.sleep(2)
 
     with allure.step("点击分享按钮"):
@@ -1470,6 +1580,7 @@ def test_click_share_circle_of_friend_46(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("47.签到页查看我的中奖记录")
 @allure.severity('Critical')
 def test_click_my_winning_record_47(d):
@@ -1478,6 +1589,7 @@ def test_click_my_winning_record_47(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("向下滑动"):
         d(scrollable=True).scroll(steps=30)  # 向下滑动
         time.sleep(2)
@@ -1494,6 +1606,7 @@ def test_click_my_winning_record_47(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("48.点击用户调研")
 @allure.severity('Critical')
 def test_click_user_survey_48(d):
@@ -1502,6 +1615,7 @@ def test_click_user_survey_48(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击有奖调研"):
         click_element(d, "有奖调研")
         assert_title(d, "用户调研")
@@ -1513,13 +1627,14 @@ def test_click_user_survey_48(d):
 
 @pytest.allure.feature('Home')
 @allure.feature("49.点击设置")
-@allure.severity('Critical')
+@allure.severity('Block')
 def test_click_set_up_49(d):
     """
     点击设置
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击设置"):
 
         time.sleep(5)
@@ -1531,6 +1646,7 @@ def test_click_set_up_49(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("50.点击比财支付密码管理")
 @allure.severity('Critical')
 def test_click_bicai_payment_password_management_50(d):
@@ -1539,6 +1655,7 @@ def test_click_bicai_payment_password_management_50(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击比财支付密码管理"):
         d(text=u"比财支付密码管理").click()
         time.sleep(2)
@@ -1548,6 +1665,7 @@ def test_click_bicai_payment_password_management_50(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("51.点击修改密码")
 @allure.severity('Critical')
 def test_click_change_password_51(d):
@@ -1556,6 +1674,7 @@ def test_click_change_password_51(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击修改密码"):
         d(text=u"修改密码").click()
         time.sleep(2)
@@ -1571,6 +1690,7 @@ def test_click_change_password_51(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("52.点击忘记密码")
 @allure.severity('Critical')
 def test_click_forget_password_52(d):
@@ -1579,6 +1699,7 @@ def test_click_forget_password_52(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击忘记密码"):
         d(text=u"忘记密码").click()
         time.sleep(2)
@@ -1598,6 +1719,7 @@ def test_click_forget_password_52(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("53.点击首页默认")
 @allure.severity('Critical')
 def test_click_home_page_default_53(d):
@@ -1606,6 +1728,7 @@ def test_click_home_page_default_53(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击首页默认版本"):
         d(text=u"首页默认显示版本").click()
 
@@ -1621,6 +1744,7 @@ def test_click_home_page_default_53(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("54.消息推送提醒")
 @allure.severity('Critical')
 def test_click_news_push_54(d):
@@ -1629,6 +1753,7 @@ def test_click_news_push_54(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("开启消息推送提醒"):
         click_element(d, "消息推送提醒")
 
@@ -1637,6 +1762,7 @@ def test_click_news_push_54(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("55.默认安全购买渠道设置")
 @allure.severity('Critical')
 def test_default_purchase_channel_55(d):
@@ -1645,6 +1771,7 @@ def test_default_purchase_channel_55(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击默认安全购买渠道设置"):
         click_element(d, "默认安全购买渠道设置")
 
@@ -1660,6 +1787,7 @@ def test_default_purchase_channel_55(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("56.点击版本更新说明")
 @allure.severity('Critical')
 def test_click_new_version_56(d):
@@ -1668,6 +1796,7 @@ def test_click_new_version_56(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击版本更新说明"):
         click_element(d, "版本更新说明")
         time.sleep(5)
@@ -1680,6 +1809,7 @@ def test_click_new_version_56(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("57.点击隐私政策")
 @allure.severity('Critical')
 def test_click_privacy_policy_57(d):
@@ -1688,6 +1818,7 @@ def test_click_privacy_policy_57(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击隐私政策"):
         click_element(d, "隐私政策")
 
@@ -1699,6 +1830,7 @@ def test_click_privacy_policy_57(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("58.点击联系我们")
 @allure.severity('Critical')
 def test_click_call_me_58(d):
@@ -1707,6 +1839,7 @@ def test_click_call_me_58(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击联系我们"):
         click_element(d, "联系我们")
 
@@ -1718,6 +1851,7 @@ def test_click_call_me_58(d):
     Consts.RESULT_LIST.append('True')
 
 
+@pytest.allure.feature('Personal')
 @allure.feature("59.点击意见反馈")
 @allure.severity('Critical')
 def test_click_give_feedback_59(d):
@@ -1726,6 +1860,7 @@ def test_click_give_feedback_59(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击意见反馈"):
         click_element(d, "意见反馈")
 
@@ -1746,6 +1881,7 @@ def test_sign_out_app_60(d):
     :param d:
     :return:
     """
+    Consts.TEST_LIST.append('Test')
     with allure.step("点击安全退出"):
 
         click_element(d, "安全退出")

@@ -1,5 +1,0 @@
-connectionpool.py          205 DEBUG    Starting new HTTP connection (1): 127.0.0.1:49906
-connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /shell HTTP/1.1" 200 107
-connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /shell HTTP/1.1" 200 99
-connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "POST /session/com.bs.finance HTTP/1.1" 200 317
-connectionpool.py          393 DEBUG    http://127.0.0.1:49906 "GET /pidof/com.bs.finance HTTP/1.1" 200 4

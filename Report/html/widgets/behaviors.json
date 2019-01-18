@@ -1,5 +1,5 @@
 {
-  "total" : 61,
+  "total" : 62,
   "items" : [ {
     "uid" : "70cf6719a6b21834f4828bfc81908b89",
     "name" : "Home",
@@ -67,6 +67,17 @@
       "total" : 1
     }
   }, {
+    "uid" : "7979d69c00d8a98487156b0c788f03c3",
+    "name" : "Personal",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 55,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 55
+    }
+  }, {
     "uid" : "7ee2a2f8214c50f1f115e6c44bdabdac",
     "name" : "04.点击侧边栏目logo",
     "statistic" : {
@@ -91,17 +102,6 @@
   }, {
     "uid" : "aff2290c39ef4b2830b5d76b8bb33f7a",
     "name" : "06.修改昵称页修改昵称点击完成",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "295cdddf6af7830f8ab41a865ce49f61",
-    "name" : "07.修改昵称页点击返回icon",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

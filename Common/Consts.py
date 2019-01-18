@@ -13,6 +13,9 @@ UI_ENVIRONMENT_RELEASE = 'release'
 # UI响应时间list，单位毫秒
 STRESS_LIST = []
 
+# UI执行list
+TEST_LIST = []
+
 # UI执行结果list
 RESULT_LIST = []
 

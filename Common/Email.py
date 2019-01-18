@@ -25,11 +25,14 @@ class SendMail:
 
     def sendMail(self):
         msg = MIMEMultipart()
+        test_body = Consts.TEST_LIST
         result_body = Consts.RESULT_LIST
-        body = 'Hi，all\n本次安卓UI自动化测试报告如下：\n  运行结果通过：' + str(result_body.__len__()) + "个测试用例"
+        error_number = test_body.__len__()-result_body.__len__()
+        body = 'Hi，all\n本次安卓UI自动化测试报告如下：\n本次测试运行：' + str(test_body.__len__()) + '个测试用例 \n运行结果通过：' \
+               + str(result_body.__len__()) + '个测试用例 \n未通过的测试用例：' + str(error_number) + '个'
         mail_body = MIMEText(body, _subtype='plain', _charset='utf-8')
         tm = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
-        msg['Subject'] = Header("安卓UI自动化测试报告"+"_"+tm, 'utf-8')
+        msg['Subject'] = Header("安卓UI自动化测试报告"+"_未通过用例" + str(error_number) + '个_' + tm, 'utf-8')
         msg['From'] = self.config.sender
         receivers = self.config.receiver
         toclause = receivers.split(',')
