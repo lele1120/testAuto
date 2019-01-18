@@ -1,13 +1,35 @@
 {
-  "total" : 62,
+  "total" : 67,
   "items" : [ {
+    "uid" : "7979d69c00d8a98487156b0c788f03c3",
+    "name" : "Personal",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 55,
+      "unknown" : 0,
+      "total" : 55
+    }
+  }, {
+    "uid" : "03c2c43ea40815c27306e3934ff482fd",
+    "name" : "Regression",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
     "uid" : "70cf6719a6b21834f4828bfc81908b89",
     "name" : "Home",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
       "total" : 5
     }
@@ -15,12 +37,12 @@
     "uid" : "48e614ba46e49c9e15701025bdc91a97",
     "name" : "01.启动app后进入比财",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   }, {
     "uid" : "a16365db6f4a21eef86847772508c600",
@@ -29,9 +51,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   }, {
     "uid" : "923cb436607b9b46cee87f46cdac91b1",
@@ -40,42 +62,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "4225324b6f2bb265fb7e30d065d339b9",
-    "name" : "49.点击设置",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "7ec8ebd0bc83c20942fe9f917c10c768",
-    "name" : "60.app退出",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "7979d69c00d8a98487156b0c788f03c3",
-    "name" : "Personal",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 55,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 55
+      "total" : 2
     }
   }, {
     "uid" : "7ee2a2f8214c50f1f115e6c44bdabdac",
@@ -83,8 +72,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }
@@ -94,8 +83,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }
@@ -105,8 +94,19 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "295cdddf6af7830f8ab41a865ce49f61",
+    "name" : "07.修改昵称页点击返回icon",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }

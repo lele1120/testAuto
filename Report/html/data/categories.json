@@ -1,25 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "UiObjectNotFoundError: -32002 Server error: <Selector [resourceId='com.bs.finance:id/go_main']> data: ",
-      "children" : [ {
-        "name" : "test_sidebar.test_go_main_01",
-        "uid" : "bc139583eb61b285",
-        "parentUid" : "1bffd5cd33430036804e60028d555494",
-        "status" : "failed",
-        "time" : {
-          "start" : 1547791931471,
-          "stop" : 1547791976762,
-          "duration" : 45291
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "1bffd5cd33430036804e60028d555494"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }
