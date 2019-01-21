@@ -1,4 +1,7 @@
 [ {
-  "values" : [ "Y66手机udid:d5ddd4f7" ],
-  "name" : "使用连接方式"
+  "values" : [ "Y66手机udid" ],
+  "name" : "environment"
+}, {
+  "values" : [ "xuchen" ],
+  "name" : "tester"
 } ]

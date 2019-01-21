@@ -5,7 +5,6 @@ from Common import Email, Log, Consts, Shell
 from Conf import Config
 import pytest
 
-
 if __name__ == '__main__':
     """
     执行所有case并生成报告
@@ -34,8 +33,8 @@ if __name__ == '__main__':
     test_body = Consts.TEST_LIST
     result_body = Consts.RESULT_LIST
     error_number = test_body.__len__() - result_body.__len__()
-    if error_number > 0:
 
+    if error_number > 0:
         try:
             mail = Email.SendMail()
             mail.sendMail()
@@ -49,7 +48,7 @@ if __name__ == '__main__':
 
     else:
 
-        print("计算错误请查看代码")
+        print("小兄弟去看看代码吧")
 
 
 

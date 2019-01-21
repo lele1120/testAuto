@@ -13,7 +13,10 @@ from Params.params import get_driver_by_key
 from Common import Operate
 from Common import Consts
 from Common import Assert
+
 import sys
+
+from TestCase.conftest import action_env
 
 test = Assert.Assertions()
 action = Operate.Operation()
@@ -22,25 +25,12 @@ sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 @pytest.fixture(scope='module')
 def d():
-    global running_environment
-    running_environment = sys.argv[1]
-    # running_environment = "Y66手机udid"
-    # running_environment = "Y66手机ip"
+    running_environment = action_env()
     d = get_driver_by_key(running_environment)  # 输入参数启动
-    global start_time
-    i = datetime.datetime.now()
-    strat_time = "启动时间为  %s时%s分%s秒" % (i.hour, i.minute, i.second)
-    global now_date
-    now_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-    print(strat_time)
-
     # d.unlock()
     d.set_fastinput_ime(True)  # 开启快速输入
     d.session("com.bs.finance")
     yield d
-    y = datetime.datetime.now()
-    end_time = "结束时间为  %s时%s分%s秒" % (y.hour, y.minute, y.second)
-    print(end_time)
     d.app_stop("com.bs.finance")
 
 
@@ -57,10 +47,6 @@ class TestRegression:
         Consts.TEST_LIST.append('Test')
 
         time.sleep(5)
-
-        show_running_environment = str(running_environment)+":" + get_value(str(running_environment))
-
-        pytest.allure.environment(使用连接方式=str(show_running_environment))
 
         with pytest.allure.step("启动页点击进入比财"):
 
