@@ -1469,7 +1469,8 @@ class TestSidebar:
             test.assert_element_exists_save_picture(d, d(description=u"签到抽奖规则").exists, "签到规则跳转")
 
         with pytest.allure.step("点击活动规则关闭"):
-            d(className="android.view.View", instance=1).click(timeout=10)
+            # d(className="android.view.View", instance=1).click(timeout=10)
+            d(description=u"yAAAAAElFTkSuQmCC").click(timeout=10)
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Personal')
@@ -1489,6 +1490,8 @@ class TestSidebar:
         with pytest.allure.step("点击发送给朋友"):
 
             d(description=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
+
+            time.sleep(3)
 
         with pytest.allure.step("选择要发送的人"):
 

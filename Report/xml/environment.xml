@@ -1,10 +1,10 @@
 <ns0:environment xmlns:ns0="urn:model.commons.qatools.yandex.ru">
-  <id>1974f922-109b-4869-ae3c-f19dfa60477a</id>
+  <id>9af5df33-6dcc-4fc6-828d-c2c83719c600</id>
   <name>Allure environment parameters</name>
   <parameter>
     <key>environment</key>
     <name>environment</name>
-    <value>Y66手机udid</value>
+    <value>360手机udid</value>
   </parameter>
   <parameter>
     <key>tester</key>
