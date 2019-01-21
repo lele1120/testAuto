@@ -12,6 +12,7 @@ import sys
 UI_ENVIRONMENT_DEBUG = 'debug'
 UI_ENVIRONMENT_RELEASE = 'release'
 UI_ENVIRONMENT_MOBILE_PHONE_MODEL = sys.argv[1]
+# UI_ENVIRONMENT_MOBILE_PHONE_MODEL = 'Y66手机udid'
 
 
 # UI响应时间list，单位毫秒

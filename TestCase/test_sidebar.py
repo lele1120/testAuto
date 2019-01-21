@@ -36,7 +36,7 @@ def d():
 class TestSidebar:
     @pytest.allure.feature('Home')
     @pytest.allure.feature("01.启动app后进入比财")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('blocker')
     def test_go_main_01(self, d):
         """
         首次启动app点击进入比财,如果有广告页点击x关闭， 
@@ -64,7 +64,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Home')
     @pytest.allure.feature("02.比财登录")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('blocker')
     def test_login_02(self, d):
         """
         比财账号登录
@@ -110,7 +110,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Home')
     @pytest.allure.feature("03.弹出侧边栏")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('blocker')
     def test_sidebar_eject_03(self, d):
         """
          验证点击左上角图标弹出侧边栏功能
@@ -140,7 +140,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("04.点击侧边栏目logo")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_logo_click_04(self, d):
         """
         验证点击侧边栏logo会跳转正确跳到个人资料页，及个人资料页内控件元素存在校验
@@ -169,7 +169,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("05.点击昵称进入修改页")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_nickname_click_05(self, d):
         """
         验证点击昵称可正确跳转修到昵称修改页
@@ -189,7 +189,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("06.修改昵称页修改昵称点击完成")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_complete_click_06(self, d):
         """
         昵称修改后点击完成验证个人资料页是否显示修改后昵称
@@ -221,7 +221,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("07.修改昵称页点击返回icon")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_nickname_icon_click_07(self, d):
         """
         修改昵称后点击返回icon，查看个人资料页昵称未被修改
@@ -251,7 +251,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("08.修改性别")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_sex_08(self, d):
         """
         修改性别，如果是男就修改成女，如果是女就修改成男
@@ -286,7 +286,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("09.修改职业")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_profession_09(self, d):
         """
         修改职业，如果是测试就修改为码农，如果是码农就修改为测试，并校验
@@ -328,7 +328,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("10.修改职业点击返回icon")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_profession_icon_10(self, d):
         """
         修改职业后点击返回icon
@@ -368,7 +368,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("11.修改职业输入框输入内容点击取消")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_profession_clear_11(self, d):
         """
         修改职业输入内容后显示取消按钮，点击取消按钮删除清空输入内容
@@ -415,7 +415,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("12.手机号校验")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_phone_number_check_12(self, d):
         """
         个人资料手机号与登录账号对比校验
@@ -430,7 +430,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("13.所在地修改")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_address_13(self, d):
         """
         所在地修改，如果是北京朝阳区三环到四环之间或其他地址就修改为上海徐汇区城区，反之修改为北京朝阳区三环到四环之间
@@ -513,7 +513,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("14.修改所在地点击返回icon")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_address_clear_14(self, d):
         """
         修改地址后点击返回icon查看内容是否未被修改
@@ -597,7 +597,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("15.修改个性签名")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_personalized_signature_15(self, d):
         """
         修改个性签名
@@ -651,7 +651,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("16.修改个性签名后点击返回icon")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_modify_personalized_signature_clear_16(self, d):
         """
         修改个性签名点击返回icon
@@ -698,7 +698,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("17.验证实名状态")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_check_real_name_authentication_state_17(self, d):
         """
         根据个人资料中实名认证状态检验是否已实名
@@ -728,7 +728,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("18.实名认证页返回icon点击")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_real_name_click_icon_18(self, d):
         """
         实名状态页点击返回icon
@@ -745,7 +745,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("19.验证绑卡状态")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_check_tied_card_state_19(self, d):
         """
         根据个人资料中实名认证状态检验是否绑卡
@@ -796,7 +796,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("20.绑定银行卡页icon点击")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_tied_card_click_icon_20(self, d):
         """
         绑卡页点击返回icon
@@ -813,7 +813,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("21.已实名中点击查看榜单返回app首页")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_check_list_click_21(self, d):
         """
         已经实名用户点击查看绑定
@@ -840,7 +840,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("22.添加银行卡")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_add_bank_cards_22(self, d):
         """
         添加银行卡
@@ -900,7 +900,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("23.点击我的关注")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_my_concern_23(self, d):
         """
         点击我的关注，校验内容
@@ -924,7 +924,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("24.验证关注内内容")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_my_concern_content_24(self, d):
         """
         验证我的关注内下一页内容
@@ -967,7 +967,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("25.点击我的消息")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_my_news_25(self, d):
         """
         点击我的消息
@@ -998,7 +998,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("26.点击我的钱包")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_bicai_wallet_26(self, d):
         """
         点击我的钱包跳转
@@ -1015,7 +1015,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("27.点击常见问题")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_common_problem_27(self, d):
         """
         点击常见问题跳转
@@ -1031,7 +1031,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("28.点击明细")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_detailed_28(self, d):
         """
         点击明细，跳转明细页默认选择收益明细
@@ -1053,7 +1053,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("29.点击交易记录")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_business_record_29(self, d):
         """
         切换交易明细页，日期图标被隐藏
@@ -1075,7 +1075,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("30.点击交易记录页内容")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_business_record_content_30(self, d):
         """
         如果交易记录页中有内容点击进入
@@ -1100,7 +1100,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("31.点击提现")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_cash_withdrawal_31(self, d):
         """
         点击提现
@@ -1122,7 +1122,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("32.验证进入提现页提现按钮默认不可点")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_cash_withdrawal_clickenable_32(self, d):
         """
         验证页面跳转后提现按钮不可点击
@@ -1137,7 +1137,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("33.验证输入大于等于10元提现金额按钮可点击")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_cash_withdrawal_clickable_33(self, d):
         """
         验证页面输入大于等于10元随机金额提现按钮可以点击
@@ -1156,7 +1156,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("34.验证输入小等10元提现金额按钮不可点击")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_cash_withdrawal_clickable__less_than_ten_34(self, d):
         """
         验证页面输入小于10元随机金额提现按钮不可点击
@@ -1174,7 +1174,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("35.账户余额隐藏显示状态校验")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_balance_display_hide_35(self, d):
         """
         账户余额校验
@@ -1216,7 +1216,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("36.点击我的钱包银行卡跳转")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_card_button_36(self, d):
         """
         点击我的钱包银行卡跳转
@@ -1238,7 +1238,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("37.点击II类户跳转")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_type_two_accounts_37(self, d):
         """
         点击二类户跳转
@@ -1269,7 +1269,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("38.点击未开户")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_not_opening_bank_38(self, d):
         """
         点击二类户跳转
@@ -1302,7 +1302,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("39.点击查看全部银行")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_look_all_bank_39(self, d):
         """
         点击查看全部银行
@@ -1324,7 +1324,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("40.点击卡券跳转到卡券页")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_card_ticket_40(self, d):
         """
         点击卡券跳转到卡券页
@@ -1346,7 +1346,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("41.点击关于我们")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_understand_bicai_41(self, d):
         """
         点击关于我们
@@ -1371,7 +1371,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("42.点击签到")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_sign_in_42(self, d):
         """
         点击签到
@@ -1401,7 +1401,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("43.签到抽奖校验")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_sign_in_luck_draw_43(self, d):
         """
         签到抽奖校验
@@ -1452,7 +1452,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("44.查看活动规则")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_look_activity_rules_44(self, d):
         """
         查看活动规则
@@ -1474,7 +1474,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("45.点击分享")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_share_friend_45(self, d):
         """
         点击分享给朋友
@@ -1505,7 +1505,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("46.点击分享圈")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_share_circle_of_friend_46(self, d):
         """
         点击分享给朋友圈
@@ -1528,7 +1528,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("47.签到页查看我的中奖记录")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_my_winning_record_47(self, d):
         """
         在签到页点击我的中奖记录
@@ -1554,7 +1554,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("48.点击用户调研")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_user_survey_48(self, d):
         """
         点击用户调研
@@ -1572,7 +1572,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Home')
     @pytest.allure.feature("49.点击设置")
-    @pytest.allure.severity('Block')
+    @pytest.allure.severity('blocker')
     def test_click_set_up_49(self, d):
         """
         点击设置
@@ -1592,7 +1592,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("50.点击比财支付密码管理")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_bicai_payment_password_management_50(self, d):
         """
         点击比财支付密码管理
@@ -1610,7 +1610,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("51.点击修改密码")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_change_password_51(self, d):
         """
         点击修改密码
@@ -1634,7 +1634,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("52.点击忘记密码")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_forget_password_52(self, d):
         """
         点击忘记密码
@@ -1662,7 +1662,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("53.点击首页默认")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_home_page_default_53(self, d):
         """
         点击首页默认
@@ -1686,7 +1686,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("54.消息推送提醒")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_news_push_54(self, d):
         """
         点击消息推送提醒
@@ -1703,7 +1703,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("55.默认安全购买渠道设置")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_default_purchase_channel_55(self, d):
         """
         默认安全购买渠道设置
@@ -1727,7 +1727,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("56.点击版本更新说明")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_new_version_56(self, d):
         """
         点击版本更新说明
@@ -1748,7 +1748,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("57.点击隐私政策")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_privacy_policy_57(self, d):
         """
         点击隐私政策
@@ -1768,7 +1768,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("58.点击联系我们")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_call_me_58(self, d):
         """
         点击联系我们
@@ -1788,7 +1788,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("59.点击意见反馈")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_give_feedback_59(self, d):
         """
         点击意见反馈
@@ -1808,7 +1808,7 @@ class TestSidebar:
 
     @pytest.allure.feature('Home')
     @pytest.allure.feature("60.app退出")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('blocker')
     def test_sign_out_app_60(self, d):
         """
         退出app

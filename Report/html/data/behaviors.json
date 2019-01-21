@@ -5,25 +5,25 @@
     "name" : "01.启动app后进入比财",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_go_main_01",
-      "uid" : "8097ce1cfd717c60",
+      "uid" : "97a3aff7de6306a8",
       "parentUid" : "48e614ba46e49c9e15701025bdc91a97",
       "status" : "passed",
       "time" : {
-        "start" : 1548048806789,
-        "stop" : 1548048820422,
-        "duration" : 13633
+        "start" : 1548050421024,
+        "stop" : 1548050434615,
+        "duration" : 13591
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_go_main_01",
-      "uid" : "346e3de8e8788e2c",
+      "uid" : "9d9bff26760dc63",
       "parentUid" : "48e614ba46e49c9e15701025bdc91a97",
       "status" : "passed",
       "time" : {
-        "start" : 1548049236106,
-        "stop" : 1548049249658,
-        "duration" : 13552
+        "start" : 1548050851585,
+        "stop" : 1548050865044,
+        "duration" : 13459
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -33,61 +33,61 @@
     "name" : "Home",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_go_main_01",
-      "uid" : "8097ce1cfd717c60",
+      "uid" : "97a3aff7de6306a8",
       "parentUid" : "70cf6719a6b21834f4828bfc81908b89",
       "status" : "passed",
       "time" : {
-        "start" : 1548048806789,
-        "stop" : 1548048820422,
-        "duration" : 13633
+        "start" : 1548050421024,
+        "stop" : 1548050434615,
+        "duration" : 13591
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_login_02",
-      "uid" : "d1381442b49341c3",
+      "uid" : "79d7caf32975e22a",
       "parentUid" : "70cf6719a6b21834f4828bfc81908b89",
       "status" : "passed",
       "time" : {
-        "start" : 1548048820426,
-        "stop" : 1548048833112,
-        "duration" : 12686
+        "start" : 1548050434619,
+        "stop" : 1548050447265,
+        "duration" : 12646
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_sidebar_eject_03",
-      "uid" : "49cdfbcec81a434",
+      "uid" : "a57e2b9e58982fe8",
       "parentUid" : "70cf6719a6b21834f4828bfc81908b89",
       "status" : "passed",
       "time" : {
-        "start" : 1548048833114,
-        "stop" : 1548048846602,
-        "duration" : 13488
+        "start" : 1548050447267,
+        "stop" : 1548050460765,
+        "duration" : 13498
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_set_up_49",
-      "uid" : "708e819d260fedc5",
+      "uid" : "60c81b507b0898b4",
       "parentUid" : "70cf6719a6b21834f4828bfc81908b89",
       "status" : "passed",
       "time" : {
-        "start" : 1548049168144,
-        "stop" : 1548049176291,
-        "duration" : 8147
+        "start" : 1548050783351,
+        "stop" : 1548050791508,
+        "duration" : 8157
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_sign_out_app_60",
-      "uid" : "d68b10079d2fed91",
+      "uid" : "362203db7c4dd26",
       "parentUid" : "70cf6719a6b21834f4828bfc81908b89",
       "status" : "passed",
       "time" : {
-        "start" : 1548049231014,
-        "stop" : 1548049234715,
-        "duration" : 3701
+        "start" : 1548050846487,
+        "stop" : 1548050850209,
+        "duration" : 3722
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -97,25 +97,25 @@
     "name" : "02.比财登录",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_login_02",
-      "uid" : "d1381442b49341c3",
+      "uid" : "79d7caf32975e22a",
       "parentUid" : "a16365db6f4a21eef86847772508c600",
       "status" : "passed",
       "time" : {
-        "start" : 1548048820426,
-        "stop" : 1548048833112,
-        "duration" : 12686
+        "start" : 1548050434619,
+        "stop" : 1548050447265,
+        "duration" : 12646
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_login_02",
-      "uid" : "87804653c932c8c0",
+      "uid" : "c16b27afac6859aa",
       "parentUid" : "a16365db6f4a21eef86847772508c600",
       "status" : "passed",
       "time" : {
-        "start" : 1548049249660,
-        "stop" : 1548049262507,
-        "duration" : 12847
+        "start" : 1548050865047,
+        "stop" : 1548050877752,
+        "duration" : 12705
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -125,25 +125,25 @@
     "name" : "03.弹出侧边栏",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_sidebar_eject_03",
-      "uid" : "49cdfbcec81a434",
+      "uid" : "a57e2b9e58982fe8",
       "parentUid" : "923cb436607b9b46cee87f46cdac91b1",
       "status" : "passed",
       "time" : {
-        "start" : 1548048833114,
-        "stop" : 1548048846602,
-        "duration" : 13488
+        "start" : 1548050447267,
+        "stop" : 1548050460765,
+        "duration" : 13498
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_sidebar_eject_03",
-      "uid" : "533bc8a0b774814d",
+      "uid" : "32d8c1a670db5f8",
       "parentUid" : "923cb436607b9b46cee87f46cdac91b1",
       "status" : "passed",
       "time" : {
-        "start" : 1548049262509,
-        "stop" : 1548049275938,
-        "duration" : 13429
+        "start" : 1548050877753,
+        "stop" : 1548050890743,
+        "duration" : 12990
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -153,13 +153,13 @@
     "name" : "04.点击侧边栏目logo",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_logo_click_04",
-      "uid" : "44f001edc83bfd41",
+      "uid" : "2d110d4a7e4f93fe",
       "parentUid" : "7ee2a2f8214c50f1f115e6c44bdabdac",
       "status" : "passed",
       "time" : {
-        "start" : 1548048846604,
-        "stop" : 1548048850501,
-        "duration" : 3897
+        "start" : 1548050460767,
+        "stop" : 1548050464655,
+        "duration" : 3888
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -169,661 +169,661 @@
     "name" : "Personal",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_logo_click_04",
-      "uid" : "44f001edc83bfd41",
+      "uid" : "2d110d4a7e4f93fe",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048846604,
-        "stop" : 1548048850501,
-        "duration" : 3897
+        "start" : 1548050460767,
+        "stop" : 1548050464655,
+        "duration" : 3888
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_nickname_click_05",
-      "uid" : "677e6185b5ba6f17",
+      "uid" : "d43c33605c890021",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048850503,
-        "stop" : 1548048853765,
-        "duration" : 3262
+        "start" : 1548050464657,
+        "stop" : 1548050467916,
+        "duration" : 3259
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_complete_click_06",
-      "uid" : "9b6bd9431f762121",
+      "uid" : "2cb5d489f0b92ce8",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048853767,
-        "stop" : 1548048862755,
-        "duration" : 8988
+        "start" : 1548050467918,
+        "stop" : 1548050476986,
+        "duration" : 9068
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_nickname_icon_click_07",
-      "uid" : "fc9c8455310f0ade",
+      "uid" : "44da2daf76049620",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048862757,
-        "stop" : 1548048870220,
-        "duration" : 7463
+        "start" : 1548050476989,
+        "stop" : 1548050484544,
+        "duration" : 7555
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_sex_08",
-      "uid" : "ca6e9c115df512ec",
+      "uid" : "3b7aa04b0b109007",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048870222,
-        "stop" : 1548048873610,
-        "duration" : 3388
+        "start" : 1548050484546,
+        "stop" : 1548050487915,
+        "duration" : 3369
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_09",
-      "uid" : "9ed27917a5010daf",
+      "uid" : "33825c7fb26e7d4d",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048873612,
-        "stop" : 1548048879921,
-        "duration" : 6309
+        "start" : 1548050487917,
+        "stop" : 1548050494145,
+        "duration" : 6228
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_icon_10",
-      "uid" : "a103b9e3b779e469",
+      "uid" : "c67ccdc8fd44991c",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048879923,
-        "stop" : 1548048884800,
-        "duration" : 4877
+        "start" : 1548050494147,
+        "stop" : 1548050499015,
+        "duration" : 4868
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_clear_11",
-      "uid" : "304603e2076df796",
+      "uid" : "22097242450dd330",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048884802,
-        "stop" : 1548048891273,
-        "duration" : 6471
+        "start" : 1548050499017,
+        "stop" : 1548050505478,
+        "duration" : 6461
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_phone_number_check_12",
-      "uid" : "ed75d4cdeac1eeb2",
+      "uid" : "1b3939e3a106133c",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048891276,
-        "stop" : 1548048891451,
-        "duration" : 175
+        "start" : 1548050505481,
+        "stop" : 1548050505665,
+        "duration" : 184
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_address_13",
-      "uid" : "670b752387d99df7",
+      "uid" : "2f425205c92e9b8f",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048891453,
-        "stop" : 1548048903881,
-        "duration" : 12428
+        "start" : 1548050505667,
+        "stop" : 1548050518185,
+        "duration" : 12518
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_address_clear_14",
-      "uid" : "2e05766f1573e4ac",
+      "uid" : "3b782472c29ade6c",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048903883,
-        "stop" : 1548048916252,
-        "duration" : 12369
+        "start" : 1548050518187,
+        "stop" : 1548050530666,
+        "duration" : 12479
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_15",
-      "uid" : "90bc8ba21904abca",
+      "uid" : "955483a7492dd546",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048916254,
-        "stop" : 1548048925705,
-        "duration" : 9451
+        "start" : 1548050530669,
+        "stop" : 1548050540210,
+        "duration" : 9541
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_clear_16",
-      "uid" : "2bfb20284af27c5f",
+      "uid" : "5242b5a486309ddf",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048925707,
-        "stop" : 1548048936663,
-        "duration" : 10956
+        "start" : 1548050540212,
+        "stop" : 1548050551176,
+        "duration" : 10964
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_check_real_name_authentication_state_17",
-      "uid" : "6c736db26c38e67b",
+      "uid" : "d3b2479f75d763e3",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048936666,
-        "stop" : 1548048940339,
-        "duration" : 3673
+        "start" : 1548050551178,
+        "stop" : 1548050554762,
+        "duration" : 3584
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_real_name_click_icon_18",
-      "uid" : "6e20da5b01caedbc",
+      "uid" : "95190ddeff75e2ee",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048940341,
-        "stop" : 1548048942131,
-        "duration" : 1790
+        "start" : 1548050554764,
+        "stop" : 1548050556527,
+        "duration" : 1763
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_check_tied_card_state_19",
-      "uid" : "69b521b69ab5f9be",
+      "uid" : "25ab42ee73bdd454",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048942133,
-        "stop" : 1548048953931,
-        "duration" : 11798
+        "start" : 1548050556529,
+        "stop" : 1548050568405,
+        "duration" : 11876
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_tied_card_click_icon_20",
-      "uid" : "1c42e1b0a65f9d4c",
+      "uid" : "7c1f5d170c1e2426",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048953932,
-        "stop" : 1548048955878,
-        "duration" : 1946
+        "start" : 1548050568407,
+        "stop" : 1548050570337,
+        "duration" : 1930
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_check_list_click_21",
-      "uid" : "506ddde3188726c2",
+      "uid" : "9f5ecc4d50275a21",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048955880,
-        "stop" : 1548048962402,
-        "duration" : 6522
+        "start" : 1548050570338,
+        "stop" : 1548050576985,
+        "duration" : 6647
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_add_bank_cards_22",
-      "uid" : "e848204a865e922b",
+      "uid" : "3b13f6eba56eb58a",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048962404,
-        "stop" : 1548048976223,
-        "duration" : 13819
+        "start" : 1548050576987,
+        "stop" : 1548050590819,
+        "duration" : 13832
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_concern_23",
-      "uid" : "e761df54285a3c45",
+      "uid" : "2d8f89b49fd064f7",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048976226,
-        "stop" : 1548048979860,
-        "duration" : 3634
+        "start" : 1548050590822,
+        "stop" : 1548050594794,
+        "duration" : 3972
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_concern_content_24",
-      "uid" : "c42f52c3131918a2",
+      "uid" : "4800a57d1c778376",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048979862,
-        "stop" : 1548049015400,
-        "duration" : 35538
+        "start" : 1548050594796,
+        "stop" : 1548050630047,
+        "duration" : 35251
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_news_25",
-      "uid" : "d126ea5c38ef853d",
+      "uid" : "d4b504fadeebed5b",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049015405,
-        "stop" : 1548049033903,
-        "duration" : 18498
+        "start" : 1548050630051,
+        "stop" : 1548050648687,
+        "duration" : 18636
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_bicai_wallet_26",
-      "uid" : "6ca8280022930299",
+      "uid" : "380f33ce1a75aa20",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049033905,
-        "stop" : 1548049038032,
-        "duration" : 4127
+        "start" : 1548050648690,
+        "stop" : 1548050652472,
+        "duration" : 3782
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_common_problem_27",
-      "uid" : "f17f01150377ec87",
+      "uid" : "23a5f929017eab91",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049038034,
-        "stop" : 1548049042664,
-        "duration" : 4630
+        "start" : 1548050652474,
+        "stop" : 1548050657197,
+        "duration" : 4723
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_detailed_28",
-      "uid" : "93b6ff39a48244f5",
+      "uid" : "4767e80b0267c14b",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049042666,
-        "stop" : 1548049046959,
-        "duration" : 4293
+        "start" : 1548050657200,
+        "stop" : 1548050661434,
+        "duration" : 4234
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_business_record_29",
-      "uid" : "57575553f3307c02",
+      "uid" : "d3a9b512cabec384",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049046961,
-        "stop" : 1548049050389,
-        "duration" : 3428
+        "start" : 1548050661436,
+        "stop" : 1548050664854,
+        "duration" : 3418
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_business_record_content_30",
-      "uid" : "4d5417ebf571b8b5",
+      "uid" : "ed92bee99e54d34f",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049050391,
-        "stop" : 1548049057722,
-        "duration" : 7331
+        "start" : 1548050664856,
+        "stop" : 1548050672268,
+        "duration" : 7412
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_cash_withdrawal_31",
-      "uid" : "1290db9ac878bfb7",
+      "uid" : "cc7733f804774e83",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049057724,
-        "stop" : 1548049061830,
-        "duration" : 4106
+        "start" : 1548050672270,
+        "stop" : 1548050676414,
+        "duration" : 4144
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32",
-      "uid" : "f00597a05f8c74f5",
+      "uid" : "1d1027844e6dd3ce",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049061832,
-        "stop" : 1548049062019,
-        "duration" : 187
+        "start" : 1548050676416,
+        "stop" : 1548050676633,
+        "duration" : 217
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable_33",
-      "uid" : "c8af4670a9c94b2d",
+      "uid" : "d20a31870c0fc4ee",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049062021,
-        "stop" : 1548049062023,
+        "start" : 1548050676635,
+        "stop" : 1548050676637,
         "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable__less_than_ten_34",
-      "uid" : "7ec3b822525cf52b",
+      "uid" : "2d72c70766fe4c1c",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049062024,
-        "stop" : 1548049065133,
-        "duration" : 3109
+        "start" : 1548050676638,
+        "stop" : 1548050679757,
+        "duration" : 3119
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_balance_display_hide_35",
-      "uid" : "a9a803689739e6bb",
+      "uid" : "f52d54bc336e9717",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049065135,
-        "stop" : 1548049071178,
-        "duration" : 6043
+        "start" : 1548050679760,
+        "stop" : 1548050685954,
+        "duration" : 6194
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_card_button_36",
-      "uid" : "767c47218fe5f1f3",
+      "uid" : "e4983e2b3d5bb67",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049071180,
-        "stop" : 1548049076735,
-        "duration" : 5555
+        "start" : 1548050685956,
+        "stop" : 1548050691548,
+        "duration" : 5592
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_type_two_accounts_37",
-      "uid" : "5d5a8d8f6e5dae22",
+      "uid" : "fbe92858c9b3e0d2",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049076737,
-        "stop" : 1548049085632,
-        "duration" : 8895
+        "start" : 1548050691550,
+        "stop" : 1548050700487,
+        "duration" : 8937
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_not_opening_bank_38",
-      "uid" : "19e5a714b741a8da",
+      "uid" : "c406b2b4a97fd7d1",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049085635,
-        "stop" : 1548049092633,
-        "duration" : 6998
+        "start" : 1548050700489,
+        "stop" : 1548050707508,
+        "duration" : 7019
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_look_all_bank_39",
-      "uid" : "2668e96d9bad3711",
+      "uid" : "2ffddfadfe297699",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049092634,
-        "stop" : 1548049101109,
-        "duration" : 8475
+        "start" : 1548050707511,
+        "stop" : 1548050715836,
+        "duration" : 8325
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_card_ticket_40",
-      "uid" : "edbd86515a52e94d",
+      "uid" : "774aff3acb2c8ba6",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049101111,
-        "stop" : 1548049112082,
-        "duration" : 10971
+        "start" : 1548050715838,
+        "stop" : 1548050726517,
+        "duration" : 10679
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_understand_bicai_41",
-      "uid" : "e85175b02911ba27",
+      "uid" : "e9ef22f254629586",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049112084,
-        "stop" : 1548049118542,
-        "duration" : 6458
+        "start" : 1548050726520,
+        "stop" : 1548050732851,
+        "duration" : 6331
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_sign_in_42",
-      "uid" : "fc98c7a7d83a29c7",
+      "uid" : "143811a3ad8e09fe",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049118544,
-        "stop" : 1548049131831,
-        "duration" : 13287
+        "start" : 1548050732853,
+        "stop" : 1548050746185,
+        "duration" : 13332
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_sign_in_luck_draw_43",
-      "uid" : "f639cc0515e7f89",
+      "uid" : "1180e2962b9a552a",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049131833,
-        "stop" : 1548049135978,
-        "duration" : 4145
+        "start" : 1548050746187,
+        "stop" : 1548050750523,
+        "duration" : 4336
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_look_activity_rules_44",
-      "uid" : "cbd4e1eb90309f3b",
+      "uid" : "1958f01c6611b808",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049135980,
-        "stop" : 1548049139238,
-        "duration" : 3258
+        "start" : 1548050750525,
+        "stop" : 1548050753663,
+        "duration" : 3138
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_share_friend_45",
-      "uid" : "b74489309e658f65",
+      "uid" : "b2fcd26b15751e41",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049139239,
-        "stop" : 1548049147958,
-        "duration" : 8719
+        "start" : 1548050753665,
+        "stop" : 1548050762453,
+        "duration" : 8788
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_share_circle_of_friend_46",
-      "uid" : "246790dd32413cbb",
+      "uid" : "1e3b33de135bc01f",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049147960,
-        "stop" : 1548049153638,
-        "duration" : 5678
+        "start" : 1548050762454,
+        "stop" : 1548050768383,
+        "duration" : 5929
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_winning_record_47",
-      "uid" : "44ac21c0ec108737",
+      "uid" : "1add349ccf7985ec",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049153640,
-        "stop" : 1548049163300,
-        "duration" : 9660
+        "start" : 1548050768385,
+        "stop" : 1548050778276,
+        "duration" : 9891
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_user_survey_48",
-      "uid" : "fe192362f9c65b00",
+      "uid" : "aa19e81355290ac8",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049163302,
-        "stop" : 1548049168142,
-        "duration" : 4840
+        "start" : 1548050778278,
+        "stop" : 1548050783349,
+        "duration" : 5071
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50",
-      "uid" : "74667b237805633a",
+      "uid" : "e00146eb8470dd55",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049176293,
-        "stop" : 1548049180071,
-        "duration" : 3778
+        "start" : 1548050791510,
+        "stop" : 1548050795376,
+        "duration" : 3866
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_change_password_51",
-      "uid" : "21c45a782908c8f5",
+      "uid" : "acbb73919f51af1c",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049180073,
-        "stop" : 1548049187181,
-        "duration" : 7108
+        "start" : 1548050795379,
+        "stop" : 1548050802246,
+        "duration" : 6867
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_forget_password_52",
-      "uid" : "33abaa594a72f471",
+      "uid" : "a288f65db96d28ee",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049187184,
-        "stop" : 1548049194218,
-        "duration" : 7034
+        "start" : 1548050802249,
+        "stop" : 1548050809365,
+        "duration" : 7116
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_home_page_default_53",
-      "uid" : "ad395155e43fa13e",
+      "uid" : "7b7fbcb505c12875",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049194219,
-        "stop" : 1548049198281,
-        "duration" : 4062
+        "start" : 1548050809368,
+        "stop" : 1548050813516,
+        "duration" : 4148
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_news_push_54",
-      "uid" : "f8116c3cf8e2b65",
+      "uid" : "273d53bfeefd69c3",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049198282,
-        "stop" : 1548049201620,
-        "duration" : 3338
+        "start" : 1548050813519,
+        "stop" : 1548050816755,
+        "duration" : 3236
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_default_purchase_channel_55",
-      "uid" : "9a81b15b05d89a02",
+      "uid" : "ba6e0dc30c8268b8",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049201622,
-        "stop" : 1548049206482,
-        "duration" : 4860
+        "start" : 1548050816756,
+        "stop" : 1548050821614,
+        "duration" : 4858
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_new_version_56",
-      "uid" : "dfa9fc2119087dca",
+      "uid" : "b26bf82f8dd82fd9",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049206484,
-        "stop" : 1548049216141,
-        "duration" : 9657
+        "start" : 1548050821616,
+        "stop" : 1548050831413,
+        "duration" : 9797
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_privacy_policy_57",
-      "uid" : "84e29e9ba3a1095e",
+      "uid" : "efba2370b12f97b2",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049216144,
-        "stop" : 1548049221099,
-        "duration" : 4955
+        "start" : 1548050831416,
+        "stop" : 1548050836488,
+        "duration" : 5072
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_call_me_58",
-      "uid" : "c7b3f0b13d82a28",
+      "uid" : "4eaef1c03f099fec",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049221101,
-        "stop" : 1548049226501,
-        "duration" : 5400
+        "start" : 1548050836490,
+        "stop" : 1548050841813,
+        "duration" : 5323
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_give_feedback_59",
-      "uid" : "3220277d2635186f",
+      "uid" : "8545cf2ba5d6b9c6",
       "parentUid" : "7979d69c00d8a98487156b0c788f03c3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049226503,
-        "stop" : 1548049231012,
-        "duration" : 4509
+        "start" : 1548050841815,
+        "stop" : 1548050846485,
+        "duration" : 4670
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -833,13 +833,13 @@
     "name" : "05.点击昵称进入修改页",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_nickname_click_05",
-      "uid" : "677e6185b5ba6f17",
+      "uid" : "d43c33605c890021",
       "parentUid" : "f2293d824db32f1ceeb35d2cebd56f32",
       "status" : "passed",
       "time" : {
-        "start" : 1548048850503,
-        "stop" : 1548048853765,
-        "duration" : 3262
+        "start" : 1548050464657,
+        "stop" : 1548050467916,
+        "duration" : 3259
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -849,13 +849,13 @@
     "name" : "06.修改昵称页修改昵称点击完成",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_complete_click_06",
-      "uid" : "9b6bd9431f762121",
+      "uid" : "2cb5d489f0b92ce8",
       "parentUid" : "aff2290c39ef4b2830b5d76b8bb33f7a",
       "status" : "passed",
       "time" : {
-        "start" : 1548048853767,
-        "stop" : 1548048862755,
-        "duration" : 8988
+        "start" : 1548050467918,
+        "stop" : 1548050476986,
+        "duration" : 9068
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -865,13 +865,13 @@
     "name" : "07.修改昵称页点击返回icon",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_nickname_icon_click_07",
-      "uid" : "fc9c8455310f0ade",
+      "uid" : "44da2daf76049620",
       "parentUid" : "295cdddf6af7830f8ab41a865ce49f61",
       "status" : "passed",
       "time" : {
-        "start" : 1548048862757,
-        "stop" : 1548048870220,
-        "duration" : 7463
+        "start" : 1548050476989,
+        "stop" : 1548050484544,
+        "duration" : 7555
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -881,13 +881,13 @@
     "name" : "08.修改性别",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_sex_08",
-      "uid" : "ca6e9c115df512ec",
+      "uid" : "3b7aa04b0b109007",
       "parentUid" : "0ef2128f51468239a0b7d3a760b01487",
       "status" : "passed",
       "time" : {
-        "start" : 1548048870222,
-        "stop" : 1548048873610,
-        "duration" : 3388
+        "start" : 1548050484546,
+        "stop" : 1548050487915,
+        "duration" : 3369
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -897,13 +897,13 @@
     "name" : "09.修改职业",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_09",
-      "uid" : "9ed27917a5010daf",
+      "uid" : "33825c7fb26e7d4d",
       "parentUid" : "ca4a267992adb7f031fdb2085f4780cc",
       "status" : "passed",
       "time" : {
-        "start" : 1548048873612,
-        "stop" : 1548048879921,
-        "duration" : 6309
+        "start" : 1548050487917,
+        "stop" : 1548050494145,
+        "duration" : 6228
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -913,13 +913,13 @@
     "name" : "10.修改职业点击返回icon",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_icon_10",
-      "uid" : "a103b9e3b779e469",
+      "uid" : "c67ccdc8fd44991c",
       "parentUid" : "254cedfc2c4a488725d24399d2ce5adb",
       "status" : "passed",
       "time" : {
-        "start" : 1548048879923,
-        "stop" : 1548048884800,
-        "duration" : 4877
+        "start" : 1548050494147,
+        "stop" : 1548050499015,
+        "duration" : 4868
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -929,13 +929,13 @@
     "name" : "11.修改职业输入框输入内容点击取消",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_clear_11",
-      "uid" : "304603e2076df796",
+      "uid" : "22097242450dd330",
       "parentUid" : "e9a68ac5917a2c3f6d93b2e49bb350b3",
       "status" : "passed",
       "time" : {
-        "start" : 1548048884802,
-        "stop" : 1548048891273,
-        "duration" : 6471
+        "start" : 1548050499017,
+        "stop" : 1548050505478,
+        "duration" : 6461
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -945,13 +945,13 @@
     "name" : "12.手机号校验",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_phone_number_check_12",
-      "uid" : "ed75d4cdeac1eeb2",
+      "uid" : "1b3939e3a106133c",
       "parentUid" : "2d7e01f64181e426236ceab9a8c80ae7",
       "status" : "passed",
       "time" : {
-        "start" : 1548048891276,
-        "stop" : 1548048891451,
-        "duration" : 175
+        "start" : 1548050505481,
+        "stop" : 1548050505665,
+        "duration" : 184
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -961,13 +961,13 @@
     "name" : "13.所在地修改",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_address_13",
-      "uid" : "670b752387d99df7",
+      "uid" : "2f425205c92e9b8f",
       "parentUid" : "92911831b6eccb83fa25ca4b87632b66",
       "status" : "passed",
       "time" : {
-        "start" : 1548048891453,
-        "stop" : 1548048903881,
-        "duration" : 12428
+        "start" : 1548050505667,
+        "stop" : 1548050518185,
+        "duration" : 12518
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -977,13 +977,13 @@
     "name" : "14.修改所在地点击返回icon",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_address_clear_14",
-      "uid" : "2e05766f1573e4ac",
+      "uid" : "3b782472c29ade6c",
       "parentUid" : "f166a95e8c94637303173051213641c2",
       "status" : "passed",
       "time" : {
-        "start" : 1548048903883,
-        "stop" : 1548048916252,
-        "duration" : 12369
+        "start" : 1548050518187,
+        "stop" : 1548050530666,
+        "duration" : 12479
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -993,13 +993,13 @@
     "name" : "15.修改个性签名",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_15",
-      "uid" : "90bc8ba21904abca",
+      "uid" : "955483a7492dd546",
       "parentUid" : "0abcae3f28cb596370153931b74d77eb",
       "status" : "passed",
       "time" : {
-        "start" : 1548048916254,
-        "stop" : 1548048925705,
-        "duration" : 9451
+        "start" : 1548050530669,
+        "stop" : 1548050540210,
+        "duration" : 9541
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1009,13 +1009,13 @@
     "name" : "16.修改个性签名后点击返回icon",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_clear_16",
-      "uid" : "2bfb20284af27c5f",
+      "uid" : "5242b5a486309ddf",
       "parentUid" : "4d6db4404721310d287c460718cf91d9",
       "status" : "passed",
       "time" : {
-        "start" : 1548048925707,
-        "stop" : 1548048936663,
-        "duration" : 10956
+        "start" : 1548050540212,
+        "stop" : 1548050551176,
+        "duration" : 10964
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1025,13 +1025,13 @@
     "name" : "17.验证实名状态",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_check_real_name_authentication_state_17",
-      "uid" : "6c736db26c38e67b",
+      "uid" : "d3b2479f75d763e3",
       "parentUid" : "38533f3eaa4a69fce66ee85fbc9b17b0",
       "status" : "passed",
       "time" : {
-        "start" : 1548048936666,
-        "stop" : 1548048940339,
-        "duration" : 3673
+        "start" : 1548050551178,
+        "stop" : 1548050554762,
+        "duration" : 3584
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1041,13 +1041,13 @@
     "name" : "18.实名认证页返回icon点击",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_real_name_click_icon_18",
-      "uid" : "6e20da5b01caedbc",
+      "uid" : "95190ddeff75e2ee",
       "parentUid" : "1613258e845a8c5927089eccc67ab251",
       "status" : "passed",
       "time" : {
-        "start" : 1548048940341,
-        "stop" : 1548048942131,
-        "duration" : 1790
+        "start" : 1548050554764,
+        "stop" : 1548050556527,
+        "duration" : 1763
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1057,13 +1057,13 @@
     "name" : "19.验证绑卡状态",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_check_tied_card_state_19",
-      "uid" : "69b521b69ab5f9be",
+      "uid" : "25ab42ee73bdd454",
       "parentUid" : "50e8532dc024b32a73c0e1e88b1d43a8",
       "status" : "passed",
       "time" : {
-        "start" : 1548048942133,
-        "stop" : 1548048953931,
-        "duration" : 11798
+        "start" : 1548050556529,
+        "stop" : 1548050568405,
+        "duration" : 11876
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1073,13 +1073,13 @@
     "name" : "20.绑定银行卡页icon点击",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_tied_card_click_icon_20",
-      "uid" : "1c42e1b0a65f9d4c",
+      "uid" : "7c1f5d170c1e2426",
       "parentUid" : "27b833cbbb2e48d9583c162175561e35",
       "status" : "passed",
       "time" : {
-        "start" : 1548048953932,
-        "stop" : 1548048955878,
-        "duration" : 1946
+        "start" : 1548050568407,
+        "stop" : 1548050570337,
+        "duration" : 1930
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1089,13 +1089,13 @@
     "name" : "21.已实名中点击查看榜单返回app首页",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_check_list_click_21",
-      "uid" : "506ddde3188726c2",
+      "uid" : "9f5ecc4d50275a21",
       "parentUid" : "8d234ef455441adbdb4d98391dbac04b",
       "status" : "passed",
       "time" : {
-        "start" : 1548048955880,
-        "stop" : 1548048962402,
-        "duration" : 6522
+        "start" : 1548050570338,
+        "stop" : 1548050576985,
+        "duration" : 6647
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1105,13 +1105,13 @@
     "name" : "22.添加银行卡",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_add_bank_cards_22",
-      "uid" : "e848204a865e922b",
+      "uid" : "3b13f6eba56eb58a",
       "parentUid" : "5b167a542fbd794dae79e39633463ece",
       "status" : "passed",
       "time" : {
-        "start" : 1548048962404,
-        "stop" : 1548048976223,
-        "duration" : 13819
+        "start" : 1548050576987,
+        "stop" : 1548050590819,
+        "duration" : 13832
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1121,13 +1121,13 @@
     "name" : "23.点击我的关注",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_my_concern_23",
-      "uid" : "e761df54285a3c45",
+      "uid" : "2d8f89b49fd064f7",
       "parentUid" : "31ccd5cbbe06ec266ca55dd57b6232d6",
       "status" : "passed",
       "time" : {
-        "start" : 1548048976226,
-        "stop" : 1548048979860,
-        "duration" : 3634
+        "start" : 1548050590822,
+        "stop" : 1548050594794,
+        "duration" : 3972
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1137,13 +1137,13 @@
     "name" : "24.验证关注内内容",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_my_concern_content_24",
-      "uid" : "c42f52c3131918a2",
+      "uid" : "4800a57d1c778376",
       "parentUid" : "a1a726e20af0fb0f21ae25453db34107",
       "status" : "passed",
       "time" : {
-        "start" : 1548048979862,
-        "stop" : 1548049015400,
-        "duration" : 35538
+        "start" : 1548050594796,
+        "stop" : 1548050630047,
+        "duration" : 35251
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1153,13 +1153,13 @@
     "name" : "25.点击我的消息",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_my_news_25",
-      "uid" : "d126ea5c38ef853d",
+      "uid" : "d4b504fadeebed5b",
       "parentUid" : "0447a71167682ef977d52fb2b70140ef",
       "status" : "passed",
       "time" : {
-        "start" : 1548049015405,
-        "stop" : 1548049033903,
-        "duration" : 18498
+        "start" : 1548050630051,
+        "stop" : 1548050648687,
+        "duration" : 18636
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1169,13 +1169,13 @@
     "name" : "26.点击我的钱包",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_bicai_wallet_26",
-      "uid" : "6ca8280022930299",
+      "uid" : "380f33ce1a75aa20",
       "parentUid" : "2aa833901b361bbc465dd984fbaf4c7b",
       "status" : "passed",
       "time" : {
-        "start" : 1548049033905,
-        "stop" : 1548049038032,
-        "duration" : 4127
+        "start" : 1548050648690,
+        "stop" : 1548050652472,
+        "duration" : 3782
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1185,13 +1185,13 @@
     "name" : "27.点击常见问题",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_common_problem_27",
-      "uid" : "f17f01150377ec87",
+      "uid" : "23a5f929017eab91",
       "parentUid" : "e27515b2708eb2e65b1707fdbdd1009c",
       "status" : "passed",
       "time" : {
-        "start" : 1548049038034,
-        "stop" : 1548049042664,
-        "duration" : 4630
+        "start" : 1548050652474,
+        "stop" : 1548050657197,
+        "duration" : 4723
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1201,13 +1201,13 @@
     "name" : "28.点击明细",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_detailed_28",
-      "uid" : "93b6ff39a48244f5",
+      "uid" : "4767e80b0267c14b",
       "parentUid" : "2d62604be8929b658b8d5ca29b0d9028",
       "status" : "passed",
       "time" : {
-        "start" : 1548049042666,
-        "stop" : 1548049046959,
-        "duration" : 4293
+        "start" : 1548050657200,
+        "stop" : 1548050661434,
+        "duration" : 4234
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1217,13 +1217,13 @@
     "name" : "29.点击交易记录",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_business_record_29",
-      "uid" : "57575553f3307c02",
+      "uid" : "d3a9b512cabec384",
       "parentUid" : "c798ee377d70b5ec2f76ac8a991691b6",
       "status" : "passed",
       "time" : {
-        "start" : 1548049046961,
-        "stop" : 1548049050389,
-        "duration" : 3428
+        "start" : 1548050661436,
+        "stop" : 1548050664854,
+        "duration" : 3418
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1233,13 +1233,13 @@
     "name" : "30.点击交易记录页内容",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_business_record_content_30",
-      "uid" : "4d5417ebf571b8b5",
+      "uid" : "ed92bee99e54d34f",
       "parentUid" : "4f95b54ab0dd8452867f4d20deaed47d",
       "status" : "passed",
       "time" : {
-        "start" : 1548049050391,
-        "stop" : 1548049057722,
-        "duration" : 7331
+        "start" : 1548050664856,
+        "stop" : 1548050672268,
+        "duration" : 7412
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1249,13 +1249,13 @@
     "name" : "31.点击提现",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_cash_withdrawal_31",
-      "uid" : "1290db9ac878bfb7",
+      "uid" : "cc7733f804774e83",
       "parentUid" : "b2b73e91df8227b206d07bb35bc82618",
       "status" : "passed",
       "time" : {
-        "start" : 1548049057724,
-        "stop" : 1548049061830,
-        "duration" : 4106
+        "start" : 1548050672270,
+        "stop" : 1548050676414,
+        "duration" : 4144
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1265,13 +1265,13 @@
     "name" : "32.验证进入提现页提现按钮默认不可点",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32",
-      "uid" : "f00597a05f8c74f5",
+      "uid" : "1d1027844e6dd3ce",
       "parentUid" : "057e2fb8dc9a92b9ce952ba6bff77508",
       "status" : "passed",
       "time" : {
-        "start" : 1548049061832,
-        "stop" : 1548049062019,
-        "duration" : 187
+        "start" : 1548050676416,
+        "stop" : 1548050676633,
+        "duration" : 217
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1281,12 +1281,12 @@
     "name" : "33.验证输入大于等于10元提现金额按钮可点击",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable_33",
-      "uid" : "c8af4670a9c94b2d",
+      "uid" : "d20a31870c0fc4ee",
       "parentUid" : "2a64ea9359e8aa090279f15352581e49",
       "status" : "passed",
       "time" : {
-        "start" : 1548049062021,
-        "stop" : 1548049062023,
+        "start" : 1548050676635,
+        "stop" : 1548050676637,
         "duration" : 2
       },
       "flaky" : false,
@@ -1297,13 +1297,13 @@
     "name" : "34.验证输入小等10元提现金额按钮不可点击",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable__less_than_ten_34",
-      "uid" : "7ec3b822525cf52b",
+      "uid" : "2d72c70766fe4c1c",
       "parentUid" : "1e9935b6fe1095b207ec267a45cf991a",
       "status" : "passed",
       "time" : {
-        "start" : 1548049062024,
-        "stop" : 1548049065133,
-        "duration" : 3109
+        "start" : 1548050676638,
+        "stop" : 1548050679757,
+        "duration" : 3119
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1313,13 +1313,13 @@
     "name" : "35.账户余额隐藏显示状态校验",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_balance_display_hide_35",
-      "uid" : "a9a803689739e6bb",
+      "uid" : "f52d54bc336e9717",
       "parentUid" : "712d688aad21b905a8052971afadc0fb",
       "status" : "passed",
       "time" : {
-        "start" : 1548049065135,
-        "stop" : 1548049071178,
-        "duration" : 6043
+        "start" : 1548050679760,
+        "stop" : 1548050685954,
+        "duration" : 6194
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1329,13 +1329,13 @@
     "name" : "36.点击我的钱包银行卡跳转",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_card_button_36",
-      "uid" : "767c47218fe5f1f3",
+      "uid" : "e4983e2b3d5bb67",
       "parentUid" : "4e7720fc8f3aa5ca0828b3d92bc77847",
       "status" : "passed",
       "time" : {
-        "start" : 1548049071180,
-        "stop" : 1548049076735,
-        "duration" : 5555
+        "start" : 1548050685956,
+        "stop" : 1548050691548,
+        "duration" : 5592
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1345,13 +1345,13 @@
     "name" : "37.点击II类户跳转",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_type_two_accounts_37",
-      "uid" : "5d5a8d8f6e5dae22",
+      "uid" : "fbe92858c9b3e0d2",
       "parentUid" : "4e04af872aed45052febb175a7600fe7",
       "status" : "passed",
       "time" : {
-        "start" : 1548049076737,
-        "stop" : 1548049085632,
-        "duration" : 8895
+        "start" : 1548050691550,
+        "stop" : 1548050700487,
+        "duration" : 8937
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1361,13 +1361,13 @@
     "name" : "38.点击未开户",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_not_opening_bank_38",
-      "uid" : "19e5a714b741a8da",
+      "uid" : "c406b2b4a97fd7d1",
       "parentUid" : "719754ad733bfdbd031de2c092055b32",
       "status" : "passed",
       "time" : {
-        "start" : 1548049085635,
-        "stop" : 1548049092633,
-        "duration" : 6998
+        "start" : 1548050700489,
+        "stop" : 1548050707508,
+        "duration" : 7019
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1377,13 +1377,13 @@
     "name" : "39.点击查看全部银行",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_look_all_bank_39",
-      "uid" : "2668e96d9bad3711",
+      "uid" : "2ffddfadfe297699",
       "parentUid" : "8975bc897213af97ea0f90cc1972aef8",
       "status" : "passed",
       "time" : {
-        "start" : 1548049092634,
-        "stop" : 1548049101109,
-        "duration" : 8475
+        "start" : 1548050707511,
+        "stop" : 1548050715836,
+        "duration" : 8325
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1393,13 +1393,13 @@
     "name" : "40.点击卡券跳转到卡券页",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_card_ticket_40",
-      "uid" : "edbd86515a52e94d",
+      "uid" : "774aff3acb2c8ba6",
       "parentUid" : "a163a89b7b87b260eab73e4efd68407b",
       "status" : "passed",
       "time" : {
-        "start" : 1548049101111,
-        "stop" : 1548049112082,
-        "duration" : 10971
+        "start" : 1548050715838,
+        "stop" : 1548050726517,
+        "duration" : 10679
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1409,13 +1409,13 @@
     "name" : "41.点击关于我们",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_understand_bicai_41",
-      "uid" : "e85175b02911ba27",
+      "uid" : "e9ef22f254629586",
       "parentUid" : "847b31f2e4f80c14d9f75cb79f8daa30",
       "status" : "passed",
       "time" : {
-        "start" : 1548049112084,
-        "stop" : 1548049118542,
-        "duration" : 6458
+        "start" : 1548050726520,
+        "stop" : 1548050732851,
+        "duration" : 6331
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1425,13 +1425,13 @@
     "name" : "42.点击签到",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_sign_in_42",
-      "uid" : "fc98c7a7d83a29c7",
+      "uid" : "143811a3ad8e09fe",
       "parentUid" : "c58d399de65a31b36c8e490e3fa30d1b",
       "status" : "passed",
       "time" : {
-        "start" : 1548049118544,
-        "stop" : 1548049131831,
-        "duration" : 13287
+        "start" : 1548050732853,
+        "stop" : 1548050746185,
+        "duration" : 13332
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1441,13 +1441,13 @@
     "name" : "43.签到抽奖校验",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_sign_in_luck_draw_43",
-      "uid" : "f639cc0515e7f89",
+      "uid" : "1180e2962b9a552a",
       "parentUid" : "3445ccc3ceaa3506e908909e605f2a7c",
       "status" : "passed",
       "time" : {
-        "start" : 1548049131833,
-        "stop" : 1548049135978,
-        "duration" : 4145
+        "start" : 1548050746187,
+        "stop" : 1548050750523,
+        "duration" : 4336
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1457,13 +1457,13 @@
     "name" : "44.查看活动规则",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_look_activity_rules_44",
-      "uid" : "cbd4e1eb90309f3b",
+      "uid" : "1958f01c6611b808",
       "parentUid" : "329b1fc95fc0760a919fe604b90c9a82",
       "status" : "passed",
       "time" : {
-        "start" : 1548049135980,
-        "stop" : 1548049139238,
-        "duration" : 3258
+        "start" : 1548050750525,
+        "stop" : 1548050753663,
+        "duration" : 3138
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1473,13 +1473,13 @@
     "name" : "45.点击分享",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_share_friend_45",
-      "uid" : "b74489309e658f65",
+      "uid" : "b2fcd26b15751e41",
       "parentUid" : "cd8f4cd0de3ff61a8e935b8df0c2ed07",
       "status" : "passed",
       "time" : {
-        "start" : 1548049139239,
-        "stop" : 1548049147958,
-        "duration" : 8719
+        "start" : 1548050753665,
+        "stop" : 1548050762453,
+        "duration" : 8788
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1489,13 +1489,13 @@
     "name" : "46.点击分享圈",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_share_circle_of_friend_46",
-      "uid" : "246790dd32413cbb",
+      "uid" : "1e3b33de135bc01f",
       "parentUid" : "3dcc7a6cf00f9bd3a51c99188bcd0802",
       "status" : "passed",
       "time" : {
-        "start" : 1548049147960,
-        "stop" : 1548049153638,
-        "duration" : 5678
+        "start" : 1548050762454,
+        "stop" : 1548050768383,
+        "duration" : 5929
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1505,13 +1505,13 @@
     "name" : "47.签到页查看我的中奖记录",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_my_winning_record_47",
-      "uid" : "44ac21c0ec108737",
+      "uid" : "1add349ccf7985ec",
       "parentUid" : "8cee764bed0ea1594a5367132b78eac4",
       "status" : "passed",
       "time" : {
-        "start" : 1548049153640,
-        "stop" : 1548049163300,
-        "duration" : 9660
+        "start" : 1548050768385,
+        "stop" : 1548050778276,
+        "duration" : 9891
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1521,13 +1521,13 @@
     "name" : "48.点击用户调研",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_user_survey_48",
-      "uid" : "fe192362f9c65b00",
+      "uid" : "aa19e81355290ac8",
       "parentUid" : "494d49b17c682e5535c69c3408a412d3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049163302,
-        "stop" : 1548049168142,
-        "duration" : 4840
+        "start" : 1548050778278,
+        "stop" : 1548050783349,
+        "duration" : 5071
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1537,13 +1537,13 @@
     "name" : "49.点击设置",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_set_up_49",
-      "uid" : "708e819d260fedc5",
+      "uid" : "60c81b507b0898b4",
       "parentUid" : "4225324b6f2bb265fb7e30d065d339b9",
       "status" : "passed",
       "time" : {
-        "start" : 1548049168144,
-        "stop" : 1548049176291,
-        "duration" : 8147
+        "start" : 1548050783351,
+        "stop" : 1548050791508,
+        "duration" : 8157
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1553,13 +1553,13 @@
     "name" : "50.点击比财支付密码管理",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50",
-      "uid" : "74667b237805633a",
+      "uid" : "e00146eb8470dd55",
       "parentUid" : "dfee8f3363f70bcf3c68c309636e26c1",
       "status" : "passed",
       "time" : {
-        "start" : 1548049176293,
-        "stop" : 1548049180071,
-        "duration" : 3778
+        "start" : 1548050791510,
+        "stop" : 1548050795376,
+        "duration" : 3866
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1569,13 +1569,13 @@
     "name" : "51.点击修改密码",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_change_password_51",
-      "uid" : "21c45a782908c8f5",
+      "uid" : "acbb73919f51af1c",
       "parentUid" : "082a38dd4d2bcdfe84d228ece3aa7875",
       "status" : "passed",
       "time" : {
-        "start" : 1548049180073,
-        "stop" : 1548049187181,
-        "duration" : 7108
+        "start" : 1548050795379,
+        "stop" : 1548050802246,
+        "duration" : 6867
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1585,13 +1585,13 @@
     "name" : "52.点击忘记密码",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_forget_password_52",
-      "uid" : "33abaa594a72f471",
+      "uid" : "a288f65db96d28ee",
       "parentUid" : "84e1e71c1b38eaa4911ad1e14ba86203",
       "status" : "passed",
       "time" : {
-        "start" : 1548049187184,
-        "stop" : 1548049194218,
-        "duration" : 7034
+        "start" : 1548050802249,
+        "stop" : 1548050809365,
+        "duration" : 7116
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1601,13 +1601,13 @@
     "name" : "53.点击首页默认",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_home_page_default_53",
-      "uid" : "ad395155e43fa13e",
+      "uid" : "7b7fbcb505c12875",
       "parentUid" : "db81056141bbaf231c9b019d5f48d7e4",
       "status" : "passed",
       "time" : {
-        "start" : 1548049194219,
-        "stop" : 1548049198281,
-        "duration" : 4062
+        "start" : 1548050809368,
+        "stop" : 1548050813516,
+        "duration" : 4148
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1617,13 +1617,13 @@
     "name" : "54.消息推送提醒",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_news_push_54",
-      "uid" : "f8116c3cf8e2b65",
+      "uid" : "273d53bfeefd69c3",
       "parentUid" : "83acf74b4bd2032e8e851a4449a263c5",
       "status" : "passed",
       "time" : {
-        "start" : 1548049198282,
-        "stop" : 1548049201620,
-        "duration" : 3338
+        "start" : 1548050813519,
+        "stop" : 1548050816755,
+        "duration" : 3236
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1633,13 +1633,13 @@
     "name" : "55.默认安全购买渠道设置",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_default_purchase_channel_55",
-      "uid" : "9a81b15b05d89a02",
+      "uid" : "ba6e0dc30c8268b8",
       "parentUid" : "c682b419aa990350835df4b4c500dc74",
       "status" : "passed",
       "time" : {
-        "start" : 1548049201622,
-        "stop" : 1548049206482,
-        "duration" : 4860
+        "start" : 1548050816756,
+        "stop" : 1548050821614,
+        "duration" : 4858
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1649,13 +1649,13 @@
     "name" : "56.点击版本更新说明",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_new_version_56",
-      "uid" : "dfa9fc2119087dca",
+      "uid" : "b26bf82f8dd82fd9",
       "parentUid" : "adc6f91a56f32fdf93c44c9681c99d27",
       "status" : "passed",
       "time" : {
-        "start" : 1548049206484,
-        "stop" : 1548049216141,
-        "duration" : 9657
+        "start" : 1548050821616,
+        "stop" : 1548050831413,
+        "duration" : 9797
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1665,13 +1665,13 @@
     "name" : "57.点击隐私政策",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_privacy_policy_57",
-      "uid" : "84e29e9ba3a1095e",
+      "uid" : "efba2370b12f97b2",
       "parentUid" : "eb66a4eab1aa3b3efa2773a33b8faa51",
       "status" : "passed",
       "time" : {
-        "start" : 1548049216144,
-        "stop" : 1548049221099,
-        "duration" : 4955
+        "start" : 1548050831416,
+        "stop" : 1548050836488,
+        "duration" : 5072
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1681,13 +1681,13 @@
     "name" : "58.点击联系我们",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_call_me_58",
-      "uid" : "c7b3f0b13d82a28",
+      "uid" : "4eaef1c03f099fec",
       "parentUid" : "6a607895988a4316051c14eadc046dad",
       "status" : "passed",
       "time" : {
-        "start" : 1548049221101,
-        "stop" : 1548049226501,
-        "duration" : 5400
+        "start" : 1548050836490,
+        "stop" : 1548050841813,
+        "duration" : 5323
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1697,13 +1697,13 @@
     "name" : "59.点击意见反馈",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_click_give_feedback_59",
-      "uid" : "3220277d2635186f",
+      "uid" : "8545cf2ba5d6b9c6",
       "parentUid" : "bc0084a3043b9c5f3af0e2250a452ad1",
       "status" : "passed",
       "time" : {
-        "start" : 1548049226503,
-        "stop" : 1548049231012,
-        "duration" : 4509
+        "start" : 1548050841815,
+        "stop" : 1548050846485,
+        "duration" : 4670
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1713,13 +1713,13 @@
     "name" : "60.app退出",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_sign_out_app_60",
-      "uid" : "d68b10079d2fed91",
+      "uid" : "362203db7c4dd26",
       "parentUid" : "7ec8ebd0bc83c20942fe9f917c10c768",
       "status" : "passed",
       "time" : {
-        "start" : 1548049231014,
-        "stop" : 1548049234715,
-        "duration" : 3701
+        "start" : 1548050846487,
+        "stop" : 1548050850209,
+        "duration" : 3722
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1729,85 +1729,85 @@
     "name" : "Regression",
     "children" : [ {
       "name" : "test_regression.TestRegression.test_go_main_01",
-      "uid" : "346e3de8e8788e2c",
+      "uid" : "9d9bff26760dc63",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049236106,
-        "stop" : 1548049249658,
-        "duration" : 13552
+        "start" : 1548050851585,
+        "stop" : 1548050865044,
+        "duration" : 13459
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_login_02",
-      "uid" : "87804653c932c8c0",
+      "uid" : "c16b27afac6859aa",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049249660,
-        "stop" : 1548049262507,
-        "duration" : 12847
+        "start" : 1548050865047,
+        "stop" : 1548050877752,
+        "duration" : 12705
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_sidebar_eject_03",
-      "uid" : "533bc8a0b774814d",
+      "uid" : "32d8c1a670db5f8",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049262509,
-        "stop" : 1548049275938,
-        "duration" : 13429
+        "start" : 1548050877753,
+        "stop" : 1548050890743,
+        "duration" : 12990
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_click_bicai_wallet_04",
-      "uid" : "ab48da402873c962",
+      "uid" : "58f159127545da4e",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049275941,
-        "stop" : 1548049279688,
-        "duration" : 3747
+        "start" : 1548050890745,
+        "stop" : 1548050894435,
+        "duration" : 3690
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_click_type_two_accounts_05",
-      "uid" : "753b511faf156f3",
+      "uid" : "22fb679ff9f20502",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049279690,
-        "stop" : 1548049287111,
-        "duration" : 7421
+        "start" : 1548050894437,
+        "stop" : 1548050901754,
+        "duration" : 7317
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_click_set_up_06",
-      "uid" : "b6086166886c9732",
+      "uid" : "d52822ae5d361bd3",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049287114,
-        "stop" : 1548049295301,
-        "duration" : 8187
+        "start" : 1548050901756,
+        "stop" : 1548050910024,
+        "duration" : 8268
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_sign_out_app_07",
-      "uid" : "7cd8aac7ba72c9da",
+      "uid" : "8672f4d5404b1072",
       "parentUid" : "03c2c43ea40815c27306e3934ff482fd",
       "status" : "passed",
       "time" : {
-        "start" : 1548049295303,
-        "stop" : 1548049298976,
-        "duration" : 3673
+        "start" : 1548050910027,
+        "stop" : 1548050913556,
+        "duration" : 3529
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1817,13 +1817,13 @@
     "name" : "04.点击我的钱包",
     "children" : [ {
       "name" : "test_regression.TestRegression.test_click_bicai_wallet_04",
-      "uid" : "ab48da402873c962",
+      "uid" : "58f159127545da4e",
       "parentUid" : "c0c429625a5356f9d46904e007720e28",
       "status" : "passed",
       "time" : {
-        "start" : 1548049275941,
-        "stop" : 1548049279688,
-        "duration" : 3747
+        "start" : 1548050890745,
+        "stop" : 1548050894435,
+        "duration" : 3690
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1833,13 +1833,13 @@
     "name" : "05.点击II类户跳转",
     "children" : [ {
       "name" : "test_regression.TestRegression.test_click_type_two_accounts_05",
-      "uid" : "753b511faf156f3",
+      "uid" : "22fb679ff9f20502",
       "parentUid" : "f4a387477bb582e8a59882d0f5e27818",
       "status" : "passed",
       "time" : {
-        "start" : 1548049279690,
-        "stop" : 1548049287111,
-        "duration" : 7421
+        "start" : 1548050894437,
+        "stop" : 1548050901754,
+        "duration" : 7317
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1849,13 +1849,13 @@
     "name" : "06.点击设置",
     "children" : [ {
       "name" : "test_regression.TestRegression.test_click_set_up_06",
-      "uid" : "b6086166886c9732",
+      "uid" : "d52822ae5d361bd3",
       "parentUid" : "ddf23af2f5eab794d95d7a2fc15123f0",
       "status" : "passed",
       "time" : {
-        "start" : 1548049287114,
-        "stop" : 1548049295301,
-        "duration" : 8187
+        "start" : 1548050901756,
+        "stop" : 1548050910024,
+        "duration" : 8268
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1865,13 +1865,13 @@
     "name" : "07.app退出",
     "children" : [ {
       "name" : "test_regression.TestRegression.test_sign_out_app_07",
-      "uid" : "7cd8aac7ba72c9da",
+      "uid" : "8672f4d5404b1072",
       "parentUid" : "f1d3dd3f29ba4a4232b9367bd06693f3",
       "status" : "passed",
       "time" : {
-        "start" : 1548049295303,
-        "stop" : 1548049298976,
-        "duration" : 3673
+        "start" : 1548050910027,
+        "stop" : 1548050913556,
+        "duration" : 3529
       },
       "flaky" : false,
       "parameters" : [ ]

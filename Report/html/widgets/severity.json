@@ -1,670 +1,670 @@
 [ {
-  "uid" : "fc9c8455310f0ade",
-  "name" : "test_sidebar.TestSidebar.test_nickname_icon_click_07",
+  "uid" : "143811a3ad8e09fe",
+  "name" : "test_sidebar.TestSidebar.test_click_sign_in_42",
   "time" : {
-    "start" : 1548048862757,
-    "stop" : 1548048870220,
-    "duration" : 7463
+    "start" : 1548050732853,
+    "stop" : 1548050746185,
+    "duration" : 13332
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "19e5a714b741a8da",
-  "name" : "test_sidebar.TestSidebar.test_click_not_opening_bank_38",
-  "time" : {
-    "start" : 1548049085635,
-    "stop" : 1548049092633,
-    "duration" : 6998
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "670b752387d99df7",
-  "name" : "test_sidebar.TestSidebar.test_modify_address_13",
-  "time" : {
-    "start" : 1548048891453,
-    "stop" : 1548048903881,
-    "duration" : 12428
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "3220277d2635186f",
-  "name" : "test_sidebar.TestSidebar.test_click_give_feedback_59",
-  "time" : {
-    "start" : 1548049226503,
-    "stop" : 1548049231012,
-    "duration" : 4509
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "69b521b69ab5f9be",
-  "name" : "test_sidebar.TestSidebar.test_check_tied_card_state_19",
-  "time" : {
-    "start" : 1548048942133,
-    "stop" : 1548048953931,
-    "duration" : 11798
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "cbd4e1eb90309f3b",
-  "name" : "test_sidebar.TestSidebar.test_look_activity_rules_44",
-  "time" : {
-    "start" : 1548049135980,
-    "stop" : 1548049139238,
-    "duration" : 3258
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "ad395155e43fa13e",
-  "name" : "test_sidebar.TestSidebar.test_click_home_page_default_53",
-  "time" : {
-    "start" : 1548049194219,
-    "stop" : 1548049198281,
-    "duration" : 4062
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "f00597a05f8c74f5",
-  "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32",
-  "time" : {
-    "start" : 1548049061832,
-    "stop" : 1548049062019,
-    "duration" : 187
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "2e05766f1573e4ac",
-  "name" : "test_sidebar.TestSidebar.test_modify_address_clear_14",
-  "time" : {
-    "start" : 1548048903883,
-    "stop" : 1548048916252,
-    "duration" : 12369
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "6c736db26c38e67b",
-  "name" : "test_sidebar.TestSidebar.test_check_real_name_authentication_state_17",
-  "time" : {
-    "start" : 1548048936666,
-    "stop" : 1548048940339,
-    "duration" : 3673
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "2668e96d9bad3711",
-  "name" : "test_sidebar.TestSidebar.test_click_look_all_bank_39",
-  "time" : {
-    "start" : 1548049092634,
-    "stop" : 1548049101109,
-    "duration" : 8475
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "49cdfbcec81a434",
-  "name" : "test_sidebar.TestSidebar.test_sidebar_eject_03",
-  "time" : {
-    "start" : 1548048833114,
-    "stop" : 1548048846602,
-    "duration" : 13488
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "246790dd32413cbb",
-  "name" : "test_sidebar.TestSidebar.test_click_share_circle_of_friend_46",
-  "time" : {
-    "start" : 1548049147960,
-    "stop" : 1548049153638,
-    "duration" : 5678
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "346e3de8e8788e2c",
-  "name" : "test_regression.TestRegression.test_go_main_01",
-  "time" : {
-    "start" : 1548049236106,
-    "stop" : 1548049249658,
-    "duration" : 13552
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "44f001edc83bfd41",
-  "name" : "test_sidebar.TestSidebar.test_logo_click_04",
-  "time" : {
-    "start" : 1548048846604,
-    "stop" : 1548048850501,
-    "duration" : 3897
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "6e20da5b01caedbc",
-  "name" : "test_sidebar.TestSidebar.test_real_name_click_icon_18",
-  "time" : {
-    "start" : 1548048940341,
-    "stop" : 1548048942131,
-    "duration" : 1790
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "e848204a865e922b",
-  "name" : "test_sidebar.TestSidebar.test_add_bank_cards_22",
-  "time" : {
-    "start" : 1548048962404,
-    "stop" : 1548048976223,
-    "duration" : 13819
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "d1381442b49341c3",
-  "name" : "test_sidebar.TestSidebar.test_login_02",
-  "time" : {
-    "start" : 1548048820426,
-    "stop" : 1548048833112,
-    "duration" : 12686
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "c42f52c3131918a2",
-  "name" : "test_sidebar.TestSidebar.test_click_my_concern_content_24",
-  "time" : {
-    "start" : 1548048979862,
-    "stop" : 1548049015400,
-    "duration" : 35538
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "f17f01150377ec87",
-  "name" : "test_sidebar.TestSidebar.test_click_common_problem_27",
-  "time" : {
-    "start" : 1548049038034,
-    "stop" : 1548049042664,
-    "duration" : 4630
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "74667b237805633a",
-  "name" : "test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50",
-  "time" : {
-    "start" : 1548049176293,
-    "stop" : 1548049180071,
-    "duration" : 3778
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "9ed27917a5010daf",
-  "name" : "test_sidebar.TestSidebar.test_modify_profession_09",
-  "time" : {
-    "start" : 1548048873612,
-    "stop" : 1548048879921,
-    "duration" : 6309
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "708e819d260fedc5",
-  "name" : "test_sidebar.TestSidebar.test_click_set_up_49",
-  "time" : {
-    "start" : 1548049168144,
-    "stop" : 1548049176291,
-    "duration" : 8147
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a9a803689739e6bb",
-  "name" : "test_sidebar.TestSidebar.test_balance_display_hide_35",
-  "time" : {
-    "start" : 1548049065135,
-    "stop" : 1548049071178,
-    "duration" : 6043
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "c7b3f0b13d82a28",
-  "name" : "test_sidebar.TestSidebar.test_click_call_me_58",
-  "time" : {
-    "start" : 1548049221101,
-    "stop" : 1548049226501,
-    "duration" : 5400
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "b6086166886c9732",
-  "name" : "test_regression.TestRegression.test_click_set_up_06",
-  "time" : {
-    "start" : 1548049287114,
-    "stop" : 1548049295301,
-    "duration" : 8187
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2bfb20284af27c5f",
+  "uid" : "5242b5a486309ddf",
   "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_clear_16",
   "time" : {
-    "start" : 1548048925707,
-    "stop" : 1548048936663,
-    "duration" : 10956
+    "start" : 1548050540212,
+    "stop" : 1548050551176,
+    "duration" : 10964
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "90bc8ba21904abca",
-  "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_15",
+  "uid" : "3b782472c29ade6c",
+  "name" : "test_sidebar.TestSidebar.test_modify_address_clear_14",
   "time" : {
-    "start" : 1548048916254,
-    "stop" : 1548048925705,
-    "duration" : 9451
+    "start" : 1548050518187,
+    "stop" : 1548050530666,
+    "duration" : 12479
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "a103b9e3b779e469",
-  "name" : "test_sidebar.TestSidebar.test_modify_profession_icon_10",
-  "time" : {
-    "start" : 1548048879923,
-    "stop" : 1548048884800,
-    "duration" : 4877
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "7ec3b822525cf52b",
+  "uid" : "2d72c70766fe4c1c",
   "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable__less_than_ten_34",
   "time" : {
-    "start" : 1548049062024,
-    "stop" : 1548049065133,
-    "duration" : 3109
+    "start" : 1548050676638,
+    "stop" : 1548050679757,
+    "duration" : 3119
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "f639cc0515e7f89",
-  "name" : "test_sidebar.TestSidebar.test_click_sign_in_luck_draw_43",
+  "uid" : "c406b2b4a97fd7d1",
+  "name" : "test_sidebar.TestSidebar.test_click_not_opening_bank_38",
   "time" : {
-    "start" : 1548049131833,
-    "stop" : 1548049135978,
-    "duration" : 4145
+    "start" : 1548050700489,
+    "stop" : 1548050707508,
+    "duration" : 7019
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "ab48da402873c962",
-  "name" : "test_regression.TestRegression.test_click_bicai_wallet_04",
+  "uid" : "25ab42ee73bdd454",
+  "name" : "test_sidebar.TestSidebar.test_check_tied_card_state_19",
   "time" : {
-    "start" : 1548049275941,
-    "stop" : 1548049279688,
-    "duration" : 3747
+    "start" : 1548050556529,
+    "stop" : 1548050568405,
+    "duration" : 11876
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "93b6ff39a48244f5",
-  "name" : "test_sidebar.TestSidebar.test_click_detailed_28",
-  "time" : {
-    "start" : 1548049042666,
-    "stop" : 1548049046959,
-    "duration" : 4293
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "4d5417ebf571b8b5",
-  "name" : "test_sidebar.TestSidebar.test_click_business_record_content_30",
-  "time" : {
-    "start" : 1548049050391,
-    "stop" : 1548049057722,
-    "duration" : 7331
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "6ca8280022930299",
-  "name" : "test_sidebar.TestSidebar.test_click_bicai_wallet_26",
-  "time" : {
-    "start" : 1548049033905,
-    "stop" : 1548049038032,
-    "duration" : 4127
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "f8116c3cf8e2b65",
-  "name" : "test_sidebar.TestSidebar.test_click_news_push_54",
-  "time" : {
-    "start" : 1548049198282,
-    "stop" : 1548049201620,
-    "duration" : 3338
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "767c47218fe5f1f3",
-  "name" : "test_sidebar.TestSidebar.test_click_card_button_36",
-  "time" : {
-    "start" : 1548049071180,
-    "stop" : 1548049076735,
-    "duration" : 5555
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "533bc8a0b774814d",
-  "name" : "test_regression.TestRegression.test_sidebar_eject_03",
-  "time" : {
-    "start" : 1548049262509,
-    "stop" : 1548049275938,
-    "duration" : 13429
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "1c42e1b0a65f9d4c",
-  "name" : "test_sidebar.TestSidebar.test_tied_card_click_icon_20",
-  "time" : {
-    "start" : 1548048953932,
-    "stop" : 1548048955878,
-    "duration" : 1946
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "304603e2076df796",
-  "name" : "test_sidebar.TestSidebar.test_modify_profession_clear_11",
-  "time" : {
-    "start" : 1548048884802,
-    "stop" : 1548048891273,
-    "duration" : 6471
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "e761df54285a3c45",
-  "name" : "test_sidebar.TestSidebar.test_click_my_concern_23",
-  "time" : {
-    "start" : 1548048976226,
-    "stop" : 1548048979860,
-    "duration" : 3634
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "753b511faf156f3",
-  "name" : "test_regression.TestRegression.test_click_type_two_accounts_05",
-  "time" : {
-    "start" : 1548049279690,
-    "stop" : 1548049287111,
-    "duration" : 7421
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "d68b10079d2fed91",
-  "name" : "test_sidebar.TestSidebar.test_sign_out_app_60",
-  "time" : {
-    "start" : 1548049231014,
-    "stop" : 1548049234715,
-    "duration" : 3701
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "b74489309e658f65",
-  "name" : "test_sidebar.TestSidebar.test_click_share_friend_45",
-  "time" : {
-    "start" : 1548049139239,
-    "stop" : 1548049147958,
-    "duration" : 8719
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "9b6bd9431f762121",
-  "name" : "test_sidebar.TestSidebar.test_complete_click_06",
-  "time" : {
-    "start" : 1548048853767,
-    "stop" : 1548048862755,
-    "duration" : 8988
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "84e29e9ba3a1095e",
-  "name" : "test_sidebar.TestSidebar.test_click_privacy_policy_57",
-  "time" : {
-    "start" : 1548049216144,
-    "stop" : 1548049221099,
-    "duration" : 4955
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "44ac21c0ec108737",
-  "name" : "test_sidebar.TestSidebar.test_click_my_winning_record_47",
-  "time" : {
-    "start" : 1548049153640,
-    "stop" : 1548049163300,
-    "duration" : 9660
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "7cd8aac7ba72c9da",
-  "name" : "test_regression.TestRegression.test_sign_out_app_07",
-  "time" : {
-    "start" : 1548049295303,
-    "stop" : 1548049298976,
-    "duration" : 3673
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "ed75d4cdeac1eeb2",
-  "name" : "test_sidebar.TestSidebar.test_phone_number_check_12",
-  "time" : {
-    "start" : 1548048891276,
-    "stop" : 1548048891451,
-    "duration" : 175
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "dfa9fc2119087dca",
-  "name" : "test_sidebar.TestSidebar.test_click_new_version_56",
-  "time" : {
-    "start" : 1548049206484,
-    "stop" : 1548049216141,
-    "duration" : 9657
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "9a81b15b05d89a02",
-  "name" : "test_sidebar.TestSidebar.test_default_purchase_channel_55",
-  "time" : {
-    "start" : 1548049201622,
-    "stop" : 1548049206482,
-    "duration" : 4860
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "57575553f3307c02",
-  "name" : "test_sidebar.TestSidebar.test_click_business_record_29",
-  "time" : {
-    "start" : 1548049046961,
-    "stop" : 1548049050389,
-    "duration" : 3428
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "edbd86515a52e94d",
-  "name" : "test_sidebar.TestSidebar.test_click_card_ticket_40",
-  "time" : {
-    "start" : 1548049101111,
-    "stop" : 1548049112082,
-    "duration" : 10971
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "33abaa594a72f471",
-  "name" : "test_sidebar.TestSidebar.test_click_forget_password_52",
-  "time" : {
-    "start" : 1548049187184,
-    "stop" : 1548049194218,
-    "duration" : 7034
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "ca6e9c115df512ec",
-  "name" : "test_sidebar.TestSidebar.test_modify_sex_08",
-  "time" : {
-    "start" : 1548048870222,
-    "stop" : 1548048873610,
-    "duration" : 3388
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "d126ea5c38ef853d",
-  "name" : "test_sidebar.TestSidebar.test_click_my_news_25",
-  "time" : {
-    "start" : 1548049015405,
-    "stop" : 1548049033903,
-    "duration" : 18498
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "21c45a782908c8f5",
-  "name" : "test_sidebar.TestSidebar.test_click_change_password_51",
-  "time" : {
-    "start" : 1548049180073,
-    "stop" : 1548049187181,
-    "duration" : 7108
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "c8af4670a9c94b2d",
+  "uid" : "d20a31870c0fc4ee",
   "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable_33",
   "time" : {
-    "start" : 1548049062021,
-    "stop" : 1548049062023,
+    "start" : 1548050676635,
+    "stop" : 1548050676637,
     "duration" : 2
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "8097ce1cfd717c60",
-  "name" : "test_sidebar.TestSidebar.test_go_main_01",
+  "uid" : "79d7caf32975e22a",
+  "name" : "test_sidebar.TestSidebar.test_login_02",
   "time" : {
-    "start" : 1548048806789,
-    "stop" : 1548048820422,
-    "duration" : 13633
+    "start" : 1548050434619,
+    "stop" : 1548050447265,
+    "duration" : 12646
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ba6e0dc30c8268b8",
+  "name" : "test_sidebar.TestSidebar.test_default_purchase_channel_55",
+  "time" : {
+    "start" : 1548050816756,
+    "stop" : 1548050821614,
+    "duration" : 4858
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "87804653c932c8c0",
-  "name" : "test_regression.TestRegression.test_login_02",
+  "uid" : "b26bf82f8dd82fd9",
+  "name" : "test_sidebar.TestSidebar.test_click_new_version_56",
   "time" : {
-    "start" : 1548049249660,
-    "stop" : 1548049262507,
-    "duration" : 12847
+    "start" : 1548050821616,
+    "stop" : 1548050831413,
+    "duration" : 9797
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "5d5a8d8f6e5dae22",
-  "name" : "test_sidebar.TestSidebar.test_click_type_two_accounts_37",
+  "uid" : "8545cf2ba5d6b9c6",
+  "name" : "test_sidebar.TestSidebar.test_click_give_feedback_59",
   "time" : {
-    "start" : 1548049076737,
-    "stop" : 1548049085632,
-    "duration" : 8895
+    "start" : 1548050841815,
+    "stop" : 1548050846485,
+    "duration" : 4670
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "1290db9ac878bfb7",
+  "uid" : "22097242450dd330",
+  "name" : "test_sidebar.TestSidebar.test_modify_profession_clear_11",
+  "time" : {
+    "start" : 1548050499017,
+    "stop" : 1548050505478,
+    "duration" : 6461
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4800a57d1c778376",
+  "name" : "test_sidebar.TestSidebar.test_click_my_concern_content_24",
+  "time" : {
+    "start" : 1548050594796,
+    "stop" : 1548050630047,
+    "duration" : 35251
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1180e2962b9a552a",
+  "name" : "test_sidebar.TestSidebar.test_click_sign_in_luck_draw_43",
+  "time" : {
+    "start" : 1548050746187,
+    "stop" : 1548050750523,
+    "duration" : 4336
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2d8f89b49fd064f7",
+  "name" : "test_sidebar.TestSidebar.test_click_my_concern_23",
+  "time" : {
+    "start" : 1548050590822,
+    "stop" : 1548050594794,
+    "duration" : 3972
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8672f4d5404b1072",
+  "name" : "test_regression.TestRegression.test_sign_out_app_07",
+  "time" : {
+    "start" : 1548050910027,
+    "stop" : 1548050913556,
+    "duration" : 3529
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "362203db7c4dd26",
+  "name" : "test_sidebar.TestSidebar.test_sign_out_app_60",
+  "time" : {
+    "start" : 1548050846487,
+    "stop" : 1548050850209,
+    "duration" : 3722
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "33825c7fb26e7d4d",
+  "name" : "test_sidebar.TestSidebar.test_modify_profession_09",
+  "time" : {
+    "start" : 1548050487917,
+    "stop" : 1548050494145,
+    "duration" : 6228
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1b3939e3a106133c",
+  "name" : "test_sidebar.TestSidebar.test_phone_number_check_12",
+  "time" : {
+    "start" : 1548050505481,
+    "stop" : 1548050505665,
+    "duration" : 184
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ed92bee99e54d34f",
+  "name" : "test_sidebar.TestSidebar.test_click_business_record_content_30",
+  "time" : {
+    "start" : 1548050664856,
+    "stop" : 1548050672268,
+    "duration" : 7412
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e4983e2b3d5bb67",
+  "name" : "test_sidebar.TestSidebar.test_click_card_button_36",
+  "time" : {
+    "start" : 1548050685956,
+    "stop" : 1548050691548,
+    "duration" : 5592
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7b7fbcb505c12875",
+  "name" : "test_sidebar.TestSidebar.test_click_home_page_default_53",
+  "time" : {
+    "start" : 1548050809368,
+    "stop" : 1548050813516,
+    "duration" : 4148
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7c1f5d170c1e2426",
+  "name" : "test_sidebar.TestSidebar.test_tied_card_click_icon_20",
+  "time" : {
+    "start" : 1548050568407,
+    "stop" : 1548050570337,
+    "duration" : 1930
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "774aff3acb2c8ba6",
+  "name" : "test_sidebar.TestSidebar.test_click_card_ticket_40",
+  "time" : {
+    "start" : 1548050715838,
+    "stop" : 1548050726517,
+    "duration" : 10679
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d3b2479f75d763e3",
+  "name" : "test_sidebar.TestSidebar.test_check_real_name_authentication_state_17",
+  "time" : {
+    "start" : 1548050551178,
+    "stop" : 1548050554762,
+    "duration" : 3584
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a57e2b9e58982fe8",
+  "name" : "test_sidebar.TestSidebar.test_sidebar_eject_03",
+  "time" : {
+    "start" : 1548050447267,
+    "stop" : 1548050460765,
+    "duration" : 13498
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "3b7aa04b0b109007",
+  "name" : "test_sidebar.TestSidebar.test_modify_sex_08",
+  "time" : {
+    "start" : 1548050484546,
+    "stop" : 1548050487915,
+    "duration" : 3369
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "acbb73919f51af1c",
+  "name" : "test_sidebar.TestSidebar.test_click_change_password_51",
+  "time" : {
+    "start" : 1548050795379,
+    "stop" : 1548050802246,
+    "duration" : 6867
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "32d8c1a670db5f8",
+  "name" : "test_regression.TestRegression.test_sidebar_eject_03",
+  "time" : {
+    "start" : 1548050877753,
+    "stop" : 1548050890743,
+    "duration" : 12990
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9d9bff26760dc63",
+  "name" : "test_regression.TestRegression.test_go_main_01",
+  "time" : {
+    "start" : 1548050851585,
+    "stop" : 1548050865044,
+    "duration" : 13459
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b2fcd26b15751e41",
+  "name" : "test_sidebar.TestSidebar.test_click_share_friend_45",
+  "time" : {
+    "start" : 1548050753665,
+    "stop" : 1548050762453,
+    "duration" : 8788
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1d1027844e6dd3ce",
+  "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32",
+  "time" : {
+    "start" : 1548050676416,
+    "stop" : 1548050676633,
+    "duration" : 217
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "273d53bfeefd69c3",
+  "name" : "test_sidebar.TestSidebar.test_click_news_push_54",
+  "time" : {
+    "start" : 1548050813519,
+    "stop" : 1548050816755,
+    "duration" : 3236
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "22fb679ff9f20502",
+  "name" : "test_regression.TestRegression.test_click_type_two_accounts_05",
+  "time" : {
+    "start" : 1548050894437,
+    "stop" : 1548050901754,
+    "duration" : 7317
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "cc7733f804774e83",
   "name" : "test_sidebar.TestSidebar.test_click_cash_withdrawal_31",
   "time" : {
-    "start" : 1548049057724,
-    "stop" : 1548049061830,
-    "duration" : 4106
+    "start" : 1548050672270,
+    "stop" : 1548050676414,
+    "duration" : 4144
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "677e6185b5ba6f17",
-  "name" : "test_sidebar.TestSidebar.test_nickname_click_05",
+  "uid" : "d3a9b512cabec384",
+  "name" : "test_sidebar.TestSidebar.test_click_business_record_29",
   "time" : {
-    "start" : 1548048850503,
-    "stop" : 1548048853765,
-    "duration" : 3262
+    "start" : 1548050661436,
+    "stop" : 1548050664854,
+    "duration" : 3418
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "e85175b02911ba27",
-  "name" : "test_sidebar.TestSidebar.test_click_understand_bicai_41",
-  "time" : {
-    "start" : 1548049112084,
-    "stop" : 1548049118542,
-    "duration" : 6458
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "fe192362f9c65b00",
+  "uid" : "aa19e81355290ac8",
   "name" : "test_sidebar.TestSidebar.test_click_user_survey_48",
   "time" : {
-    "start" : 1548049163302,
-    "stop" : 1548049168142,
-    "duration" : 4840
+    "start" : 1548050778278,
+    "stop" : 1548050783349,
+    "duration" : 5071
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "fc98c7a7d83a29c7",
-  "name" : "test_sidebar.TestSidebar.test_click_sign_in_42",
+  "uid" : "2ffddfadfe297699",
+  "name" : "test_sidebar.TestSidebar.test_click_look_all_bank_39",
   "time" : {
-    "start" : 1548049118544,
-    "stop" : 1548049131831,
-    "duration" : 13287
+    "start" : 1548050707511,
+    "stop" : 1548050715836,
+    "duration" : 8325
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "506ddde3188726c2",
+  "uid" : "efba2370b12f97b2",
+  "name" : "test_sidebar.TestSidebar.test_click_privacy_policy_57",
+  "time" : {
+    "start" : 1548050831416,
+    "stop" : 1548050836488,
+    "duration" : 5072
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1e3b33de135bc01f",
+  "name" : "test_sidebar.TestSidebar.test_click_share_circle_of_friend_46",
+  "time" : {
+    "start" : 1548050762454,
+    "stop" : 1548050768383,
+    "duration" : 5929
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d52822ae5d361bd3",
+  "name" : "test_regression.TestRegression.test_click_set_up_06",
+  "time" : {
+    "start" : 1548050901756,
+    "stop" : 1548050910024,
+    "duration" : 8268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4767e80b0267c14b",
+  "name" : "test_sidebar.TestSidebar.test_click_detailed_28",
+  "time" : {
+    "start" : 1548050657200,
+    "stop" : 1548050661434,
+    "duration" : 4234
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a288f65db96d28ee",
+  "name" : "test_sidebar.TestSidebar.test_click_forget_password_52",
+  "time" : {
+    "start" : 1548050802249,
+    "stop" : 1548050809365,
+    "duration" : 7116
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e00146eb8470dd55",
+  "name" : "test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50",
+  "time" : {
+    "start" : 1548050791510,
+    "stop" : 1548050795376,
+    "duration" : 3866
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "380f33ce1a75aa20",
+  "name" : "test_sidebar.TestSidebar.test_click_bicai_wallet_26",
+  "time" : {
+    "start" : 1548050648690,
+    "stop" : 1548050652472,
+    "duration" : 3782
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4eaef1c03f099fec",
+  "name" : "test_sidebar.TestSidebar.test_click_call_me_58",
+  "time" : {
+    "start" : 1548050836490,
+    "stop" : 1548050841813,
+    "duration" : 5323
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9f5ecc4d50275a21",
   "name" : "test_sidebar.TestSidebar.test_check_list_click_21",
   "time" : {
-    "start" : 1548048955880,
-    "stop" : 1548048962402,
-    "duration" : 6522
+    "start" : 1548050570338,
+    "stop" : 1548050576985,
+    "duration" : 6647
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1add349ccf7985ec",
+  "name" : "test_sidebar.TestSidebar.test_click_my_winning_record_47",
+  "time" : {
+    "start" : 1548050768385,
+    "stop" : 1548050778276,
+    "duration" : 9891
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "f52d54bc336e9717",
+  "name" : "test_sidebar.TestSidebar.test_balance_display_hide_35",
+  "time" : {
+    "start" : 1548050679760,
+    "stop" : 1548050685954,
+    "duration" : 6194
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "95190ddeff75e2ee",
+  "name" : "test_sidebar.TestSidebar.test_real_name_click_icon_18",
+  "time" : {
+    "start" : 1548050554764,
+    "stop" : 1548050556527,
+    "duration" : 1763
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "44da2daf76049620",
+  "name" : "test_sidebar.TestSidebar.test_nickname_icon_click_07",
+  "time" : {
+    "start" : 1548050476989,
+    "stop" : 1548050484544,
+    "duration" : 7555
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2cb5d489f0b92ce8",
+  "name" : "test_sidebar.TestSidebar.test_complete_click_06",
+  "time" : {
+    "start" : 1548050467918,
+    "stop" : 1548050476986,
+    "duration" : 9068
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c16b27afac6859aa",
+  "name" : "test_regression.TestRegression.test_login_02",
+  "time" : {
+    "start" : 1548050865047,
+    "stop" : 1548050877752,
+    "duration" : 12705
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e9ef22f254629586",
+  "name" : "test_sidebar.TestSidebar.test_click_understand_bicai_41",
+  "time" : {
+    "start" : 1548050726520,
+    "stop" : 1548050732851,
+    "duration" : 6331
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d43c33605c890021",
+  "name" : "test_sidebar.TestSidebar.test_nickname_click_05",
+  "time" : {
+    "start" : 1548050464657,
+    "stop" : 1548050467916,
+    "duration" : 3259
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "60c81b507b0898b4",
+  "name" : "test_sidebar.TestSidebar.test_click_set_up_49",
+  "time" : {
+    "start" : 1548050783351,
+    "stop" : 1548050791508,
+    "duration" : 8157
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "955483a7492dd546",
+  "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_15",
+  "time" : {
+    "start" : 1548050530669,
+    "stop" : 1548050540210,
+    "duration" : 9541
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "23a5f929017eab91",
+  "name" : "test_sidebar.TestSidebar.test_click_common_problem_27",
+  "time" : {
+    "start" : 1548050652474,
+    "stop" : 1548050657197,
+    "duration" : 4723
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "58f159127545da4e",
+  "name" : "test_regression.TestRegression.test_click_bicai_wallet_04",
+  "time" : {
+    "start" : 1548050890745,
+    "stop" : 1548050894435,
+    "duration" : 3690
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "3b13f6eba56eb58a",
+  "name" : "test_sidebar.TestSidebar.test_add_bank_cards_22",
+  "time" : {
+    "start" : 1548050576987,
+    "stop" : 1548050590819,
+    "duration" : 13832
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1958f01c6611b808",
+  "name" : "test_sidebar.TestSidebar.test_look_activity_rules_44",
+  "time" : {
+    "start" : 1548050750525,
+    "stop" : 1548050753663,
+    "duration" : 3138
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2d110d4a7e4f93fe",
+  "name" : "test_sidebar.TestSidebar.test_logo_click_04",
+  "time" : {
+    "start" : 1548050460767,
+    "stop" : 1548050464655,
+    "duration" : 3888
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2f425205c92e9b8f",
+  "name" : "test_sidebar.TestSidebar.test_modify_address_13",
+  "time" : {
+    "start" : 1548050505667,
+    "stop" : 1548050518185,
+    "duration" : 12518
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "fbe92858c9b3e0d2",
+  "name" : "test_sidebar.TestSidebar.test_click_type_two_accounts_37",
+  "time" : {
+    "start" : 1548050691550,
+    "stop" : 1548050700487,
+    "duration" : 8937
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "97a3aff7de6306a8",
+  "name" : "test_sidebar.TestSidebar.test_go_main_01",
+  "time" : {
+    "start" : 1548050421024,
+    "stop" : 1548050434615,
+    "duration" : 13591
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c67ccdc8fd44991c",
+  "name" : "test_sidebar.TestSidebar.test_modify_profession_icon_10",
+  "time" : {
+    "start" : 1548050494147,
+    "stop" : 1548050499015,
+    "duration" : 4868
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d4b504fadeebed5b",
+  "name" : "test_sidebar.TestSidebar.test_click_my_news_25",
+  "time" : {
+    "start" : 1548050630051,
+    "stop" : 1548050648687,
+    "duration" : 18636
   },
   "status" : "passed",
   "severity" : "critical"

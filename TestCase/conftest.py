@@ -30,7 +30,6 @@ from Common import Consts
 def action_env():
     # 定义环境
     env = Consts.UI_ENVIRONMENT_MOBILE_PHONE_MODEL
-    # env = 'Y66手机udid'
     # 定义报告中environment
     conf = Config()
     host = conf.host_release
