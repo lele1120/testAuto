@@ -201,7 +201,7 @@ class TestRegression:
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("07.点击去实名认证")
     @pytest.allure.severity('blocker')
-    def test_click_go_real_name_06(self, d):
+    def test_click_go_real_name_07(self, d):
         """
         点击去实名认证
         :param d:
@@ -227,9 +227,9 @@ class TestRegression:
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Regression')
-    @pytest.allure.feature("06.点击设置")
+    @pytest.allure.feature("08.点击设置")
     @pytest.allure.severity('Block')
-    def test_click_set_up_06(self, d):
+    def test_click_set_up_08(self, d):
         """
         点击设置
         :param d:
@@ -247,9 +247,9 @@ class TestRegression:
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Regression')
-    @pytest.allure.feature("07.app退出")
+    @pytest.allure.feature("09.app退出")
     @pytest.allure.severity('critical')
-    def test_sign_out_app_07(self, d):
+    def test_sign_out_app_09(self, d):
         """
         退出app
         :param d:
