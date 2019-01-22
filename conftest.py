@@ -19,8 +19,6 @@ import time
 from os import path
 from Conf.Config import Config
 from Common import Consts
-
-import allure
 import pytest
 
 from Params.params import get_driver_by_key
@@ -34,10 +32,9 @@ def action_env():
     env = Consts.UI_ENVIRONMENT_MOBILE_PHONE_MODEL
     # 定义报告中environment
     conf = Config()
-    host = conf.host_release
     tester = conf.tester_release
-    allure.environment(environment=env)
-    allure.environment(tester=tester)
+    pytest.allure.environment(environment=env)
+    pytest.allure.environment(tester=tester)
     return env
 
 

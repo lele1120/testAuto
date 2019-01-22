@@ -5,15 +5,11 @@ import time
 import pytest
 from os import path
 from Params.params import get_value
-
-from Params.params import get_driver_by_key
 from Common import Operate
 from Common import Consts
 from Common import Assert
 
 import sys
-
-from TestCase.conftest import action_env
 
 test = Assert.Assertions()
 action = Operate.Operation()

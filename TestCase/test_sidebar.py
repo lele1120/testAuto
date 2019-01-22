@@ -6,16 +6,11 @@ import time
 import pytest
 import random
 from os import path
-import datetime
 from Params.params import get_value
-
-from Params.params import get_driver_by_key
 from Common import Operate
 from Common import Consts
 from Common import Assert
 import sys
-
-from TestCase.conftest import action_env
 
 test = Assert.Assertions()
 action = Operate.Operation()
