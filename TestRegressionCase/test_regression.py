@@ -37,7 +37,7 @@ def d():
 class TestRegression:
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("01.启动app后进入比财")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_go_main_01(self, d):
         """
         首次启动app点击进入比财,如果有广告页点击x关闭，
@@ -65,7 +65,7 @@ class TestRegression:
 
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("02.比财登录")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_login_02(self, d):
         """
         比财账号登录
@@ -111,7 +111,7 @@ class TestRegression:
 
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("03.弹出侧边栏")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_sidebar_eject_03(self, d):
         """
          验证点击左上角图标弹出侧边栏功能
@@ -143,7 +143,7 @@ class TestRegression:
 
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("04.点击我的钱包")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_bicai_wallet_04(self, d):
         """
         点击我的钱包跳转
@@ -160,7 +160,7 @@ class TestRegression:
 
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("05.点击II类户跳转")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_click_type_two_accounts_05(self, d):
         """
         点击二类户跳转
@@ -175,12 +175,58 @@ class TestRegression:
         with pytest.allure.step("校验是否跳转成功"):
             test.assert_title(d, "II类户")
 
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('Regression')
+    @pytest.allure.feature("06.点击立即开户")
+    @pytest.allure.severity('blocker')
+    def test_click_fast_open_account_06(self, d):
+        """
+        点击二类户立即开户跳转实名认证页
+        :param d:
+        :return:
+        """
+        Consts.TEST_LIST.append('Test')
+        with pytest.allure.step("点击II类户立即开户"):
+            action.click_element(d, "立即开户")
+
+        with pytest.allure.step("校验是否跳转成功"):
+            test.assert_title(d, "实名认证")
+
+        with pytest.allure.step("校验实名认证页内容"):
+            real_name_tips = d(resourceId=get_value("实名认证提示2")).get_text()
+            test.assert_equal_save_picture(d, real_name_tips, "购买理财需实名认证", "验证提示文本")
+
+        with pytest.allure.step("校验去实名认证控件是否存在"):
+            test.assert_element_exists_save_picture(d, d(resourceId=get_value("去实名认证")).exists, "验证去实名认证控件存在")
+            Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('Regression')
+    @pytest.allure.feature("07.点击去实名认证")
+    @pytest.allure.severity('blocker')
+    def test_click_go_real_name_06(self, d):
+        """
+        点击去实名认证
+        :param d:
+        :return:
+        """
+        Consts.TEST_LIST.append('Test')
+        with pytest.allure.step("点击去实名认证"):
+            action.click_element(d, "去实名认证")
+
+        with pytest.allure.step("校验是否跳转成功"):
+            test.assert_title(d, "身份证认证")
+
+        action.display_picture(d, "用户未实名")
+
+        with pytest.allure.step("点击返回icon"):
+            action.click_element(d, "返回icon")
+
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
 
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
-
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Regression')
@@ -205,7 +251,7 @@ class TestRegression:
 
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("07.app退出")
-    @pytest.allure.severity('Critical')
+    @pytest.allure.severity('critical')
     def test_sign_out_app_07(self, d):
         """
         退出app

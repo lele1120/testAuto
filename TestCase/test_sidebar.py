@@ -724,6 +724,7 @@ class TestSidebar:
                 test.assert_title(d, "身份证认证")
 
                 action.display_picture(d, "用户未实名")
+
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Personal')
