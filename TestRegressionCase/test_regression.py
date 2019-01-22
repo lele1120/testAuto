@@ -20,17 +20,6 @@ action = Operate.Operation()
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 
-@pytest.fixture(scope='module')
-def d():
-    running_environment = action_env()
-    d = get_driver_by_key(running_environment)  # 输入参数启动
-    # d.unlock()
-    d.set_fastinput_ime(True)  # 开启快速输入
-    d.session("com.bs.finance")
-    yield d
-    d.app_stop("com.bs.finance")
-
-
 class TestRegression:
     @pytest.allure.feature('Regression')
     @pytest.allure.feature("01.启动app后进入比财")
@@ -41,7 +30,6 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
 
         time.sleep(5)
 
@@ -68,7 +56,6 @@ class TestRegression:
         比财账号登录
 
         """
-        Consts.TEST_LIST.append('Test')
 
         global USER_ID   # 使用账号
 
@@ -114,8 +101,6 @@ class TestRegression:
          验证点击左上角图标弹出侧边栏功能
         """
 
-        Consts.TEST_LIST.append('Test')
-
         global cebian_button  # 侧边栏按钮
 
         global realname_status  # 实名认证状态
@@ -147,7 +132,7 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
+        
         global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
         global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
         with pytest.allure.step("点击我的钱包"):
@@ -164,7 +149,7 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
+        
         with pytest.allure.step("点击II类户（图片）跳转"):
             d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
             time.sleep(1)
@@ -183,7 +168,7 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
+        
         with pytest.allure.step("点击II类户立即开户"):
             action.click_element(d, "立即开户")
 
@@ -207,7 +192,7 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
+        
         with pytest.allure.step("点击去实名认证"):
             action.click_element(d, "去实名认证")
 
@@ -235,7 +220,7 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
+        
         with pytest.allure.step("点击设置"):
 
             time.sleep(5)
@@ -244,6 +229,7 @@ class TestRegression:
 
         with pytest.allure.step("title校验"):
             test.assert_title(d, "设置")
+
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Regression')
@@ -255,7 +241,7 @@ class TestRegression:
         :param d:
         :return:
         """
-        Consts.TEST_LIST.append('Test')
+        
         with pytest.allure.step("点击安全退出"):
 
             action.click_element(d, "安全退出")
@@ -269,6 +255,7 @@ class TestRegression:
             assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
 
         action.display_picture(d, "app退出")
+
         Consts.RESULT_LIST.append('True')
 
 

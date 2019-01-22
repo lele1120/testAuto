@@ -15,15 +15,17 @@
 """
 
 import sys
+import time
 from os import path
+from Conf.Config import Config
+from Common import Consts
 
 import allure
 import pytest
 
-sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
+from Params.params import get_driver_by_key
 
-from Conf.Config import Config
-from Common import Consts
+sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 
 @pytest.fixture()
@@ -37,3 +39,32 @@ def action_env():
     allure.environment(environment=env)
     allure.environment(tester=tester)
     return env
+
+
+@pytest.fixture(scope='module')
+def d():
+    """
+    启动app
+    :return:
+    """
+    running_environment = action_env()
+    d = get_driver_by_key(running_environment)  # 输入参数启动
+    # d.unlock()
+    d.set_fastinput_ime(True)  # 开启快速输入
+    d.session("com.bs.finance")
+    yield d
+    d.app_stop("com.bs.finance")
+
+
+@pytest.fixture(scope="function", autouse=True)
+def func_header(request):
+    """
+    统计运行case数
+    :param request:
+    :return:
+    """
+    Consts.TEST_LIST.append('Test')
+    print('\n-----------------')
+    print('function    : %s' % request.function.__name__)
+    print('time        : %s' % time.asctime())
+    print('-----------------')

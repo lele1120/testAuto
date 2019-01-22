@@ -19,6 +19,7 @@ if __name__ == '__main__':
 
     # 定义测试集
     allure_list = '--allure_features=Home,Personal,Regression'
+    # allure_list = '--allure_features=Home,Regression'
     # allure_list = '--allure_features=Regression'
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)
@@ -33,6 +34,10 @@ if __name__ == '__main__':
     test_body = Consts.TEST_LIST
     result_body = Consts.RESULT_LIST
     error_number = test_body.__len__() - result_body.__len__()
+
+    print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
+    print("运行"+str(test_body.__len__()) + "个测试用例")
+    print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
 
     if error_number > 0:
         try:
