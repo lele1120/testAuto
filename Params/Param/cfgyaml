@@ -100,6 +100,8 @@ element_id:
   去实名认证: com.bs.finance:id/btn_next
   身份证正面: com.bs.finance:id/iv_front
   身份证背面: ccom.bs.finance:id/iv_back
+  实名认证提示2: com.bs.finance:id/tv_2
+  去实名认证: com.bs.finance:id/btn_next
 
 user_id:
 # 登录账号

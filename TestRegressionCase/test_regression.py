@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
-import re
 import time
 import pytest
-import random
 from os import path
-import datetime
 from Params.params import get_value
 
 from Params.params import get_driver_by_key

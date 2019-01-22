@@ -1410,8 +1410,10 @@ class TestSidebar:
         :return:
         """
         Consts.TEST_LIST.append('Test')
-        with pytest.allure.step("签到抽奖校验"):
 
+        global red_envelope_money
+
+        with pytest.allure.step("签到抽奖校验"):
             for i in range(d(className="android.widget.Image").__len__()):
                 if d(className="android.widget.Image")[i].info['contentDescription'] == "5@2x":
                     print("今日未抽奖")
@@ -1419,35 +1421,31 @@ class TestSidebar:
                         d(className="android.widget.Image")[i].click()
                         time.sleep(5)
                         d(className="android.widget.Image")[i].click()
-                        global red_envelope_money
-                        for j in range(d(className="android.view.View").__len__()):
-                            if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
-                                global red_envelope_money
-                                red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
-                                print(red_envelope_money_text)
-                                red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
-                                print("抽中金额:" + str(red_envelope_money) + "元")
 
-                                with pytest.allure.step("点击查看中奖记录"):
-                                    d(description=u"查看我的中奖记录").click()
-                                #     red_envelope_money_record_text = (d(className="android.view.View")[1]).info['contentDescription']
-                                #     red_envelope_record_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_record_text)
-                                #
-                                #     test.assert_equal_save_picture(d, red_envelope_money, red_envelope_record_money, "抽到红包与最新记录金额对比")
-                                #
-                                #     record_date = (d(className="android.view.View")[2]).info['contentDescription']
-                                #
-                                #     test.assert_equal_save_picture(d, record_date, now_date, "抽奖日期对比")
-                                #
-                                    with pytest.allure.step("点击返回"):
+                    for j in range(d(className="android.view.View").__len__()):
+                        if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
+                            red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
+                            print("*********************************")
+                            print(red_envelope_money_text)
+                            print("*********************************")
+                            red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
+                            print("抽中金额:" + str(red_envelope_money) + "元")
 
-                                        d(className="android.widget.ImageView")[0].click()  # 点击返回
+                        break
 
-                                        test.assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
-                                                                                className="android.view.View").exists, "返回签到页")
-                                break
+                        time.sleep(2)
 
-        print("该用户已抽奖")
+                        d(description=u"查看我的中奖记录").click(timeout=10)
+
+                        # d(className="android.widget.ImageView")[0].click()  # 点击返回
+
+                        d(className="android.widget.ImageView", instance=9).click(timeout=10)
+
+                        test.assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
+                                                                         className="android.view.View").exists, "返回签到页")
+                break
+
+            print("该用户已抽奖")
 
         Consts.RESULT_LIST.append('True')
 
