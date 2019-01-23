@@ -35,9 +35,9 @@ class TestSidebar:
             action.click_element(d, "启动页进入比财")
 
         with pytest.allure.step("如果弹出广告页点x关闭"):
-            if d(resourceId=get_value("广告页")).exists:  # 如果弹出广告页
+            if d(resourceId=get_value("广告页")).exists:
 
-                action.click_element(d, "广告页关闭")  # 点击x关闭
+                action.click_element(d, "广告页关闭")
 
         with pytest.allure.step("验证启动app点击进入比财是否进入首页"):
 
@@ -69,9 +69,8 @@ class TestSidebar:
             action.input_element(d, "登录页账号输入框", USER_ID)
 
         with pytest.allure.step("点击获取验证码"):
-            action.click_element(d, "登录页获取验证码按钮")  # 点击获取验证码
+            action.click_element(d, "登录页获取验证码按钮")
 
-        #  如果弹出4位数字图片验证码
         with pytest.allure.step("输入4位验证码"):
             time.sleep(2)
             if d(text=u"请填写图像验证码").exists:
@@ -964,7 +963,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
         global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
         with pytest.allure.step("点击我的钱包"):
@@ -981,7 +979,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击常见问题"):
             action.click_element(d, "常见问题")
             test.assert_title(d, "常见问题")
@@ -997,7 +994,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击明细"):
             d(description=u"明细").click()
             time.sleep(2)
@@ -1019,7 +1015,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击交易记录"):
             action.click_element(d, "交易记录")
             test.assert_title(d, "明细")
@@ -1041,7 +1036,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         if d(className="android.widget.RelativeLayout", instance=2).exists:
             with pytest.allure.step("点击交易记录页首条记录"):
                 d(className="android.widget.RelativeLayout", instance=2).click()
@@ -1066,7 +1060,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击提现"):
             d(description=u"提现").click()
             time.sleep(2)
@@ -1088,7 +1081,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("验证进入提现页提现按钮默认不可点"):
             test.assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
                                                "提现按钮默认不可点")
@@ -1103,7 +1095,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("验证输入大于等于10元提现按钮可以点击"):
             if float(balance[0]) >= 10.00:
                 input_money_text = random.uniform(10.00, float(balance[0]))
@@ -1122,7 +1113,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("验证输入小于10元提现按钮不可点击"):
             action.input_element(d, "余额提现页金额输入框", str(9.99))
             test.assert_element_exists_save_picture(d, not d(resourceId=get_value("提现按钮")).info["clickable"],
@@ -1140,7 +1130,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("获取账户余额显示隐藏状态"):
             if d(description=u"****").exists:
                 print("当前账户余额金额显示状态为:隐藏")
@@ -1182,7 +1171,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         card_button_text = "银行卡(" + str(cards_number) + ")"
         with pytest.allure.step("点击银行卡跳转"):
             d(description=card_button_text).click()
@@ -1204,7 +1192,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击II类户（图片）跳转"):
             d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
             time.sleep(1)
@@ -1235,7 +1222,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击未开户"):
             action.click_element_with_text(d, "未开户", "未开户")
         with pytest.allure.step("校验是否跳转到未开户"):
@@ -1268,7 +1254,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击查看全部银行"):
             action.click_element(d, "查看全部银行")
 
@@ -1290,7 +1275,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击卡券"):
             d(description=u"卡券").click()
             time.sleep(2)
@@ -1312,7 +1296,6 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
         with pytest.allure.step("点击关于我们"):
             action.click_element_with_text(d, "关于我们", "关于我们")
 
@@ -1337,7 +1320,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         if d(resourceId="com.bs.finance:id/tab3_dot").exists:
             not_sign_in = 1  # 签到上方红点存在，今日还未点击过签到按钮
         else:
@@ -1367,41 +1350,45 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
 
         global red_envelope_money
 
         with pytest.allure.step("签到抽奖校验"):
+            time.sleep(5)
             for i in range(d(className="android.widget.Image").__len__()):
+                print("----------------------------------------------------------------")
+                print(d(className="android.widget.Image")[i].info['contentDescription'])
+                print("----------------------------------------------------------------")
                 if d(className="android.widget.Image")[i].info['contentDescription'] == "5@2x":
                     print("今日未抽奖")
                     with pytest.allure.step("点击抽奖"):
                         d(className="android.widget.Image")[i].click()
                         time.sleep(5)
                         d(className="android.widget.Image")[i].click()
+                        time.sleep(5)
+                        for j in range(d(className="android.view.View").__len__()):
+                            print("----------------------------------------------------------------")
+                            print(d(className="android.view.View")[j].info['contentDescription'])
+                            print("----------------------------------------------------------------")
+                            if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
+                                print("*-*-*-*-*-*-*")
+                                print(j)
+                                print("*-*-*-*-*-*-*")
+                                red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
+                                print("*********************************")
+                                print(red_envelope_money_text)
+                                print("*********************************")
+                                red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
+                                print("抽中金额:" + str(red_envelope_money) + "元")
+                                time.sleep(2)
 
-                    for j in range(d(className="android.view.View").__len__()):
-                        if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
-                            red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
-                            print("*********************************")
-                            print(red_envelope_money_text)
-                            print("*********************************")
-                            red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
-                            print("抽中金额:" + str(red_envelope_money) + "元")
+                                d(description=u"查看我的中奖记录").click(timeout=10)
 
-                        break
+                                time.sleep(2)
 
-                        time.sleep(2)
+                                d(resourceId="com.bs.finance:id/rl_back").click(timeout=10)
 
-                        d(description=u"查看我的中奖记录").click(timeout=10)
-
-                        # d(className="android.widget.ImageView")[0].click()  # 点击返回
-
-                        d(className="android.widget.ImageView", instance=9).click(timeout=10)
-
-                        test.assert_element_exists_save_picture(d, d(description=u"我的中奖记录",
-                                                                         className="android.view.View").exists, "返回签到页")
-                break
+                                break
 
             print("该用户已抽奖")
 
@@ -1416,7 +1403,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("查看活动规则"):
 
             d(description=u"活动规则").click(timeout=10)
@@ -1439,7 +1426,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         time.sleep(2)
         with pytest.allure.step("点击分享按钮"):
             d(description=u"分享").click(timeout=10)  # 点击分享
@@ -1472,7 +1459,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         time.sleep(2)
 
         with pytest.allure.step("点击分享按钮"):
@@ -1495,7 +1482,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("向下滑动"):
             d(scrollable=True).scroll(steps=30)  # 向下滑动
             time.sleep(2)
@@ -1521,7 +1508,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击有奖调研"):
             action.click_element(d, "有奖调研")
             test.assert_title(d, "用户调研")
@@ -1539,7 +1526,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击设置"):
 
             time.sleep(5)
@@ -1559,7 +1546,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击比财支付密码管理"):
             d(text=u"比财支付密码管理").click()
             time.sleep(2)
@@ -1577,7 +1564,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击修改密码"):
             d(text=u"修改密码").click()
             time.sleep(2)
@@ -1601,7 +1588,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击忘记密码"):
             d(text=u"忘记密码").click()
             time.sleep(2)
@@ -1629,7 +1616,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击首页默认版本"):
             d(text=u"首页默认显示版本").click()
 
@@ -1653,7 +1640,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("开启消息推送提醒"):
             action.click_element(d, "消息推送提醒")
 
@@ -1670,7 +1657,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击默认安全购买渠道设置"):
             action.click_element(d, "默认安全购买渠道设置")
 
@@ -1694,7 +1681,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击版本更新说明"):
             action.click_element(d, "版本更新说明")
             time.sleep(5)
@@ -1715,7 +1702,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击隐私政策"):
             action.click_element(d, "隐私政策")
 
@@ -1735,7 +1722,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击联系我们"):
             action.click_element(d, "联系我们")
 
@@ -1755,7 +1742,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击意见反馈"):
             action.click_element(d, "意见反馈")
 
@@ -1775,7 +1762,7 @@ class TestSidebar:
         :param d:
         :return:
         """
-    # Consts.TEST_LIST.append('Test')
+
         with pytest.allure.step("点击安全退出"):
 
             action.click_element(d, "安全退出")

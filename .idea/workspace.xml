@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="">
+    <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="修改运行级别；&#10;添加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/err.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/err.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Params/Param/cfgyaml" beforeDir="false" afterPath="$PROJECT_DIR$/Params/Param/cfgyaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/packages.json" afterDir="false" />
@@ -15,12 +15,17 @@
       <change beforePath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/environment.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/environment.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/retry-trend.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/severity.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/suites.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/html/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/summary.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/picture/app退出.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/app退出.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/picture/修改昵称页.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/修改昵称页.png" afterDir="false" />
@@ -34,8 +39,10 @@
       <change beforePath="$PROJECT_DIR$/Report/picture/有关注4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/有关注4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/picture/添加银行卡.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/添加银行卡.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/picture/用户已实名.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/用户已实名.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/账号18301401092已登录状态_失败.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/xml/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/xml/environment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCase/test_sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_sidebar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,12 +52,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1548062782021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1548221022518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1548047018819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/testAuto$tt.coverage" NAME="tt Coverage Results" MODIFIED="1541752358942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
+    <SUITE FILE_PATH="coverage/testAuto$att.coverage" NAME="att Coverage Results" MODIFIED="1548213331722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$params.coverage" NAME="params Coverage Results" MODIFIED="1547787974767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Params" />
     <SUITE FILE_PATH="coverage/testAuto$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1541748507868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_interface.coverage" NAME="test_interface Coverage Results" MODIFIED="1541658906799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/testAuto$tta.coverage" NAME="tta Coverage Results" MODIFIED="1548219144751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1545220881530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$main.coverage" NAME="main Coverage Results" MODIFIED="1541664399534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_suite" />
     <SUITE FILE_PATH="coverage/testAuto$test_bicai__1_.coverage" NAME="test_bicai (1) Coverage Results" MODIFIED="1547691311632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
@@ -58,13 +67,13 @@
     <SUITE FILE_PATH="coverage/testAuto$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1542268441984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$lianxi.coverage" NAME="lianxi Coverage Results" MODIFIED="1547222459760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$env_module.coverage" NAME="env_module Coverage Results" MODIFIED="1541664566426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/module" />
-    <SUITE FILE_PATH="coverage/testAuto$test_sidebar.coverage" NAME="test_sidebar Coverage Results" MODIFIED="1547798442060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
+    <SUITE FILE_PATH="coverage/testAuto$test_sidebar.coverage" NAME="test_sidebar Coverage Results" MODIFIED="1548210617992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/testAuto$test_regression.coverage" NAME="test_regression Coverage Results" MODIFIED="1547626536330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$test_bicai.coverage" NAME="test_bicai Coverage Results" MODIFIED="1541554792320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/testAuto$h5location.coverage" NAME="h5location Coverage Results" MODIFIED="1546832478838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$test.coverage" NAME="test Coverage Results" MODIFIED="1541405982000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$mytestpp.coverage" NAME="mytestpp Coverage Results" MODIFIED="1544074101661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/testAuto$at.coverage" NAME="at Coverage Results" MODIFIED="1548061677150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestRegressionCase" />
+    <SUITE FILE_PATH="coverage/testAuto$at.coverage" NAME="at Coverage Results" MODIFIED="1548127712245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestRegressionCase" />
     <SUITE FILE_PATH="coverage/testAuto$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1547730642851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$make_test.coverage" NAME="make_test Coverage Results" MODIFIED="1545207273418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
   </component>
@@ -73,14 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
+      <file leaf-file-name="Consts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Consts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="e#45#89#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -88,8 +94,8 @@
       <file leaf-file-name="test_sidebar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="1472" column="42" selection-start-line="1472" selection-start-column="42" selection-end-line="1472" selection-end-column="42" />
+            <state relative-caret-position="217">
+              <caret line="1389" selection-start-line="1389" selection-end-line="1389" />
               <folding>
                 <element signature="e#46#84#0" expanded="true" />
               </folding>
@@ -97,56 +103,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="at.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestRegressionCase/at.py">
+      <file leaf-file-name="att.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/att.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="42" selection-end-column="15" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="签到规则跳转_失败.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Report/picture/签到规则跳转_失败.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="账号18301401092已登录状态_失败.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Report/picture/账号18301401092已登录状态_失败.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Consts.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Consts.py">
+      <file leaf-file-name="tta.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conf/Config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="15" />
               <folding>
-                <element signature="e#24#43#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py">
+      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4051">
-              <caret line="229" selection-start-line="184" selection-end-line="229" />
+            <state relative-caret-position="161">
+              <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding>
-                <element signature="e#46#84#0" expanded="true" />
+                <element signature="e#45#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/params.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="40" />
+              <folding>
+                <element signature="e#64#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,17 +163,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Report/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="76">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -181,36 +180,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mai</find>
-      <find>ascii</find>
-      <find>设置</find>
-      <find>Consts.RESULT_LIST.append('True')</find>
-      <find>ordinal</find>
-      <find>smtp</find>
-      <find>connect</find>
-      <find>host</find>
-      <find>VALUE_HOST</find>
-      <find>private_debug</find>
-      <find>self.config</find>
-      <find>import uiautomator2 as u2</find>
-      <find>action.action.display_picture</find>
-      <find>def display_picture(self, d, picture_name):</find>
-      <find>allure.attach(picture_name</find>
-      <find>get_driver_by_key</find>
-      <find>display_picture</find>
-      <find>action.test.assert_title(d, &quot;职业&quot;)</find>
-      <find>(d):</find>
-      <find>allure.environment</find>
-      <find>self,d</find>
-      <find>USER_ID</find>
       <find>now_date</find>
-      <find>Critical</find>
       <find>Home</find>
       <find>Y66手机udid</find>
       <find>d(description=u&quot;发送给朋友&quot;, className=&quot;android.view.View&quot;).click(timeout=10)</find>
       <find>发送给朋友</find>
-      <find>45</find>
       <find>44</find>
+      <find>com.bs.finance:id/openState</find>
+      <find>com.bs.finance:id/tv_2</find>
+      <find>get_t</find>
+      <find>Critical</find>
+      <find>身份证认证</find>
+      <find>立即开户</find>
+      <find>pytest.allure.step(</find>
+      <find>timeout</find>
+      <find>time</find>
+      <find>Consts.TEST_LIST.append('Test')</find>
+      <find>Test</find>
+      <find># Consts.TEST_LIST.append('Test')</find>
+      <find>Consts</find>
+      <find>#</find>
+      <find>抽奖</find>
+      <find>luck</find>
+      <find>43</find>
+      <find>u2</find>
+      <find>com.bs.finance:id/rl_back</find>
+      <find>签到</find>
+      <find>返回</find>
+      <find>45</find>
+      <find>u</find>
+      <find>critical</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -221,6 +220,8 @@
       <replace>pytest.allure.environment</replace>
       <replace>self, d</replace>
       <replace>critical</replace>
+      <replace>allure.step(</replace>
+      <replace># Consts.TEST_LIST.append('Test')</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/test_case</dir>
@@ -233,10 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/usage/setting.py" />
-        <option value="$PROJECT_DIR$/test_case/demo.py" />
-        <option value="$PROJECT_DIR$/usage/tt.py" />
         <option value="$PROJECT_DIR$/biz/tt.py" />
         <option value="$PROJECT_DIR$/biz/save_picture_by_function_name.py" />
         <option value="$PROJECT_DIR$/test_case/test_interface.py" />
@@ -272,17 +269,22 @@
         <option value="$PROJECT_DIR$/Common/Email.py" />
         <option value="$PROJECT_DIR$/Conf/Config.py" />
         <option value="$PROJECT_DIR$/Common/Assert.py" />
-        <option value="$PROJECT_DIR$/Params/params.py" />
         <option value="$PROJECT_DIR$/Common/Operate.py" />
         <option value="$PROJECT_DIR$/TestCase/test_regression.py" />
         <option value="$PROJECT_DIR$/Conf/config.ini" />
-        <option value="$PROJECT_DIR$/TestCase/conftest.py" />
-        <option value="$PROJECT_DIR$/TestRegressionCase/test_regression.py" />
-        <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/TestRegressionCase/at.py" />
-        <option value="$PROJECT_DIR$/TestCase/test_sidebar.py" />
-        <option value="$PROJECT_DIR$/Common/Consts.py" />
         <option value="$PROJECT_DIR$/Params/Param/cfgyaml" />
+        <option value="$PROJECT_DIR$/TestRegressionCase/at.py" />
+        <option value="$PROJECT_DIR$/Common/Consts.py" />
+        <option value="$PROJECT_DIR$/TestCase/conftest.py" />
+        <option value="$PROJECT_DIR$/Conf/Conftest.py" />
+        <option value="$PROJECT_DIR$/TestRegressionCase/test_regression.py" />
+        <option value="$PROJECT_DIR$/TestRegressionCase/Conftestreg.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/Params/params.py" />
+        <option value="$PROJECT_DIR$/att.py" />
+        <option value="$PROJECT_DIR$/tta.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/TestCase/test_sidebar.py" />
       </list>
     </option>
   </component>
@@ -295,11 +297,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
-    <option name="y" value="52" />
-    <option name="width" value="1522" />
-    <option name="height" value="947" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -318,27 +320,6 @@
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Params" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Params" type="462c0819:PsiDirectoryNode" />
-              <item name="Param" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="Report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -346,12 +327,6 @@
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="Report" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="picture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
@@ -378,14 +353,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Conf" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/TestCase" />
+      <recent name="$PROJECT_DIR$/TestRegressionCase" />
+      <recent name="$PROJECT_DIR$/Conf" />
       <recent name="$PROJECT_DIR$/Params/Param" />
-      <recent name="$PROJECT_DIR$/test_regression_case" />
-      <recent name="$PROJECT_DIR$/test_case" />
-      <recent name="$PROJECT_DIR$/biz" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TestRegressionCase" />
+      <recent name="$PROJECT_DIR$/Conf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +397,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="att" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testAuto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -428,31 +405,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestCase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestCase/conftest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="params" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="testAuto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Params" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Params/params.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/att.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -496,20 +454,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="tta" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="testAuto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.run" />
-      <item itemvalue="Python.params" />
       <item itemvalue="Python.test_sidebar" />
-      <item itemvalue="Python.conftest" />
       <item itemvalue="Python.at" />
+      <item itemvalue="Python.att" />
+      <item itemvalue="Python.tta" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
-        <item itemvalue="Python.at" />
-        <item itemvalue="Python.conftest" />
+        <item itemvalue="Python.tta" />
+        <item itemvalue="Python.att" />
         <item itemvalue="Python.test_sidebar" />
-        <item itemvalue="Python.params" />
+        <item itemvalue="Python.at" />
       </list>
     </recent_temporary>
   </component>
@@ -523,48 +500,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00068" summary="增加等待时间">
-      <created>1545901989388</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1545901989389</updated>
-    </task>
-    <task id="LOCAL-00069" summary="取消修改地址case编写">
-      <created>1545973788841</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1545973788841</updated>
-    </task>
-    <task id="LOCAL-00070" summary="个人资料页功能编写完成">
-      <created>1545982175936</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1545982175937</updated>
-    </task>
-    <task id="LOCAL-00071" summary="添加退出功能 完成闭环">
-      <created>1545990478779</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1545990478779</updated>
-    </task>
-    <task id="LOCAL-00072" summary="实名状态及绑卡状态查询">
-      <created>1546052087975</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1546052087976</updated>
-    </task>
-    <task id="LOCAL-00073" summary="实名状态及绑卡状态查询">
-      <created>1546052458922</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1546052458922</updated>
     </task>
     <task id="LOCAL-00074" summary="侧边栏功能编写">
       <created>1546066931231</created>
@@ -867,7 +802,49 @@
       <option name="project" value="LOCAL" />
       <updated>1548051321362</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="添加运行环境配置">
+      <created>1548063443764</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1548063443764</updated>
+    </task>
+    <task id="LOCAL-00118" summary="修改运行级别；&#10;添加">
+      <created>1548125925989</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1548125925990</updated>
+    </task>
+    <task id="LOCAL-00119" summary="修改运行级别；&#10;添加二类户未开户跳转实名认证case">
+      <created>1548130256529</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1548130256529</updated>
+    </task>
+    <task id="LOCAL-00120" summary="修改case编号">
+      <created>1548133834874</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1548133834874</updated>
+    </task>
+    <task id="LOCAL-00121" summary="修改运行级别；&#10;添加">
+      <created>1548145018007</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1548145018007</updated>
+    </task>
+    <task id="LOCAL-00122" summary="修改运行级别；&#10;添加">
+      <created>1548148110661</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1548148110662</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TodoView">
@@ -881,24 +858,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="52" width="1522" height="947" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="23" width="1920" height="977" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063898" side_tool="true" weight="0.28656715" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50745475" side_tool="true" weight="0.2875" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49361023" visible="true" weight="0.34823528" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32842582" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32842582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49254525" visible="true" weight="0.23295455" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733758" weight="0.28522727" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.27702704" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.23003195" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38941178" />
       <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38863635" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -940,10 +916,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="个人资料页功能编写完成" />
-    <MESSAGE value="添加退出功能 完成闭环" />
-    <MESSAGE value="实名状态及绑卡状态查询" />
-    <MESSAGE value="侧边栏功能编写" />
     <MESSAGE value="侧边栏我的关注功能编写" />
     <MESSAGE value="我的关注功能编写" />
     <MESSAGE value="调整登录逻辑添加判断是否弹出4位验证码，弹出走条件1，不弹出走条件2" />
@@ -965,37 +937,18 @@
     <MESSAGE value="维护case" />
     <MESSAGE value="添加回归测试用例套件" />
     <MESSAGE value="添加运行环境配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加运行环境配置" />
+    <MESSAGE value="修改运行级别；&#10;添加二类户未开户跳转实名认证case" />
+    <MESSAGE value="修改case编号" />
+    <MESSAGE value="修改testconf" />
+    <MESSAGE value="修改运行级别；&#10;添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改运行级别；&#10;添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestCase/report/html/app.js" />
-    <entry file="file://$PROJECT_DIR$/Report/html/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="23" column="78293" selection-start-line="23" selection-start-column="78293" selection-end-line="23" selection-end-column="78293" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/mime/multipart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/mime/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/mime/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -1045,27 +998,11 @@
     <entry file="file://$PROJECT_DIR$/Conf/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Params/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Report/xml/3af980e5-981d-45f3-9642-053e5e2e9d2c-attachment.txt" />
-    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="e#69#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/Email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="e#66#80#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,9 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Report/xml/1b8720b8-184a-45fd-9220-ec056e04314f-attachment.txt" />
-    <entry file="file://$PROJECT_DIR$/Report/picture/app退出.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Report/picture/控件未获取到.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1131,12 +1065,70 @@
       </provider>
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Params/params.py">
+    <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py" />
+    <entry file="file://$PROJECT_DIR$/Report/picture/签到规则跳转_失败.png" />
+    <entry file="file://$PROJECT_DIR$/Report/picture/账号18301401092已登录状态_失败.png" />
+    <entry file="file://$PROJECT_DIR$/Report/picture/app退出.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Report/html/widgets/duration.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+        <state relative-caret-position="1026">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestRegressionCase/at.py" />
+    <entry file="file://$PROJECT_DIR$/Conf/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="e#64#73#0" expanded="true" />
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#46#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Conftest1.py" />
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+          <folding>
+            <element signature="e#407#417#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1144,71 +1136,64 @@
     <entry file="file://$PROJECT_DIR$/TestCase/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_regression.py" />
     <entry file="file://$PROJECT_DIR$/TestRegressionCase/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/conftest.py">
+    <entry file="file://$PROJECT_DIR$/Common/Consts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Operate.py">
+    <entry file="file://$PROJECT_DIR$/Params/params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="40" />
+          <folding>
+            <element signature="e#64#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="15" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+    <entry file="file://$PROJECT_DIR$/att.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="42" selection-end-column="15" />
           <folding>
-            <element signature="e#24#43#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Report/picture/签到规则跳转_失败.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Report/picture/账号18301401092已登录状态_失败.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Report/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestRegressionCase/at.py">
+    <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4051">
-          <caret line="229" selection-start-line="184" selection-end-line="229" />
+        <state relative-caret-position="217">
+          <caret line="1389" selection-start-line="1389" selection-end-line="1389" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
           </folding>
@@ -1217,35 +1202,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="397">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding>
             <element signature="e#45#89#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Consts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="1472" column="42" selection-start-line="1472" selection-start-column="42" selection-end-line="1472" selection-end-column="42" />
-          <folding>
-            <element signature="e#46#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
