@@ -22,6 +22,7 @@ element_id:
   图片验证码输入框: com.bs.finance:id/et_msg_code
   图片验证码确定按钮: com.bs.finance:id/btn_submit
   登录验证码输入框: com.bs.finance:id/et_msg_code
+  登录页关闭: com.bs.finance:id/iv_close
   立即登录按钮: com.bs.finance:id/btn_login
   首页左上角图标: com.bs.finance:id/iv_user
   侧边栏logo: com.bs.finance:id/iv_user_logo
@@ -102,6 +103,9 @@ element_id:
   身份证背面: ccom.bs.finance:id/iv_back
   实名认证提示2: com.bs.finance:id/tv_2
   去实名认证: com.bs.finance:id/btn_next
+  资产按钮: com.bs.finance:id/rl_3
+  首页银行名称: com.bs.finance:id/tv_bank
+  安全购买: com.bs.finance:id/tv_buy
 
 user_id:
 # 登录账号
