@@ -5,721 +5,649 @@
     "name" : "TestCase",
     "children" : [ {
       "name" : "test_sidebar.TestSidebar.test_go_main_01",
-      "uid" : "182fc414cbc3ec9d",
+      "uid" : "f1ea15b67c2ee2ab",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062782613,
-        "stop" : 1548062796692,
-        "duration" : 14079
+        "start" : 1550467761791,
+        "stop" : 1550467775800,
+        "duration" : 14009
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_login_02",
-      "uid" : "955ddda08e5a7165",
+      "uid" : "aaa25d3b2f4a53eb",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062796697,
-        "stop" : 1548062809727,
-        "duration" : 13030
+        "start" : 1550467775805,
+        "stop" : 1550467789380,
+        "duration" : 13575
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_sidebar_eject_03",
-      "uid" : "22bf570ffecc78c1",
+      "uid" : "30a07abf621f6213",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062809729,
-        "stop" : 1548062823472,
-        "duration" : 13743
+        "start" : 1550467789382,
+        "stop" : 1550467802920,
+        "duration" : 13538
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_logo_click_04",
-      "uid" : "7b89d6d75d0a0a73",
+      "uid" : "594a34e70a7e6b7f",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062823474,
-        "stop" : 1548062827272,
-        "duration" : 3798
+        "start" : 1550467802922,
+        "stop" : 1550467807049,
+        "duration" : 4127
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_nickname_click_05",
-      "uid" : "e4d2dbc9e58bd3d6",
+      "uid" : "70888d37576de8c2",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062827273,
-        "stop" : 1548062830743,
-        "duration" : 3470
+        "start" : 1550467807051,
+        "stop" : 1550467810525,
+        "duration" : 3474
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_complete_click_06",
-      "uid" : "2fcefe6ce38f4905",
+      "uid" : "87d11856bcb46339",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062830746,
-        "stop" : 1548062840237,
-        "duration" : 9491
+        "start" : 1550467810528,
+        "stop" : 1550467819875,
+        "duration" : 9347
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_nickname_icon_click_07",
-      "uid" : "53dbc16aa6f32a57",
+      "uid" : "9c8eeae18aeb8f9d",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062840239,
-        "stop" : 1548062848002,
-        "duration" : 7763
+        "start" : 1550467819877,
+        "stop" : 1550467827499,
+        "duration" : 7622
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_sex_08",
-      "uid" : "f0ea06d78ecbfe7",
+      "uid" : "6178adb44105b597",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062848005,
-        "stop" : 1548062851652,
-        "duration" : 3647
+        "start" : 1550467827502,
+        "stop" : 1550467831139,
+        "duration" : 3637
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_09",
-      "uid" : "82fe44211298572f",
+      "uid" : "f34ae5091c989033",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062851653,
-        "stop" : 1548062858032,
-        "duration" : 6379
+        "start" : 1550467831142,
+        "stop" : 1550467837809,
+        "duration" : 6667
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_icon_10",
-      "uid" : "e5a1b6bc6c299966",
+      "uid" : "6cfaf8d0e5729d5",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062858034,
-        "stop" : 1548062863282,
-        "duration" : 5248
+        "start" : 1550467837811,
+        "stop" : 1550467842869,
+        "duration" : 5058
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_profession_clear_11",
-      "uid" : "ad98b6d9a35eaa11",
+      "uid" : "48c17f5bf01224e2",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062863285,
-        "stop" : 1548062869963,
-        "duration" : 6678
+        "start" : 1550467842871,
+        "stop" : 1550467849681,
+        "duration" : 6810
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_phone_number_check_12",
-      "uid" : "bacb6e65b6f526d0",
+      "uid" : "73e89eb4a2da8a2c",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062869965,
-        "stop" : 1548062870171,
+        "start" : 1550467849683,
+        "stop" : 1550467849889,
         "duration" : 206
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_address_13",
-      "uid" : "2e9302903cd68790",
+      "uid" : "e9129e4c3a31c151",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062870173,
-        "stop" : 1548062883142,
-        "duration" : 12969
+        "start" : 1550467849891,
+        "stop" : 1550467862799,
+        "duration" : 12908
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_address_clear_14",
-      "uid" : "85c4f69d097b1a06",
+      "uid" : "f0264c13a3fe9832",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062883144,
-        "stop" : 1548062896132,
-        "duration" : 12988
+        "start" : 1550467862802,
+        "stop" : 1550467875540,
+        "duration" : 12738
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_15",
-      "uid" : "206e2c8855004b1a",
+      "uid" : "abbe713713764943",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062896135,
-        "stop" : 1548062906005,
-        "duration" : 9870
+        "start" : 1550467875542,
+        "stop" : 1550467885413,
+        "duration" : 9871
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_modify_personalized_signature_clear_16",
-      "uid" : "bc47a32ad9a88da",
+      "uid" : "9eb907afbd0647ee",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062906007,
-        "stop" : 1548062917523,
-        "duration" : 11516
+        "start" : 1550467885416,
+        "stop" : 1550467896550,
+        "duration" : 11134
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_check_real_name_authentication_state_17",
-      "uid" : "280912f6e83cfb49",
+      "uid" : "71ded8c0a5b2b861",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062917525,
-        "stop" : 1548062921204,
-        "duration" : 3679
+        "start" : 1550467896553,
+        "stop" : 1550467900236,
+        "duration" : 3683
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_real_name_click_icon_18",
-      "uid" : "c47419a2630b5bdf",
+      "uid" : "455139f189d77d2d",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062921206,
-        "stop" : 1548062923075,
-        "duration" : 1869
+        "start" : 1550467900238,
+        "stop" : 1550467902112,
+        "duration" : 1874
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_check_tied_card_state_19",
-      "uid" : "274b8317adece68d",
+      "uid" : "4f0c19b2b08f9aa1",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062923078,
-        "stop" : 1548062935422,
-        "duration" : 12344
+        "start" : 1550467902114,
+        "stop" : 1550467914579,
+        "duration" : 12465
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_tied_card_click_icon_20",
-      "uid" : "8a2869d8c0d2037b",
+      "uid" : "f1b46953530a45dd",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062935424,
-        "stop" : 1548062937486,
-        "duration" : 2062
+        "start" : 1550467914581,
+        "stop" : 1550467916695,
+        "duration" : 2114
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_check_list_click_21",
-      "uid" : "7273cd64cbc28014",
+      "uid" : "a7ce12efdc30912a",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062937488,
-        "stop" : 1548062944456,
-        "duration" : 6968
+        "start" : 1550467916697,
+        "stop" : 1550467923944,
+        "duration" : 7247
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_add_bank_cards_22",
-      "uid" : "73342bb77946c659",
+      "uid" : "83798635974d6288",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062944458,
-        "stop" : 1548062958355,
-        "duration" : 13897
+        "start" : 1550467923946,
+        "stop" : 1550467938113,
+        "duration" : 14167
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_concern_23",
-      "uid" : "ef0832bf804e9ae9",
+      "uid" : "d50c46578c3e4bd5",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062958358,
-        "stop" : 1548062962872,
-        "duration" : 4514
+        "start" : 1550467938116,
+        "stop" : 1550467942438,
+        "duration" : 4322
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_concern_content_24",
-      "uid" : "74c48f9f7e1c28d8",
+      "uid" : "d5aef46e5134bb66",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062962874,
-        "stop" : 1548062999855,
-        "duration" : 36981
+        "start" : 1550467942440,
+        "stop" : 1550467980512,
+        "duration" : 38072
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_my_news_25",
-      "uid" : "34fa2642cd0115ef",
+      "uid" : "5700e86922c262c8",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548062999860,
-        "stop" : 1548063019706,
-        "duration" : 19846
+        "start" : 1550467980517,
+        "stop" : 1550467999968,
+        "duration" : 19451
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_bicai_wallet_26",
-      "uid" : "259710d50df6892b",
+      "uid" : "2f1763ebb2b8e765",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063019709,
-        "stop" : 1548063024508,
-        "duration" : 4799
+        "start" : 1550467999971,
+        "stop" : 1550468005912,
+        "duration" : 5941
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_common_problem_27",
-      "uid" : "9bf0e533ad40333d",
+      "uid" : "aa1874d35e23d92f",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063024510,
-        "stop" : 1548063029286,
-        "duration" : 4776
+        "start" : 1550468005914,
+        "stop" : 1550468010800,
+        "duration" : 4886
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_detailed_28",
-      "uid" : "7163506075ed637",
+      "uid" : "9791d8e572e562ad",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063029289,
-        "stop" : 1548063033442,
-        "duration" : 4153
+        "start" : 1550468010803,
+        "stop" : 1550468014938,
+        "duration" : 4135
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_business_record_29",
-      "uid" : "49d1242df0d695b",
+      "uid" : "17ce07192a60f243",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063033444,
-        "stop" : 1548063036981,
-        "duration" : 3537
+        "start" : 1550468014940,
+        "stop" : 1550468018508,
+        "duration" : 3568
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_business_record_content_30",
-      "uid" : "b1cbce22e7c3bd2",
+      "uid" : "d18294a9b4538696",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063036983,
-        "stop" : 1548063044592,
-        "duration" : 7609
+        "start" : 1550468018511,
+        "stop" : 1550468026301,
+        "duration" : 7790
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_cash_withdrawal_31",
-      "uid" : "9c5423160f853401",
+      "uid" : "21bbaa709c872a6",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063044595,
-        "stop" : 1548063048723,
-        "duration" : 4128
+        "start" : 1550468026303,
+        "stop" : 1550468030469,
+        "duration" : 4166
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32",
-      "uid" : "9c1936160ec6d993",
+      "uid" : "eacbeae4c3429320",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063048725,
-        "stop" : 1548063048973,
-        "duration" : 248
+        "start" : 1550468030471,
+        "stop" : 1550468030658,
+        "duration" : 187
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable_33",
-      "uid" : "b72742f01b83618",
+      "uid" : "d3114c6c9c24dfe4",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063048975,
-        "stop" : 1548063048976,
-        "duration" : 1
+        "start" : 1550468030660,
+        "stop" : 1550468030662,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_cash_withdrawal_clickable__less_than_ten_34",
-      "uid" : "db8a519017cea0f4",
+      "uid" : "fdbb26dc26fb358a",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063048977,
-        "stop" : 1548063052336,
-        "duration" : 3359
+        "start" : 1550468030663,
+        "stop" : 1550468033981,
+        "duration" : 3318
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_balance_display_hide_35",
-      "uid" : "529b3cdc31fff238",
+      "uid" : "5efdcf2fac56200a",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063052338,
-        "stop" : 1548063058675,
-        "duration" : 6337
+        "start" : 1550468033983,
+        "stop" : 1550468040683,
+        "duration" : 6700
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_card_button_36",
-      "uid" : "46e4410ba7282083",
+      "uid" : "77c79c0032c23d07",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063058677,
-        "stop" : 1548063064355,
-        "duration" : 5678
+        "start" : 1550468040685,
+        "stop" : 1550468046479,
+        "duration" : 5794
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_type_two_accounts_37",
-      "uid" : "8111d93c481d8b97",
+      "uid" : "31a1bf0d987ecc0c",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063064358,
-        "stop" : 1548063073216,
+        "start" : 1550468046481,
+        "stop" : 1550468055339,
         "duration" : 8858
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_not_opening_bank_38",
-      "uid" : "d19150fe614a3125",
+      "uid" : "5f8e8af9b012ea7b",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063073219,
-        "stop" : 1548063080584,
-        "duration" : 7365
+        "start" : 1550468055342,
+        "stop" : 1550468062651,
+        "duration" : 7309
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_look_all_bank_39",
-      "uid" : "8b1a6f0a1e656808",
+      "uid" : "8173ed7f948bef52",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063080586,
-        "stop" : 1548063089282,
-        "duration" : 8696
+        "start" : 1550468062653,
+        "stop" : 1550468071578,
+        "duration" : 8925
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_card_ticket_40",
-      "uid" : "19a66d332862a6c3",
+      "uid" : "7cda3334d7aaffa3",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063089284,
-        "stop" : 1548063099027,
-        "duration" : 9743
+        "start" : 1550468071581,
+        "stop" : 1550468081661,
+        "duration" : 10080
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_understand_bicai_41",
-      "uid" : "84786e673fc0595f",
+      "uid" : "f05f7244af56c8f0",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063099029,
-        "stop" : 1548063110371,
-        "duration" : 11342
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_sidebar.TestSidebar.test_click_sign_in_42",
-      "uid" : "cc3311d13d52187b",
-      "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
-      "status" : "passed",
-      "time" : {
-        "start" : 1548063110374,
-        "stop" : 1548063123778,
-        "duration" : 13404
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_sidebar.TestSidebar.test_click_sign_in_luck_draw_43",
-      "uid" : "7fb931ad18fdfd54",
-      "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
-      "status" : "passed",
-      "time" : {
-        "start" : 1548063123780,
-        "stop" : 1548063129701,
-        "duration" : 5921
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_sidebar.TestSidebar.test_look_activity_rules_44",
-      "uid" : "dee04d1ce21b40d6",
-      "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
-      "status" : "passed",
-      "time" : {
-        "start" : 1548063129704,
-        "stop" : 1548063133021,
-        "duration" : 3317
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_sidebar.TestSidebar.test_click_share_friend_45",
-      "uid" : "e7f831a529d05800",
-      "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
-      "status" : "passed",
-      "time" : {
-        "start" : 1548063133024,
-        "stop" : 1548063144201,
-        "duration" : 11177
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_sidebar.TestSidebar.test_click_share_circle_of_friend_46",
-      "uid" : "dbf793686a6928db",
-      "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
-      "status" : "passed",
-      "time" : {
-        "start" : 1548063144203,
-        "stop" : 1548063151531,
-        "duration" : 7328
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_sidebar.TestSidebar.test_click_my_winning_record_47",
-      "uid" : "d1f622a1013de8aa",
-      "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
-      "status" : "passed",
-      "time" : {
-        "start" : 1548063151533,
-        "stop" : 1548063161918,
-        "duration" : 10385
+        "start" : 1550468081664,
+        "stop" : 1550468088699,
+        "duration" : 7035
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_user_survey_48",
-      "uid" : "b4fa1d4f7956b29b",
+      "uid" : "2369f781ffaacd5a",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063161920,
-        "stop" : 1548063167043,
-        "duration" : 5123
+        "start" : 1550468088701,
+        "stop" : 1550468093749,
+        "duration" : 5048
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_set_up_49",
-      "uid" : "d79e7e296d4eb24d",
+      "uid" : "accc71b5527a3dec",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063167045,
-        "stop" : 1548063175293,
-        "duration" : 8248
+        "start" : 1550468093752,
+        "stop" : 1550468102083,
+        "duration" : 8331
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50",
-      "uid" : "bd818d99df68ca71",
+      "uid" : "ce17f9f00e1a80a5",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063175295,
-        "stop" : 1548063179243,
-        "duration" : 3948
+        "start" : 1550468102086,
+        "stop" : 1550468106069,
+        "duration" : 3983
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_change_password_51",
-      "uid" : "dc8426bdc33cf020",
+      "uid" : "1cd7f6cd06c8a0ba",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063179245,
-        "stop" : 1548063186288,
-        "duration" : 7043
+        "start" : 1550468106072,
+        "stop" : 1550468113110,
+        "duration" : 7038
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_forget_password_52",
-      "uid" : "890844652092da2e",
+      "uid" : "b1e58418213cb68e",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063186290,
-        "stop" : 1548063193397,
-        "duration" : 7107
+        "start" : 1550468113112,
+        "stop" : 1550468120451,
+        "duration" : 7339
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_home_page_default_53",
-      "uid" : "8ef0da8015c3fbf7",
+      "uid" : "2a33080c3085801f",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063193400,
-        "stop" : 1548063197612,
-        "duration" : 4212
+        "start" : 1550468120454,
+        "stop" : 1550468124867,
+        "duration" : 4413
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_news_push_54",
-      "uid" : "dd6274a550707d84",
+      "uid" : "c6c1403a883d9c78",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063197614,
-        "stop" : 1548063201070,
-        "duration" : 3456
+        "start" : 1550468124870,
+        "stop" : 1550468128178,
+        "duration" : 3308
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_default_purchase_channel_55",
-      "uid" : "387f1e611f7ea42e",
+      "uid" : "f42aa143b5ed1cdc",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063201072,
-        "stop" : 1548063206166,
-        "duration" : 5094
+        "start" : 1550468128180,
+        "stop" : 1550468133270,
+        "duration" : 5090
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_new_version_56",
-      "uid" : "f05bedcbc596f7a5",
+      "uid" : "86bf4c51d1548c95",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063206169,
-        "stop" : 1548063216072,
-        "duration" : 9903
+        "start" : 1550468133272,
+        "stop" : 1550468143209,
+        "duration" : 9937
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_privacy_policy_57",
-      "uid" : "dac7d489fe7a3207",
+      "uid" : "55f2973c0b5ec001",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063216074,
-        "stop" : 1548063221254,
-        "duration" : 5180
+        "start" : 1550468143211,
+        "stop" : 1550468148292,
+        "duration" : 5081
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_call_me_58",
-      "uid" : "e1f7ddb6636f0540",
+      "uid" : "361b82b35905ebe8",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063221257,
-        "stop" : 1548063226909,
-        "duration" : 5652
+        "start" : 1550468148295,
+        "stop" : 1550468153277,
+        "duration" : 4982
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_click_give_feedback_59",
-      "uid" : "c3ea5c0c1651a95b",
+      "uid" : "3db84f4cf18d3789",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063226911,
-        "stop" : 1548063231669,
-        "duration" : 4758
+        "start" : 1550468153279,
+        "stop" : 1550468158030,
+        "duration" : 4751
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_sidebar.TestSidebar.test_sign_out_app_60",
-      "uid" : "b786423ac6bb856a",
+      "uid" : "50f5b7b5137a05b9",
       "parentUid" : "9fa14e2db0d1ecbd3a4c5f0825d2ac34",
       "status" : "passed",
       "time" : {
-        "start" : 1548063231672,
-        "stop" : 1548063235524,
-        "duration" : 3852
+        "start" : 1550468158032,
+        "stop" : 1550468161775,
+        "duration" : 3743
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -729,89 +657,249 @@
     "name" : "TestRegressionCase",
     "children" : [ {
       "name" : "test_regression.TestRegression.test_go_main_01",
-      "uid" : "890d49170db3feb3",
+      "uid" : "888c85214cf19045",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063237146,
-        "stop" : 1548063251293,
-        "duration" : 14147
+        "start" : 1550468163195,
+        "stop" : 1550468177668,
+        "duration" : 14473
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_login_02",
-      "uid" : "2e35df2008fe11ba",
+      "uid" : "fd0f2eb6bc75622",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063251296,
-        "stop" : 1548063264439,
-        "duration" : 13143
+        "start" : 1550468177671,
+        "stop" : 1550468191132,
+        "duration" : 13461
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_sidebar_eject_03",
-      "uid" : "853e50f281caf29d",
+      "uid" : "7e3ee50ae0e2c1d7",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063264441,
-        "stop" : 1548063277792,
-        "duration" : 13351
+        "start" : 1550468191135,
+        "stop" : 1550468204686,
+        "duration" : 13551
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_click_bicai_wallet_04",
-      "uid" : "36abf893abb0a051",
+      "uid" : "b89832dfc930ade5",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063277794,
-        "stop" : 1548063281619,
-        "duration" : 3825
+        "start" : 1550468204688,
+        "stop" : 1550468208573,
+        "duration" : 3885
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_regression.TestRegression.test_click_type_two_accounts_05",
-      "uid" : "c158e68704ea9238",
+      "uid" : "14a9e16fe2c209c3",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063281621,
-        "stop" : 1548063288977,
-        "duration" : 7356
+        "start" : 1550468208575,
+        "stop" : 1550468212578,
+        "duration" : 4003
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
-      "name" : "test_regression.TestRegression.test_click_set_up_06",
-      "uid" : "8dde41335354b27d",
+      "name" : "test_regression.TestRegression.test_click_fast_open_account_06",
+      "uid" : "eccec55e4ea3b035",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063288979,
-        "stop" : 1548063297187,
-        "duration" : 8208
+        "start" : 1550468212581,
+        "stop" : 1550468216306,
+        "duration" : 3725
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
-      "name" : "test_regression.TestRegression.test_sign_out_app_07",
-      "uid" : "6c7bcedbce4d2a8c",
+      "name" : "test_regression.TestRegression.test_click_go_real_name_07",
+      "uid" : "6d000c64ff89752a",
       "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
       "status" : "passed",
       "time" : {
-        "start" : 1548063297189,
-        "stop" : 1548063301025,
-        "duration" : 3836
+        "start" : 1550468216308,
+        "stop" : 1550468224809,
+        "duration" : 8501
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_regression.TestRegression.test_click_set_up_08",
+      "uid" : "7034382ce432315",
+      "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468224812,
+        "stop" : 1550468232941,
+        "duration" : 8129
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_regression.TestRegression.test_sign_out_app_09",
+      "uid" : "bf4c202f8d50c5ec",
+      "parentUid" : "b7b46b4f804506f9c4350058ecbb0347",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468232943,
+        "stop" : 1550468236807,
+        "duration" : 3864
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
     "uid" : "b7b46b4f804506f9c4350058ecbb0347"
+  }, {
+    "name" : "TestSignInLottery",
+    "children" : [ {
+      "name" : "test_signin.TestRegression.test_go_main_01",
+      "uid" : "cb37763fee620e4",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468237739,
+        "stop" : 1550468251395,
+        "duration" : 13656
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_login_02",
+      "uid" : "679c0811b510dfe7",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468251397,
+        "stop" : 1550468264360,
+        "duration" : 12963
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_sidebar_eject_03",
+      "uid" : "bc6d2a1b61bdc0b1",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468264362,
+        "stop" : 1550468277995,
+        "duration" : 13633
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_click_sign_in_04",
+      "uid" : "5494212a5c91f6e7",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468277997,
+        "stop" : 1550468291560,
+        "duration" : 13563
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_click_sign_in_luck_draw_05",
+      "uid" : "f5c4aa1b5b56635d",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468291563,
+        "stop" : 1550468303905,
+        "duration" : 12342
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_look_activity_rules_06",
+      "uid" : "85783a9b9cdfcbb1",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468303908,
+        "stop" : 1550468307325,
+        "duration" : 3417
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_click_share_friend_07",
+      "uid" : "c52d32cd6ee00c9d",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468307328,
+        "stop" : 1550468318246,
+        "duration" : 10918
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_click_share_circle_of_friend_08",
+      "uid" : "84d9201e12981cf7",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468318248,
+        "stop" : 1550468324895,
+        "duration" : 6647
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_click_my_winning_record_09",
+      "uid" : "1ae6a11cef1983",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468324897,
+        "stop" : 1550468335296,
+        "duration" : 10399
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_click_set_up_10",
+      "uid" : "5a3cec97ac6702",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468335299,
+        "stop" : 1550468343620,
+        "duration" : 8321
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_signin.TestRegression.test_sign_out_app_09",
+      "uid" : "7dc274c37d51f657",
+      "parentUid" : "91f54cab3b607c3500333fe30471b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1550468343623,
+        "stop" : 1550468347442,
+        "duration" : 3819
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "91f54cab3b607c3500333fe30471b30c"
   } ]
 }

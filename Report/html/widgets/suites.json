@@ -1,5 +1,5 @@
 {
-  "total" : 2,
+  "total" : 3,
   "items" : [ {
     "uid" : "ee79ae265a842e48c4df30f006daaf4e",
     "name" : "TestCase",
@@ -7,9 +7,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 60,
+      "passed" : 54,
       "unknown" : 0,
-      "total" : 60
+      "total" : 54
+    }
+  }, {
+    "uid" : "dd3518e6132d77191300c0ea74fa7fe5",
+    "name" : "TestSignInLottery",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
     }
   }, {
     "uid" : "cba3a7a9e7d59b1cd876ada21b151e11",
@@ -18,9 +29,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 7
+      "total" : 9
     }
   } ]
 }

@@ -1,188 +1,21 @@
 "Status","Name","Duration in ms","Description"
-"passed","TestCase.test_sidebar.TestSidebar.test_click_my_winning_record_47","10385","
-        在签到页点击我的中奖记录
-        :param d:
-        :return:
-        "
-"passed","TestRegressionCase.test_regression.TestRegression.test_go_main_01","14147","
-        首次启动app点击进入比财,如果有广告页点击x关闭，
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_my_concern_23","4514","
-        点击我的关注，校验内容
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_sign_in_luck_draw_43","5921","
-        签到抽奖校验
-        :param d:
-        :return:
-        "
-"passed","TestRegressionCase.test_regression.TestRegression.test_click_type_two_accounts_05","7356","
-        点击二类户跳转
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_new_version_56","9903","
-        点击版本更新说明
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_phone_number_check_12","206","
-        个人资料手机号与登录账号对比校验
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_card_button_36","5678","
-        点击我的钱包银行卡跳转
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_home_page_default_53","4212","
-        点击首页默认
-        :param d:
-        :return:
-        "
-"passed","TestRegressionCase.test_regression.TestRegression.test_click_bicai_wallet_04","3825","
-        点击我的钱包跳转
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_news_push_54","3456","
-        点击消息推送提醒
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_nickname_icon_click_07","7763","
-        修改昵称后点击返回icon，查看个人资料页昵称未被修改
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_profession_icon_10","5248","
-        修改职业后点击返回icon
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_share_circle_of_friend_46","7328","
-        点击分享给朋友圈
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_sign_out_app_60","3852","
-        退出app
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_look_all_bank_39","8696","
-        点击查看全部银行
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_tied_card_click_icon_20","2062","
-        绑卡页点击返回icon
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_real_name_click_icon_18","1869","
-        实名状态页点击返回icon
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_detailed_28","4153","
-        点击明细，跳转明细页默认选择收益明细
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_business_record_29","3537","
+"passed","TestCase.test_sidebar.TestSidebar.test_click_business_record_29","3568","
         切换交易明细页，日期图标被隐藏
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_profession_09","6379","
-        修改职业，如果是测试就修改为码农，如果是码农就修改为测试，并校验
+"passed","TestCase.test_sidebar.TestSidebar.test_click_common_problem_27","4886","
+        点击常见问题跳转
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_not_opening_bank_38","7365","
-        点击二类户跳转
+"passed","TestRegressionCase.test_regression.TestRegression.test_click_bicai_wallet_04","3885","
+        点击我的钱包跳转
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_check_tied_card_state_19","12344","
-        根据个人资料中实名认证状态检验是否绑卡
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_user_survey_48","5123","
-        点击用户调研
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_card_ticket_40","9743","
-        点击卡券跳转到卡券页
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32","248","
-        验证页面跳转后提现按钮不可点击
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_call_me_58","5652","
-        点击联系我们
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50","3948","
-        点击比财支付密码管理
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_forget_password_52","7107","
-        点击忘记密码
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_logo_click_04","3798","
-        验证点击侧边栏logo会跳转正确跳到个人资料页，及个人资料页内控件元素存在校验
-        :param d:
-        :return: 无
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_nickname_click_05","3470","
-        验证点击昵称可正确跳转修到昵称修改页
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_check_real_name_authentication_state_17","3679","
-        根据个人资料中实名认证状态检验是否已实名
-        :param d:
-        :return:
-        "
-"passed","TestRegressionCase.test_regression.TestRegression.test_login_02","13143","
-        比财账号登录
-
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_privacy_policy_57","5180","
-        点击隐私政策
-        :param d:
-        :return:
-        "
-"passed","TestRegressionCase.test_regression.TestRegression.test_sidebar_eject_03","13351","
-         验证点击左上角图标弹出侧边栏功能
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_profession_clear_11","6678","
-        修改职业输入内容后显示取消按钮，点击取消按钮删除清空输入内容
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_address_13","12969","
-        所在地修改，如果是北京朝阳区三环到四环之间或其他地址就修改为上海徐汇区城区，反之修改为北京朝阳区三环到四环之间
-        :param d:
-        :return:
-        "
-"passed","TestRegressionCase.test_regression.TestRegression.test_sign_out_app_07","3836","
-        退出app
+"passed","TestSignInLottery.test_signin.TestRegression.test_click_set_up_10","8321","
+        点击设置
         :param d:
         :return:
         "
@@ -191,140 +24,339 @@
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_personalized_signature_clear_16","11516","
-        修改个性签名点击返回icon
+"passed","TestCase.test_sidebar.TestSidebar.test_tied_card_click_icon_20","2114","
+        绑卡页点击返回icon
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_bicai_wallet_26","4799","
-        点击我的钱包跳转
+"passed","TestCase.test_sidebar.TestSidebar.test_login_02","13575","
+        比财账号登录
+
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_check_real_name_authentication_state_17","3683","
+        根据个人资料中实名认证状态检验是否已实名
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_add_bank_cards_22","13897","
-        添加银行卡
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_address_13","12908","
+        所在地修改，如果是北京朝阳区三环到四环之间或其他地址就修改为上海徐汇区城区，反之修改为北京朝阳区三环到四环之间
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_look_activity_rules_44","3317","
-        查看活动规则
+"passed","TestCase.test_sidebar.TestSidebar.test_click_user_survey_48","5048","
+        点击用户调研
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_check_list_click_21","6968","
-        已经实名用户点击查看绑定
+"passed","TestCase.test_sidebar.TestSidebar.test_real_name_click_icon_18","1874","
+        实名状态页点击返回icon
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_common_problem_27","4776","
-        点击常见问题跳转
+"passed","TestCase.test_sidebar.TestSidebar.test_click_news_push_54","3308","
+        点击消息推送提醒
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_cash_withdrawal_clickable__less_than_ten_34","3359","
-        验证页面输入小于10元随机金额提现按钮不可点击
+"passed","TestCase.test_sidebar.TestSidebar.test_click_privacy_policy_57","5081","
+        点击隐私政策
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_business_record_content_30","7609","
-        如果交易记录页中有内容点击进入
+"passed","TestCase.test_sidebar.TestSidebar.test_click_card_ticket_40","10080","
+        点击卡券跳转到卡券页
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_default_purchase_channel_55","5094","
-        默认安全购买渠道设置
+"passed","TestSignInLottery.test_signin.TestRegression.test_go_main_01","13656","
+        首次启动app点击进入比财,如果有广告页点击x关闭，
         :param d:
         :return:
         "
-"passed","TestRegressionCase.test_regression.TestRegression.test_click_set_up_06","8208","
-        点击设置
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_personalized_signature_15","9870","
-        修改个性签名
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_share_friend_45","11177","
-        点击分享给朋友
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_understand_bicai_41","11342","
-        点击关于我们
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_complete_click_06","9491","
-        昵称修改后点击完成验证个人资料页是否显示修改后昵称
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_go_main_01","14079","
-        首次启动app点击进入比财,如果有广告页点击x关闭， 
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_balance_display_hide_35","6337","
-        账户余额校验
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_cash_withdrawal_clickable_33","1","
-        验证页面输入大于等于10元随机金额提现按钮可以点击
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_cash_withdrawal_31","4128","
-        点击提现
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_my_concern_content_24","36981","
-        验证我的关注内下一页内容
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_give_feedback_59","4758","
-        点击意见反馈
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_change_password_51","7043","
-        点击修改密码
-        :param d:
-        :return:
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_sign_in_42","13404","
+"passed","TestSignInLottery.test_signin.TestRegression.test_click_sign_in_04","13563","
         点击签到
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_address_clear_14","12988","
-        修改地址后点击返回icon查看内容是否未被修改
+"passed","TestCase.test_sidebar.TestSidebar.test_click_detailed_28","4135","
+        点击明细，跳转明细页默认选择收益明细
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_modify_sex_08","3647","
+"passed","TestCase.test_sidebar.TestSidebar.test_click_understand_bicai_41","7035","
+        点击关于我们
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_cash_withdrawal_31","4166","
+        点击提现
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_sex_08","3637","
         修改性别，如果是男就修改成女，如果是女就修改成男
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_sidebar_eject_03","13743","
-         验证点击左上角图标弹出侧边栏功能
-        "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_set_up_49","8248","
-        点击设置
+"passed","TestSignInLottery.test_signin.TestRegression.test_click_sign_in_luck_draw_05","12342","
+        签到抽奖校验
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_click_my_news_25","19846","
+"passed","TestCase.test_sidebar.TestSidebar.test_click_call_me_58","4982","
+        点击联系我们
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_bicai_payment_password_management_50","3983","
+        点击比财支付密码管理
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_complete_click_06","9347","
+        昵称修改后点击完成验证个人资料页是否显示修改后昵称
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_home_page_default_53","4413","
+        点击首页默认
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_personalized_signature_15","9871","
+        修改个性签名
+        :param d:
+        :return:
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_login_02","12963","
+        比财账号登录
+
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_card_button_36","5794","
+        点击我的钱包银行卡跳转
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_profession_clear_11","6810","
+        修改职业输入内容后显示取消按钮，点击取消按钮删除清空输入内容
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_address_clear_14","12738","
+        修改地址后点击返回icon查看内容是否未被修改
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_cash_withdrawal_clickable_33","2","
+        验证页面输入大于等于10元随机金额提现按钮可以点击
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_personalized_signature_clear_16","11134","
+        修改个性签名点击返回icon
+        :param d:
+        :return:
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_sidebar_eject_03","13551","
+         验证点击左上角图标弹出侧边栏功能
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_business_record_content_30","7790","
+        如果交易记录页中有内容点击进入
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_sign_out_app_60","3743","
+        退出app
+        :param d:
+        :return:
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_click_share_circle_of_friend_08","6647","
+        点击分享给朋友圈
+        :param d:
+        :return:
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_go_main_01","14473","
+        首次启动app点击进入比财,如果有广告页点击x关闭，
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_not_opening_bank_38","7309","
+        点击二类户跳转
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_nickname_icon_click_07","7622","
+        修改昵称后点击返回icon，查看个人资料页昵称未被修改
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_add_bank_cards_22","14167","
+        添加银行卡
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_check_list_click_21","7247","
+        已经实名用户点击查看绑定
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_bicai_wallet_26","5941","
+        点击我的钱包跳转
+        :param d:
+        :return:
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_click_go_real_name_07","8501","
+        点击去实名认证
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_my_news_25","19451","
         点击我的消息
         :param d:
         :return:
         "
-"passed","TestCase.test_sidebar.TestSidebar.test_login_02","13030","
+"passed","TestRegressionCase.test_regression.TestRegression.test_sign_out_app_09","3864","
+        退出app
+        :param d:
+        :return:
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_sign_out_app_09","3819","
+        退出app
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_balance_display_hide_35","6700","
+        账户余额校验
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_phone_number_check_12","206","
+        个人资料手机号与登录账号对比校验
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_logo_click_04","4127","
+        验证点击侧边栏logo会跳转正确跳到个人资料页，及个人资料页内控件元素存在校验
+        :param d:
+        :return: 无
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_look_activity_rules_06","3417","
+        查看活动规则
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_sidebar_eject_03","13538","
+         验证点击左上角图标弹出侧边栏功能
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_login_02","13461","
         比财账号登录
 
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_click_type_two_accounts_05","4003","
+        点击二类户跳转
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_go_main_01","14009","
+        首次启动app点击进入比财,如果有广告页点击x关闭， 
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_cash_withdrawal_clickenable_32","187","
+        验证页面跳转后提现按钮不可点击
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_default_purchase_channel_55","5090","
+        默认安全购买渠道设置
+        :param d:
+        :return:
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_click_fast_open_account_06","3725","
+        点击二类户立即开户跳转实名认证页
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_check_tied_card_state_19","12465","
+        根据个人资料中实名认证状态检验是否绑卡
+        :param d:
+        :return:
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_sidebar_eject_03","13633","
+         验证点击左上角图标弹出侧边栏功能
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_forget_password_52","7339","
+        点击忘记密码
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_give_feedback_59","4751","
+        点击意见反馈
+        :param d:
+        :return:
+        "
+"passed","TestRegressionCase.test_regression.TestRegression.test_click_set_up_08","8129","
+        点击设置
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_set_up_49","8331","
+        点击设置
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_new_version_56","9937","
+        点击版本更新说明
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_profession_icon_10","5058","
+        修改职业后点击返回icon
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_modify_profession_09","6667","
+        修改职业，如果是测试就修改为码农，如果是码农就修改为测试，并校验
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_my_concern_23","4322","
+        点击我的关注，校验内容
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_look_all_bank_39","8925","
+        点击查看全部银行
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_nickname_click_05","3474","
+        验证点击昵称可正确跳转修到昵称修改页
+        :param d:
+        :return:
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_click_share_friend_07","10918","
+        点击分享给朋友
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_cash_withdrawal_clickable__less_than_ten_34","3318","
+        验证页面输入小于10元随机金额提现按钮不可点击
+        :param d:
+        :return:
+        "
+"passed","TestSignInLottery.test_signin.TestRegression.test_click_my_winning_record_09","10399","
+        在签到页点击我的中奖记录
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_change_password_51","7038","
+        点击修改密码
+        :param d:
+        :return:
+        "
+"passed","TestCase.test_sidebar.TestSidebar.test_click_my_concern_content_24","38072","
+        验证我的关注内下一页内容
+        :param d:
+        :return:
         "

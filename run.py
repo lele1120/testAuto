@@ -18,8 +18,8 @@ if __name__ == '__main__':
     html_report_path = conf.html_report_path
 
     # 定义测试集
-    allure_list = '--allure_features=Home,Personal,Regression'
-    # allure_list = '--allure_features=Home,luck'
+    allure_list = '--allure_features=Home,sigin,Personal,Regression'
+    # allure_list = '--allure_features=sigin'
     # allure_list = '--allure_features=Regression'
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)

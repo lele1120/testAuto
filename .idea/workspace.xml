@@ -2,45 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7f6cdc-a1a6-4b67-b602-eb250172c71a" name="Default" comment="修改运行级别；&#10;添加">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/testAuto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/err.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/err.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/history/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/app退出.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/app退出.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/修改昵称页.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/修改昵称页.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/控件未获取到.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/控件未获取到.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/无关注1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/无关注3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/无关注5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/无关注6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/无关注6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/有关注2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/有关注2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/有关注4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/有关注4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/添加银行卡.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/添加银行卡.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/picture/用户已实名.png" beforeDir="false" afterPath="$PROJECT_DIR$/Report/picture/用户已实名.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/packages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/data/timeline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/export/influxDbData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/export/mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/export/prometheusData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/history.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/history/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/plugins/behaviors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/plugins/packages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/plugins/screen-diff/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/plugins/screen-diff/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/duration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/executors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/severity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/status-chart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/html/widgets/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/app退出.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/修改昵称页.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/实名认证页面点击返回icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/控件未获取到.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/无关注6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/有关注2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/有关注4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/添加银行卡.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/picture/用户已实名.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/picture/账号18301401092已登录状态_失败.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/xml/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/xml/environment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/xml/environment.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCase/test_sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_sidebar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
@@ -52,7 +75,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1548221022518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testAuto$run.coverage" NAME="run Coverage Results" MODIFIED="1550467761214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testAuto$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1548047018819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/testAuto$tt.coverage" NAME="tt Coverage Results" MODIFIED="1541752358942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/usage" />
     <SUITE FILE_PATH="coverage/testAuto$att.coverage" NAME="att Coverage Results" MODIFIED="1548213331722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -82,65 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Consts.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Consts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_sidebar.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="1389" selection-start-line="1389" selection-end-line="1389" />
-              <folding>
-                <element signature="e#46#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="att.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/att.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="42" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tta.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tta.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="372">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding>
                 <element signature="e#45#89#0" expanded="true" />
               </folding>
@@ -148,14 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="params.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Params/params.py">
+      <file leaf-file-name="test_signin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestSignInLottery/test_signin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="40" />
-              <folding>
-                <element signature="e#64#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="82">
+              <caret line="170" column="56" selection-start-line="170" selection-start-column="56" selection-end-line="170" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -163,8 +129,29 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Report/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            <state relative-caret-position="418">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cfgyaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="107" column="7" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_sidebar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="1313" selection-start-line="1313" selection-end-line="1313" />
+              <folding>
+                <element signature="e#46#84#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,15 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>now_date</find>
-      <find>Home</find>
-      <find>Y66手机udid</find>
-      <find>d(description=u&quot;发送给朋友&quot;, className=&quot;android.view.View&quot;).click(timeout=10)</find>
-      <find>发送给朋友</find>
-      <find>44</find>
-      <find>com.bs.finance:id/openState</find>
-      <find>com.bs.finance:id/tv_2</find>
-      <find>get_t</find>
       <find>Critical</find>
       <find>身份证认证</find>
       <find>立即开户</find>
@@ -197,19 +175,28 @@
       <find>time</find>
       <find>Consts.TEST_LIST.append('Test')</find>
       <find>Test</find>
-      <find># Consts.TEST_LIST.append('Test')</find>
+      <find />
       <find>Consts</find>
       <find>#</find>
       <find>抽奖</find>
       <find>luck</find>
       <find>43</find>
-      <find>u2</find>
       <find>com.bs.finance:id/rl_back</find>
-      <find>签到</find>
       <find>返回</find>
       <find>45</find>
       <find>u</find>
       <find>critical</find>
+      <find>u2</find>
+      <find>picture_name</find>
+      <find>详细地址文本</find>
+      <find>13</find>
+      <find />
+      <find>re</find>
+      <find>re.findall</find>
+      <find>签到</find>
+      <find>print(d(className=&quot;android.widget.Image&quot;)[i].info['contentDescription'])</find>
+      <find />
+      <find>ex</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -218,10 +205,10 @@
       <replace>action.display_picture</replace>
       <replace>(self,d):</replace>
       <replace>pytest.allure.environment</replace>
-      <replace>self, d</replace>
+      <replace />
       <replace>critical</replace>
       <replace>allure.step(</replace>
-      <replace># Consts.TEST_LIST.append('Test')</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/test_case</dir>
@@ -234,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/biz/tt.py" />
         <option value="$PROJECT_DIR$/biz/save_picture_by_function_name.py" />
         <option value="$PROJECT_DIR$/test_case/test_interface.py" />
         <option value="$PROJECT_DIR$/biz/get_value_by_yaml.py" />
@@ -274,17 +260,18 @@
         <option value="$PROJECT_DIR$/Conf/config.ini" />
         <option value="$PROJECT_DIR$/Params/Param/cfgyaml" />
         <option value="$PROJECT_DIR$/TestRegressionCase/at.py" />
-        <option value="$PROJECT_DIR$/Common/Consts.py" />
         <option value="$PROJECT_DIR$/TestCase/conftest.py" />
         <option value="$PROJECT_DIR$/Conf/Conftest.py" />
         <option value="$PROJECT_DIR$/TestRegressionCase/test_regression.py" />
         <option value="$PROJECT_DIR$/TestRegressionCase/Conftestreg.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/Params/params.py" />
         <option value="$PROJECT_DIR$/att.py" />
         <option value="$PROJECT_DIR$/tta.py" />
-        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/Common/Consts.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/TestCase/test_sidebar.py" />
+        <option value="$PROJECT_DIR$/TestSignInLottery/test_signin.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -297,11 +284,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="977" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="206" />
+    <option name="y" value="52" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -310,6 +297,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,16 +326,30 @@
               <item name="testAuto" type="462c0819:PsiDirectoryNode" />
               <item name="TestRegressionCase" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testAuto" type="462c0819:PsiDirectoryNode" />
+              <item name="TestSignInLottery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="testAuto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (testAuto) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -500,13 +502,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539741889289</updated>
-    </task>
-    <task id="LOCAL-00074" summary="侧边栏功能编写">
-      <created>1546066931231</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1546066931231</updated>
     </task>
     <task id="LOCAL-00075" summary="侧边栏我的关注功能编写">
       <created>1546067116523</created>
@@ -844,10 +839,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548148110662</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="维护签到抽奖case稳定性">
+      <created>1548222131690</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1548222131690</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -858,23 +860,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1920" height="977" extended-state="6" />
+    <frame x="206" y="52" width="1680" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33069083" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50745475" side_tool="true" weight="0.2875" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840257" weight="0.33034825" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5079872" side_tool="true" weight="0.3181818" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32842582" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32842582" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49254525" visible="true" weight="0.23295455" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49201277" visible="true" weight="0.24235295" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733758" weight="0.28522727" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.23003195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915397" visible="true" weight="0.07387058" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32960597" />
       <window_info id="Structure" order="1" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
-      <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38863635" />
+      <window_info id="Favorites" order="2" sideWeight="0.500846" side_tool="true" weight="0.2257721" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -916,7 +919,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="侧边栏我的关注功能编写" />
     <MESSAGE value="我的关注功能编写" />
     <MESSAGE value="调整登录逻辑添加判断是否弹出4位验证码，弹出走条件1，不弹出走条件2" />
     <MESSAGE value="添加我的关注内容页条目断言" />
@@ -940,6 +942,7 @@
     <MESSAGE value="修改运行级别；&#10;添加二类户未开户跳转实名认证case" />
     <MESSAGE value="修改case编号" />
     <MESSAGE value="修改testconf" />
+    <MESSAGE value="维护签到抽奖case稳定性" />
     <MESSAGE value="修改运行级别；&#10;添加" />
     <option name="LAST_COMMIT_MESSAGE" value="修改运行级别；&#10;添加" />
   </component>
@@ -949,27 +952,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/mime/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/_parseaddr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3781">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/_policybase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5795">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/email/message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3667">
@@ -999,27 +981,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Report/xml/3af980e5-981d-45f3-9642-053e5e2e9d2c-attachment.txt" />
-    <entry file="file://$PROJECT_DIR$/Common/Email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Shell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.pytest_cache/README.md" />
     <entry file="file://$PROJECT_DIR$/Report/html/export/influxDbData.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1050,27 +1011,16 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Report/xml/1b8720b8-184a-45fd-9220-ec056e04314f-attachment.txt" />
-    <entry file="file://$PROJECT_DIR$/Report/picture/控件未获取到.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Report/picture/控件未获取到.png" />
     <entry file="file://$PROJECT_DIR$/Log/log.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-836" />
       </provider>
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Log/err.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-319" />
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py" />
     <entry file="file://$PROJECT_DIR$/Report/picture/签到规则跳转_失败.png" />
     <entry file="file://$PROJECT_DIR$/Report/picture/账号18301401092已登录状态_失败.png" />
-    <entry file="file://$PROJECT_DIR$/Report/picture/app退出.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Params/Param/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1080,130 +1030,148 @@
     <entry file="file://$PROJECT_DIR$/Report/html/widgets/duration.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Operate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestRegressionCase/at.py" />
-    <entry file="file://$PROJECT_DIR$/Conf/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#24#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#46#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/Conftest1.py" />
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-          <folding>
-            <element signature="e#407#417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TestRegressionCase/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Consts.py">
+    <entry file="file://$PROJECT_DIR$/att.py" />
+    <entry file="file://$PROJECT_DIR$/tta.py" />
+    <entry file="file://$PROJECT_DIR$/Report/picture/app退出.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Report/xml/0a1727c2-6437-4194-81e1-828ae6728f1d-attachment.txt" />
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="46" lean-forward="true" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Shell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" column="3" lean-forward="true" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#407#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Params/params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="40" />
-          <folding>
-            <element signature="e#64#73#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1243">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
+    <entry file="file://$PROJECT_DIR$/Log/err.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-466" />
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Assert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="56">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tta.py">
+    <entry file="file://$PROJECT_DIR$/Common/Consts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/att.py">
+    <entry file="file://$PROJECT_DIR$/TestRegressionCase/test_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="42" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Report/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="162">
+          <caret line="18" column="21" selection-end-line="266" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test_sidebar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="1389" selection-start-line="1389" selection-end-line="1389" />
+        <state relative-caret-position="277">
+          <caret line="1313" selection-start-line="1313" selection-end-line="1313" />
           <folding>
             <element signature="e#46#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/cfgyaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Report/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestSignInLottery/test_signin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="170" column="56" selection-start-line="170" selection-start-column="56" selection-end-line="170" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="372">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
           <folding>
             <element signature="e#45#89#0" expanded="true" />
           </folding>
