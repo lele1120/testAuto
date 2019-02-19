@@ -18,7 +18,7 @@ if __name__ == '__main__':
     html_report_path = conf.html_report_path
 
     # 定义测试集
-    allure_list = '--allure_features=Home,sigin,Personal,Regression,notloggedin'
+    allure_list = '--allure_features=Home,sigin,Personal,homepage,Regression,notloggedin'
     # allure_list = '--allure_features=homepage'
     # allure_list = '--allure_features=Regression'
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
