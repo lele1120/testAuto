@@ -29,7 +29,7 @@ class TestRegression:
         点击首页搜索框
         :param d:
         """
-        action.login_in(d)  # 登录
+        # action.login_in(d)  # 登录
         time.sleep(10)
         with pytest.allure.step("点击首页搜索"):
             action.click_element(d, "首页搜索")
@@ -240,14 +240,14 @@ class TestRegression:
 
         with pytest.allure.step("验证跳转成功"):
             test.assert_title(d, "拼团阖家欢")
-            time.sleep(5)
+            time.sleep(10)
             test.assert_element_exists_save_picture(d, d(description=u"活动规则").exists, "活动规则按钮")
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
             test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
         Consts.RESULT_LIST.append('True')
 
-        action.login_out(d) #登出
+        # action.login_out(d)  # 登出
 
 
 
