@@ -8,6 +8,7 @@
 """
 import os
 import re
+import json
 
 import yaml
 from Common import Log
@@ -84,3 +85,19 @@ def get_driver_by_key(key):
                 print("未发现udid为" + uuid + "的移动设备")
     else:
         print("请使用yaml文件中的设备连接名称")
+
+
+def change_param_for_json(key):
+    """
+
+    :param key: 关键字
+    :return: json格式数据
+    """
+    text_a = (get_value(key)).replace('=', ':')  # 字符串原本的样子,将=替换为:
+    list_a = text_a.split(',')  # 根据逗号切割 将字符串存入数组
+    list_c = []
+    for i in range(text_a.count(',') + 1):  # 根据逗号+1数量循环赋值
+        list_a[i] = list_a[i].strip()  # 去除前后空格
+        list_c.append('\"' + (list_a[i][0:list_a[i].rfind(":")]) + '\"' + list_a[i][list_a[i].rfind(":"):])
+    text_c = ('{' + ','.join(list_c) + '}')
+    return json.loads(text_c)

@@ -106,6 +106,21 @@ element_id:
   资产按钮: com.bs.finance:id/rl_3
   首页银行名称: com.bs.finance:id/tv_bank
   安全购买: com.bs.finance:id/tv_buy
+  首页搜索: com.bs.finance:id/iv_search_icon
+  搜索按钮: com.bs.finance:id/rl_search
+  选择搜索类型: com.bs.finance:id/tv_type_choose_text
+  搜索文本框: com.bs.finance:id/et_content
+  类型展示: com.bs.finance:id/tips_text
+  搜索页展示名称: com.bs.finance:id/tv_name
+  搜索页类型选择: com.bs.finance:id/ll_type_choose
+  机构选项: com.bs.finance:id/item_1
+  产品选项: com.bs.finance:id/item_2
+  首页昨日收益: com.bs.finance:id/tv_income
+  导航栏比财按钮: com.bs.finance:id/rl_0
+  排行榜按钮: com.bs.finance:id/linear_phb
+  排行榜机构名称: com.bs.finance:id/tv_prd_name
+  拼团活动入口: com.bs.finance:id/linear_jz
+  首页banner: className="android.widget.ImageView", instance=3
 
 user_id:
 # 登录账号
