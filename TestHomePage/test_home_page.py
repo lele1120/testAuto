@@ -245,6 +245,9 @@ class TestRegression:
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
             test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
+
+        with pytest.allure.step("点击返回icon"):
+            action.click_element(d, "返回icon")
         Consts.RESULT_LIST.append('True')
 
         action.login_out(d)  # 登出
