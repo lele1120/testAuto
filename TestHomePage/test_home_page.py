@@ -29,7 +29,7 @@ class TestRegression:
         点击首页搜索框
         :param d:
         """
-        # action.login_in(d)  # 登录
+        action.login_in(d)  # 登录
         time.sleep(10)
         with pytest.allure.step("点击首页搜索"):
             action.click_element(d, "首页搜索")
@@ -247,7 +247,7 @@ class TestRegression:
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
         Consts.RESULT_LIST.append('True')
 
-        # action.login_out(d)  # 登出
+        action.login_out(d)  # 登出
 
 
 
