@@ -2,6 +2,8 @@ import os
 import re
 import time
 import allure
+
+from Common import Consts
 from Conf.Config import Config
 from Params.params import get_value,change_param_for_json
 
@@ -112,5 +114,33 @@ class Operation:
                 self.display_picture(d, "控件未获取到")
             d(resourceId=element_text).click(timeout=10.0)
             time.sleep(1)
+
+    def element_exists(self, d, element_name):
+        """
+
+        :param d:d
+        :param bool_a: 控件.exists 存在返回ture，不存在返回Flase
+        :param picture_name: 图片名称
+        :return:
+        """
+        element_text = get_value(element_name)
+        if d(resourceId=element_text).exists:
+            return True
+        else:
+            return False
+
+    def element_gettext(self, d, element_name):
+        """
+        获取控件文本内容
+        :param d:
+        :param element_name:
+        :return:
+        """
+        element_text = get_value(element_name)
+        return d(resourceId=element_text).get_text()
+
+
+
+
 
 

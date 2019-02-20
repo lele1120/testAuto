@@ -175,6 +175,8 @@ class TestRegression:
             test.assert_title(d, "货币基金")
             test.assert_element_exists_save_picture(d, d(resourceId=get_value("排行榜机构名称")).exists, "排行榜机构名称")
 
+        Consts.RESULT_LIST.append('True')
+
     @pytest.allure.feature('homepage')
     @pytest.allure.feature("09.返回首页")
     @pytest.allure.severity('critical')
@@ -245,12 +247,93 @@ class TestRegression:
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
             test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
             test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
+        Consts.RESULT_LIST.append('True')
 
-        with pytest.allure.step("点击返回icon"):
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("13.返回首页")
+    @pytest.allure.severity('critical')
+    def test_return_home_page_13(self, d):
+        """
+        返回首页
+        :param d:
+        """
+        with pytest.allure.step("返回首页"):
             action.click_element(d, "返回icon")
+
+        with pytest.allure.step("验证返回成功"):
+            test.assert_element_exists_save_picture(d, d(resourceId=get_value("首页左上角图标")).exists, "点击查看榜单返回首页")
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("14.银行存款和直销银行理财切换")
+    @pytest.allure.severity('critical')
+    def test_choose_bank_deposit_14(self, d):
+        """
+        切换banner图下方按钮选项
+        :param d:
+        :return:
+        """
+        global choose_type
+        time.sleep(2)
+        with pytest.allure.step("获取默认选项"):
+            if action.element_exists(d, "银行存款选中下划线"):
+                choose_type = 0
+            elif action.element_exists(d, "直销银行理财选中下划线"):
+                choose_type = 1
+            else:
+                choose_type = -1
+
+            recommend_content = d(resourceId=get_value("推荐内容"))
+            recommend_content_real_bank = ['推荐', '1天', '1个月内', '1-3个月', '3-6个月', '6个月以上']
+            recommend_content_real_financing = ['推荐', '1天', '3-6个月', '6个月以上']
+            recommend_content_test = []
+            if choose_type == 0:
+                for i in range(recommend_content.__len__()):
+                    recommend_content_test.append(recommend_content[i].get_text())
+
+                test.assert_equal_save_picture(d, recommend_content_test, recommend_content_real_bank, "获取推荐列表")
+            elif choose_type == 1:
+                for i in range(recommend_content.__len__()):
+                    recommend_content_test.append(recommend_content[i].get_text())
+                test.assert_equal_save_picture(d, recommend_content_test, recommend_content_real_financing, "获取推荐列表")
+            print(choose_type)
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("15.直销银行理财和银行存款切换")
+    @pytest.allure.severity('critical')
+    def test_choose_financing_15(self, d):
+        """
+        切换banner图下方按钮选项选择理财
+        :param d:
+        :return:
+        """
+        with pytest.allure.step("点击直销银行理财选项"):
+            recommend_content = d(resourceId=get_value("推荐内容"))
+            recommend_content_real_bank = ['推荐', '1天', '1个月内', '1-3个月', '3-6个月', '6个月以上']
+            recommend_content_real_financing = ['推荐', '1天', '3-6个月', '6个月以上']
+            recommend_content_test = []
+            if choose_type == 0:
+                action.click_element(d, "直销银行理财选项")
+                test.assert_element_exists_save_picture(d, action.element_exists(d, "直销银行理财选中下划线"), "直销银行理财选中下划线显示")
+                time.sleep(1)
+                for i in range(recommend_content.__len__()):
+                    recommend_content_test.append(recommend_content[i].get_text())
+                test.assert_equal_save_picture(d, recommend_content_test, recommend_content_real_financing, "获取推荐列表")
+            elif choose_type == 1:
+                action.click_element(d, "银行存款选项")
+                test.assert_element_exists_save_picture(d, action.element_exists(d, "银行存款选中下划线"), "银行存款选中下划线显示")
+                time.sleep(1)
+                for i in range(recommend_content.__len__()):
+                    recommend_content_test.append(recommend_content[i].get_text())
+                test.assert_equal_save_picture(d, recommend_content_test, recommend_content_real_bank, "获取推荐列表")
+            print(choose_type)
         Consts.RESULT_LIST.append('True')
 
         action.login_out(d)  # 登出
+
+
+
 
 
 
