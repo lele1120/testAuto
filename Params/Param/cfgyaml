@@ -121,6 +121,11 @@ element_id:
   排行榜机构名称: com.bs.finance:id/tv_prd_name
   拼团活动入口: com.bs.finance:id/linear_jz
   首页banner: className="android.widget.ImageView", instance=3
+  银行存款选中下划线: com.bs.finance:id/v_left
+  直销银行理财选中下划线: com.bs.finance:id/v_right
+  推荐内容: com.bs.finance:id/tv_tab_title
+  直销银行理财选项: com.bs.finance:id/ll_right
+  银行存款选项: com.bs.finance:id/tv_left
 
 user_id:
 # 登录账号
