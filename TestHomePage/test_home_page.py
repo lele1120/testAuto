@@ -473,6 +473,21 @@ class TestRegression:
             test.assert_equal_save_picture(d, bank_name, belong_to_bank.strip(), "银行名称对比")
 
         Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("21.返回首页")
+    @pytest.allure.severity('critical')
+    def test_return_home_page_21(self, d):
+        """
+        返回首页
+        :param d:
+        """
+        with pytest.allure.step("返回首页"):
+            action.click_element(d, "返回icon")
+
+        with pytest.allure.step("验证返回成功"):
+            test.assert_element_exists_save_picture(d, d(resourceId=get_value("首页左上角图标")).exists, "点击查看榜单返回首页")
+        Consts.RESULT_LIST.append('True')
         action.login_out(d)  # 登出
 
 
