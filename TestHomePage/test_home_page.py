@@ -1,15 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
-
-import re
-import time
-import pytest
 from os import path
-from Params.params import get_value,change_param_for_json
+from Params.params import get_value
 from Common import Operate
 from Common import Consts
 from Common import Assert
+import time
+import pytest
 
 
 import sys
@@ -20,7 +18,7 @@ sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 USER_ID = Operate.Operation().USER_ID
 
 
-class TestRegression:
+class TestHomePage:
     @pytest.allure.feature('homepage')
     @pytest.allure.feature("01.点击首页搜索")
     @pytest.allure.severity('critical')

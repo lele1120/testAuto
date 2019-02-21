@@ -130,6 +130,10 @@ element_id:
   推荐周期显示: com.bs.finance:id/tv_day
   首页产品名称: com.bs.finance:id/tv_d_prd_name
   产品购买页产品隶属于: com.bs.finance:id/tv_bank
+  首页银行按钮: com.bs.finance:id/rl_1
+  首页比财按钮: com.bs.finance:id/rl_0
+  收藏银行: com.bs.finance:id/collect_bank_list
+  全部银行: com.bs.finance:id/all_bank_list
 
 user_id:
 # 登录账号

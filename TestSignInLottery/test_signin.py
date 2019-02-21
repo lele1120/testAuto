@@ -18,7 +18,7 @@ action = Operate.Operation()
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 
-class TestRegression:
+class TestSignIn:
     @pytest.allure.feature('sigin')
     @pytest.allure.feature("01.启动app后进入比财")
     @pytest.allure.severity('critical')
