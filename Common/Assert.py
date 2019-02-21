@@ -68,9 +68,9 @@ class Assertions:
         """
         if not d(resourceId=get_value("标题")).exists:
             time.sleep(2)
-        else:
-            self.assert_equal_save_picture(d, title, d(resourceId=get_value("标题")).get_text(), "标题对比")
-            print("页面title为:" + str(d(resourceId=get_value("标题")).get_text()))
-            print("预期页面的title为:" + str(title))
-            time.sleep(1)
+
+        self.assert_equal_save_picture(d, title, d(resourceId=get_value("标题")).get_text(), "标题对比")
+        print("页面title为:" + str(d(resourceId=get_value("标题")).get_text()))
+        print("预期页面的title为:" + str(title))
+        time.sleep(1)
 
