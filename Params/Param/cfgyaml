@@ -126,6 +126,10 @@ element_id:
   推荐内容: com.bs.finance:id/tv_tab_title
   直销银行理财选项: com.bs.finance:id/ll_right
   银行存款选项: com.bs.finance:id/tv_left
+  推荐排名: com.bs.finance:id/tv_right_lab1
+  推荐周期显示: com.bs.finance:id/tv_day
+  首页产品名称: com.bs.finance:id/tv_d_prd_name
+  产品购买页产品隶属于: com.bs.finance:id/tv_bank
 
 user_id:
 # 登录账号

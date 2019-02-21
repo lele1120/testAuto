@@ -269,7 +269,7 @@ class TestRegression:
     @pytest.allure.severity('critical')
     def test_choose_bank_deposit_14(self, d):
         """
-        切换banner图下方按钮选项
+        银行存款和直销银行理财切换
         :param d:
         :return:
         """
@@ -304,7 +304,7 @@ class TestRegression:
     @pytest.allure.severity('critical')
     def test_choose_financing_15(self, d):
         """
-        切换banner图下方按钮选项选择理财
+        直销银行理财和银行存款切换
         :param d:
         :return:
         """
@@ -330,6 +330,149 @@ class TestRegression:
             print(choose_type)
         Consts.RESULT_LIST.append('True')
 
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("16.点击银行存款推荐时间选项")
+    @pytest.allure.severity('critical')
+    def test_click_recommend_bank_date_16(self, d):
+        """
+        点击银行存款推荐时间选项
+        :param d:
+        :return:
+        """
+        with pytest.allure.step("点击银行存款选项"):
+            action.click_element(d, "银行存款选项")
+            recommend_content = d(resourceId=get_value("推荐内容"))
+            recommend_content_real_bank = ['推荐', '1天', '1个月内', '1-3个月', '3-6个月', '6个月以上']
+        time.sleep(2)
+        for i in range(recommend_content.__len__()):
+            d(resourceId=get_value("推荐内容"))[i].click()
+            time.sleep(1)
+            if d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == str(recommend_content_real_bank[i]):
+                with pytest.allure.step("选择"+d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text()+"选项"):
+                    print("选择"+d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text()+"选项")
+                    if d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "推荐":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐排名"), "推荐排名显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "1天":
+                        test.assert_element_exists_save_picture(d, not action.element_exists(d, "推荐周期显示"), "推荐周期1天显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "1个月内":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"), "推荐周期1个月内显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "1-3个月":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"), "推荐周期1-3个月显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "3-6个月":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"), "推荐周期3-6个月显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "6个月以上":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"), "推荐周期6个月以上显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+        d(resourceId=get_value("推荐内容"))[0].click()
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("17.点击直销银行理财选项")
+    @pytest.allure.severity('critical')
+    def test_click_recommend_financing_date_17(self, d):
+        """
+        点击银行存款推荐时间选项
+        :param d:
+        :return:
+        """
+        with pytest.allure.step("点击直销银行理财选项"):
+            action.click_element(d, "直销银行理财选项")
+            recommend_content = d(resourceId=get_value("推荐内容"))
+            recommend_content_real_financing = ['推荐', '1天',  '3-6个月', '6个月以上']
+        time.sleep(2)
+        for i in range(recommend_content.__len__()):
+            d(resourceId=get_value("推荐内容"))[i].click()
+            time.sleep(1)
+            if d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == str(recommend_content_real_financing[i]):
+                with pytest.allure.step("选择" + d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() + "选项"):
+                    print("选择" + d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() + "选项")
+                    if d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "推荐":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐排名"), "推荐排名显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "1天":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"),
+                                                                "推荐周期1天显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "3-6个月":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"),
+                                                                "推荐周期3-6个月显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+                    elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "6个月以上":
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐周期显示"),
+                                                                "推荐周期6个月以上显示")
+                        test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
+        d(resourceId=get_value("推荐内容"))[0].click()
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("18.点击银行存款推荐时间选项")
+    @pytest.allure.severity('critical')
+    def test_click_deposit_name_18(self, d):
+        """
+        点击银行存款推荐时间选项
+        :param d:
+        :return:
+        """
+        with pytest.allure.step("点击银行存款选项"):
+            action.click_element(d, "银行存款选项")
+        time.sleep(10)
+        product_name = d(resourceId=get_value("首页产品名称")).get_text()
+        bank_name = d(resourceId=get_value("首页银行名称")).get_text()
+        print(product_name)
+        with pytest.allure.step("点击首条产品跳转产品购买页"):
+            action.click_element(d, "首页银行名称")
+            test.assert_title(d, product_name)
+            d(scrollable=True).scroll(steps=30)  # 向下滑动
+            time.sleep(2)
+            belong_to_bank = d(resourceId=get_value("产品购买页产品隶属于")).get_text().split('隶属于 ')[1]
+            test.assert_equal_save_picture(d, bank_name, belong_to_bank.strip(), "银行名称对比")
+
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("19.返回首页")
+    @pytest.allure.severity('critical')
+    def test_return_home_page_19(self, d):
+        """
+        返回首页
+        :param d:
+        """
+        with pytest.allure.step("返回首页"):
+            action.click_element(d, "返回icon")
+
+        with pytest.allure.step("验证返回成功"):
+            test.assert_element_exists_save_picture(d, d(resourceId=get_value("首页左上角图标")).exists, "点击查看榜单返回首页")
+        Consts.RESULT_LIST.append('True')
+
+    @pytest.allure.feature('homepage')
+    @pytest.allure.feature("20.点击银行理财推荐时间选项")
+    @pytest.allure.severity('critical')
+    def test_click_financing_name_20(self, d):
+        """
+        点击直销银行理财选项
+        :param d:
+        :return:
+        """
+        with pytest.allure.step("点击直销银行理财选项"):
+            action.click_element(d, "直销银行理财选项")
+        time.sleep(5)
+        product_name = d(resourceId=get_value("首页产品名称")).get_text()
+        bank_name = d(resourceId=get_value("首页银行名称")).get_text()
+        print(product_name)
+        with pytest.allure.step("点击首条产品跳转产品购买页"):
+            action.click_element(d, "首页银行名称")
+            test.assert_title(d, product_name)
+            d(scrollable=True).scroll(steps=30)  # 向下滑动
+            time.sleep(2)
+            belong_to_bank = d(resourceId=get_value("产品购买页产品隶属于")).get_text().split('隶属于 ')[1]
+            test.assert_equal_save_picture(d, bank_name, belong_to_bank.strip(), "银行名称对比")
+
+        Consts.RESULT_LIST.append('True')
         action.login_out(d)  # 登出
 
 
