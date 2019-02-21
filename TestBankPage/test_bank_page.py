@@ -27,7 +27,7 @@ class TestBankPage:
         点击首页银行按钮
         :param d:
         """
-        # action.login_in(d)  # 登录
+        action.login_in(d)  # 登录
         time.sleep(10)
         with pytest.allure.step("点击首页银行按钮"):
             action.click_element(d, "首页银行按钮")
