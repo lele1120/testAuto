@@ -33,7 +33,7 @@ class TestBankPage:
             action.click_element(d, "首页银行按钮")
             test.assert_element_exists_save_picture(d, action.element_exists(d, "收藏银行"), "收藏银行显示")
             test.assert_element_exists_save_picture(d, action.element_exists(d, "全部银行"), "全部银行显示")
-            Consts.RESULT_LIST.append('True')
+        Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('bank_page')
     @pytest.allure.feature("21.返回首页")

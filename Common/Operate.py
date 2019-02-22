@@ -3,7 +3,7 @@ import re
 import time
 import allure
 
-from Common import Consts
+from Common import Consts, Log
 from Conf.Config import Config
 from Params.params import get_value,change_param_for_json
 
@@ -11,6 +11,7 @@ from Params.params import get_value,change_param_for_json
 class Operation:
     def __init__(self):
         self.config = Config()
+        self.log = Log.MyLog()
         self.run_path = Config.path_dir
         self.USER_ID = str(get_value("xc手机号"))
         self.picture_verification_code = str(get_value("四位图片验证码"))
@@ -101,19 +102,21 @@ class Operation:
         """
         element_text = get_value(element_name)
 
-        if element_text.find('className=') == 0:
-            element_name_change = change_param_for_json(element_name)
-            d(**element_name_change).wait(timeout=10.0)
-            if not d(**element_name_change).exists:
-                self.display_picture(d, "控件未获取到")
-            d(**element_name_change).click(timeout=10.0)
-            time.sleep(1)
-        elif element_text.find('className=') == -1:
-            d(resourceId=element_text).wait(timeout=10.0)
-            if not d(resourceId=element_text).exists:
-                self.display_picture(d, "控件未获取到")
-            d(resourceId=element_text).click(timeout=10.0)
-            time.sleep(1)
+        try:
+            if element_text.find('className=') == 0:
+                element_name_change = change_param_for_json(element_name)
+                d(**element_name_change).wait(timeout=10.0)
+                d(**element_name_change).click(timeout=10.0)
+                time.sleep(1)
+            elif element_text.find('className=') == -1:
+                d(resourceId=element_text).wait(timeout=10.0)
+                d(resourceId=element_text).click(timeout=10.0)
+                time.sleep(1)
+            print("点击" + element_name + "控件_成功")
+        except:
+            self.display_picture(d, "控件未获取到")
+            self.log.error("点击" + element_name + "控件失败 ")
+            raise
 
     def element_exists(self, d, element_name):
         """

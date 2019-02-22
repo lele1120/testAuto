@@ -349,7 +349,7 @@ class TestHomePage:
                 with pytest.allure.step("选择"+d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text()+"选项"):
                     print("选择"+d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text()+"选项")
                     if d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "推荐":
-                        test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐排名"), "推荐排名显示")
+                        # test.assert_element_exists_save_picture(d, action.element_exists(d, "推荐排名"), "推荐排名显示")
                         test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "推荐数据查询")
                     elif d(resourceId="com.bs.finance:id/tv_tab_title")[i].get_text() == "1天":
                         test.assert_element_exists_save_picture(d, not action.element_exists(d, "推荐周期显示"), "推荐周期1天显示")
