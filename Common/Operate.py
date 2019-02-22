@@ -23,6 +23,7 @@ class Operation:
         :param d:
         :return:
         """
+        time.sleep(5)
         self.click_element(d, "启动页进入比财")
         if d(resourceId=get_value("广告页")).exists:  # 如果弹出广告页
             self.click_element(d, "广告页关闭")  # 点击x关闭
