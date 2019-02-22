@@ -5,7 +5,7 @@ import allure
 
 from Common import Consts, Log
 from Conf.Config import Config
-from Params.params import get_value,change_param_for_json
+from Params.params import get_value, change_param_for_json
 
 
 class Operation:

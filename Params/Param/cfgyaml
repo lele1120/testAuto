@@ -134,6 +134,10 @@ element_id:
   首页比财按钮: com.bs.finance:id/rl_0
   收藏银行: com.bs.finance:id/collect_bank_list
   全部银行: com.bs.finance:id/all_bank_list
+  收藏页隶属于: com.bs.finance:id/tv_bank_from
+  收藏页银行名称: com.bs.finance:id/tv_bank_name
+  收藏按钮: com.bs.finance:id/tv_collect
+
 
 user_id:
 # 登录账号
