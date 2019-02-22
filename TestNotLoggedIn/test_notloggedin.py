@@ -76,6 +76,7 @@ class TestNotLoginIn:
             action.click_element(d, "资产按钮")
 
         with pytest.allure.step("验证是否弹出登录页"):
+            time.sleep(5)
             test.assert_element_exists_save_picture(d, d(resourceId=get_value("立即登录按钮")).exists, "弹出登录页")
 
         Consts.RESULT_LIST.append('True')
