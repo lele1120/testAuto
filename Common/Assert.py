@@ -74,7 +74,7 @@ class Assertions:
             print("预期页面的title为:" + str(title))
             time.sleep(1)
         except:
-            self.display_picture(d, "控件未获取到")
+            self.operation.display_picture(d, "控件未获取到")
             self.log.error("对比" + title + "控件")
             raise
 
