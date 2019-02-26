@@ -42,21 +42,21 @@ if __name__ == '__main__':
     print("失败" + str(error_number) + "个测试用例")
     print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
 
-    # if error_number > 0:
-    #     try:
-    #         mail = Email.SendMail()
-    #         mail.sendMail()
-    #     except:
-    #         log.error('发送邮件失败，请检查邮件配置')
-    #         raise
-    #
-    # elif test_body.__len__() is not 0 and error_number == 0:
-    #
-    #     print("全部通过")
-    #
-    # else:
-    #
-    #     print("小兄弟去看看代码吧")
+    if error_number > 0:
+        try:
+            mail = Email.SendMail()
+            mail.sendMail()
+        except:
+            log.error('发送邮件失败，请检查邮件配置')
+            raise
+
+    elif test_body.__len__() is not 0 and error_number == 0:
+
+        print("全部通过")
+
+    else:
+
+        print("小兄弟去看看代码吧")
 
 
 

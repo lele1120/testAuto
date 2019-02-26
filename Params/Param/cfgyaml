@@ -100,7 +100,7 @@ element_id:
   二类户立即开户: com.bs.finance:id/openState
   去实名认证: com.bs.finance:id/btn_next
   身份证正面: com.bs.finance:id/iv_front
-  身份证背面: ccom.bs.finance:id/iv_back
+  身份证背面: com.bs.finance:id/iv_back
   实名认证提示2: com.bs.finance:id/tv_2
   去实名认证: com.bs.finance:id/btn_next
   资产按钮: com.bs.finance:id/rl_3
@@ -137,6 +137,49 @@ element_id:
   收藏页隶属于: com.bs.finance:id/tv_bank_from
   收藏页银行名称: com.bs.finance:id/tv_bank_name
   收藏按钮: com.bs.finance:id/tv_collect
+  产品页利率: com.bs.finance:id/tv_content_l
+  产品页期限: com.bs.finance:id/tv_content_r
+  产品页起存金额: com.bs.finance:id/tv_qcje2
+  产品页递增金额: com.bs.finance:id/tv_dzje
+  产品页支取时间: com.bs.finance:id/tv_zqsj
+  产品页产品类型: com.bs.finance:id/tv_cklx
+  产品页锁定期: com.bs.finance:id/tv_sdq
+  关闭按钮: com.bs.finance:id/rl_close
+  产品活动入口: com.bs.finance:id/iv_actity
+  计算器按钮: com.bs.finance:id/btn_comment
+  计算器买入金额: com.bs.finance:id/et_price
+  计算器期限: com.bs.finance:id/et_day
+  计算器本产品收益: com.bs.finance:id/tv_reference_income
+  计算器银行定期收益: com.bs.finance:id/third_income
+  按此金额购买: com.bs.finance:id/tv_buy
+  存入页输入框金额: com.bs.finance:id/et_detail_pay_money
+  存入页产品名称: com.bs.finance:id/tv_bank_name
+  存入页产品类型: com.bs.finance:id/messageType
+  存入页起购金额: com.bs.finance:id/Purchase_Amount
+  存入页最小递增金额: com.bs.finance:id/IncrementingAmount
+  存入页协议名称: com.bs.finance:id/agree_01
+  存入页充值按钮: com.bs.finance:id/btn_doMoney
+  存入页选择银行卡: com.bs.finance:id/btn_select_bank
+  充值页关闭按钮: com.bs.finance:id/close
+  充值页银行卡名称: com.bs.finance:id/tv_card_bank_name
+  充值页每日限额: com.bs.finance:id/tv_meiri_xiane
+  充值页单笔限额: com.bs.finance:id/tv_danci_xiane
+  查看资产: com.bs.finance:id/tv_bottom
+  资产页总资产: com.bs.finance:id/tv_totle_price
+  资产页金额隐藏显示: com.bs.finance:id/open_or_see
+  资产页余额明细: com.bs.finance:id/tv_banlance_mx
+  可用余额页充值: com.bs.finance:id/ll_recharge
+  可用余额页提现: com.bs.finance:id/ll_putforward
+  可用余额页明细查询: com.bs.finance:id/ll_trans
+  资产页存款产品明细查询: com.bs.finance:id/ll_evaluating
+  可用余额页返回: com.bs.finance:id/iv_back
+  存款产品页已支取: com.bs.finance:id/tv_finish
+  存款产品页持有中: com.bs.finance:id/tv_cying
+  存款产品页明细: com.bs.finance:id/bt_mingxi
+  存款产品页再次存入: com.bs.finance:id/bt_jiaoyi
+  资产页更多服务: com.bs.finance:id/ll_more_services
+  更多服务页绑定银行卡管理: com.bs.finance:id/linear_card
+  添加新银行卡: com.bs.finance:id/btn_select_fund
 
 
 user_id:
