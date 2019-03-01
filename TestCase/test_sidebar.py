@@ -1520,7 +1520,7 @@ class TestSidebar:
             action.click_element(d, "隐私政策")
 
         with pytest.allure.step("校验title"):
-            test.assert_title(d, "北京比财数据科技有限公司隐私隐私声明(V1.0版)")
+            test.assert_title(d, "隐私政策")
 
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")

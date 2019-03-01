@@ -180,6 +180,16 @@ element_id:
   资产页更多服务: com.bs.finance:id/ll_more_services
   更多服务页绑定银行卡管理: com.bs.finance:id/linear_card
   添加新银行卡: com.bs.finance:id/btn_select_fund
+  首页知道按钮: com.bs.finance:id/rl_2
+  数据知道: com.bs.finance:id/linear_know
+  新手专享: com.bs.finance:id/tab_0
+  新手专项产品名称: com.bs.finance:id/tv_prd_name
+  爆款: com.bs.finance:id/tab_1
+  无数据: com.bs.finance:id/nodata_tip
+  新品: com.bs.finance:id/tab_2
+  查询按钮: com.bs.finance:id/btn_query
+  全部选项: com.bs.finance:id/tv_item_0
+  数据知道页更多: com.bs.finance:id/btn_more
 
 
 user_id:

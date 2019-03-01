@@ -201,12 +201,12 @@ class TestBankPage:
             action.click_element(d, "产品活动入口")
             time.sleep(5)
         with pytest.allure.step("验证跳转成功"):
-            test.assert_title(d, "拼团阖家欢")
-            time.sleep(5)
-            test.assert_element_exists_save_picture(d, d(description=u"活动规则").exists, "活动规则按钮")
-            test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
-            test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
-            test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
+            test.assert_title(d, "产品详情")
+            # time.sleep(5)
+            # test.assert_element_exists_save_picture(d, d(description=u"活动规则").exists, "活动规则按钮")
+            # test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
+            # test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
+            # test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('bank_page')
