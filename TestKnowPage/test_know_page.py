@@ -408,15 +408,16 @@ class TestKnowPage:
             test.assert_title(d, "比财知道")
         for i in range(0, 4):
             d(resourceId="com.bs.finance:id/tab_" + str(i)).click()
+            time.sleep(1)
             test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/line_" + str(i)).exists,
                                                     "验证下划线切换")
 
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('know_page')
-    @pytest.allure.feature("26.点击返回icon")
+    @pytest.allure.feature("27.点击返回icon")
     @pytest.allure.severity('critical')
-    def test_click_return_26(self, d):
+    def test_click_return_27(self, d):
         """
         点击返回icon
         :param d:

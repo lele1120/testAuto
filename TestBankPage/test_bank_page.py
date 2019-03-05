@@ -201,7 +201,7 @@ class TestBankPage:
             action.click_element(d, "产品活动入口")
             time.sleep(5)
         with pytest.allure.step("验证跳转成功"):
-            test.assert_title(d, "产品详情")
+            test.assert_title(d, "拼团")
             # time.sleep(5)
             # test.assert_element_exists_save_picture(d, d(description=u"活动规则").exists, "活动规则按钮")
             # test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")

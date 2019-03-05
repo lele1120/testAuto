@@ -190,6 +190,45 @@ element_id:
   查询按钮: com.bs.finance:id/btn_query
   全部选项: com.bs.finance:id/tv_item_0
   数据知道页更多: com.bs.finance:id/btn_more
+  首页资产按钮: com.bs.finance:id/rl_3
+  资产页金额: com.bs.finance:id/tv_title_all
+  资产页昨日收益: com.bs.finance:id/tv_zrsy
+  资产页累计收益: com.bs.finance:id/tv_ljsy
+  资产页隐藏显示按钮: com.bs.finance:id/chebox
+  资产页收益明细: com.bs.finance:id/tv_income
+  资产页交易记录: com.bs.finance:id/tv_transaction
+  资产页更多: com.bs.finance:id/rl_submit
+  切换视图: com.bs.finance:id/invest_switch_ll
+  资产页存款: com.bs.finance:id/ll_title_ckcp
+  资产页理财: com.bs.finance:id/ll_title_lc
+  资产页基金: com.bs.finance:id/ll_title_jj
+  资产页银行显示: com.bs.finance:id/linear_item
+  添加记账: com.bs.finance:id/invest_add_ll
+  银行内产品名称: com.bs.finance:id/tv_name
+  产品金额存入输入框: com.bs.finance:id/et_je
+  产品日期选择: com.bs.finance:id/ll_date
+  日期选择确定: com.bs.finance:id/tv_sure
+  确认记账: com.bs.finance:id/btn_sure
+  查看记账: com.bs.finance:id/btn_watch
+  添加记账金额: com.bs.finance:id/tv_value2
+  资产页银行名称: com.bs.finance:id/tv_org_name
+  资产页智能存款: com.bs.finance:id/ll_item_znck
+  记账管理: com.bs.finance:id/invest_manage_ll
+  修改页面金额输入框: com.bs.finance:id/money
+  修改页面确认修改按钮: com.bs.finance:id/btn_sure
+  记账管理金额展示: com.bs.finance:id/tv_money
+  智能存款页更多: com.bs.finance:id/iv_more
+  智能存款页修改: com.bs.finance:id/invest_update_ll
+  智能存款页删除: com.bs.finance:id/invest_delete_ll
+  手工记账标示: com.bs.finance:id/tv_type
+  删除弹框取消按钮: com.bs.finance:id/title_qx
+  删除弹框确定按钮: com.bs.finance:id/title_qd
+  智能存款页常见问题: com.bs.finance:id/iv_question
+  更多内常见问题: com.bs.finance:id/invest_help_ll
+  记账管理页全选按钮: com.bs.finance:id/cb_all
+  记账管理页删除按钮: com.bs.finance:id/tv_delete
+  记账管理页删除确定按钮: com.bs.finance:id/tv_left
+  记账管理页删除取消按钮: com.bs.finance:id/tv_right
 
 
 user_id:
