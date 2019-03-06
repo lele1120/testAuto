@@ -62,7 +62,8 @@ class TestKnowPage:
             action.click_element(d, "新手专享")
         with pytest.allure.step("查询出产品"):
             time.sleep(5)
-            test.assert_element_exists_save_picture(d,action.element_exists(d,"新手专项产品名称"),"查询出产品")
+            if not action.element_exists(d, "缺省页文本"):
+                test.assert_element_exists_save_picture(d, action.element_exists(d, "新手专项产品名称"), "查询出产品")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('know_page')
@@ -257,7 +258,8 @@ class TestKnowPage:
             action.click_element(d, "新手专享")
         with pytest.allure.step("查询出产品"):
             time.sleep(5)
-            test.assert_element_exists_save_picture(d,action.element_exists(d,"新手专项产品名称"),"查询出产品")
+            if not action.element_exists(d, "缺省页文本"):
+                test.assert_element_exists_save_picture(d,action.element_exists(d,"新手专项产品名称"),"查询出产品")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('know_page')
@@ -301,7 +303,7 @@ class TestKnowPage:
     @pytest.allure.feature('know_page')
     @pytest.allure.feature("20.点击返回icon")
     @pytest.allure.severity('critical')
-    def test_click_return_17(self, d):
+    def test_click_return_20(self, d):
         """
         点击返回icon
         :param d:
@@ -339,7 +341,8 @@ class TestKnowPage:
             action.click_element(d, "新手专享")
         with pytest.allure.step("查询出产品"):
             time.sleep(5)
-            test.assert_element_exists_save_picture(d, action.element_exists(d, "新手专项产品名称"), "查询出产品")
+            if not action.element_exists(d, "缺省页文本"):
+                test.assert_element_exists_save_picture(d, action.element_exists(d, "新手专项产品名称"), "查询出产品")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('know_page')

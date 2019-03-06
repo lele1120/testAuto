@@ -327,9 +327,9 @@ class TestSignIn:
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('sigin')
-    @pytest.allure.feature("09.app退出")
+    @pytest.allure.feature("11.app退出")
     @pytest.allure.severity('critical')
-    def test_sign_out_app_09(self, d):
+    def test_sign_out_app_11(self, d):
         """
         退出app
         :param d:
