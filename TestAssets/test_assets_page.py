@@ -39,9 +39,9 @@ class TestAssetsPage:
         with pytest.allure.step("获取资产视角"):
             global angle_of_view
             if action.element_exists(d, "资产页存款"):
-                angle_of_view = 0 # 产品视角
+                angle_of_view = 0  # 产品视角
             elif action.element_exists(d, "资产页银行显示"):
-                angle_of_view = 1 # 银行视角
+                angle_of_view = 1  # 银行视角
 
         Consts.RESULT_LIST.append('True')
 

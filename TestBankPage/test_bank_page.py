@@ -594,8 +594,10 @@ class TestBankPage:
             action.click_element(d, "存款产品页再次存入")
         with pytest.allure.step("点击再次存入"):
             test.assert_element_exists_save_picture(d, action.element_exists(d, "更多产品"), "产品下架")
+            time.sleep(2)
         with pytest.allure.step("点击更多产品"):
             action.click_element(d, "更多产品")
+            time.sleep(2)
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('bank_page')
@@ -609,7 +611,9 @@ class TestBankPage:
         """
         with pytest.allure.step("进入梅州客商银行"):
             action.click_element(d, "首页银行按钮")
+            time.sleep(2)
             d(resourceId="com.bs.finance:id/tv_name", text=u"梅州客商银行").click()
+            time.sleep(2)
             action.click_element(d, "查看资产")
         with pytest.allure.step("点击更多服务"):
             action.click_element(d, "资产页更多服务")

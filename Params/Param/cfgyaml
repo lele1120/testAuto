@@ -232,6 +232,19 @@ element_id:
   排行榜数值: com.bs.finance:id/tv_temp
   排行榜万年收益: com.bs.finance:id/tab_0
   更多产品: com.bs.finance:id/tv_yes
+  排行榜销量: com.bs.finance:id/tab_2
+  排行榜关注量: com.bs.finance:id/tab_3
+  第一项下划线: com.bs.finance:id/line_0
+  第二项下划线: com.bs.finance:id/line_1
+  第三项下划线: com.bs.finance:id/line_2
+  第四项下划线: com.bs.finance:id/line_3
+  右上角搜索: com.bs.finance:id/btn_query
+  货币基金产品名称: com.bs.finance:id/tv_prd_name
+  理财产品产品名称: com.bs.finance:id/tv_prd_name
+  纯债基金产品名称: com.bs.finance:id/tv_prd_name
+  产品输入框: com.bs.finance:id/et_key
+  搜索箭头: com.bs.finance:id/btn_query
+  搜索页确定: com.bs.finance:id/btn_ok
 
 
 user_id:

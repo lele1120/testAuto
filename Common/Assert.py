@@ -78,4 +78,34 @@ class Assertions:
             self.log.error("对比" + title + "控件")
             raise
 
+    def assert_list(self, d,tv_temp):
+        tv_temp_list = []
+        tv_temp_list_c = []
+        for i in range(tv_temp.__len__()):
+            # print("排行榜数值:" + (tv_temp[i].get_text()).translate(str.maketrans('%', ' ')).strip())
+            tv_temp_list.append(float((tv_temp[i].get_text()).translate(str.maketrans('%', ' ')).strip()))
+            tv_temp_list_c.append(float((tv_temp[i].get_text()).translate(str.maketrans('%', ' ')).strip()))
+
+        tv_temp_list.sort()
+        tv_temp_list.reverse()
+        print(tv_temp_list)
+        print(tv_temp_list_c)
+        for i in range(tv_temp_list.__len__()):
+            self.assert_equal_save_picture(d, tv_temp_list[i], tv_temp_list_c[i], "排序后对比")
+
+    def assert_list_no_reverse(self, d,tv_temp):
+        tv_temp_list = []
+        tv_temp_list_c = []
+        for i in range(tv_temp.__len__()):
+            # print("排行榜数值:" + (tv_temp[i].get_text()).translate(str.maketrans('%', ' ')).strip())
+            tv_temp_list.append(float((tv_temp[i].get_text()).translate(str.maketrans('%', ' ')).strip()))
+            tv_temp_list_c.append(float((tv_temp[i].get_text()).translate(str.maketrans('%', ' ')).strip()))
+
+        tv_temp_list.sort()
+        # tv_temp_list.reverse()
+        print(tv_temp_list)
+        print(tv_temp_list_c)
+        for i in range(tv_temp_list.__len__()):
+            self.assert_equal_save_picture(d, tv_temp_list[i], tv_temp_list_c[i], "排序后对比")
+
 
