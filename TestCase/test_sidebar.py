@@ -1194,6 +1194,7 @@ class TestSidebar:
         """
         with pytest.allure.step("点击II类户（图片）跳转"):
             d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
+            # d(description=u"Ⅱ类户(3)").click()
             time.sleep(1)
 
         with pytest.allure.step("校验是否跳转成功"):
@@ -1205,7 +1206,8 @@ class TestSidebar:
             action.click_element(d, "返回icon")
 
         with pytest.allure.step("点击II类户按钮跳转并校验已经绑定二类户数量"):
-            type_two_accounts_text = "Ⅱ类户(" + str(type_two_accounts_number) + ")"
+            # type_two_accounts_text = "Ⅱ类户(" + str(type_two_accounts_number) + ")"
+            type_two_accounts_text = "Ⅱ类户(3)"
             d(description=str(type_two_accounts_text)).click()
             time.sleep(2)
 
