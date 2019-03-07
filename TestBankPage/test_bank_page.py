@@ -156,248 +156,248 @@ class TestBankPage:
             test.assert_title(d, "银行")
         Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("09.点击周周利1号产品")
-    @pytest.allure.severity('critical')
-    def test_click_zzl1_product_09(self, d):
-        with pytest.allure.step("点击周周利1号产品"):
-            d(resourceId="com.bs.finance:id/tv_name", text=u"周周利1号").click()
-        with pytest.allure.step("验证产品标题跳转"):
-            test.assert_title(d, "周周利1号")
-        with pytest.allure.step("验证产品展示内容"):
-            product_details = ["4.1250%", "28天-3年", "1,000.00元", "1.00元", "锁定期后随时支取", "定期存款", "28天"]
-            product_details_real = [action.element_gettext(d, "产品页利率"),
-                                    action.element_gettext(d, "产品页期限"),
-                                    action.element_gettext(d, "产品页起存金额"),
-                                    action.element_gettext(d, "产品页递增金额"),
-                                    action.element_gettext(d, "产品页支取时间"),
-                                    action.element_gettext(d, "产品页产品类型"),
-                                    action.element_gettext(d, "产品页锁定期")]
-        for i in range(product_details.__len__()):
-            test.assert_equal_save_picture(d, product_details[i], product_details_real[i], product_details[i]+"对比" + product_details_real[i])
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("09.点击周周利1号产品")
+    # @pytest.allure.severity('critical')
+    # def test_click_zzl1_product_09(self, d):
+    #     with pytest.allure.step("点击周周利1号产品"):
+    #         d(resourceId="com.bs.finance:id/tv_name", text=u"周周利1号").click()
+    #     with pytest.allure.step("验证产品标题跳转"):
+    #         test.assert_title(d, "周周利1号")
+    #     with pytest.allure.step("验证产品展示内容"):
+    #         product_details = ["4.1250%", "28天-3年", "1,000.00元", "1.00元", "锁定期后随时支取", "定期存款", "28天"]
+    #         product_details_real = [action.element_gettext(d, "产品页利率"),
+    #                                 action.element_gettext(d, "产品页期限"),
+    #                                 action.element_gettext(d, "产品页起存金额"),
+    #                                 action.element_gettext(d, "产品页递增金额"),
+    #                                 action.element_gettext(d, "产品页支取时间"),
+    #                                 action.element_gettext(d, "产品页产品类型"),
+    #                                 action.element_gettext(d, "产品页锁定期")]
+    #     for i in range(product_details.__len__()):
+    #         test.assert_equal_save_picture(d, product_details[i], product_details_real[i], product_details[i]+"对比" + product_details_real[i])
+    #
+    #     Consts.RESULT_LIST.append('True')
 
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("10.点击保护条款")
+    # @pytest.allure.severity('critical')
+    # def test_click_protection_lause_10(self, d):
+    #     with pytest.allure.step("点击受保护条款"):
+    #         d(text=u"受存款保险保护 >").click()
+    #     with pytest.allure.step("验证是否弹出"):
+    #         time.sleep(5)
+    #         test.assert_element_exists_save_picture(d, action.element_exists(d, "关闭按钮"), "验证保护条款是否展示")
+    #     with pytest.allure.step("点击关闭"):
+    #         action.click_element(d, "关闭按钮")
+    #     with pytest.allure.step("验证产品标题跳转"):
+    #         test.assert_title(d, "周周利1号")
+    #     Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("10.点击保护条款")
-    @pytest.allure.severity('critical')
-    def test_click_protection_lause_10(self, d):
-        with pytest.allure.step("点击受保护条款"):
-            d(text=u"受存款保险保护 >").click()
-        with pytest.allure.step("验证是否弹出"):
-            time.sleep(5)
-            test.assert_element_exists_save_picture(d, action.element_exists(d, "关闭按钮"), "验证保护条款是否展示")
-        with pytest.allure.step("点击关闭"):
-            action.click_element(d, "关闭按钮")
-        with pytest.allure.step("验证产品标题跳转"):
-            test.assert_title(d, "周周利1号")
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("11.点击活动入口")
+    # @pytest.allure.severity('critical')
+    # def test_click_actity_button_11(self, d):
+    #     with pytest.allure.step("活动按钮"):
+    #         action.click_element(d, "产品活动入口")
+    #         time.sleep(5)
+    #     with pytest.allure.step("验证跳转成功"):
+    #         test.assert_title(d, "拼团")
+    #         time.sleep(5)
+    #         test.assert_element_exists_save_picture(d, d(description=u"活动规则").exists, "活动规则按钮")
+    #         test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
+    #         test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
+    #         test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
+    #     Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("11.点击活动入口")
-    @pytest.allure.severity('critical')
-    def test_click_actity_button_11(self, d):
-        with pytest.allure.step("活动按钮"):
-            action.click_element(d, "产品活动入口")
-            time.sleep(5)
-        with pytest.allure.step("验证跳转成功"):
-            test.assert_title(d, "拼团")
-            # time.sleep(5)
-            # test.assert_element_exists_save_picture(d, d(description=u"活动规则").exists, "活动规则按钮")
-            # test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "往期拼团按钮")
-            # test.assert_element_exists_save_picture(d, d(description=u"拼团", className="android.view.View", instance=1).exists, "拼团按钮")
-            # test.assert_element_exists_save_picture(d, d(description=u"往期拼团").exists, "活动投资按钮")
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("12.返回产品页")
+    # @pytest.allure.severity('critical')
+    # def test_return_home_page_12(self, d):
+    #     """
+    #     返回产品页
+    #     :param d:
+    #     """
+    #     with pytest.allure.step("返回首页"):
+    #         action.click_element(d, "返回icon")
+    #
+    #     with pytest.allure.step("验证返回成功"):
+    #         test.assert_title(d, "周周利1号")
+    #     Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("12.返回产品页")
-    @pytest.allure.severity('critical')
-    def test_return_home_page_12(self, d):
-        """
-        返回产品页
-        :param d:
-        """
-        with pytest.allure.step("返回首页"):
-            action.click_element(d, "返回icon")
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("13.点击计算器")
+    # @pytest.allure.severity('critical')
+    # def test_click_calculator_13(self, d):
+    #     """
+    #     点击计算器
+    #     :param d:
+    #     :return:
+    #     """
+    #     with pytest.allure.step("点击计算器"):
+    #         action.click_element(d, "计算器按钮")
+    #
+    #     with pytest.allure.step("计算器内容对比"):
+    #         global calculator_details
+    #         calculator_details = ["10000", "3年", "1,254.68", "106.45"]
+    #         calculator_details_real = [action.element_gettext(d, "计算器买入金额"),
+    #                                    action.element_gettext(d, "计算器期限"),
+    #                                    action.element_gettext(d, "计算器本产品收益"),
+    #                                    action.element_gettext(d, "计算器银行定期收益")]
+    #     with pytest.allure.step("计算器内容对比"):
+    #         for i in range(calculator_details.__len__()):
+    #             test.assert_equal_save_picture(d, calculator_details[i], calculator_details_real[i], calculator_details[i]+"对比" + calculator_details_real[i])
+    #     Consts.RESULT_LIST.append('True')
 
-        with pytest.allure.step("验证返回成功"):
-            test.assert_title(d, "周周利1号")
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("14.点击按此金额购买")
+    # @pytest.allure.severity('critical')
+    # def test_click_this_money_14(self, d):
+    #     """
+    #     点击计算器
+    #     :param d:
+    #     :return:
+    #     """
+    #     with pytest.allure.step("按此金额购买"):
+    #         action.click_element(d, "按此金额购买")
+    #         time.sleep(5)
+    #     with pytest.allure.step("进入存入页标题对比"):
+    #         test.assert_title(d, "存入")
+    #     with pytest.allure.step("金额对比"):
+    #         test.assert_equal_save_picture(d,calculator_details[0],action.element_gettext(d, "存入页输入框金额"), "存入页金额对比")
+    #     Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("13.点击计算器")
-    @pytest.allure.severity('critical')
-    def test_click_calculator_13(self, d):
-        """
-        点击计算器
-        :param d:
-        :return:
-        """
-        with pytest.allure.step("点击计算器"):
-            action.click_element(d, "计算器按钮")
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("15.返回产品页")
+    # @pytest.allure.severity('critical')
+    # def test_return_home_page_15(self, d):
+    #     """
+    #     返回产品页
+    #     :param d:
+    #     """
+    #     with pytest.allure.step("返回首页"):
+    #         action.click_element(d, "返回icon")
+    #
+    #     with pytest.allure.step("验证返回成功"):
+    #         test.assert_title(d, "周周利1号")
+    #     Consts.RESULT_LIST.append('True')
 
-        with pytest.allure.step("计算器内容对比"):
-            global calculator_details
-            calculator_details = ["10000", "3年", "1,254.68", "106.45"]
-            calculator_details_real = [action.element_gettext(d, "计算器买入金额"),
-                                       action.element_gettext(d, "计算器期限"),
-                                       action.element_gettext(d, "计算器本产品收益"),
-                                       action.element_gettext(d, "计算器银行定期收益")]
-        with pytest.allure.step("计算器内容对比"):
-            for i in range(calculator_details.__len__()):
-                test.assert_equal_save_picture(d, calculator_details[i], calculator_details_real[i], calculator_details[i]+"对比" + calculator_details_real[i])
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("16.点击安全购买")
+    # @pytest.allure.severity('critical')
+    # def test_click_safe_buy_16(self, d):
+    #     """
+    #     点击安全购买
+    #     :param d:
+    #     """
+    #     with pytest.allure.step("点击安全购买"):
+    #         action.click_element(d, "安全购买")
+    #     with pytest.allure.step("标题对比"):
+    #         test.assert_title(d, "存入")
+    #     with pytest.allure.step("验证产品展示内容"):
+    #         product_details = ["周周利1号", "起购金额1000.00元", "定期存款", "最小递增1.00元", "《产品服务协议》"]
+    #         product_details_real = [action.element_gettext(d, "存入页产品名称"),
+    #                                 action.element_gettext(d, "存入页起购金额"),
+    #                                 action.element_gettext(d, "存入页产品类型"),
+    #                                 action.element_gettext(d, "存入页最小递增金额"),
+    #                                 action.element_gettext(d, "存入页协议名称")]
+    #     for i in range(product_details.__len__()):
+    #         test.assert_equal_save_picture(d, product_details[i], product_details_real[i],
+    #                                        product_details[i]+"对比" + product_details_real[i])
+    #
+    #     Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("14.点击按此金额购买")
-    @pytest.allure.severity('critical')
-    def test_click_this_money_14(self, d):
-        """
-        点击计算器
-        :param d:
-        :return:
-        """
-        with pytest.allure.step("按此金额购买"):
-            action.click_element(d, "按此金额购买")
-            time.sleep(5)
-        with pytest.allure.step("进入存入页标题对比"):
-            test.assert_title(d, "存入")
-        with pytest.allure.step("金额对比"):
-            test.assert_equal_save_picture(d,calculator_details[0],action.element_gettext(d, "存入页输入框金额"), "存入页金额对比")
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("17.点击协议")
+    # @pytest.allure.severity('critical')
+    # def test_click_agreement_17(self, d):
+    #     with pytest.allure.step("点击协议"):
+    #         action.click_element(d, "存入页协议名称")
+    #     with pytest.allure.step("标题对比"):
+    #         test.assert_title(d, "产品服务协议")
+    #     Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("15.返回产品页")
-    @pytest.allure.severity('critical')
-    def test_return_home_page_15(self, d):
-        """
-        返回产品页
-        :param d:
-        """
-        with pytest.allure.step("返回首页"):
-            action.click_element(d, "返回icon")
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("18.返回存入页")
+    # @pytest.allure.severity('critical')
+    # def test_return_home_page_18(self, d):
+    #     """
+    #     返回产品页
+    #     :param d:
+    #     """
+    #     with pytest.allure.step("返回首页"):
+    #         action.click_element(d, "返回icon")
+    #     with pytest.allure.step("标题对比"):
+    #         test.assert_title(d, "存入")
+    #     Consts.RESULT_LIST.append('True')
 
-        with pytest.allure.step("验证返回成功"):
-            test.assert_title(d, "周周利1号")
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("16.点击安全购买")
-    @pytest.allure.severity('critical')
-    def test_click_safe_buy_16(self, d):
-        """
-        点击安全购买
-        :param d:
-        """
-        with pytest.allure.step("点击安全购买"):
-            action.click_element(d, "安全购买")
-        with pytest.allure.step("标题对比"):
-            test.assert_title(d, "存入")
-        with pytest.allure.step("验证产品展示内容"):
-            product_details = ["周周利1号", "起购金额1000.00元", "定期存款", "最小递增1.00元", "《产品服务协议》"]
-            product_details_real = [action.element_gettext(d, "存入页产品名称"),
-                                    action.element_gettext(d, "存入页起购金额"),
-                                    action.element_gettext(d, "存入页产品类型"),
-                                    action.element_gettext(d, "存入页最小递增金额"),
-                                    action.element_gettext(d, "存入页协议名称")]
-        for i in range(product_details.__len__()):
-            test.assert_equal_save_picture(d, product_details[i], product_details_real[i],
-                                           product_details[i]+"对比" + product_details_real[i])
-
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("17.点击协议")
-    @pytest.allure.severity('critical')
-    def test_click_agreement_17(self, d):
-        with pytest.allure.step("点击协议"):
-            action.click_element(d, "存入页协议名称")
-        with pytest.allure.step("标题对比"):
-            test.assert_title(d, "产品服务协议")
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("18.返回存入页")
-    @pytest.allure.severity('critical')
-    def test_return_home_page_18(self, d):
-        """
-        返回产品页
-        :param d:
-        """
-        with pytest.allure.step("返回首页"):
-            action.click_element(d, "返回icon")
-        with pytest.allure.step("标题对比"):
-            test.assert_title(d, "存入")
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("19.点击充值")
-    @pytest.allure.severity('critical')
-    def test_click_recharge_19(self, d):
-        """
-        点击充值
-        :param d:
-        :return:
-        """
-        with pytest.allure.step("点击充值"):
-            action.click_element(d, "存入页充值按钮")
-        with pytest.allure.step("标题对比"):
-            test.assert_title(d, "充值")
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("20.点击更多银行卡")
-    @pytest.allure.severity('critical')
-    def test_more_bank_card_20(self, d):
-        """
-        点击更多银行卡
-        :param d:
-        :return:
-        """
-        with pytest.allure.step("点击选择银行卡"):
-            action.click_element(d, "存入页选择银行卡")
-        with pytest.allure.step("点击充值页关闭按钮"):
-            test.assert_element_exists_save_picture(d, "充值页关闭按钮", "验证充值页关闭")
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("21.点击农业银行卡")
-    @pytest.allure.severity('critical')
-    def test_click_agricultural_bank_21(self, d):
-        """
-        点击农业银行
-        :param d:
-        :return:
-        """
-        with pytest.allure.step("选择农业银行银行卡"):
-            d(resourceId="com.bs.finance:id/tv_bank_name", text=u"农业银行(8272)").click()
-        with pytest.allure.step("校验银行是否切换成功"):
-            test.assert_equal_save_picture(d, action.element_gettext(d, "充值页银行卡名称"), "农业银行", "切换为农业银行")
-        with pytest.allure.step("每日限额校验"):
-            test.assert_equal_save_picture(d, action.element_gettext(d, "充值页每日限额").strip(), "每日限额:  10,000.00元", "每日限额校验")
-        with pytest.allure.step("单笔限额校验"):
-            test.assert_equal_save_picture(d, action.element_gettext(d, "充值页单笔限额").strip(), "单笔限额:  2,000.00元", "单笔限额校验")
-        Consts.RESULT_LIST.append('True')
-
-    @pytest.allure.feature('bank_page')
-    @pytest.allure.feature("22.返回银行页")
-    @pytest.allure.severity('critical')
-    def test_return_home_bank_page_22(self, d):
-        """
-        返回客商银行页
-        :param d:
-        """
-
-        with pytest.allure.step("返回银行页"):
-            for i in range(5):
-                if action.element_gettext(d, "标题") == "银行":
-                    break
-                else:
-                    action.click_element(d, "返回icon")
-
-        with pytest.allure.step("验证返回成功"):
-            test.assert_title(d, "银行")
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("19.点击充值")
+    # @pytest.allure.severity('critical')
+    # def test_click_recharge_19(self, d):
+    #     """
+    #     点击充值
+    #     :param d:
+    #     :return:
+    #     """
+    #     with pytest.allure.step("点击充值"):
+    #         action.click_element(d, "存入页充值按钮")
+    #     with pytest.allure.step("标题对比"):
+    #         test.assert_title(d, "充值")
+    #     Consts.RESULT_LIST.append('True')
+    #
+    # @pytest.allure.feature('bank_page1')
+    # @pytest.allure.feature("20.点击更多银行卡")
+    # @pytest.allure.severity('critical')
+    # def test_more_bank_card_20(self, d):
+    #     """
+    #     点击更多银行卡
+    #     :param d:
+    #     :return:
+    #     """
+    #     with pytest.allure.step("点击选择银行卡"):
+    #         action.click_element(d, "存入页选择银行卡")
+    #     with pytest.allure.step("点击充值页关闭按钮"):
+    #         test.assert_element_exists_save_picture(d, "充值页关闭按钮", "验证充值页关闭")
+    #     Consts.RESULT_LIST.append('True')
+    #
+    # @pytest.allure.feature('bank_page')
+    # @pytest.allure.feature("21.点击农业银行卡")
+    # @pytest.allure.severity('critical')
+    # def test_click_agricultural_bank_21(self, d):
+    #     """
+    #     点击农业银行
+    #     :param d:
+    #     :return:
+    #     """
+    #     with pytest.allure.step("选择农业银行银行卡"):
+    #         d(resourceId="com.bs.finance:id/tv_bank_name", text=u"农业银行(8272)").click()
+    #     with pytest.allure.step("校验银行是否切换成功"):
+    #         test.assert_equal_save_picture(d, action.element_gettext(d, "充值页银行卡名称"), "农业银行", "切换为农业银行")
+    #     with pytest.allure.step("每日限额校验"):
+    #         test.assert_equal_save_picture(d, action.element_gettext(d, "充值页每日限额").strip(), "每日限额:  10,000.00元", "每日限额校验")
+    #     with pytest.allure.step("单笔限额校验"):
+    #         test.assert_equal_save_picture(d, action.element_gettext(d, "充值页单笔限额").strip(), "单笔限额:  2,000.00元", "单笔限额校验")
+    #     Consts.RESULT_LIST.append('True')
+    #
+    # @pytest.allure.feature('bank_page')
+    # @pytest.allure.feature("22.返回银行页")
+    # @pytest.allure.severity('critical')
+    # def test_return_home_bank_page_22(self, d):
+    #     """
+    #     返回客商银行页
+    #     :param d:
+    #     """
+    #
+    #     with pytest.allure.step("返回银行页"):
+    #         for i in range(5):
+    #             if action.element_gettext(d, "标题") == "银行":
+    #                 break
+    #             else:
+    #                 action.click_element(d, "返回icon")
+    #
+    #     with pytest.allure.step("验证返回成功"):
+    #         test.assert_title(d, "银行")
+    #     Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('bank_page')
     @pytest.allure.feature("23.点击查看资产")
@@ -592,12 +592,10 @@ class TestBankPage:
         """
         with pytest.allure.step("点击再次存入"):
             action.click_element(d, "存款产品页再次存入")
-        with pytest.allure.step("标题验证"):
-            test.assert_title(d, "周周利1号")
-        with pytest.allure.step("点击返回icon返回银行页"):
-            action.click_element(d, "返回icon")
-        with pytest.allure.step("点击返回icon返回银行页"):
-            action.click_element(d, "返回icon")
+        with pytest.allure.step("点击再次存入"):
+            test.assert_element_exists_save_picture(d, action.element_exists(d, "更多产品"), "产品下架")
+        with pytest.allure.step("点击更多产品"):
+            action.click_element(d, "更多产品")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('bank_page')
@@ -609,6 +607,10 @@ class TestBankPage:
         :param d:
         :return:
         """
+        with pytest.allure.step("进入梅州客商银行"):
+            action.click_element(d, "首页银行按钮")
+            d(resourceId="com.bs.finance:id/tv_name", text=u"梅州客商银行").click()
+            action.click_element(d, "查看资产")
         with pytest.allure.step("点击更多服务"):
             action.click_element(d, "资产页更多服务")
         with pytest.allure.step("标题验证"):
