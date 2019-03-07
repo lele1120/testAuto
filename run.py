@@ -19,8 +19,8 @@ if __name__ == '__main__':
 
     # 定义测试集
     allure_list = '--allure_features=Home,sigin,Personal,homepage,Regression,' \
-                  'notloggedin,bank_page,know_page,assets_page'
-    # allure_list = '--allure_features=know_page'
+                  'notloggedin,bank_page,know_page,assets_page,ranking_list_page'
+    # allure_list = '--allure_features=ranking_list_page'
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (xml_report_path, html_report_path)
