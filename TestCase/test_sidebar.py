@@ -728,7 +728,7 @@ class TestSidebar:
                 global cards_number
                 cards_name_a = []
                 cards_name_b = []
-                card_name = d(resourceId=get_value("银行名称"))  # 获取卡数量
+                card_name = d(resourceId=get_value("银行卡页银行名称"))  # 获取卡数量
 
                 for i in range(card_name.__len__()):
                     print(card_name[i].get_text())
@@ -1231,7 +1231,7 @@ class TestSidebar:
 
             if d(resourceId=get_value("银行卡展示")).__len__() >= 1:
 
-                if d(resourceId=get_value("银行名称")).get_text() == "晋享财富":
+                if d(resourceId=get_value("银行卡页银行名称")).get_text() == "晋享财富":
                     test.assert_element_exists_save_picture(d, d(resourceId=get_value("立即开户")).exists, "跳转到未开户")
 
                     with pytest.allure.step("如果有未开户点击立即开户跳转"):
@@ -1479,7 +1479,7 @@ class TestSidebar:
         with pytest.allure.step("title跳转验证"):
             test.assert_title(d, "安全购买渠道设置")
 
-        bank_name = d(resourceId=get_value("银行名称"))
+        bank_name = d(resourceId=get_value("银行卡页银行名称"))
         for i in range(bank_name.__len__()):
             print("银行名称为:"+bank_name[i].get_text())
 

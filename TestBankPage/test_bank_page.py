@@ -53,15 +53,16 @@ class TestBankPage:
             time.sleep(2)
             d(scrollable=True).scroll(steps=20)  # 向下滑动
             time.sleep(2)
-            bank_name_list = d(resourceId=get_value("银行名称"))
+            bank_name_list = d(resourceId=get_value("产品名称"))
+            print(bank_name_list)
             i_bank = random.randint(0+1, bank_name_list.__len__()-1)
             global i_bank_name
-            i_bank_name = d(resourceId=get_value("银行名称"))[i_bank].get_text()
+            i_bank_name = bank_name_list[i_bank].get_text()
             print(i_bank_name)
 
         with pytest.allure.step("点击" + i_bank_name + "跳转"):
             try:
-                d(resourceId=get_value("银行名称"))[i_bank].click(timeout=10)
+                d(resourceId=get_value("产品名称"))[i_bank].click(timeout=10)
             except:
                 action.display_picture(d, "控件未获取到")
                 logging.error("点击银行名称失败 ")

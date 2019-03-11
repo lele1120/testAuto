@@ -94,6 +94,7 @@ element_id:
   联系我们: com.bs.finance:id/btn_call_me
   意见反馈: com.bs.finance:id/btn_you
   产品名称: com.bs.finance:id/tv_name
+  银行卡页银行名称: com.bs.finance:id/tv_name
   资产页银行名称: com.bs.finance:id/tv_name
   晋商弹框: com.bs.finance:id/tv_hint
   晋商弹框确定: com.bs.finance:id/tv_right
