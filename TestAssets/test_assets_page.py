@@ -156,9 +156,10 @@ class TestAssetsPage:
             time.sleep(2)
             if angle_of_view == 0:
                 test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").exists, "添加记账")
-                d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").click()
+                d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").click(timeout=10)
                 with pytest.allure.step("查看是否记账成功"):
-                    action.click_element(d, "银行名称")
+
+                    d(resourceId="com.bs.finance:id/tv_name").click(timeout=10)
                     test.assert_equal_save_picture(d, action.element_gettext(d, "添加记账金额"), "1,000.00", "添加记账")
             elif angle_of_view == 1:
                 action.click_element(d, "资产页存款")
@@ -201,12 +202,11 @@ class TestAssetsPage:
                 # d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").click()
                 time.sleep(1)
                 with pytest.allure.step("查看是否记账成功"):
-                    action.click_element(d, "银行名称")
+                    action.click_element(d, "产品名称")
                     test.assert_equal_save_picture(d, action.element_gettext(d, "添加记账金额"), "2,000.00", "添加记账")
+                    # test.assert_equal_save_picture(d, d(resourceId="com.bs.finance:id/tv_money", text=u"2,000.00",className="android.widget.TextView", instance=1).exists,"2,000.00", "添加记账")
             elif angle_of_view == 1:
                 time.sleep(2)
-                # action.click_element(d, "资产页存款")
-                time.sleep(1)
                 action.click_element(d, "资产页智能存款")
                 with pytest.allure.step("查看是否记账成功"):
                     test.assert_equal_save_picture(d, action.element_gettext(d, "添加记账金额"), "2,000.00", "添加记账")

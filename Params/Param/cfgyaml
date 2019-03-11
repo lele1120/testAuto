@@ -94,6 +94,7 @@ element_id:
   联系我们: com.bs.finance:id/btn_call_me
   意见反馈: com.bs.finance:id/btn_you
   产品名称: com.bs.finance:id/tv_name
+  资产页银行名称: com.bs.finance:id/tv_name
   晋商弹框: com.bs.finance:id/tv_hint
   晋商弹框确定: com.bs.finance:id/tv_right
   未开户消息: com.bs.finance:id/tv_world
@@ -197,7 +198,6 @@ element_id:
   资产页隐藏显示按钮: com.bs.finance:id/chebox
   资产页收益明细: com.bs.finance:id/tv_income
   资产页交易记录: com.bs.finance:id/tv_transaction
-  资产页更多: com.bs.finance:id/rl_submit
   切换视图: com.bs.finance:id/invest_switch_ll
   资产页存款: com.bs.finance:id/ll_title_ckcp
   资产页理财: com.bs.finance:id/ll_title_lc
@@ -218,6 +218,7 @@ element_id:
   修改页面确认修改按钮: com.bs.finance:id/btn_sure
   记账管理金额展示: com.bs.finance:id/tv_money
   智能存款页更多: com.bs.finance:id/iv_more
+  资产页更多: com.bs.finance:id/rl_submit
   智能存款页修改: com.bs.finance:id/invest_update_ll
   智能存款页删除: com.bs.finance:id/invest_delete_ll
   手工记账标示: com.bs.finance:id/tv_type
