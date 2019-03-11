@@ -317,7 +317,8 @@ class TestHomePage:
                 time.sleep(1)
                 for i in range(recommend_content.__len__()):
                     recommend_content_test.append(recommend_content[i].get_text())
-                test.assert_equal_save_picture(d, recommend_content_test, recommend_content_real_financing, "获取推荐列表")
+                    test.assert_element_exists_save_picture(d, action.element_exists(d, "首页银行名称"), "可查询出产品")
+                # test.assert_equal_save_picture(d, recommend_content_test, recommend_content_real_financing, "获取推荐列表")
             elif choose_type == 1:
                 action.click_element(d, "银行存款选项")
                 test.assert_element_exists_save_picture(d, action.element_exists(d, "银行存款选中下划线"), "银行存款选中下划线显示")

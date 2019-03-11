@@ -93,7 +93,7 @@ element_id:
   隐私政策: com.bs.finance:id/btn_mySelfy
   联系我们: com.bs.finance:id/btn_call_me
   意见反馈: com.bs.finance:id/btn_you
-  银行名称: com.bs.finance:id/tv_name
+  产品名称: com.bs.finance:id/tv_name
   晋商弹框: com.bs.finance:id/tv_hint
   晋商弹框确定: com.bs.finance:id/tv_right
   未开户消息: com.bs.finance:id/tv_world
@@ -245,6 +245,8 @@ element_id:
   产品输入框: com.bs.finance:id/et_key
   搜索箭头: com.bs.finance:id/btn_query
   搜索页确定: com.bs.finance:id/btn_ok
+  推荐银行: com.bs.finance:id/fl_item
+  比收益: com.bs.finance:id/linear_bsy
 
 
 user_id:
