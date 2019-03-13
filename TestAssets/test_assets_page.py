@@ -127,7 +127,9 @@ class TestAssetsPage:
         with pytest.allure.step("点击添加记账"):
             action.click_element(d, "添加记账")
         with pytest.allure.step("点击百合银行"):
-            d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click()
+            if not d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").exists:
+                d(text=u"B").click(timeout=10)
+            d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
         with pytest.allure.step("添加产品"):
             action.click_element(d, "银行内产品名称")
         with pytest.allure.step("输入存入金额"):
@@ -295,7 +297,9 @@ class TestAssetsPage:
             with pytest.allure.step("点击添加记账"):
                 action.click_element(d, "添加记账")
             with pytest.allure.step("点击百合银行"):
-                d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click()
+                if not d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").exists:
+                    d(text=u"B").click(timeout=10)
+                d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
             with pytest.allure.step("添加产品"):
                 action.click_element(d, "银行内产品名称")
             with pytest.allure.step("输入存入金额"):

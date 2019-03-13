@@ -220,6 +220,7 @@ element_id:
   记账管理金额展示: com.bs.finance:id/tv_money
   智能存款页更多: com.bs.finance:id/iv_more
   资产页更多: com.bs.finance:id/rl_submit
+  比收益更多: com.bs.finance:id/rl_submit
   智能存款页修改: com.bs.finance:id/invest_update_ll
   智能存款页删除: com.bs.finance:id/invest_delete_ll
   手工记账标示: com.bs.finance:id/tv_type
@@ -249,6 +250,10 @@ element_id:
   搜索页确定: com.bs.finance:id/btn_ok
   推荐银行: com.bs.finance:id/fl_item
   比收益: com.bs.finance:id/linear_bsy
+  说明关闭: com.bs.finance:id/close_view
+  比收益产品名称: com.bs.finance:id/name
+  比收益产品收益: com.bs.finance:id/price
+  比收益产品收益差额: com.bs.finance:id/xicha
 
 
 user_id:
