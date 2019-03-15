@@ -12,6 +12,7 @@ phoneusb:
 # 手机设备序列号
   Y66手机udid : d5ddd4f7
   360手机udid : 111368a9
+  魅族手机udid : 822QEDTK22FT9
 
 element_id:
 # 控件id
@@ -252,9 +253,23 @@ element_id:
   比收益: com.bs.finance:id/linear_bsy
   说明关闭: com.bs.finance:id/close_view
   比收益产品名称: com.bs.finance:id/name
+  比收益理财产品名称: com.bs.finance:id/name2
   比收益产品收益: com.bs.finance:id/price
+  比收益理财产品收益: com.bs.finance:id/price2
   比收益产品收益差额: com.bs.finance:id/xicha
-
+  比收益理财产品收益差额: com.bs.finance:id/xicha2
+  比收益金额输入框: com.bs.finance:id/tv_investMoney
+  比收益金额选项: com.bs.finance:id/tab_rule
+  比收益月年选项: com.bs.finance:id/iv_qx_icon
+  比收益销量选项: com.bs.finance:id/ll_xl
+  比收益月年显示: com.bs.finance:id/tab_qx
+  比收益销量显示: com.bs.finance:id/payNum
+  比收益添加按钮: com.bs.finance:id/btn_add_item
+  比收益添加产品页收益率选项: com.bs.finance:id/tab_rule
+  比收益收益率数值显示: com.bs.finance:id/syl
+  比收益收益率复选框: com.bs.finance:id/checkbox
+  比收益添加产品页完成按钮: com.bs.finance:id/btnOk
+  比收益添加产品页重制按钮: com.bs.finance:id/btnDef
 
 user_id:
 # 登录账号
