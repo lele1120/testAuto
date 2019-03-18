@@ -44,8 +44,9 @@ class TestKnowPage:
         :return:
         """
         with pytest.allure.step("点击抢爆款"):
-            d(resourceId="com.bs.finance:id/tv_item", text=u"抢爆款").click()
+            d(resourceId="com.bs.finance:id/tv_item", text=u"抢爆款").click(timeout=10)
         with pytest.allure.step("标题对比"):
+            time.sleep(2)
             test.assert_title(d, "数据分析优选")
         Consts.RESULT_LIST.append('True')
 
@@ -158,7 +159,7 @@ class TestKnowPage:
         """
         with pytest.allure.step("点击畅销专区"):
             d(resourceId="com.bs.finance:id/iv_item", description=u"比财", className="android.widget.ImageView",
-              instance=1).click()
+              instance=1).click(timeout=10)
             time.sleep(2)
         test.assert_element_exists_save_picture(d, action.element_exists(d, "排行榜机构名称"), "查询出产品")
         Consts.RESULT_LIST.append('True')
@@ -169,7 +170,7 @@ class TestKnowPage:
     def test_click_fund_four_option_10(self, d):
         with pytest.allure.step("点击货币基金下方四个选项"):
             for i in range(0, 4):
-                d(resourceId="com.bs.finance:id/tab_"+str(i)).click()
+                d(resourceId="com.bs.finance:id/tab_"+str(i)).click(timeout=10)
                 test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/line_"+str(i)).exists,
                                                         "验证下划线切换")
         Consts.RESULT_LIST.append('True')
@@ -191,7 +192,7 @@ class TestKnowPage:
     def test_click_financing_four_option_12(self, d):
         with pytest.allure.step("点击理财产品下方四个选项"):
             for i in range(0, 4):
-                d(resourceId="com.bs.finance:id/tab_"+str(i)).click()
+                d(resourceId="com.bs.finance:id/tab_"+str(i)).click(timeout=10)
                 test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/line_"+str(i)).exists,
                                                         "验证下划线切换")
         Consts.RESULT_LIST.append('True')
@@ -212,7 +213,7 @@ class TestKnowPage:
     def test_click_debt_four_option_14(self, d):
         with pytest.allure.step("点击纯债基金下方四个选项"):
             for i in range(0, 4):
-                d(resourceId="com.bs.finance:id/tab_" + str(i)).click()
+                d(resourceId="com.bs.finance:id/tab_" + str(i)).click(timeout=10)
                 test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/line_" + str(i)).exists,
                                                         "验证下划线切换")
         Consts.RESULT_LIST.append('True')
@@ -240,7 +241,7 @@ class TestKnowPage:
         :return:
         """
         with pytest.allure.step("点击抢爆款"):
-            d(resourceId="com.bs.finance:id/tv_item", text=u"新手专享").click()
+            d(resourceId="com.bs.finance:id/tv_item", text=u"新手专享").click(timeout=10)
         with pytest.allure.step("标题对比"):
             test.assert_title(d, "数据分析优选")
         Consts.RESULT_LIST.append('True')
@@ -323,7 +324,7 @@ class TestKnowPage:
         :return:
         """
         with pytest.allure.step("点击抢爆款"):
-            d(resourceId="com.bs.finance:id/tv_item", text=u"新品上架").click()
+            d(resourceId="com.bs.finance:id/tv_item", text=u"新品上架").click(timeout=10)
         with pytest.allure.step("标题对比"):
             test.assert_title(d, "数据分析优选")
         Consts.RESULT_LIST.append('True')
@@ -410,7 +411,7 @@ class TestKnowPage:
         with pytest.allure.step("标题对比"):
             test.assert_title(d, "比财知道")
         for i in range(0, 4):
-            d(resourceId="com.bs.finance:id/tab_" + str(i)).click()
+            d(resourceId="com.bs.finance:id/tab_" + str(i)).click(timeout=10)
             time.sleep(1)
             test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/line_" + str(i)).exists,
                                                     "验证下划线切换")
