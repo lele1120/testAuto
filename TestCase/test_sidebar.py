@@ -963,8 +963,8 @@ class TestSidebar:
         :param d:
         :return:
         """
-        global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
-        global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
+        # global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
+        # global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
         with pytest.allure.step("点击我的钱包"):
             action.click_element_with_text(d, "我的钱包", "我的钱包")
             test.assert_title(d, "我的钱包")
@@ -995,7 +995,7 @@ class TestSidebar:
         :return:
         """
         with pytest.allure.step("点击明细"):
-            d(description=u"明细").click()
+            d(text=u"明细").click(timeout=10)
             time.sleep(2)
             test.assert_title(d, "明细")
 
@@ -1024,7 +1024,7 @@ class TestSidebar:
                                                "交易记录下划线显示")
 
         with pytest.allure.step("日期图标显示"):
-            test.assert_element_exists_save_picture(d,not d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标隐藏")
+            test.assert_element_exists_save_picture(d, not d(resourceId="com.bs.finance:id/iv_date").exists, "日期图标隐藏")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Personal')
@@ -1061,13 +1061,17 @@ class TestSidebar:
         :return:
         """
         with pytest.allure.step("点击提现"):
-            d(description=u"提现").click()
+            d(text=u"提现").click(timeout=10)
             time.sleep(2)
             test.assert_title(d, "余额提现")
-
+            time.sleep(5)
         with pytest.allure.step("正则匹配可提现余额"):
             global balance  # 可提现余额
-            balance_text = d(resourceId="com.bs.finance:id/wallet_get_cash_tv_money_tip").get_text()
+            balance_text = action.element_gettext(d, "可提现余额")
+            print(balance_text)
+            print("---------------------------------")
+            # balance_text = d(resourceId="com.bs.finance:id/wallet_get_cash_tv_money_tip").get_text()
+            # balance_text = d(resourceId="com.bs.finance:id/wallet_get_cash_tv_money_tip").get_text()
             balance = re.findall(r'-?\d+\.?\d*e?-?\d*?', balance_text)
             print("可提现余额：" + str(balance[0]))
         Consts.RESULT_LIST.append('True')
@@ -1130,12 +1134,14 @@ class TestSidebar:
         :param d:
         :return:
         """
+        # global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
+        # global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
         with pytest.allure.step("获取账户余额显示隐藏状态"):
-            if d(description=u"****").exists:
+            if d(text=u"****").exists:
                 print("当前账户余额金额显示状态为:隐藏")
                 remaining_sum_type = 1  # 金额隐藏
 
-            elif d(description=str(balance[0])).exists:
+            elif d(text=str(balance[0])).exists:
                 print("当前账户余额金额显示状态为:显示")
                 remaining_sum_type = 0  # 金额显示
 
@@ -1150,11 +1156,11 @@ class TestSidebar:
             test.assert_title(d, "我的钱包")
 
         with pytest.allure.step("获取改变后账户余额显示隐藏状态"):
-            if d(description=str(balance[0])).exists:
+            if d(text=str(balance[0])).exists:
                 print("当前账户余额金额显示状态为:显示")
                 change_remaining_sum_type = 1  # 金额显示
 
-            elif d(description=u"****").exists:
+            elif d(text=u"****").exists:
                 print("当前账户余额金额显示状态为:隐藏")
                 change_remaining_sum_type = 0  # 金额隐藏
 
@@ -1173,7 +1179,7 @@ class TestSidebar:
         """
         card_button_text = "银行卡(" + str(cards_number) + ")"
         with pytest.allure.step("点击银行卡跳转"):
-            d(description=card_button_text).click()
+            d(text=card_button_text).click()
             time.sleep(2)
 
         with pytest.allure.step("校验是否跳转成功"):
@@ -1193,8 +1199,8 @@ class TestSidebar:
         :return:
         """
         with pytest.allure.step("点击II类户（图片）跳转"):
-            d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
-            # d(description=u"Ⅱ类户(3)").click()
+            d(text=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
+            # d(text=u"Ⅱ类户(3)").click()
             time.sleep(1)
 
         with pytest.allure.step("校验是否跳转成功"):
@@ -1208,7 +1214,7 @@ class TestSidebar:
         with pytest.allure.step("点击II类户按钮跳转并校验已经绑定二类户数量"):
             # type_two_accounts_text = "Ⅱ类户(" + str(type_two_accounts_number) + ")"
             type_two_accounts_text = "Ⅱ类户(3)"
-            d(description=str(type_two_accounts_text)).click()
+            d(text=str(type_two_accounts_text)).click()
             time.sleep(2)
 
         with pytest.allure.step("校验是否跳转成功"):
@@ -1278,7 +1284,7 @@ class TestSidebar:
         :return:
         """
         with pytest.allure.step("点击卡券"):
-            d(description=u"卡券").click()
+            d(text=u"卡券").click()
             time.sleep(2)
             test.assert_title(d, "卡券")
 
@@ -1305,10 +1311,10 @@ class TestSidebar:
             test.assert_title(d, "关于我们")
 
         with pytest.allure.step("点击使用帮助"):
-            d(description=u"使用帮助").click(timeout=10)
+            d(text=u"使用帮助").click(timeout=10)
 
         with pytest.allure.step("点击安全说明"):
-            d(description=u"安全说明").click(timeout=10)
+            d(text=u"安全说明").click(timeout=10)
 
         action.click_element(d, "返回icon")
         Consts.RESULT_LIST.append('True')

@@ -8,6 +8,8 @@
 """
 import time
 
+import pytest
+
 from Common import Log, Operate
 from Common import Consts
 from Params.params import get_value
@@ -78,7 +80,7 @@ class Assertions:
             self.log.error("对比" + title + "控件")
             raise
 
-    def assert_list(self, d,tv_temp):
+    def assert_list(self, d, tv_temp):
         tv_temp_list = []
         tv_temp_list_c = []
         for i in range(tv_temp.__len__()):
@@ -93,7 +95,7 @@ class Assertions:
         for i in range(tv_temp_list.__len__()):
             self.assert_equal_save_picture(d, tv_temp_list[i], tv_temp_list_c[i], "排序后对比")
 
-    def assert_list_no_reverse(self, d,tv_temp):
+    def assert_list_no_reverse(self, d, tv_temp):
         tv_temp_list = []
         tv_temp_list_c = []
         for i in range(tv_temp.__len__()):
@@ -107,5 +109,32 @@ class Assertions:
         print(tv_temp_list_c)
         for i in range(tv_temp_list.__len__()):
             self.assert_equal_save_picture(d, tv_temp_list[i], tv_temp_list_c[i], "排序后对比")
+
+    def assert_profit(self, d, prd_key, prd_value, prd_many):
+        dict_prd = {}
+        prd_key_list = []
+        prd_value_list = []
+        prd_many_list = []
+
+        for i in range(prd_key.__len__()):
+            dict_prd[prd_key[i].get_text()] = float(prd_value[i].get_text())
+        print(dict_prd)
+
+        for key in dict_prd:
+            prd_key_list.append(key)
+        print(prd_key_list)
+
+        for key in dict_prd:
+            prd_value_list.append(dict_prd[key])
+        print(prd_value_list)
+
+        for i in range(prd_many.__len__()):
+            prd_many_list.append(float((prd_many[i].get_text()).translate(str.maketrans('+', ' ')).strip()))
+        print(prd_many_list)
+
+        for i in range(prd_many_list.__len__()):
+            many_num = prd_value_list[i] - prd_many_list[i]
+            with pytest.allure.step("验证收益计算\n" + str(prd_value_list[i]) + "减" + str(prd_many_list[i])+"等于"+str(many_num)):
+                self.assert_equal_save_picture(d, many_num, prd_value_list[-1], "产品收益对比")
 
 

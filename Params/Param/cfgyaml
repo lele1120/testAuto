@@ -270,6 +270,7 @@ element_id:
   比收益收益率复选框: com.bs.finance:id/checkbox
   比收益添加产品页完成按钮: com.bs.finance:id/btnOk
   比收益添加产品页重制按钮: com.bs.finance:id/btnDef
+  可提现余额: com.bs.finance:id/wallet_get_cash_tv_money_tip
 
 user_id:
 # 登录账号

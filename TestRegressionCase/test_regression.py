@@ -146,8 +146,9 @@ class TestRegression:
         :return:
         """
         
-        with pytest.allure.step("点击II类户（图片）跳转"):
-            d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
+        with pytest.allure.step("点击II类户跳转"):
+            # d(description=u"A37H3tXWoJVwAAAAAASUVORK5CYII=").click()
+            d(text=u"Ⅱ类户").click(timeout=10)
             time.sleep(1)
 
         with pytest.allure.step("校验是否跳转成功"):

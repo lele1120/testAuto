@@ -19,8 +19,9 @@ if __name__ == '__main__':
 
     # 定义测试集
     allure_list = '--allure_features=Home,sigin,Personal,homepage,Regression,' \
-                  'notloggedin,bank_page,know_page,assets_page,ranking_list_page'
+                  'notloggedin,bank_page,know_page,assets_page,ranking_list_page,profit'
     # allure_list = '--allure_features=ranking_list_page'
+    # allure_list = '--allure_features=assets_page'
     args = ['-q', '--maxfail=3', '--alluredir', xml_report_path, allure_list]
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (xml_report_path, html_report_path)
@@ -48,6 +49,7 @@ if __name__ == '__main__':
     #         mail = Email.SendMail()
     #         mail.sendMail()
     #     except:
+
     #         log.error('发送邮件失败，请检查邮件配置')
     #         raise
     #

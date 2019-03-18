@@ -32,6 +32,7 @@ class TestAssetsPage:
         :param d:
         """
         action.login_in(d)  # 登录
+        time.sleep(5)
         with pytest.allure.step("点击首页银行按钮"):
             action.click_element(d, "首页资产按钮")
         with pytest.allure.step("标题判断是否跳转成功"):
@@ -126,10 +127,16 @@ class TestAssetsPage:
             action.click_element(d, "资产页更多")
         with pytest.allure.step("点击添加记账"):
             action.click_element(d, "添加记账")
+            time.sleep(2)
         with pytest.allure.step("点击百合银行"):
             if not d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").exists:
+                time.sleep(5)
+                # d(text=u"B", className="android.widget.TextView", instance=1).click()
                 d(text=u"B").click(timeout=10)
-            d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
+                d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
+            else:
+                d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
+
         with pytest.allure.step("添加产品"):
             action.click_element(d, "银行内产品名称")
         with pytest.allure.step("输入存入金额"):
@@ -254,6 +261,7 @@ class TestAssetsPage:
             action.click_element(d, "智能存款页删除")
         with pytest.allure.step("点击确定"):
             action.click_element(d, "删除弹框确定按钮")
+            time.sleep(1)
         with pytest.allure.step("验证取消删除成功"):
             test.assert_element_exists_save_picture(d, not action.element_exists(d, "手工记账标示"), "删除手工记账")
             test.assert_element_exists_save_picture(d, action.element_exists(d, "缺省页文本"), "删除手工记账1")
@@ -298,6 +306,7 @@ class TestAssetsPage:
                 action.click_element(d, "添加记账")
             with pytest.allure.step("点击百合银行"):
                 if not d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").exists:
+                    # d(text=u"B", className="android.widget.TextView", instance=1).click(timeout=10)
                     d(text=u"B").click(timeout=10)
                 d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
             with pytest.allure.step("添加产品"):

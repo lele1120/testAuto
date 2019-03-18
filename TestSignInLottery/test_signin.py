@@ -163,41 +163,49 @@ class TestSignIn:
         global red_envelope_money
 
         with pytest.allure.step("签到抽奖校验"):
-            time.sleep(5)
-            for i in range(d(className="android.widget.Image").__len__()):
-                if d(className="android.widget.Image")[i].exists:
-                    if d(className="android.widget.Image")[i].info['contentDescription'] == "5@2x":
-                        print("今日未抽奖")
-                        with pytest.allure.step("点击抽奖"):
-                            d(className="android.widget.Image")[i].click()
-                            time.sleep(5)
-                            d(className="android.widget.Image")[i].click()
-                            time.sleep(5)
-                            for j in range(d(className="android.view.View").__len__()):
-                                print("----------------------------------------------------------------")
-                                print(d(className="android.view.View")[j].info['contentDescription'])
-                                print("----------------------------------------------------------------")
-                                if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
-                                    print("*-*-*-*-*-*-*")
-                                    print(j)
-                                    print("*-*-*-*-*-*-*")
-                                    red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
-                                    print("*********************************")
-                                    print(red_envelope_money_text)
-                                    print("*********************************")
-                                    red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
-                                    print("抽中金额:" + str(red_envelope_money) + "元")
-                                    time.sleep(2)
-
-                                    d(description=u"查看我的中奖记录").click(timeout=10)
-
-                                    time.sleep(2)
-
-                                    d(resourceId="com.bs.finance:id/rl_back").click(timeout=10)
-
-                                    break
-
-            print("该用户已抽奖")
+            time.sleep(10)
+            # for i in range(d(className="android.widget.Image").__len__()):
+            #     if d(className="android.widget.Image")[i].exists:
+            #         if d(className="android.widget.Image")[i].info['contentDescription'] == "5@2x":
+            #             print("今日未抽奖")
+            #             with pytest.allure.step("点击抽奖"):
+            #                 d(className="android.widget.Image")[i].click()
+            #                 time.sleep(5)
+            #                 d(className="android.widget.Image")[i].click()
+            #                 time.sleep(5)
+            #                 for j in range(d(className="android.view.View").__len__()):
+            #                     print("----------------------------------------------------------------")
+            #                     print(d(className="android.view.View")[j].info['contentDescription'])
+            #                     print("----------------------------------------------------------------")
+            #                     if "获得" in str(d(className="android.view.View")[j].info['contentDescription']):
+            #                         print("*-*-*-*-*-*-*")
+            #                         print(j)
+            #                         print("*-*-*-*-*-*-*")
+            #                         red_envelope_money_text = (d(className="android.view.View")[j]).info['contentDescription']
+            #                         print("*********************************")
+            #                         print(red_envelope_money_text)
+            #                         print("*********************************")
+            #                         red_envelope_money = re.findall(r'-?\d+\.?\d*e?-?\d*?', red_envelope_money_text)
+            #                         print("抽中金额:" + str(red_envelope_money) + "元")
+            #                         time.sleep(2)
+            #
+            #                         d(text=u"查看我的中奖记录").click(timeout=10)
+            #
+            #                         time.sleep(2)
+            #
+            #                         d(resourceId="com.bs.finance:id/rl_back").click(timeout=10)
+            #
+            #                         break
+            if d(text=u"5@2x").exists:
+                print("今日未抽奖")
+                with pytest.allure.step("点击抽奖"):
+                    d(text=u"5@2x").click(timeout=10)
+                    time.sleep(10)
+                    d.click(0.269, 0.533)
+                    time.sleep(2)
+                    d(text=u"查看我的中奖记录").click(timeout=10)
+            else:
+                print("该用户已抽奖")
 
         Consts.RESULT_LIST.append('True')
 
@@ -213,15 +221,15 @@ class TestSignIn:
 
         with pytest.allure.step("查看活动规则"):
 
-            d(description=u"活动规则").click(timeout=10)
+            d(text=u"活动规则").click(timeout=10)
 
             time.sleep(2)
 
-            test.assert_element_exists_save_picture(d, d(description=u"签到抽奖规则").exists, "签到规则跳转")
+            test.assert_element_exists_save_picture(d, d(text=u"签到抽奖规则").exists, "签到规则跳转")
 
         with pytest.allure.step("点击活动规则关闭"):
-            # d(className="android.view.View", instance=1).click(timeout=10)
-            d(description=u"yAAAAAElFTkSuQmCC").click(timeout=10)
+            d(className="android.view.View", instance=5).click(timeout=10)
+            # d(text=u"yAAAAAElFTkSuQmCC").click(timeout=10)
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('sigin')
@@ -236,25 +244,24 @@ class TestSignIn:
 
         time.sleep(2)
         with pytest.allure.step("点击分享按钮"):
-            d(description=u"分享").click(timeout=10)  # 点击分享
+            d(text=u"分享").click(timeout=10)  # 点击分享
 
         with pytest.allure.step("点击发送给朋友"):
 
-            d(description=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
+            d(text=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
 
             time.sleep(3)
 
         with pytest.allure.step("选择要发送的人"):
-
-            d(resourceId="com.tencent.mm:id/pp", text=u"熊出没请您注意").click(timeout=10)
+            d(resourceId="com.tencent.mm:id/q0", text=u"熊出没请您注意").click(timeout=10)
 
         with pytest.allure.step("点击分享"):
 
-            d(resourceId="com.tencent.mm:id/ayb").click(timeout=10)
+            d(resourceId="com.tencent.mm:id/az_").click(timeout=10)
 
         with pytest.allure.step("点击返回比财"):
 
-            d(resourceId="com.tencent.mm:id/aya").click(timeout=10)  # 返回比财
+            d(resourceId="com.tencent.mm:id/az9").click(timeout=10)  # 返回比财
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('sigin')
@@ -270,14 +277,13 @@ class TestSignIn:
         time.sleep(2)
 
         with pytest.allure.step("点击分享按钮"):
-            d(description=u"分享").click(timeout=10)  # 点击分享
+            d(text=u"分享").click(timeout=10)  # 点击分享
 
         with pytest.allure.step("点击发送到朋友圈"):
-            d(description=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
+            d(text=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
 
         with pytest.allure.step("点击发表"):
-
-            d(resourceId="com.tencent.mm:id/jq").click(timeout=10)
+            d(resourceId="com.tencent.mm:id/jx").click(timeout=10)
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('sigin')
@@ -292,15 +298,15 @@ class TestSignIn:
 
         with pytest.allure.step("向下滑动"):
             d(scrollable=True).scroll(steps=30)  # 向下滑动
-            time.sleep(2)
+            time.sleep(5)
         with pytest.allure.step("点击我的中奖记录"):
-            d(description=u"我的中奖记录").click(timeout=10)
-            time.sleep(2)
+            d(text=u"我的中奖记录").click(timeout=10)
+            time.sleep(5)
             test.assert_title(d, "签到")
 
         with pytest.allure.step("我的中奖记录中含有今日已发放记录"):
             now_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-            test.assert_element_exists_save_picture(d, d(description=str(now_date)).exists, "签到记录中记录今日签到记录")
+            test.assert_element_exists_save_picture(d, d(text=str(now_date)).exists, "签到记录中记录今日签到记录")
 
         with pytest.allure.step("点击我的中奖记录"):
             action.click_element(d, "左上角关闭")
