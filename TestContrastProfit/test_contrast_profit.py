@@ -30,6 +30,11 @@ class TestContrastProfit:
     @pytest.allure.feature("01.点击首页比收益")
     @pytest.allure.severity('critical')
     def test_click_contrast_profit_01(self, d):
+        """
+        点击比收益标题对比
+        :param d:
+        :return:
+        """
         action.login_in(d)  # 登录
         time.sleep(5)
         with pytest.allure.step("点击首页比收益"):
@@ -42,6 +47,11 @@ class TestContrastProfit:
     @pytest.allure.feature("02.点击右上角知道")
     @pytest.allure.severity('critical')
     def test_click_know_02(self, d):
+        """
+        点击右上角知道
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击首页比收益"):
             action.click_element(d, "比收益更多")
         with pytest.allure.step("标题对比"):
@@ -52,6 +62,11 @@ class TestContrastProfit:
     @pytest.allure.feature("03.关闭说明")
     @pytest.allure.severity('critical')
     def test_close_know_03(self, d):
+        """
+        关闭说明
+        :param d:
+        :return:
+        """
         with pytest.allure.step("关闭说明"):
             action.click_element(d, "说明关闭")
         with pytest.allure.step("标题对比"):
@@ -62,6 +77,11 @@ class TestContrastProfit:
     @pytest.allure.feature("04.银行存款比收益")
     @pytest.allure.severity('critical')
     def test_contrast_profit_deposit_04(self, d):
+        """
+        银行存款比收益
+        :param d:
+        :return:
+        """
         prd_key = d(resourceId=get_value("比收益产品名称"))
         prd_value = d(resourceId=get_value("比收益产品收益"))
         prd_many = d(resourceId=get_value("比收益产品收益差额"))
@@ -72,6 +92,11 @@ class TestContrastProfit:
     @pytest.allure.feature("05.修改投资金额")
     @pytest.allure.severity('critical')
     def test_modify_money_05(self, d):
+        """
+        修改投资金额
+        :param d:
+        :return:
+        """
         with pytest.allure.step("修改投资金额"):
             action.click_element(d, "比收益金额选项")
             # d.swipe_points([(0.501, 0.515), (0.494, 0.581)], 0.2)   # 切换2万金额
@@ -89,6 +114,11 @@ class TestContrastProfit:
     @pytest.allure.feature("06.修改年月")
     @pytest.allure.severity('critical')
     def test_modify_month_year_06(self, d):
+        """
+        修改年月
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击年月下拉菜单"):
             action.click_element(d, "比收益月年选项")
         with pytest.allure.step("点击3年"):
@@ -101,6 +131,11 @@ class TestContrastProfit:
     @pytest.allure.feature("07.查看产品详情")
     @pytest.allure.severity('critical')
     def test_prd_details_07(self, d):
+        """
+        查看产品详情
+        :param d:
+        :return:
+        """
         with pytest.allure.step("查看产品详情"):
             prd_key = d(resourceId=get_value("比收益产品名称"))
             prd_key_list = []
@@ -118,6 +153,11 @@ class TestContrastProfit:
     @pytest.allure.feature("08.点击添加产品")
     @pytest.allure.severity('critical')
     def test_add_prd_08(self, d):
+        """
+        添加产品
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击添加按钮"):
             action.click_element(d, "比收益添加按钮")
         with pytest.allure.step("跳转后标题对比"):
@@ -128,6 +168,11 @@ class TestContrastProfit:
     @pytest.allure.feature("09.根据收益率逆序排序产品")
     @pytest.allure.severity('critical')
     def test_reverse_order_prd_by_yield_09(self, d):
+        """
+        根据收益率逆序排序产品 对比
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击添加按钮"):
             action.click_element(d, "比收益添加产品页收益率选项")
         with pytest.allure.step("点击添加按钮"):
@@ -264,6 +309,11 @@ class TestContrastProfit:
     @pytest.allure.feature("13.点击直销银行理财")
     @pytest.allure.severity('critical')
     def test_click_cp_financing_13(self, d):
+        """
+        点击直销银行理财
+        :param d:
+        :return:
+        """
         time.sleep(5)
         with pytest.allure.step("点击比收益"):
             action.click_element(d, "比收益")
@@ -282,6 +332,11 @@ class TestContrastProfit:
     @pytest.allure.feature("14.直销银行理财比收益")
     @pytest.allure.severity('critical')
     def test_contrast_profit_deposit_14(self, d):
+        """
+        理财产品比收益
+        :param d:
+        :return:
+        """
         # prd_key = d(resourceId=get_value("比收益理财产品名称"))
         prd_value = d(resourceId=get_value("比收益理财产品收益"))
         prd_many = d(resourceId=get_value("比收益理财产品收益差额"))
@@ -312,6 +367,11 @@ class TestContrastProfit:
     @pytest.allure.feature("15.修改投资金额")
     @pytest.allure.severity('critical')
     def test_modify_money_15(self, d):
+        """
+        修改投资金额
+        :param d:
+        :return:
+        """
         with pytest.allure.step("修改投资金额"):
             action.click_element(d, "比收益金额选项")
             # d.swipe_points([(0.783, 0.589), (0.494, 0.581)], 0.2)   # 切换2万金额
@@ -347,6 +407,11 @@ class TestContrastProfit:
     @pytest.allure.feature("16.修改年月")
     @pytest.allure.severity('critical')
     def test_modify_month_year_16(self, d):
+        """
+        修改年月
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击年月下拉菜单"):
             action.click_element(d, "比收益月年选项")
         with pytest.allure.step("点击3年"):
@@ -359,6 +424,11 @@ class TestContrastProfit:
     @pytest.allure.feature("17.查看产品详情")
     @pytest.allure.severity('critical')
     def test_prd_details_17(self, d):
+        """
+        查看理财产品详情
+        :param d:
+        :return:
+        """
         with pytest.allure.step("查看产品详情"):
             prd_key = d(resourceId=get_value("比收益理财产品名称"))
             prd_key_list = []
@@ -376,6 +446,11 @@ class TestContrastProfit:
     @pytest.allure.feature("18.点击添加产品")
     @pytest.allure.severity('critical')
     def test_add_prd_18(self, d):
+        """
+        点击添加理财产品
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击添加按钮"):
             action.click_element(d, "比收益添加按钮")
         with pytest.allure.step("跳转后标题对比"):
@@ -386,6 +461,11 @@ class TestContrastProfit:
     @pytest.allure.feature("19.根据收益率逆序排序产品")
     @pytest.allure.severity('critical')
     def test_reverse_order_prd_by_yield_19(self, d):
+        """
+        根据收益率逆序排序产品
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击添加按钮"):
             action.click_element(d, "比收益添加产品页收益率选项")
         with pytest.allure.step("点击添加按钮"):

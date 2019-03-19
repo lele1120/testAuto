@@ -168,6 +168,11 @@ class TestKnowPage:
     @pytest.allure.feature("10.点击货币基金下方四个选项")
     @pytest.allure.severity('critical')
     def test_click_fund_four_option_10(self, d):
+        """
+        点击货币基金下方四个选项
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击货币基金下方四个选项"):
             for i in range(0, 4):
                 d(resourceId="com.bs.finance:id/tab_"+str(i)).click(timeout=10)
@@ -179,7 +184,11 @@ class TestKnowPage:
     @pytest.allure.feature("11.右滑动")
     @pytest.allure.severity('critical')
     def test_right_slide_11(self, d):
-
+        """
+        右滑动验证标题
+        :param d:
+        :return:
+        """
         with pytest.allure.step("右滑动"):
             d(scrollable=True).scroll.horiz.forward(steps=30)
         with pytest.allure.step(""):
@@ -190,6 +199,11 @@ class TestKnowPage:
     @pytest.allure.feature("12.点击理财产品下方四个选项")
     @pytest.allure.severity('critical')
     def test_click_financing_four_option_12(self, d):
+        """
+        点击理财产品下方四个选项
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击理财产品下方四个选项"):
             for i in range(0, 4):
                 d(resourceId="com.bs.finance:id/tab_"+str(i)).click(timeout=10)
@@ -201,6 +215,11 @@ class TestKnowPage:
     @pytest.allure.feature("13.再次右滑动")
     @pytest.allure.severity('critical')
     def test_right_slider_again_13(self, d):
+        """
+        再次右滑动验证标题
+        :param d:
+        :return:
+        """
         with pytest.allure.step("右滑动"):
             d(scrollable=True).scroll.horiz.forward(steps=30)
         with pytest.allure.step(""):
@@ -211,6 +230,11 @@ class TestKnowPage:
     @pytest.allure.feature("14.点击纯债基金下方四个选项")
     @pytest.allure.severity('critical')
     def test_click_debt_four_option_14(self, d):
+        """
+        点击纯债基金下方四个选项
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击纯债基金下方四个选项"):
             for i in range(0, 4):
                 d(resourceId="com.bs.finance:id/tab_" + str(i)).click(timeout=10)

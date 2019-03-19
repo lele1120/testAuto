@@ -656,7 +656,11 @@ class TestBankPage:
     @pytest.allure.feature("37.返回首页")
     @pytest.allure.severity('critical')
     def test_click_more_card_manage_37(self, d):
-
+        """
+        返回首页
+        :param d:
+        :return:
+        """
         with pytest.allure.step("返回银行页"):
 
             for i in range(5):

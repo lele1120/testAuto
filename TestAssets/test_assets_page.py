@@ -28,7 +28,7 @@ class TestAssetsPage:
     @pytest.allure.severity('critical')
     def test_click_assets_page_01(self, d):
         """
-        点击首页资产按钮
+        点击首页资产按钮获取产品/银行视角状态
         :param d:
         """
         action.login_in(d)  # 登录
@@ -51,7 +51,7 @@ class TestAssetsPage:
     @pytest.allure.severity('critical')
     def test_click_money_see_or_hide_02(self, d):
         """
-        点击金额显示隐藏
+        点击金额显示隐藏，获取金额显示隐藏状态
         :param d:
         :return:
         """
@@ -73,9 +73,14 @@ class TestAssetsPage:
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('assets_page')
-    @pytest.allure.feature("03.点击产页收益明细")
+    @pytest.allure.feature("03.点击产品页收益明细")
     @pytest.allure.severity('critical')
     def test_click_profit_detailed_03(self, d):
+        """
+        点击产品收益明细，标题对比验证
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击资产页收益明细"):
             action.click_element(d, "资产页收益明细")
         with pytest.allure.step("标题对比"):
@@ -86,6 +91,11 @@ class TestAssetsPage:
     @pytest.allure.feature("04.点击交易记录")
     @pytest.allure.severity('critical')
     def test_click_transaction_record_04(self, d):
+        """
+        点击交易记录，标题对比验证
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
         with pytest.allure.step("点击资产页交易记录"):
@@ -98,6 +108,11 @@ class TestAssetsPage:
     @pytest.allure.feature("05.点击右上角更多按钮")
     @pytest.allure.severity('critical')
     def test_click_more_05(self, d):
+        """
+        点击右上角更多按钮，验证下拉框是否弹出
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
         with pytest.allure.step("资产页更多"):
@@ -109,6 +124,11 @@ class TestAssetsPage:
     @pytest.allure.feature("06.点击切换视图")
     @pytest.allure.severity('critical')
     def test_change_view_06(self, d):
+        """
+        点击切换视图，获取 切换结果对比
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击切换视图"):
             action.click_element(d, "切换视图")
             time.sleep(2)
@@ -123,6 +143,11 @@ class TestAssetsPage:
     @pytest.allure.feature("07.点击添加记账")
     @pytest.allure.severity('critical')
     def test_click_bookkeeping_07(self, d):
+        """
+        点击右上角更多按钮添加记账验证添加结果
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击右上角更多"):
             action.click_element(d, "资产页更多")
         with pytest.allure.step("点击添加记账"):
@@ -155,9 +180,14 @@ class TestAssetsPage:
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('assets_page')
-    @pytest.allure.feature("08.点击返回icon")
+    @pytest.allure.feature("08.点击返回icon查看资产页产品显示")
     @pytest.allure.severity('critical')
     def test_click_return_08(self, d):
+        """
+        点击返回icon查看资产页产品显示
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
             if assets_type_see == 0:
@@ -182,6 +212,11 @@ class TestAssetsPage:
     @pytest.allure.feature("09.点击添加记账")
     @pytest.allure.severity('critical')
     def test_click_bookkeeping_manage_09(self, d):
+        """
+        添加记账后修改记账金额并且验证是否修改成功
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
         with pytest.allure.step("点击右上角更多"):
@@ -203,6 +238,11 @@ class TestAssetsPage:
     @pytest.allure.feature("10.修改记账金额")
     @pytest.allure.severity('critical')
     def test_modify_bookkeeping_10(self, d):
+        """
+        修改记账金额
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
             time.sleep(2)
@@ -225,6 +265,11 @@ class TestAssetsPage:
     @pytest.allure.feature("11.点击更多-修改")
     @pytest.allure.severity('critical')
     def test_click_more_and_more_modify_11(self, d):
+        """
+        在更多选项进行修改金额
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击更多"):
             action.click_element(d, "智能存款页更多")
         with pytest.allure.step("点击修改"):
@@ -241,6 +286,11 @@ class TestAssetsPage:
     @pytest.allure.feature("12.点击更多-删除后取消")
     @pytest.allure.severity('critical')
     def test_click_more_and_more_modify_qx_12(self, d):
+        """
+        点击删除后取消删除
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击更多"):
             action.click_element(d, "智能存款页更多")
         with pytest.allure.step("点击修改"):
@@ -255,6 +305,11 @@ class TestAssetsPage:
     @pytest.allure.feature("13.点击更多-删除后确定")
     @pytest.allure.severity('critical')
     def test_click_more_and_more_modify_qd_13(self, d):
+        """
+        点击更多-删除后确定删除
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击更多"):
             action.click_element(d, "智能存款页更多")
         with pytest.allure.step("点击修改"):
@@ -271,6 +326,11 @@ class TestAssetsPage:
     @pytest.allure.feature("14.点击常见问题")
     @pytest.allure.severity('critical')
     def test_click_common_problem_14(self, d):
+        """
+        点击常见问题
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击常见问题"):
             action.click_element(d, "智能存款页常见问题")
         with pytest.allure.step("标题验证"):
@@ -281,6 +341,11 @@ class TestAssetsPage:
     @pytest.allure.feature("15.点击更多内常见问题")
     @pytest.allure.severity('critical')
     def test_click_more_common_problem_15(self, d):
+        """
+        点击更多常见问题
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
         with pytest.allure.step("点击返回icon"):
@@ -297,6 +362,11 @@ class TestAssetsPage:
     @pytest.allure.feature("16.删除记账记录")
     @pytest.allure.severity('critical')
     def test_del_record_keeping_16(self, d):
+        """
+        删除记账记录
+        :param d:
+        :return:
+        """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
         with pytest.allure.step("添加记账数据"):
