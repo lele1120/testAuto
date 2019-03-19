@@ -223,7 +223,7 @@ class TestSignIn:
 
             d(text=u"活动规则").click(timeout=10)
 
-            time.sleep(2)
+            time.sleep(5)
 
             test.assert_element_exists_save_picture(d, d(text=u"签到抽奖规则").exists, "签到规则跳转")
 
