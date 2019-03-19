@@ -229,6 +229,7 @@ class TestKnowPage:
         """
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
+            time.sleep(3)
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('know_page')
@@ -236,11 +237,11 @@ class TestKnowPage:
     @pytest.allure.severity('critical')
     def test_click_novice_vip_16(self, d):
         """
-        点击抢爆款
+        点击新手专享
         :param d:
         :return:
         """
-        with pytest.allure.step("点击抢爆款"):
+        with pytest.allure.step("点击新手专享"):
             d(resourceId="com.bs.finance:id/tv_item", text=u"新手专享").click(timeout=10)
         with pytest.allure.step("标题对比"):
             test.assert_title(d, "数据分析优选")
