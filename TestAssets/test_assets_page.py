@@ -194,11 +194,14 @@ class TestAssetsPage:
                 action.click_element(d, "资产页隐藏显示按钮")
             time.sleep(2)
             if angle_of_view == 0:
+                time.sleep(5)
                 test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").exists, "添加记账")
                 d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").click(timeout=10)
+
                 with pytest.allure.step("查看是否记账成功"):
                     d(resourceId="com.bs.finance:id/iv_show", className="android.widget.ImageView", instance=3).click(timeout=10)
-                    # d(resourceId="com.bs.finance:id/tv_name").click(timeout=10)
+                    d(scrollable=True).scroll(steps=30)  # 向下滑动
+                    d(resourceId="com.bs.finance:id/tv_name").click(timeout=10)
                     test.assert_equal_save_picture(d, action.element_gettext(d, "添加记账金额"), "1,000.00", "添加记账")
             elif angle_of_view == 1:
                 action.click_element(d, "资产页存款")
