@@ -228,7 +228,8 @@ class TestSignIn:
             test.assert_element_exists_save_picture(d, d(text=u"签到抽奖规则").exists, "签到规则跳转")
 
         with pytest.allure.step("点击活动规则关闭"):
-            d(className="android.view.View", instance=5).click(timeout=10)
+            # d(className="android.view.View", instance=5).click(timeout=10)
+            d(className="android.widget.Image").click(timeout=10)
             # d(text=u"yAAAAAElFTkSuQmCC").click(timeout=10)
         Consts.RESULT_LIST.append('True')
 
@@ -248,8 +249,8 @@ class TestSignIn:
 
         with pytest.allure.step("点击发送给朋友"):
 
-            d(text=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
-
+            # d(text=u"发送给朋友", className="android.view.View").click(timeout=10)  # 点击发送给朋友
+            d(text=u"微信").click(timeout=10)   # 点击发送给朋友
             time.sleep(3)
 
         with pytest.allure.step("选择要发送的人"):
@@ -280,7 +281,8 @@ class TestSignIn:
             d(text=u"分享").click(timeout=10)  # 点击分享
 
         with pytest.allure.step("点击发送到朋友圈"):
-            d(text=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
+            # d(text=u"发送到朋友圈").click(timeout=10)  # 点击发送给朋友圈
+            d(text=u"朋友圈", className="android.view.View").click(timeout=10)  # 点击发送给朋友圈
 
         with pytest.allure.step("点击发表"):
             d(resourceId="com.tencent.mm:id/jx").click(timeout=10)
@@ -297,6 +299,7 @@ class TestSignIn:
         """
 
         with pytest.allure.step("向下滑动"):
+            time.sleep(5)
             d(scrollable=True).scroll(steps=30)  # 向下滑动
             time.sleep(5)
         with pytest.allure.step("点击我的中奖记录"):
@@ -321,7 +324,8 @@ class TestSignIn:
         :param d:
         :return:
         """
-
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击设置"):
             time.sleep(5)
 

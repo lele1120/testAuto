@@ -217,7 +217,9 @@ class TestRegression:
         :param d:
         :return:
         """
-        
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
+
         with pytest.allure.step("点击设置"):
 
             time.sleep(5)

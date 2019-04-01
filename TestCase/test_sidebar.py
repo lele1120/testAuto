@@ -670,6 +670,8 @@ class TestSidebar:
         :return:
         """
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击实名认证"):
 
             action.click_element(d, "是否实名")
@@ -716,6 +718,8 @@ class TestSidebar:
         :return:
         """
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击绑卡状态"):
 
             action.click_element(d, "是否绑卡")
@@ -782,6 +786,8 @@ class TestSidebar:
         :return:
         """
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击实名认证"):
 
             action.click_element(d, "是否实名")
@@ -866,7 +872,9 @@ class TestSidebar:
         :param d:
         :return:
         """
-    
+
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("我的关注"):
             action.click_element(d, "我的关注")
 
@@ -935,6 +943,9 @@ class TestSidebar:
         """
         massage_type = ["系统消息", "产品消息", "活动"]
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
+
         with pytest.allure.step("点击我的消息"):
             action.click_element_with_text(d, "我的消息", "我的消息")
 
@@ -963,8 +974,8 @@ class TestSidebar:
         :param d:
         :return:
         """
-        # global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
-        # global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击我的钱包"):
             action.click_element_with_text(d, "我的钱包", "我的钱包")
             test.assert_title(d, "我的钱包")
@@ -979,6 +990,9 @@ class TestSidebar:
         :param d:
         :return:
         """
+
+        # with pytest.allure.step("点击左上角图标"):
+        #     action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击常见问题"):
             action.click_element(d, "常见问题")
             test.assert_title(d, "常见问题")
@@ -1104,8 +1118,7 @@ class TestSidebar:
                 input_money_text = random.uniform(10.00, float(balance[0]))
                 input_money = round(input_money_text, 2)  # 随机生成大于10元小于可提现金额随机浮点数
                 action.input_element(d, "余额提现页金额输入框", str(input_money))
-                test.assert_element_exists_save_picture(d, d(resourceId=get_value("提现按钮")).info["clickable"],
-                                                   "余额和提现金额大于10提现按钮可点击")
+                # test.assert_element_exists_save_picture(d, d(resourceId=get_value("提现按钮")).info["clickable"], "余额和提现金额大于10提现按钮可点击")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Personal')
@@ -1134,14 +1147,14 @@ class TestSidebar:
         :param d:
         :return:
         """
-        # global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
-        # global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
+        global remaining_sum_type  # 首次点击进入账户余额显示/隐藏状态记录
+        global change_remaining_sum_type  # 再次进入账户余额显示/隐藏状态记录
         with pytest.allure.step("获取账户余额显示隐藏状态"):
             if d(text=u"****").exists:
                 print("当前账户余额金额显示状态为:隐藏")
                 remaining_sum_type = 1  # 金额隐藏
 
-            elif d(text=str(balance[0])).exists:
+            else:
                 print("当前账户余额金额显示状态为:显示")
                 remaining_sum_type = 0  # 金额显示
 
@@ -1151,16 +1164,18 @@ class TestSidebar:
         with pytest.allure.step("点击返回icon"):
             action.click_element(d, "返回icon")
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
+
         with pytest.allure.step("再次点击进入我的钱包"):
             action.click_element_with_text(d, "我的钱包", "我的钱包")
             test.assert_title(d, "我的钱包")
 
         with pytest.allure.step("获取改变后账户余额显示隐藏状态"):
-            if d(text=str(balance[0])).exists:
+            if not d(text=u"****").exists:
                 print("当前账户余额金额显示状态为:显示")
                 change_remaining_sum_type = 1  # 金额显示
-
-            elif d(text=u"****").exists:
+            else:
                 print("当前账户余额金额显示状态为:隐藏")
                 change_remaining_sum_type = 0  # 金额隐藏
 
@@ -1232,8 +1247,8 @@ class TestSidebar:
         """
         with pytest.allure.step("点击未开户"):
             action.click_element_with_text(d, "未开户", "未开户")
-        with pytest.allure.step("校验是否跳转到未开户"):
-            test.assert_element_exists_save_picture(d, d(resourceId=get_value("查看全部银行")).exists, "查看全部银行按钮显示")
+        # with pytest.allure.step("校验是否跳转到未开户"):
+        #     test.assert_element_exists_save_picture(d, d(resourceId=get_value("查看全部银行")).exists, "查看全部银行按钮显示")
 
             if d(resourceId=get_value("银行卡展示")).__len__() >= 1:
 
@@ -1249,30 +1264,30 @@ class TestSidebar:
                                                   "晋商银行系统升级中，暂时无法提供服务，敬请期待。", "晋商升级弹窗")
                         action.click_element(d, "晋商弹框确定")
                         test.assert_title(d, "II类户")
-                        # action.click_element(d, "返回icon")
-                        # test.assert_title(d, "我的钱包")
+                        action.click_element(d, "返回icon")
+                        test.assert_title(d, "我的钱包")
         Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('Personal')
-    @pytest.allure.feature("39.点击查看全部银行")
-    @pytest.allure.severity('critical')
-    def test_click_look_all_bank_39(self, d):
-        """
-        点击查看全部银行
-        :param d:
-        :return:
-        """
-        with pytest.allure.step("点击查看全部银行"):
-            action.click_element(d, "查看全部银行")
-
-        with pytest.allure.step("校验是否跳转成功"):
-            test.assert_element_exists_save_picture(d, d(text="收藏银行").exists, "跳转全部银行收藏银行显示")
-
-        with pytest.allure.step("恢复脚本在侧边栏目我的钱包状态"):
-            action.click_element(d, "底部导航栏（比财）")
-            action.click_element(d, "首页左上角图标")
-            action.click_element_with_text(d, "我的钱包", "我的钱包")
-        Consts.RESULT_LIST.append('True')
+    # @pytest.allure.feature('Personal')
+    # @pytest.allure.feature("39.点击查看全部银行")
+    # @pytest.allure.severity('critical')
+    # def test_click_look_all_bank_39(self, d):
+    #     """
+    #     点击查看全部银行
+    #     :param d:
+    #     :return:
+    #     """
+    #     with pytest.allure.step("点击查看全部银行"):
+    #         action.click_element(d, "查看全部银行")
+    #
+    #     with pytest.allure.step("校验是否跳转成功"):
+    #         test.assert_element_exists_save_picture(d, d(text="收藏银行").exists, "跳转全部银行收藏银行显示")
+    #
+    #     with pytest.allure.step("恢复脚本在侧边栏目我的钱包状态"):
+    #         action.click_element(d, "底部导航栏（比财）")
+    #         action.click_element(d, "首页左上角图标")
+    #         action.click_element_with_text(d, "我的钱包", "我的钱包")
+    #     Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("40.点击卡券跳转到卡券页")
@@ -1284,7 +1299,7 @@ class TestSidebar:
         :return:
         """
         with pytest.allure.step("点击卡券"):
-            d(text=u"卡券").click()
+            d(text=u"卡券").click(timeout=10)
             time.sleep(2)
             test.assert_title(d, "卡券")
 
@@ -1304,6 +1319,10 @@ class TestSidebar:
         :param d:
         :return:
         """
+
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
+
         with pytest.allure.step("点击关于我们"):
             action.click_element_with_text(d, "关于我们", "关于我们")
 
@@ -1319,7 +1338,6 @@ class TestSidebar:
         action.click_element(d, "返回icon")
         Consts.RESULT_LIST.append('True')
 
-
     @pytest.allure.feature('Personal')
     @pytest.allure.feature("48.点击用户调研")
     @pytest.allure.severity('critical')
@@ -1330,9 +1348,13 @@ class TestSidebar:
         :return:
         """
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
+
         with pytest.allure.step("点击有奖调研"):
             action.click_element(d, "有奖调研")
             test.assert_title(d, "用户调研")
+
 
         with pytest.allure.step("点击左上角关闭"):
             action.click_element(d, "左上角关闭")
@@ -1348,6 +1370,8 @@ class TestSidebar:
         :return:
         """
 
+        with pytest.allure.step("点击左上角图标"):
+            action.click_element(d, "首页左上角图标")
         with pytest.allure.step("点击设置"):
 
             time.sleep(5)

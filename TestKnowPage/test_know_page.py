@@ -31,7 +31,8 @@ class TestKnowPage:
         with pytest.allure.step("点击首页知道"):
             action.click_element(d, "首页知道按钮")
         with pytest.allure.step("验证控件是否存在"):
-            test.assert_element_exists_save_picture(d, action.element_exists(d, "数据知道"), "数据知道控件验证")
+            # test.assert_element_exists_save_picture(d, action.element_exists(d, "数据知道"), "数据知道控件验证")
+            test.assert_element_exists_save_picture(d, d(text=u"数据知道").exists, "数据知道控件验证")
         Consts.RESULT_LIST.append('True')
 
     @pytest.allure.feature('know_page')

@@ -156,8 +156,8 @@ class TestAssetsPage:
         with pytest.allure.step("点击百合银行"):
             if not d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").exists:
                 time.sleep(5)
-                # d(text=u"B", className="android.widget.TextView", instance=1).click()
-                d(text=u"B").click(timeout=10)
+                d(text=u"B", className="android.widget.TextView", instance=1).click()
+                # d(text=u"B").click(timeout=10)
                 d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
             else:
                 d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
@@ -197,8 +197,8 @@ class TestAssetsPage:
                 test.assert_element_exists_save_picture(d, d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").exists, "添加记账")
                 d(resourceId="com.bs.finance:id/tv_org_name", text=u"百合直销银行-隶属于兰州银行").click(timeout=10)
                 with pytest.allure.step("查看是否记账成功"):
-
-                    d(resourceId="com.bs.finance:id/tv_name").click(timeout=10)
+                    d(resourceId="com.bs.finance:id/iv_show", className="android.widget.ImageView", instance=3).click(timeout=10)
+                    # d(resourceId="com.bs.finance:id/tv_name").click(timeout=10)
                     test.assert_equal_save_picture(d, action.element_gettext(d, "添加记账金额"), "1,000.00", "添加记账")
             elif angle_of_view == 1:
                 action.click_element(d, "资产页存款")
@@ -377,7 +377,8 @@ class TestAssetsPage:
             with pytest.allure.step("点击百合银行"):
                 if not d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").exists:
                     # d(text=u"B", className="android.widget.TextView", instance=1).click(timeout=10)
-                    d(text=u"B").click(timeout=10)
+                    # d(text=u"B").click(timeout=10)
+                    d(text=u"B", className="android.widget.TextView", instance=1).click(timeout=10)
                 d(resourceId="com.bs.finance:id/tv_name", text=u"百合直销银行").click(timeout=10)
             with pytest.allure.step("添加产品"):
                 action.click_element(d, "银行内产品名称")
