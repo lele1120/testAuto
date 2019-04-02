@@ -351,7 +351,7 @@ class TestSignIn:
 
         with pytest.allure.step("点击确认退出_是"):
             action.click_element(d, "确认退出_是")
-
+            time.sleep(5)
         with pytest.allure.step("验证app已成功退出"):
             assert d(text="一键登录").exists  # 验证是否有文本为一键登录的控件
 
