@@ -120,8 +120,8 @@ element_id:
   产品选项: com.bs.finance:id/item_2
   首页昨日收益: com.bs.finance:id/tv_income
   导航栏比财按钮: com.bs.finance:id/rl_0
-#  排行榜按钮: com.bs.finance:id/linear_phb
-  排行榜按钮: com.bs.finance:id/linear_bsy
+  排行榜按钮: com.bs.finance:id/linear_phb
+#  排行榜按钮: com.bs.finance:id/linear_bsy
   排行榜机构名称: com.bs.finance:id/tv_prd_name
   拼团活动入口: com.bs.finance:id/linear_jz
   首页banner: className="android.widget.ImageView", instance=3
@@ -251,8 +251,8 @@ element_id:
   搜索箭头: com.bs.finance:id/btn_query
   搜索页确定: com.bs.finance:id/btn_ok
   推荐银行: com.bs.finance:id/fl_item
-#  比收益: com.bs.finance:id/linear_bsy
-  比收益: com.bs.finance:id/linear_lhq
+  比收益: com.bs.finance:id/linear_bsy
+#  比收益: com.bs.finance:id/linear_lhq
   说明关闭: com.bs.finance:id/close_view
   比收益产品名称: com.bs.finance:id/name
   比收益理财产品名称: com.bs.finance:id/name2
